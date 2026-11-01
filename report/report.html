@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Conception d'un modèle d'analyse des risques et d'alertes prédictives basé sur les données de maintenance des actifs informatiques</title>
+  <style>
+    @page { size: A4; margin: 0; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: #dfe8f2; color: #192536; font-family: "Segoe UI", Arial, sans-serif; }
+    body { font-size: 10.2pt; line-height: 1.34; }
+    .page { position: relative; width: 210mm; height: 297mm; padding: 16mm 17mm 15mm; margin: 0 auto; background: #fff; overflow: hidden; page-break-after: always; }
+    .page:last-child { page-break-after: auto; }
+    .cover { background: linear-gradient(135deg, #071426 0%, #0b2a50 55%, #0d5278 100%); color: #f8fbff; padding: 22mm 20mm 18mm; }
+    .cover::after { content: ""; position: absolute; width: 220mm; height: 70mm; left: -15mm; bottom: 0; background: linear-gradient(135deg, transparent 0 35%, rgba(14,165,233,.18) 35% 38%, transparent 38% 54%, rgba(16,185,129,.16) 54% 57%, transparent 57%); }
+    .cover .logos { display: flex; align-items: center; justify-content: space-between; height: 30mm; }
+    .cover .logos img { max-width: 38mm; max-height: 28mm; object-fit: contain; background: rgba(255,255,255,.95); border-radius: 6px; padding: 4px; }
+    .cover .eyebrow { margin-top: 17mm; text-transform: uppercase; letter-spacing: 2px; color: #8fdcff; font-weight: 700; font-size: 10pt; }
+    .cover h1 { font-size: 25pt; line-height: 1.14; margin: 8mm 0 7mm; color: #fff; max-width: 172mm; }
+    .cover .rule { height: 2px; width: 62mm; background: #38bdf8; margin: 7mm 0; }
+    .cover .subtitle { color: #c8dded; font-size: 13pt; }
+    .cover .meta { position: absolute; bottom: 29mm; left: 20mm; z-index: 2; border-left: 3px solid #10b981; padding-left: 5mm; color: #e7f5ff; line-height: 1.7; }
+    .cover .year { position: absolute; bottom: 12mm; left: 20mm; z-index: 2; color: #8fdcff; font-weight: 700; }
+    h1, h2, h3 { color: #0b2a50; margin: 0 0 4mm; line-height: 1.12; }
+    h1 { font-size: 22pt; }
+    h2 { font-size: 17pt; border-left: 4px solid #0ea5e9; padding-left: 4mm; }
+    h3 { font-size: 12pt; color: #0b5278; margin-top: 4mm; }
+    p { margin: 0 0 3.3mm; text-align: justify; }
+    ul, ol { margin: 2mm 0 3mm 6mm; padding-left: 5mm; }
+    li { margin: 1.2mm 0; }
+    .topbar { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #ced9e5; padding-bottom: 3mm; margin-bottom: 7mm; color: #52708c; font-size: 8.5pt; text-transform: uppercase; letter-spacing: 1px; font-weight: 700; }
+    .topbar span:last-child { color: #0ea5e9; }
+    .footer { position: absolute; bottom: 6mm; left: 17mm; right: 17mm; display: flex; justify-content: space-between; border-top: 1px solid #d9e2eb; padding-top: 2mm; color: #70859a; font-size: 8pt; }
+    .footer .page-no::after { content: counter(page); }
+    .lead { color: #405a71; font-size: 11pt; }
+    .muted { color: #5f7588; }
+    .small { font-size: 8.8pt; }
+    .tiny { font-size: 7.8pt; }
+    .accent { color: #0ea5e9; font-weight: 700; }
+    .green { color: #059669; font-weight: 700; }
+    .orange { color: #d97706; font-weight: 700; }
+    .red { color: #dc2626; font-weight: 700; }
+    .callout { background: #eff7ff; border-left: 4px solid #0ea5e9; padding: 4mm 5mm; margin: 4mm 0; }
+    .callout.greenbox { background: #edfcf6; border-left-color: #10b981; }
+    .callout.warn { background: #fff8e8; border-left-color: #f59e0b; }
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4mm; margin: 4mm 0; }
+    .card { border: 1px solid #cbd9e6; border-radius: 4mm; padding: 4mm; background: #f8fbfe; }
+    .card .kpi { color: #0ea5e9; font-size: 19pt; font-weight: 800; }
+    .card h3 { margin: 1mm 0 2mm; font-size: 10.5pt; }
+    .card p { text-align: left; font-size: 8.7pt; margin: 0; }
+    .two { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm; align-items: start; }
+    .two.wide-left { grid-template-columns: 1.15fr .85fr; }
+    .figure { margin: 3mm 0 4mm; text-align: center; }
+    .figure img { max-width: 100%; max-height: 76mm; object-fit: contain; border: 1px solid #d7e1ea; border-radius: 2mm; background: #f8fbfe; }
+    .figure.tall img { max-height: 105mm; }
+    .figure.small-figure img { max-height: 50mm; }
+    .figure figcaption { margin-top: 1.5mm; color: #5a7083; font-size: 8.3pt; font-style: italic; line-height: 1.2; }
+    .table-wrap { margin: 3mm 0 4mm; }
+    table { width: 100%; border-collapse: collapse; font-size: 8.6pt; }
+    th { background: #0b2a50; color: #fff; text-align: left; padding: 2.4mm; }
+    td { border: 1px solid #ced9e5; padding: 2.2mm; vertical-align: top; }
+    tr:nth-child(even) td { background: #f3f7fb; }
+    .metric-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3mm; margin: 4mm 0; }
+    .metric { background: #f5f9fd; border: 1px solid #cbd9e6; border-radius: 3mm; padding: 3mm; text-align: center; }
+    .metric strong { display: block; color: #0b2a50; font-size: 16pt; }
+    .metric span { color: #60788c; font-size: 8pt; text-transform: uppercase; letter-spacing: .5px; }
+    .flow { display: flex; align-items: center; justify-content: space-between; gap: 2mm; margin: 5mm 0; }
+    .flow .step { flex: 1; min-height: 19mm; border: 2px solid #0ea5e9; border-radius: 3mm; padding: 3mm 2mm; display: flex; align-items: center; justify-content: center; text-align: center; font-weight: 700; color: #0b2a50; background: #eff7ff; font-size: 8.5pt; }
+    .flow .arrow { color: #10b981; font-size: 16pt; font-weight: 800; }
+    .toc { columns: 2; column-gap: 12mm; margin-top: 5mm; }
+    .toc p { text-align: left; margin: 0 0 3mm; break-inside: avoid; }
+    .chapter-label { color: #0ea5e9; text-transform: uppercase; letter-spacing: 1.5px; font-size: 8.5pt; font-weight: 800; margin-bottom: 2mm; }
+    .dark-panel { background: #081426; color: #e8f5ff; border-radius: 4mm; padding: 5mm; }
+    .dark-panel h3 { color: #7dd3fc; }
+    .dark-panel p { color: #d6e6f1; }
+    .dark-panel .accent { color: #7dd3fc; }
+    .signature { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; }
+    .signature div { border: 1px solid #cbd9e6; border-radius: 3mm; padding: 4mm; background: #f9fbfd; }
+    .signature strong { display: block; color: #0b2a50; margin-bottom: 1mm; }
+    .closing { background: linear-gradient(135deg, #eff7ff, #edfcf6); border: 1px solid #b9d9e8; border-radius: 5mm; padding: 7mm; margin-top: 7mm; }
+  </style>
+</head>
+<body>
+
+<section class="page cover">
+  <div class="logos"><img src="images/onda/onda_logo.png" alt="Logo ONDA"><img src="images/cyberrange/emsi_logo.png" alt="Logo EMSI"></div>
+  <div class="eyebrow">Office National des Aéroports · Direction des Systèmes d'Information</div>
+  <h1>Conception d'un modèle d'analyse des risques et d'alertes prédictives basé sur les données de maintenance des actifs informatiques</h1>
+  <div class="rule"></div>
+  <div class="subtitle">Rapport technique du projet de fin d'année<br>Plateforme ONDA Risk Intelligence &amp; CyberRange de validation</div>
+  <div class="meta"><b>Réalisé par</b><br>Azzat Nouamane · Hnid Aimane<br><br><b>Encadrement entreprise</b><br>Mme Jaouhari Ouafaa — ONDA<br><br><b>Encadrement pédagogique</b><br>Mme Khadija Bousmar — EMSI</div>
+  <div class="year">Année académique 2025–2026</div>
+</section>
+
+<section class="page">
+  <div class="topbar"><span>Rapport technique</span><span>Remerciements &amp; résumé</span></div>
+  <h2>Remerciements</h2>
+  <p>Nous exprimons notre gratitude à Mme Jaouhari Ouafaa, notre encadrante au sein de l'Office National des Aéroports, pour son accompagnement, ses orientations et sa compréhension des enjeux opérationnels liés à la disponibilité des réseaux aéroportuaires. Nous remercions également Mme Khadija Bousmar, notre encadrante pédagogique à l'EMSI, pour son suivi méthodologique et ses remarques qui ont contribué à structurer ce travail.</p>
+  <p>Nous remercions enfin les équipes et les personnes qui ont contribué à la compréhension des données, à la validation du prototype et à la documentation des scénarios CyberRange. Ce rapport est le résultat d'un travail en binôme réalisé par Azzat Nouamane et Hnid Aimane.</p>
+  <h2 style="margin-top:7mm">Résumé</h2>
+  <p>Ce projet propose une plateforme de supervision prédictive dédiée aux actifs informatiques et aux liaisons WAN des sites aéroportuaires de l'ONDA. À partir d'un historique de 864 incidents couvrant 27 sites, une chaîne de traitement nettoie les données de maintenance, construit des observations hebdomadaires par site et entraîne une régression logistique afin d'estimer la probabilité d'au moins un incident dans les 30 jours suivants. La plateforme restitue les scores de risque, les alertes, l'historique des sites, les facteurs humains, les opérateurs télécoms et des plans d'action préventifs.</p>
+  <p>La seconde partie apporte un laboratoire CyberRange isolé. Il permet de simuler, dans un environnement contrôlé, une chaîne composée de reconnaissance, exploitation, canal de commande, analyse de charge utile et détection. Les traces produites par Nmap, Wireshark, Ghidra, YARA et Snort sont transformées en indicateurs de compromission et en mesures de durcissement.</p>
+  <div class="callout"><b>Mots-clés :</b> maintenance informatique · WAN · risque prédictif · apprentissage automatique · CyberRange · détection · IOC · REX · résilience.</div>
+  <div class="metric-grid"><div class="metric"><strong>864</strong><span>incidents historiques</span></div><div class="metric"><strong>27</strong><span>sites WAN</span></div><div class="metric"><strong>30 j</strong><span>horizon de prévision</span></div></div>
+  <div class="footer"><span>ONDA · EMSI</span><span class="page-no">Page </span></div>
+</section>
+
+<section class="page">
+  <div class="topbar"><span>Rapport technique</span><span>Abstract &amp; sommaire</span></div>
+  <h2>Abstract</h2>
+  <p>This project presents a predictive monitoring platform for ONDA's airport IT assets and WAN links. Using a history of 864 incidents across 27 sites, the data pipeline cleans maintenance records, builds weekly site-level observations and trains a logistic regression model to estimate the probability of at least one incident during the following 30 days. The application exposes risk scores, alerts, site history, human-factor controls, telecom-operator analysis and prioritized preventive actions.</p>
+  <p>The project is extended with an isolated CyberRange laboratory. In this controlled environment, a complete attack chain is simulated: reconnaissance, exploitation, command-and-control, payload analysis and detection. Evidence collected with Nmap, Wireshark, Ghidra, YARA and Snort is converted into indicators of compromise and hardening measures. The combined approach follows a resilience loop: predict weak sites, test detection capabilities, remediate and share lessons learned.</p>
+  <div class="callout greenbox"><b>Keywords:</b> IT maintenance · WAN · predictive risk · machine learning · CyberRange · detection · IOC · lessons learned · resilience.</div>
+  <h2 style="margin-top:8mm">Structure du rapport</h2>
+  <div class="toc">
+    <p><b>1.</b> Contexte général et cadrage du projet</p><p><b>2.</b> Cahier des charges, besoins et démarche</p>
+    <p><b>3.</b> Données de maintenance et modèle prédictif</p><p><b>4.</b> Conception de la plateforme ONDA</p>
+    <p><b>5.</b> Réalisation des modules de risque, REX et prévention</p><p><b>6.</b> CyberRange : simulation contrôlée</p>
+    <p><b>7.</b> Analyse des artefacts et détection</p><p><b>8.</b> Validation défensive et intégration</p>
+    <p><b>9.</b> Limites, sécurité et perspectives</p><p><b>Conclusion.</b> Bilan et ouverture</p>
+  </div>
+  <div class="dark-panel" style="margin-top:9mm"><h3>Principe de fusion</h3><p><span class="accent">Prédire</span> un risque de disponibilité, <span class="accent">simuler</span> dans un laboratoire isolé, <span class="accent">détecter</span> les traces, <span class="accent">prévenir</span> et <span class="accent">capitaliser</span> dans le REX.</p></div>
+  <div class="footer"><span>ONDA · EMSI</span><span class="page-no">Page </span></div>
+</section>
+
+<section class="page">
+  <div class="topbar"><span>Chapitre 1</span><span>Contexte général</span></div>
+  <div class="chapter-label">01 · Cadrage</div><h1>Contexte général et cadrage du projet</h1>
+  <p class="lead">La continuité des opérations aéroportuaires dépend d'une connectivité WAN stable, d'une maintenance traçable et de procédures maîtrisées.</p>
+  <h3>Contexte institutionnel et opérationnel</h3>
+  <p>L'Office National des Aéroports assure l'exploitation d'un réseau de sites aéroportuaires dont les services informatiques dépendent de liaisons WAN disponibles et stables. La connectivité intervient notamment dans l'enregistrement des passagers, l'échange de données opérationnelles, la gestion des bagages, les systèmes de sûreté et la communication interne.</p>
+  <p>Une coupure prolongée peut donc dégrader la continuité de service et mobiliser simultanément les équipes réseau, les prestataires télécoms et les équipes locales. Le besoin est de compléter la réaction après incident par un pilotage fondé sur les données.</p>
+  <h3>Problématique</h3>
+  <div class="callout">Comment exploiter l'historique de maintenance pour produire des alertes compréhensibles à 30 jours, tout en donnant aux équipes les moyens de vérifier leurs procédures et de tester la détection d'un scénario cyber dans un laboratoire isolé ?</div>
+  <h3>Objectifs</h3>
+  <div class="cards"><div class="card"><div class="kpi">01</div><h3>Mesurer</h3><p>Centraliser, normaliser et exploiter les incidents WAN historiques.</p></div><div class="card"><div class="kpi">02</div><h3>Anticiper</h3><p>Calculer un score 0–100 et prioriser les sites à surveiller.</p></div><div class="card"><div class="kpi">03</div><h3>Valider</h3><p>Tester les capacités de détection dans un CyberRange sans risque.</p></div></div>
+  <h3>Organisation du binôme</h3>
+  <table><tr><th>Membre</th><th>Contributions principales</th><th>Livrables</th></tr><tr><td><b>Azzat Nouamane</b></td><td>Modèle de risque, exploitation des résultats, scénarios contrôlés, analyse des flux et intégration.</td><td>Pipeline, scores, tableaux de bord, preuves de simulation.</td></tr><tr><td><b>Hnid Aimane</b></td><td>Laboratoire virtuel, analyse statique/dynamique, règles de détection et remédiation.</td><td>Architecture Host-Only, Ghidra, YARA/Snort, guides.</td></tr><tr><td><b>Travail commun</b></td><td>Cadrage, validation, revue des résultats et préparation de la démonstration.</td><td>Plateforme fusionnée et rapport final.</td></tr></table>
+  <div class="footer"><span>Conception d'un modèle d'analyse des risques...</span><span class="page-no">Page </span></div>
+</section>
+
+<section class="page">
+  <div class="topbar"><span>Chapitre 2</span><span>Besoins &amp; démarche</span></div>
+  <div class="chapter-label">02 · Cahier des charges</div><h1>Cahier des charges, besoins et démarche</h1>
+  <h3>Besoins fonctionnels</h3>
+  <table><tr><th>Domaine</th><th>Fonction attendue</th></tr><tr><td><b>Pilotage</b></td><td>Afficher les indicateurs réseau, la distribution des niveaux de risque et les cinq sites prioritaires.</td></tr><tr><td><b>Analyse IA</b></td><td>Classer les sites, consulter les facteurs historiques et évaluer le modèle par des métriques de validation.</td></tr><tr><td><b>Prévention</b></td><td>Produire des recommandations liées aux incidents récents, à l'indisponibilité et aux opérateurs.</td></tr><tr><td><b>Facteur humain</b></td><td>Contrôler les prérequis avant modification et conserver les déclarations REX.</td></tr><tr><td><b>CyberRange</b></td><td>Rejouer un scénario isolé, observer les traces, extraire les IOC et vérifier les signatures défensives.</td></tr><tr><td><b>Traçabilité</b></td><td>Relier un signal à une action : ticket, mission, surveillance, règle de détection ou durcissement.</td></tr></table>
+  <h3>Périmètre et limites</h3>
+  <p>Les données disponibles décrivent principalement les incidents WAN par site. Le modèle prédit donc un risque au niveau du site, et non la panne d'un routeur ou d'un équipement individuel. Une extension à l'actif nécessitera un identifiant d'équipement, son modèle, son âge, ses maintenances et ses mesures de performance.</p>
+  <p>Le CyberRange reste séparé du réseau de production. Les actions offensives sont limitées aux machines virtuelles de test dans un réseau Host-Only sans connexion Internet. Les preuves du laboratoire sont des éléments de validation pédagogique, pas des actions à exécuter sur l'infrastructure ONDA.</p>
+  <h3>Démarche itérative</h3>
+  <div class="flow"><div class="step">S1<br>Cadrage</div><div class="arrow">→</div><div class="step">S2<br>Données &amp; IA</div><div class="arrow">→</div><div class="step">S3<br>Plateforme</div><div class="arrow">→</div><div class="step">S4<br>CyberRange &amp; validation</div></div>
+  <p class="small">Le planning initial du laboratoire CyberRange totalise 37 jours-homme et sert de repère de planification technique. La fusion des projets suit quatre axes : compréhension, construction, exposition et validation.</p>
+  <h3>Architecture fonctionnelle globale</h3>
+  <div class="dark-panel"><p><b>Sources</b> : incidents Excel · actions de maintenance · REX · PCAP · artefacts de laboratoire</p><p>↓</p><p><b>Préparation</b> : normalisation · classification · agrégation site-semaine · extraction IOC</p><p>↓</p><p><b>Moteurs</b> : régression logistique · score 0–100 · règles humaines · signatures YARA/Snort</p><p>↓</p><p><b>Décision</b> : tableaux de bord · alertes · plans d'action · durcissement · REX</p></div>
+  <div class="footer"><span>ONDA · EMSI</span><span class="page-no">Page </span></div>
+</section>
+
+<section class="page">
+  <div class="topbar"><span>Chapitre 3</span><span>Données &amp; modèle</span></div>
+  <div class="chapter-label">03 · Intelligence artificielle</div><h1>Données de maintenance et conception du modèle prédictif</h1>
+  <h3>Préparation des données</h3>
+  <p>Le classeur fourni regroupe les feuilles 2021, 2022, 2023 et 2024. La chaîne concatène les feuilles, renomme les colonnes, convertit les dates et les durées, normalise les codes et les noms de sites, puis classe la nature des incidents. Les opérateurs identifiés sont notamment IAM et ORANGE ; les catégories comprennent la liaison WAN, l'électricité, le VPN/pare-feu et les cas non identifiés.</p>
+  <div class="two">
+    <div><h3>Variables principales</h3><table><tr><th>Famille</th><th>Exemples</th></tr><tr><td><b>Récence</b></td><td>Jours depuis le dernier incident.</td></tr><tr><td><b>Fréquence</b></td><td>Incidents sur 7, 30, 90 et 180 jours.</td></tr><tr><td><b>Indisponibilité</b></td><td>Durées cumulées, moyenne et maximum.</td></tr><tr><td><b>Cause/opérateur</b></td><td>Incidents IAM, ORANGE et électriques.</td></tr><tr><td><b>Temporalité</b></td><td>Mois et trimestre.</td></tr></table></div>
+    <div><h3>Chaîne de traitement</h3><div class="dark-panel"><p><b>Excel</b> → nettoyage</p><p>→ sites et catégories normalisés</p><p>→ fenêtres temporelles</p><p>→ jeu <b>site-semaine</b></p><p>→ apprentissage chronologique</p><p>→ score et niveau de risque</p></div><div class="callout greenbox small"><b>Cible :</b> au moins un incident dans les 30 jours suivants.</div></div>
+  </div>
+  <h3>Construction du jeu site-semaine</h3>
+  <p>Une observation représente un site à une date de référence hebdomadaire. Les variables d'entrée ne regardent que les incidents antérieurs à cette date. La cible est calculée sur la fenêtre future de 30 jours, ce qui limite la fuite d'information.</p>
+  <h3>Modèle et score</h3>
+  <p>Le modèle est une régression logistique précédée d'une imputation médiane et d'une standardisation des variables numériques. Le site est encodé par One-Hot Encoding. La probabilité est convertie en score : <b>score = 100 × p</b>. Les seuils sont : <span class="green">FAIBLE</span> si p &lt; 0,40 ; <span class="orange">MOYEN</span> si 0,40 ≤ p &lt; 0,70 ; <span class="red">ÉLEVÉ</span> si p ≥ 0,70.</p>
+  <h3>Fenêtres de validation</h3><div class="metric-grid"><div class="metric"><strong>2 916</strong><span>observations train</span></div><div class="metric"><strong>1 053</strong><span>observations test</span></div><div class="metric"><strong>30 j</strong><span>horizon cible</span></div></div>
+  <p class="small muted">Train : 06/12/2021 → 25/12/2023 · Test : 01/01/2024 → 23/09/2024 · Snapshot des scores : 25/10/2024.</p>
+  <div class="footer"><span>ONDA Risk Intelligence</span><span class="page-no">Page </span></div>
+</section>
+
+<section class="page">
+  <div class="topbar"><span>Chapitre 3</span><span>Évaluation du modèle</span></div>
+  <div class="chapter-label">03 · Validation</div><h1>Évaluation et interprétation des alertes</h1>
+  <p class="lead">Le modèle est évalué chronologiquement, avec un seuil de décision de 0,50 et une pondération équilibrée des classes.</p>
+  <div class="metric-grid"><div class="metric"><strong>62,39 %</strong><span>accuracy</span></div><div class="metric"><strong>54,70 %</strong><span>precision</span></div><div class="metric"><strong>88,44 %</strong><span>recall</span></div><div class="metric"><strong>67,59 %</strong><span>f1-score</span></div><div class="metric"><strong>0,777</strong><span>roc-auc</span></div><div class="metric"><strong>0,705</strong><span>pr-auc</span></div></div>
+  <h3>Matrice de confusion</h3>
+  <table><tr><th></th><th>Prédit sans incident</th><th>Prédit incident</th></tr><tr><td><b>Réel sans incident</b></td><td>244</td><td>342</td></tr><tr><td><b>Réel incident</b></td><td>54</td><td>413</td></tr></table>
+  <div class="callout"><b>Lecture :</b> le rappel élevé est utile pour un système d'alerte où manquer un site réellement incidenté est coûteux. En contrepartie, la précision de 54,70 % implique de confirmer les alertes par une analyse technique avant de déclencher une opération terrain.</div>
+  <h3>Résultats du snapshot de risque</h3>
+  <table><tr><th>Rang</th><th>Site</th><th>Score</th><th>Signaux principaux</th></tr><tr><td>1</td><td><b>129-OUARZAZATE</b></td><td class="red">99,9</td><td>5 incidents/30 j · 380,8 h/90 j · dernier incident à 3 j.</td></tr><tr><td>2</td><td><b>199-ZAGORA</b></td><td class="red">99,9</td><td>3 incidents/30 j · 254,2 h/90 j · IAM et ORANGE.</td></tr><tr><td>3</td><td><b>159-BENS-SLIMANE</b></td><td class="red">99,0</td><td>4 incidents/30 j · 320,0 h/90 j · électricité.</td></tr><tr><td>4</td><td><b>218-BOUARFA</b></td><td class="red">97,2</td><td>7 incidents/90 j · 645,0 h/90 j.</td></tr><tr><td>5</td><td><b>229-GUELMIM</b></td><td class="red">96,1</td><td>6 incidents/90 j · incidents électriques et IAM.</td></tr></table>
+  <div class="callout warn"><b>Point de cohérence :</b> l'accueil de la maquette affiche environ 62 % sous le libellé « précision modèle ML ». Les artefacts de validation indiquent que 62,39 % est l'accuracy globale ; la precision au sens ML est 54,70 %. Le rapport conserve la terminologie correcte.</div>
+  <div class="footer"><span>ONDA Risk Intelligence</span><span class="page-no">Page </span></div>
+</section>
+
+<section class="page">
+  <div class="topbar"><span>Chapitre 4</span><span>Plateforme ONDA</span></div>
+  <div class="chapter-label">04 · Architecture applicative</div><h1>Conception de la plateforme ONDA Risk Intelligence</h1>
+  <p>Le prototype s'appuie sur Python, Pandas, Scikit-learn, Joblib, Streamlit, Plotly et OpenPyXL. Les modules sont séparés par responsabilité afin de rendre l'interface lisible pour les différents profils de la DSI.</p>
+  <div class="cards"><div class="card"><div class="kpi">IA</div><h3>Risque réseau prédictif</h3><p>Modèle entraîné sur l'historique WAN, alertes et classement dynamique.</p></div><div class="card"><div class="kpi green">REX</div><h3>Facteur humain</h3><p>Check-lists, déclarations d'erreur et standardisation des procédures.</p></div><div class="card"><div class="kpi orange">30 j</div><h3>Prévention WAN</h3><p>Analyse par cause/opérateur et plan d'action priorisé.</p></div></div>
+  <h3>Modules logiciels</h3>
+  <table><tr><th>Fichier</th><th>Responsabilité</th><th>Sortie principale</th></tr><tr><td><b>home.py</b></td><td>Portail exécutif</td><td>Indicateurs, distribution et top 5.</td></tr><tr><td><b>app.py</b></td><td>Analyse IA</td><td>Scores, alertes, fiches, explorateur et diagnostic.</td></tr><tr><td><b>human_factor.py</b></td><td>REX opérationnel</td><td>Check-list, conformité, erreurs et bonnes pratiques.</td></tr><tr><td><b>prevention.py</b></td><td>Prévention</td><td>Causes, opérateurs, saisonnalité et recommandations.</td></tr></table>
+  <h3>Navigation et principes d'usage</h3>
+  <div class="flow"><div class="step">Accueil<br>pilotage</div><div class="arrow">→</div><div class="step">Alerte<br>priorisée</div><div class="arrow">→</div><div class="step">Fiche<br>site</div><div class="arrow">→</div><div class="step">Action<br>REX / ticket</div></div>
+  <p>La décision reste humaine : le score sert à trier les priorités et à expliquer les signaux observés. Il ne remplace ni la supervision temps réel ni la qualification technique d'un incident.</p>
+  <figure class="figure tall"><img src="images/onda/onda_modules.png" alt="Modules ONDA"><figcaption>Figure 1 — Modules principaux de la plateforme.</figcaption></figure>
+  <div class="footer"><span>Plateforme ONDA Risk Intelligence</span><span class="page-no">Page </span></div>
+</section>
+
+<section class="page">
+  <div class="topbar"><span>Chapitre 4</span><span>Portail exécutif</span></div>
+  <div class="chapter-label">04 · Pilotage</div><h1>Portail exécutif et accès contrôlé</h1>
+  <h3>Vue d'ensemble de la situation réseau</h3>
+  <p>Le portail est destiné à la lecture rapide de la situation des 27 sites WAN. Il met en évidence 864 incidents analysés, 11 sites à risque élevé, la répartition des niveaux et les cinq sites critiques. Cette vue sert de point de départ à une réunion de pilotage ou à une décision de priorisation.</p>
+  <figure class="figure tall"><img src="images/onda/onda_home.png" alt="Portail exécutif ONDA"><figcaption>Figure 2 — Indicateurs globaux et top 5 des sites critiques.</figcaption></figure>
+  <h3>Accès réservé</h3>
+  <p>L'écran de connexion rappelle que l'outil est destiné au personnel ONDA autorisé. En production, ce contrôle devra être complété par une gestion centralisée des identités, des rôles, des journaux d'audit et une politique de conservation des traces.</p>
+  <figure class="figure small-figure"><img src="images/onda/onda_login.png" alt="Écran de connexion ONDA"><figcaption>Figure 3 — Écran de connexion du prototype.</figcaption></figure>
+  <div class="callout greenbox"><b>Rôle de la page d'accueil :</b> donner une vision immédiate, puis orienter vers l'analyse IA, le facteur humain/REX ou le plan de prévention.</div>
+  <div class="footer"><span>ONDA Risk Intelligence</span><span class="page-no">Page </span></div>
+</section>
+
+<section class="page">
+  <div class="topbar"><span>Chapitre 5</span><span>Risque réseau</span></div>
+  <div class="chapter-label">05 · Alertes</div><h1>Vue globale du risque et alertes actives</h1>
+  <h3>Classement dynamique des sites</h3>
+  <p>La vue d'ensemble affiche le nombre total d'incidents historiques, les sites à risque élevé ou moyen et le score moyen. Le classement permet de comparer les sites sur une même échelle et d'identifier ceux qui doivent être examinés en premier.</p>
+  <figure class="figure tall"><img src="images/onda/onda_overview.png" alt="Vue globale ONDA"><figcaption>Figure 4 — Classement dynamique, score moyen et répartition globale.</figcaption></figure>
+  <h3>Alertes actives et explicabilité</h3>
+  <p>Chaque alerte présente le niveau, le score, les incidents récents, l'indisponibilité et la date du dernier incident. Les raisons produites par le modèle rendent le score plus interprétable et facilitent la préparation d'une action de mitigation.</p>
+  <figure class="figure"><img src="images/onda/onda_alerts.png" alt="Alertes de risque ONDA"><figcaption>Figure 5 — Liste des alertes actives et exemple de justification.</figcaption></figure>
+  <div class="callout"><b>Décision :</b> un score élevé entraîne une vérification prioritaire, pas une intervention automatique. La DSI peut consulter la fiche, confirmer le contexte et enregistrer l'action.</div>
+  <div class="footer"><span>Module Risque Réseau Prédictif</span><span class="page-no">Page </span></div>
+</section>
+
+<section class="page">
+  <div class="topbar"><span>Chapitre 5</span><span>Investigation technique</span></div>
+  <div class="chapter-label">05 · Fiches et explorateur</div><h1>Fiche détaillée, historique et explorateur</h1>
+  <div class="two">
+    <div><h3>Fiche site</h3><p>La fiche détaillée donne accès à la situation d'un site, ses catégories d'incidents, son historique mensuel et les actions d'intervention enregistrées.</p><figure class="figure"><img src="images/onda/onda_detail.png" alt="Fiche détaillée ONDA"><figcaption>Figure 6 — Fiche détaillée du site sélectionné.</figcaption></figure></div>
+    <div><h3>Explorateur de sites</h3><p>L'explorateur élargit l'analyse à tous les sites, y compris ceux dont le score est faible, afin de conserver une référence et de repérer les évolutions.</p><figure class="figure"><img src="images/onda/onda_explorer.png" alt="Explorateur ONDA"><figcaption>Figure 7 — Répartition des pannes et fréquence mensuelle.</figcaption></figure></div>
+  </div>
+  <h3>Indicateurs visibles dans une fiche</h3>
+  <table><tr><th>Indicateur</th><th>Utilité pour l'ingénieur</th></tr><tr><td>Score et niveau</td><td>Déterminer la priorité relative du site.</td></tr><tr><td>Dernier incident</td><td>Mesurer la récence et vérifier une éventuelle répétition.</td></tr><tr><td>Incidents/90 jours</td><td>Observer la tendance récente.</td></tr><tr><td>Indisponibilité</td><td>Estimer l'impact opérationnel.</td></tr><tr><td>Catégorie/opérateur</td><td>Orienter l'action vers réseau, énergie ou prestataire.</td></tr></table>
+  <div class="callout greenbox"><b>Traçabilité :</b> la fiche n'est pas seulement un écran de visualisation ; elle devient le point de rattachement d'une action de maintenance et d'un retour d'expérience.</div>
+  <div class="footer"><span>ONDA Risk Intelligence</span><span class="page-no">Page </span></div>
+</section>
+
+<section class="page">
+  <div class="topbar"><span>Chapitre 5</span><span>REX &amp; prévention</span></div>
+  <div class="chapter-label">05 · Actions opérationnelles</div><h1>Diagnostic du modèle, facteur humain et prévention</h1>
+  <h3>Diagnostic du modèle</h3>
+  <p>La vue de diagnostic rend visibles les métriques de validation, la matrice de confusion et les courbes comparant le risque prévu au taux observé. Elle permet de discuter les performances avec les ingénieurs plutôt que de traiter la sortie du modèle comme une vérité absolue.</p>
+  <figure class="figure"><img src="images/onda/onda_model.png" alt="Diagnostic du modèle ONDA"><figcaption>Figure 8 — Diagnostic du modèle et métriques de validation.</figcaption></figure>
+  <div class="two">
+    <div><h3>Facteur humain &amp; REX</h3><p>La check-list vérifie la sauvegarde de configuration, l'intégrité du firmware, la fenêtre horaire, la notification de la supervision, le rollback et la connectivité post-rechargement. Une non-conformité déclenche un signal de risque humain.</p><figure class="figure"><img src="images/onda/onda_human.png" alt="Facteur humain et REX"><figcaption>Figure 9 — Contrôle procédural avant modification.</figcaption></figure></div>
+    <div><h3>Prévention WAN</h3><p>Le plan agrège les causes, les opérateurs, la durée des coupures et les signaux ML afin de produire une liste d'actions : vérifier une UPS, planifier une mission, escalader un ticket ou renforcer la surveillance.</p><figure class="figure"><img src="images/onda/onda_prevention.png" alt="Plan de prévention WAN"><figcaption>Figure 10 — Plan d'intervention préventive.</figcaption></figure></div>
+  </div>
+  <div class="footer"><span>REX · Prévention · Modèle</span><span class="page-no">Page </span></div>
+</section>
+
+<section class="page">
+  <div class="topbar"><span>Chapitre 6</span><span>CyberRange</span></div>
+  <div class="chapter-label">06 · Simulation contrôlée</div><h1>CyberRange : laboratoire de validation</h1>
+  <p class="lead">Le CyberRange complète la prédiction WAN par une capacité de test active, isolée et réinitialisable.</p>
+  <h3>Rôle dans l'architecture globale</h3>
+  <p>Le laboratoire ne sert pas à attaquer l'infrastructure ONDA. Il sert à vérifier que les équipes savent reconnaître des traces, produire des signatures et appliquer des mesures de durcissement. Les figures proviennent du rapport CyberRange fourni et sont intégrées comme preuves documentaires de la simulation.</p>
+  <h3>Environnement Host-Only</h3>
+  <p>Le laboratoire repose sur deux machines virtuelles reliées par VirtualBox : Kali Linux 2024 comme machine d'analyse et Metasploitable 2 comme cible volontairement vulnérable. Les captures montrent le segment 192.168.243.0/24, Kali en 192.168.243.129 et la cible en 192.168.243.128, avec l'indication qu'il n'existe aucun accès Internet.</p>
+  <figure class="figure tall"><img src="images/cyberrange/cr_architecture.png" alt="Architecture Host-Only CyberRange"><figcaption>Figure 11 — Architecture du laboratoire virtuel et séparation du réseau.</figcaption></figure>
+  <h3>Chaîne étudiée</h3>
+  <div class="flow"><div class="step">Reconnaissance<br>Nmap</div><div class="arrow">→</div><div class="step">Exploitation<br>contrôlée</div><div class="arrow">→</div><div class="step">Canal<br>de commande</div><div class="arrow">→</div><div class="step">Analyse<br>et détection</div></div>
+  <div class="footer"><span>CyberRange de validation</span><span class="page-no">Page </span></div>
+</section>
+
+<section class="page">
+  <div class="topbar"><span>Chapitre 6</span><span>CyberRange</span></div>
+  <div class="chapter-label">06 · Reconnaissance</div><h1>Reconnaissance et preuve d'exploitation</h1>
+  <h3>Surface de services observée</h3>
+  <p>La reconnaissance permet d'identifier les ports, services et versions exposés dans la cible de test. Les captures montrent notamment FTP, SSH, Telnet, Samba, Java RMI, MySQL et HTTP. L'objectif défensif est de comparer l'inventaire observé avec la surface attendue et de prioriser la réduction des services inutiles.</p>
+  <figure class="figure tall"><img src="images/cyberrange/cr_nmap.png" alt="Reconnaissance Nmap"><figcaption>Figure 12 — Résultat documenté d'une reconnaissance de services.</figcaption></figure>
+  <h3>Scénarios contrôlés</h3>
+  <p>Le rapport CyberRange documente notamment l'étude de vsftpd 2.3.4 (CVE-2011-2523), Samba 3.0.20 (CVE-2007-2447) et d'un service Java RMI vulnérable. Les noms des vulnérabilités servent à contextualiser le laboratoire ; aucune commande offensive n'est reproduite dans ce rapport.</p>
+  <div class="two">
+    <div><figure class="figure small-figure"><img src="images/cyberrange/cr_network.png" alt="Interfaces réseau du laboratoire"><figcaption>Figure 13 — Vérification des interfaces des VMs.</figcaption></figure></div>
+    <div><figure class="figure small-figure"><img src="images/cyberrange/cr_shell.png" alt="Session de test CyberRange"><figcaption>Figure 14 — Preuve de session dans le périmètre contrôlé.</figcaption></figure></div>
+  </div>
+  <div class="callout warn"><b>Règle d'isolement :</b> les tests offensifs doivent rester confinés au laboratoire autorisé, avec snapshots, réseau sans Internet, validation formelle et remise à zéro.</div>
+  <div class="footer"><span>CyberRange · Reconnaissance</span><span class="page-no">Page </span></div>
+</section>
+
+<section class="page">
+  <div class="topbar"><span>Chapitre 7</span><span>Analyse des artefacts</span></div>
+  <div class="chapter-label">07 · Flux et rétro-ingénierie</div><h1>Observation du canal de commande et analyse statique</h1>
+  <h3>Observation du flux TCP</h3>
+  <p>Wireshark est utilisé pour documenter le flux lié au scénario. La capture fournie montre une communication entre 192.168.243.129 et 192.168.243.128 sur le port 4444, avec transfert d'une étape de Meterpreter et réponse du canal de commande. En contexte défensif, l'adresse, le port, la direction et le rythme des flux peuvent devenir des indicateurs à corréler dans un IDS ou un SIEM.</p>
+  <figure class="figure"><img src="images/cyberrange/cr_wireshark.png" alt="Capture Wireshark CyberRange"><figcaption>Figure 15 — Capture Wireshark documentant le flux TCP du scénario.</figcaption></figure>
+  <h3>Rétro-ingénierie avec Ghidra</h3>
+  <p>L'analyse statique d'un artefact de test permet d'identifier son format, ses imports, ses fonctions, ses chaînes et ses appels sensibles. Les vues de Ghidra constituent des éléments d'interprétation ; elles doivent être confirmées par le contexte et ne suffisent pas, seules, à conclure à une compromission.</p>
+  <figure class="figure"><img src="images/cyberrange/cr_ghidra.png" alt="Ghidra CodeBrowser"><figcaption>Figure 16 — Vue CodeBrowser de Ghidra sur l'artefact analysé.</figcaption></figure>
+  <div class="callout greenbox"><b>Principe :</b> séparer l'observable (flux, hash, import, chaîne, fonction) de l'interprétation (IOC confirmé, suspicion ou hypothèse).</div>
+  <div class="footer"><span>CyberRange · Wireshark · Ghidra</span><span class="page-no">Page </span></div>
+</section>
+
+<section class="page">
+  <div class="topbar"><span>Chapitre 7</span><span>IOC &amp; détection</span></div>
+  <div class="chapter-label">07 · Transformation défensive</div><h1>Des artefacts aux indicateurs de compromission</h1>
+  <p>Les éléments extraits peuvent être structurés dans une fiche d'incident : adresse et port de commande, hash de l'artefact, nom de fichier, chaînes caractéristiques, imports sensibles, séquence de connexion et métadonnées PCAP.</p>
+  <div class="two">
+    <div><figure class="figure small-figure"><img src="images/cyberrange/cr_decompile.png" alt="Décompilation Ghidra"><figcaption>Figure 17 — Vue de décompilation et contrôle du flux.</figcaption></figure></div>
+    <div><figure class="figure small-figure"><img src="images/cyberrange/cr_ghidra_graph.png" alt="Graphe de fonctions Ghidra"><figcaption>Figure 18 — Graphe de fonctions et appels réseau.</figcaption></figure></div>
+  </div>
+  <h3>Observables et usages</h3>
+  <table><tr><th>Observable</th><th>Source</th><th>Usage défensif</th></tr><tr><td>Flux sortant vers IP/port inhabituel</td><td>Wireshark / IDS</td><td>Corrélation, blocage contrôlé, enquête.</td></tr><tr><td>Hash et nom de charge utile</td><td>Analyse de fichier</td><td>Recherche dans les postes et conservation de preuve.</td></tr><tr><td>Imports ou appels mémoire/réseau</td><td>Ghidra</td><td>Priorisation et enrichissement IOC.</td></tr><tr><td>Version de service vulnérable</td><td>Nmap / inventaire</td><td>Mise à jour, désactivation ou segmentation.</td></tr></table>
+  <h3>Chaînage des preuves</h3>
+  <div class="flow"><div class="step">Payload<br>capturé</div><div class="arrow">→</div><div class="step">Strings,<br>hash, imports</div><div class="arrow">→</div><div class="step">Fonctions<br>clés</div><div class="arrow">→</div><div class="step">IOC et<br>signatures</div></div>
+  <div class="footer"><span>CyberRange · IOC</span><span class="page-no">Page </span></div>
+</section>
+
+<section class="page">
+  <div class="topbar"><span>Chapitre 8</span><span>Validation défensive</span></div>
+  <div class="chapter-label">08 · YARA, Snort et remédiation</div><h1>Validation des signatures et durcissement</h1>
+  <h3>Détection par signatures</h3>
+  <p>Les résultats de l'analyse alimentent une règle YARA de reconnaissance d'artefact et des règles Snort/IDS de détection du flux de commande ou de la séquence de staging. Les captures montrent une exécution de contrôle où deux alertes sont générées et où le fichier PCAP est traité avec succès.</p>
+  <div class="two">
+    <div><figure class="figure"><img src="images/cyberrange/cr_yara.png" alt="Test YARA"><figcaption>Figure 19 — Test documenté de détection d'artefact.</figcaption></figure></div>
+    <div><figure class="figure"><img src="images/cyberrange/cr_snort.png" alt="Test Snort"><figcaption>Figure 20 — Validation Snort sur une capture PCAP contrôlée.</figcaption></figure></div>
+  </div>
+  <h3>Remédiation et durcissement</h3>
+  <p>Les mesures sont regroupées par cause : retirer ou mettre à jour les services vulnérables, désactiver les partages inutiles, limiter les connexions sortantes, segmenter les environnements et activer la surveillance IDS/SIEM. La remédiation est reliée à l'observable et ne se limite pas à une recommandation générique.</p>
+  <figure class="figure"><img src="images/cyberrange/cr_remediation.png" alt="Guides de remédiation"><figcaption>Figure 21 — Guides de remédiation et de durcissement.</figcaption></figure>
+  <div class="callout"><b>Qualification production :</b> toute règle doit être testée sur des flux représentatifs, mesurée en faux positifs/faux négatifs et approuvée avant déploiement.</div>
+  <div class="footer"><span>CyberRange · Détection · Remédiation</span><span class="page-no">Page </span></div>
+</section>
+
+<section class="page">
+  <div class="topbar"><span>Chapitre 8</span><span>Intégration</span></div>
+  <div class="chapter-label">08 · Traçabilité</div><h1>Intégration opérationnelle de la fusion</h1>
+  <h3>De la simulation à l'usage défensif</h3>
+  <table><tr><th>Phase</th><th>Outil</th><th>Artefact produit</th><th>Réutilisation</th></tr><tr><td><b>Reconnaissance</b></td><td>Nmap</td><td>Ports, versions, CVE</td><td>Inventaire et choix des contrôles.</td></tr><tr><td><b>Exploitation contrôlée</b></td><td>Metasploit</td><td>Session de test</td><td>Validation du scénario, jamais en production.</td></tr><tr><td><b>Flux C2</b></td><td>Wireshark</td><td>PCAP et séquence TCP</td><td>IOC réseau et règle IDS.</td></tr><tr><td><b>Analyse</b></td><td>Ghidra</td><td>Fonctions, imports, hash</td><td>Règle YARA et enrichissement.</td></tr><tr><td><b>Détection</b></td><td>YARA / Snort</td><td>Alertes et signatures</td><td>Qualification de la supervision.</td><tr><td><b>Remédiation</b></td><td>Guides techniques</td><td>Actions de durcissement</td><td>Réduction de surface et REX.</td></tr></table>
+  <figure class="figure"><img src="images/cyberrange/cr_transition.png" alt="Transition vers signatures défensives"><figcaption>Figure 22 — Passage des artefacts simulés vers l'alerte et la défense.</figcaption></figure>
+  <h3>Flux de décision proposé</h3>
+  <ol><li>Le module ONDA identifie un site ou une cause prioritaire à partir du risque historique.</li><li>Une équipe reproduit un scénario correspondant uniquement dans le CyberRange.</li><li>Les IOC et les règles validés sont enregistrés dans le catalogue défensif.</li><li>Les conclusions alimentent le plan de prévention, la check-list et le REX.</li><li>Les actions sont suivies dans le journal de mitigation et réévaluées avec de nouvelles données.</li></ol>
+  <div class="callout greenbox"><b>Séparation des environnements :</b> les données de production et les données du laboratoire restent distinctes ; seule la connaissance défensive validée est transférée.</div>
+  <div class="footer"><span>ONDA Risk Intelligence + CyberRange</span><span class="page-no">Page </span></div>
+</section>
+
+<section class="page">
+  <div class="topbar"><span>Chapitre 8</span><span>Bilan &amp; perspectives</span></div>
+  <div class="chapter-label">08 · Résultats</div><h1>Bilan des résultats et limites</h1>
+  <h3>Résultats vérifiables</h3>
+  <div class="cards"><div class="card"><div class="kpi">01</div><h3>Chaîne de données</h3><p>Nettoyage reproductible, dataset site-semaine et artefacts versionnables.</p></div><div class="card"><div class="kpi">02</div><h3>Aide à la décision</h3><p>Scores, alertes explicables, fiches, opérateurs et plans d'action.</p></div><div class="card"><div class="kpi">03</div><h3>Validation cyber</h3><p>Lab isolé, traces PCAP, IOC, signatures et guides de remédiation.</p></div></div>
+  <h3>Limites identifiées</h3>
+  <ul><li>La granularité est celle du site, alors que l'intitulé vise les actifs informatiques.</li><li>L'historique ne contient pas toutes les télémétries réseau, les changements de configuration ni les événements de sécurité.</li><li>Le modèle est un POC académique : il doit être recalibré avec des données plus longues et des validations glissantes.</li><li>Les données REX initiales doivent être remplacées par une base gouvernée avec droits d'accès et traçabilité.</li><li>Les captures CyberRange valident une démarche de laboratoire et ne prouvent pas une exécution dans le réseau de production.</li></ul>
+  <h3>Perspectives</h3>
+  <p>Les évolutions prioritaires sont l'ajout d'un identifiant d'actif et de mesures de supervision, l'intégration des tickets et des changements, la comparaison de modèles, la calibration probabiliste et des seuils spécifiques par criticité de site. Une vue de corrélation entre risque de disponibilité et signaux cyber renforcerait ensuite la résilience.</p>
+  <figure class="figure"><img src="images/cyberrange/cr_gantt.png" alt="Planning CyberRange"><figcaption>Figure 23 — Planning de réalisation CyberRange repris comme support de gestion technique.</figcaption></figure>
+  <div class="footer"><span>Résultats · Limites · Perspectives</span><span class="page-no">Page </span></div>
+</section>
+
+<section class="page">
+  <div class="topbar"><span>Conclusion</span><span>Références techniques</span></div>
+  <div class="chapter-label">Conclusion générale</div><h1>Une boucle de résilience pour les réseaux aéroportuaires</h1>
+  <div class="closing"><p>Ce projet a permis de concevoir une base de supervision prédictive orientée vers les risques de maintenance des liaisons WAN de l'ONDA. La préparation des données, le modèle de régression logistique, le score par site et les modules de visualisation transforment un historique d'incidents en priorités d'intervention compréhensibles.</p><p>L'apport du CyberRange élargit la démarche : il ajoute une capacité de simulation contrôlée, d'observation des traces, de production d'IOC et de validation de signatures. La fusion est cohérente sur le plan opérationnel : le risque WAN indique où concentrer l'attention, le laboratoire permet de tester les contrôles, et le REX conserve les enseignements.</p><p>La solution reste un prototype et devra être enrichie par les données d'actifs, les télémétries et les processus de gouvernance de l'ONDA. Elle fournit toutefois une architecture claire pour passer d'une réaction après incident à une résilience mesurable.</p></div>
+  <h2 style="margin-top:9mm">Références techniques</h2>
+  <ol class="small"><li>Scikit-learn, documentation sur la régression logistique et les métriques d'évaluation.</li><li>Gordon Lyon, <i>Nmap Reference Guide</i>.</li><li>Wireshark Foundation, <i>Wireshark User's Guide</i>.</li><li>National Security Agency, documentation Ghidra.</li><li>YARA Project, documentation YARA.</li><li>Cisco Talos, documentation Snort.</li><li>Projet ONDA Risk Intelligence, artefacts internes : <i>metrics.json</i>, <i>latest_risk_scores.csv</i>, <i>feature_importance.csv</i> et captures d'interface.</li><li>Hnid Aimane et Azzat Nouamane, <i>Rapport PFA CyberRange Lab</i>, source des figures et résultats de simulation contrôlée.</li></ol>
+  <div class="dark-panel" style="margin-top:12mm"><h3>Message final</h3><p>Une alerte est utile lorsqu'elle est expliquée, vérifiée, transformée en action et réinjectée dans la connaissance collective.</p></div>
+  <div class="footer"><span>ONDA · EMSI · Azzat Nouamane &amp; Hnid Aimane</span><span class="page-no">Page </span></div>
+</section>
+
+</body>
+</html>

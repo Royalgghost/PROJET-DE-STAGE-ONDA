@@ -1,0 +1,215 @@
+{"kind":"slide","id":"sl/y90nupkv","slide":1,"title":"PROJET DE FIN D’ANNÉE · 4IIR","textShapes":8}
+{"kind":"textbox","id":"sh/7qp4be9c","slide":1,"textChars":28,"textLines":1}
+{"kind":"textbox","id":"sh/65g3298r","slide":1,"textChars":69,"textLines":3}
+{"kind":"textbox","id":"sh/ts7md4r2","slide":1,"textChars":49,"textLines":1}
+{"kind":"textbox","id":"sh/fu94fe98","slide":1,"textChars":130,"textLines":1}
+{"kind":"textbox","id":"sh/hofulsf2","slide":1,"textChars":26,"textLines":2}
+{"kind":"textbox","id":"sh/ul4vaxgb","slide":1,"textChars":107,"textLines":2}
+{"kind":"textbox","id":"sh/5sfepcfe","slide":1,"textChars":29,"textLines":1}
+{"kind":"textbox","id":"sh/ipovexwn","slide":1,"textChars":2,"textLines":1}
+{"kind":"image","id":"im/rudgbyx4","slide":1,"name":"","bbox":[155,70,90,90]}
+{"kind":"image","id":"im/cfmxk3yp","slide":1,"name":"","bbox":[1570,91.54,250,61.92]}
+{"kind":"image","id":"im/dgvyd8fa","slide":1,"name":"","bbox":[1282,341.1,466,241.81]}
+{"kind":"notes","id":"nt/y90nupkv","slide":1,"text":"[Sources] | - Local project report: report/main.tex | - Local assets: report/..."}
+{"kind":"slide","id":"sl/hwbqtkby","slide":2,"title":"SOMMAIRE","textShapes":13}
+{"kind":"textbox","id":"sh/9072xkry","slide":2,"textChars":8,"textLines":1}
+{"kind":"textbox","id":"sh/ozy1ofad","slide":2,"textChars":62,"textLines":1}
+{"kind":"textbox","id":"sh/a10jqpsj","slide":2,"textChars":2,"textLines":1}
+{"kind":"textbox","id":"sh/x4r21kru","slide":2,"textChars":19,"textLines":1}
+{"kind":"textbox","id":"sh/w3i1sfa9","slide":2,"textChars":60,"textLines":1}
+{"kind":"textbox","id":"sh/ove9o7yd","slide":2,"textChars":2,"textLines":1}
+{"kind":"textbox","id":"sh/9wnqhczy","slide":2,"textChars":25,"textLines":1}
+{"kind":"textbox","id":"sh/mtwrmxg7","slide":2,"textChars":57,"textLines":1}
+{"kind":"textbox","id":"sh/xk7qlczu","slide":2,"textChars":2,"textLines":1}
+{"kind":"textbox","id":"sh/ahwrqhgj","slide":2,"textChars":26,"textLines":1}
+{"kind":"textbox","id":"sh/bip8jmho","slide":2,"textChars":56,"textLines":1}
+{"kind":"textbox","id":"sh/s72xofmh","slide":2,"textChars":32,"textLines":1}
+{"kind":"textbox","id":"sh/76twva5c","slide":2,"textChars":2,"textLines":1}
+{"kind":"notes","id":"nt/hwbqtkby","slide":2,"text":"[Sources] | - Internal structure of the presentation based on the supplied pr..."}
+{"kind":"slide","id":"sl/ofy9wn61","slide":3,"title":"ONDA · EMSI · PFA 4IIR","textShapes":6}
+{"kind":"textbox","id":"sh/d0jax03i","slide":3,"textChars":22,"textLines":1}
+{"kind":"textbox","id":"sh/298ryl4v","slide":3,"textChars":2,"textLines":1}
+{"kind":"textbox","id":"sh/m5cra54z","slide":3,"textChars":12,"textLines":1}
+{"kind":"textbox","id":"sh/n6ls3alk","slide":3,"textChars":23,"textLines":1}
+{"kind":"textbox","id":"sh/m1c3mlsn","slide":3,"textChars":315,"textLines":1}
+{"kind":"textbox","id":"sh/943mhgre","slide":3,"textChars":156,"textLines":1}
+{"kind":"image","id":"im/ulcnalwf","slide":3,"name":"","bbox":[1056,317.78,728,404.44]}
+{"kind":"notes","id":"nt/ofy9wn61","slide":3,"text":"[Sources] | - Local project report: report/main.tex | - Local asset: report/i..."}
+{"kind":"slide","id":"sl/jyx0ra1s","slide":4,"title":"PARTIE 1","textShapes":6}
+{"kind":"textbox","id":"sh/1cj2d8b6","slide":4,"textChars":8,"textLines":1}
+{"kind":"textbox","id":"sh/0ba143al","slide":4,"textChars":19,"textLines":1}
+{"kind":"textbox","id":"sh/rm1k7yt4","slide":4,"textChars":92,"textLines":1}
+{"kind":"textbox","id":"sh/sna103ap","slide":4,"textChars":2,"textLines":1}
+{"kind":"textbox","id":"sh/jadsz2xk","slide":4,"textChars":30,"textLines":1}
+{"kind":"textbox","id":"sh/w72947yt","slide":4,"textChars":2,"textLines":1}
+{"kind":"notes","id":"nt/jyx0ra1s","slide":4,"text":"[Sources] | - Internal section divider based on the project structure."}
+{"kind":"slide","id":"sl/i107q5of","slide":5,"title":"ONDA · EMSI · PFA 4IIR","textShapes":8}
+{"kind":"textbox","id":"sh/cf2tcr61","slide":5,"textChars":22,"textLines":1}
+{"kind":"textbox","id":"sh/z2tcnm5s","slide":5,"textChars":2,"textLines":1}
+{"kind":"textbox","id":"sh/n6dcr65o","slide":5,"textChars":19,"textLines":1}
+{"kind":"textbox","id":"sh/m5kbi1oj","slide":5,"textChars":30,"textLines":1}
+{"kind":"textbox","id":"sh/x4vedgvm","slide":5,"textChars":13,"textLines":1}
+{"kind":"textbox","id":"sh/ahkvi1cb","slide":5,"textChars":185,"textLines":4}
+{"kind":"textbox","id":"sh/v2twb6dw","slide":5,"textChars":13,"textLines":1}
+{"kind":"textbox","id":"sh/k7mxovud","slide":5,"textChars":201,"textLines":4}
+{"kind":"image","id":"im/uhkvq14z","slide":5,"name":"","bbox":[793.38,776,333.25,168]}
+{"kind":"notes","id":"nt/i107q5of","slide":5,"text":"[Sources] | - Local project report: report/main.tex | - Local asset: report/i..."}
+{"kind":"slide","id":"sl/x8f69ofe","slide":6,"title":"ONDA · EMSI · PFA 4IIR","textShapes":9}
+{"kind":"textbox","id":"sh/zi98nu94","slide":6,"textChars":22,"textLines":1}
+{"kind":"textbox","id":"sh/87ipkzal","slide":6,"textChars":2,"textLines":1}
+{"kind":"textbox","id":"sh/oryp8fah","slide":6,"textChars":19,"textLines":1}
+{"kind":"textbox","id":"sh/pc76hkr2","slide":6,"textChars":22,"textLines":1}
+{"kind":"textbox","id":"sh/w32twb6l","slide":6,"textChars":9,"textLines":1}
+{"kind":"textbox","id":"sh/v2tcn650","slide":6,"textChars":194,"textLines":4}
+{"kind":"textbox","id":"sh/u1kbu1ov","slide":6,"textChars":20,"textLines":1}
+{"kind":"textbox","id":"sh/5svutgni","slide":6,"textChars":179,"textLines":4}
+{"kind":"textbox","id":"sh/j6dcr65c","slide":6,"textChars":60,"textLines":1}
+{"kind":"notes","id":"nt/x8f69ofe","slide":6,"text":"[Sources] | - Local project report: report/main.tex | - Scope consolidated fr..."}
+{"kind":"slide","id":"sl/gnmp4jqx","slide":7,"title":"ONDA · EMSI · PFA 4IIR","textShapes":6}
+{"kind":"textbox","id":"sh/dcbud0ra","slide":7,"textChars":22,"textLines":1}
+{"kind":"textbox","id":"sh/ydkbm5sv","slide":7,"textChars":2,"textLines":1}
+{"kind":"textbox","id":"sh/eh0ba1sr","slide":7,"textChars":19,"textLines":1}
+{"kind":"textbox","id":"sh/fi9c369c","slide":7,"textChars":35,"textLines":1}
+{"kind":"textbox","id":"sh/a9ojq5kz","slide":7,"textChars":170,"textLines":1}
+{"kind":"textbox","id":"sh/xcz2l03q","slide":7,"textChars":162,"textLines":4}
+{"kind":"image","id":"im/y1ofmd0z","slide":7,"name":"","bbox":[916,298.89,868,482.22]}
+{"kind":"notes","id":"nt/gnmp4jqx","slide":7,"text":"[Sources] | - Local project report: report/main.tex | - Local asset: report/i..."}
+{"kind":"slide","id":"sl/fu1gfa1s","slide":8,"title":"ONDA · EMSI · PFA 4IIR","textShapes":8}
+{"kind":"textbox","id":"sh/g72x4zyd","slide":8,"textChars":22,"textLines":1}
+{"kind":"textbox","id":"sh/ri9g7uhw","slide":8,"textChars":2,"textLines":1}
+{"kind":"textbox","id":"sh/je9g3ahk","slide":8,"textChars":19,"textLines":1}
+{"kind":"textbox","id":"sh/id0fu50z","slide":8,"textChars":27,"textLines":1}
+{"kind":"textbox","id":"sh/98rehwve","slide":8,"textChars":16,"textLines":1}
+{"kind":"textbox","id":"sh/m5gvmhwn","slide":8,"textChars":145,"textLines":4}
+{"kind":"textbox","id":"sh/n6pwfmd8","slide":8,"textChars":20,"textLines":1}
+{"kind":"textbox","id":"sh/0jydkreh","slide":8,"textChars":76,"textLines":1}
+{"kind":"image","id":"im/nud8jy1k","slide":8,"name":"","bbox":[1006,312.67,728,424.67]}
+{"kind":"notes","id":"nt/fu1gfa1s","slide":8,"text":"[Sources] | - Local project report: report/main.tex | - Local asset: report/i..."}
+{"kind":"slide","id":"sl/udsvah03","slide":9,"title":"ONDA · EMSI · PFA 4IIR","textShapes":6}
+{"kind":"textbox","id":"sh/0b65obm9","slide":9,"textChars":22,"textLines":1}
+{"kind":"textbox","id":"sh/nex4jq5k","slide":9,"textChars":2,"textLines":1}
+{"kind":"textbox","id":"sh/bih4na5w","slide":9,"textChars":19,"textLines":1}
+{"kind":"textbox","id":"sh/ah8nu54b","slide":9,"textChars":38,"textLines":1}
+{"kind":"textbox","id":"sh/p0ji9kf2","slide":9,"textChars":158,"textLines":1}
+{"kind":"textbox","id":"sh/2xsjepgb","slide":9,"textChars":170,"textLines":4}
+{"kind":"image","id":"im/t8z610vu","slide":9,"name":"","bbox":[916,424.62,868,250.76]}
+{"kind":"notes","id":"nt/udsvah03","slide":9,"text":"[Sources] | - Local project report: report/main.tex | - Local asset: report/i..."}
+{"kind":"slide","id":"sl/m90b6t0r","slide":10,"title":"PARTIE 2","textShapes":6}
+{"kind":"textbox","id":"sh/xc3mho32","slide":10,"textChars":8,"textLines":1}
+{"kind":"textbox","id":"sh/cbu58j2h","slide":10,"textChars":25,"textLines":1}
+{"kind":"textbox","id":"sh/zelojyl8","slide":10,"textChars":86,"textLines":1}
+{"kind":"textbox","id":"sh/kzu5c32t","slide":10,"textChars":2,"textLines":1}
+{"kind":"textbox","id":"sh/r6pcv6lw","slide":10,"textChars":30,"textLines":1}
+{"kind":"textbox","id":"sh/0bit8b2d","slide":10,"textChars":2,"textLines":1}
+{"kind":"notes","id":"nt/m90b6t0r","slide":10,"text":"[Sources] | - Internal section divider based on the project structure."}
+{"kind":"slide","id":"sl/jetc3ut0","slide":11,"title":"ONDA · EMSI · PFA 4IIR","textShapes":6}
+{"kind":"textbox","id":"sh/wbih4b6d","slide":11,"textChars":22,"textLines":1}
+{"kind":"textbox","id":"sh/n69grmpw","slide":11,"textChars":2,"textLines":1}
+{"kind":"textbox","id":"sh/72t03qp0","slide":11,"textChars":25,"textLines":1}
+{"kind":"textbox","id":"sh/61kzalof","slide":11,"textChars":33,"textLines":1}
+{"kind":"textbox","id":"sh/9gza9sze","slide":11,"textChars":128,"textLines":1}
+{"kind":"textbox","id":"sh/mdobedg3","slide":11,"textChars":156,"textLines":4}
+{"kind":"image","id":"im/pon6tw36","slide":11,"name":"","bbox":[996,397.73,738,264.54]}
+{"kind":"notes","id":"nt/jetc3ut0","slide":11,"text":"[Sources] | - Local project report: report/main.tex | - Local asset: report/i..."}
+{"kind":"slide","id":"sl/8f2psfyx","slide":12,"title":"ONDA · EMSI · PFA 4IIR","textShapes":6}
+{"kind":"textbox","id":"sh/0f2lgnmp","slide":12,"textChars":22,"textLines":1}
+{"kind":"textbox","id":"sh/ra943il8","slide":12,"textChars":2,"textLines":1}
+{"kind":"textbox","id":"sh/b6d4f2lc","slide":12,"textChars":25,"textLines":1}
+{"kind":"textbox","id":"sh/a543mx4r","slide":12,"textChars":33,"textLines":1}
+{"kind":"textbox","id":"sh/xw3q94ne","slide":12,"textChars":108,"textLines":1}
+{"kind":"textbox","id":"sh/atc7epon","slide":12,"textChars":146,"textLines":4}
+{"kind":"image","id":"im/1wf6x03u","slide":12,"name":"","bbox":[866,308.18,948,478.64]}
+{"kind":"notes","id":"nt/8f2psfyx","slide":12,"text":"[Sources] | - Local project report: report/main.tex | - Local asset: report/i..."}
+{"kind":"slide","id":"sl/hgzapcr6","slide":13,"title":"ONDA · EMSI · PFA 4IIR","textShapes":7}
+{"kind":"textbox","id":"sh/bq9orito","slide":13,"textChars":22,"textLines":1}
+{"kind":"textbox","id":"sh/o3i5w3ad","slide":13,"textChars":2,"textLines":1}
+{"kind":"textbox","id":"sh/gzy5s3a1","slide":13,"textChars":25,"textLines":1}
+{"kind":"textbox","id":"sh/1076lobm","slide":13,"textChars":25,"textLines":1}
+{"kind":"textbox","id":"sh/gb6x0zm9","slide":13,"textChars":150,"textLines":1}
+{"kind":"textbox","id":"sh/vaxg7ulo","slide":13,"textChars":20,"textLines":1}
+{"kind":"textbox","id":"sh/u9ofyp43","slide":13,"textChars":185,"textLines":4}
+{"kind":"image","id":"im/z6h0r6t4","slide":13,"name":"","bbox":[996,446.34,338,167.33]}
+{"kind":"image","id":"im/3adgzm9w","slide":13,"name":"","bbox":[1396,420.06,418,219.88]}
+{"kind":"notes","id":"nt/hgzapcr6","slide":13,"text":"[Sources] | - Local project report: report/main.tex | - Local assets: report/..."}
+{"kind":"slide","id":"sl/6lsnupw7","slide":14,"title":"ONDA · EMSI · PFA 4IIR","textShapes":6}
+{"kind":"textbox","id":"sh/wbydknq1","slide":14,"textChars":22,"textLines":1}
+{"kind":"textbox","id":"sh/jepwf2pc","slide":14,"textChars":2,"textLines":1}
+{"kind":"textbox","id":"sh/zi5c3y98","slide":14,"textChars":25,"textLines":1}
+{"kind":"textbox","id":"sh/ehwvat8n","slide":14,"textChars":33,"textLines":1}
+{"kind":"textbox","id":"sh/x4ni9ofy","slide":14,"textChars":145,"textLines":1}
+{"kind":"textbox","id":"sh/kre1k3y9","slide":14,"textChars":74,"textLines":1}
+{"kind":"image","id":"im/dsjux0jm","slide":14,"name":"","bbox":[382.31,496,1135.38,328]}
+{"kind":"notes","id":"nt/6lsnupw7","slide":14,"text":"[Sources] | - Local project report: report/main.tex | - Local asset: report/i..."}
+{"kind":"slide","id":"sl/vaxsvy10","slide":15,"title":"ONDA · EMSI · PFA 4IIR","textShapes":10}
+{"kind":"textbox","id":"sh/k3y5ov21","slide":15,"textChars":22,"textLines":1}
+{"kind":"textbox","id":"sh/76p4jqls","slide":15,"textChars":2,"textLines":1}
+{"kind":"textbox","id":"sh/na5476l8","slide":15,"textChars":25,"textLines":1}
+{"kind":"textbox","id":"sh/m9c3e1kn","slide":15,"textChars":31,"textLines":1}
+{"kind":"textbox","id":"sh/hsvat0fa","slide":15,"textChars":95,"textLines":1}
+{"kind":"textbox","id":"sh/4vm9ovel","slide":15,"textChars":23,"textLines":1}
+{"kind":"textbox","id":"sh/judsvqxg","slide":15,"textChars":21,"textLines":1}
+{"kind":"textbox","id":"sh/1kjyt83e","slide":15,"textChars":20,"textLines":1}
+{"kind":"textbox","id":"sh/ehsfyt43","slide":15,"textChars":13,"textLines":1}
+{"kind":"textbox","id":"sh/p8jyx83q","slide":15,"textChars":73,"textLines":1}
+{"kind":"image","id":"im/gve5crul","slide":15,"name":"","bbox":[116,531.18,338,97.64]}
+{"kind":"image","id":"im/1wn65cb6","slide":15,"name":"","bbox":[551,531.18,338,97.64]}
+{"kind":"image","id":"im/65cn6xcj","slide":15,"name":"","bbox":[986,533.26,338,93.47]}
+{"kind":"image","id":"im/r6loz2t4","slide":15,"name":"","bbox":[1421,531.18,338,97.64]}
+{"kind":"notes","id":"nt/vaxsvy10","slide":15,"text":"[Sources] | - Local project report: report/main.tex | - Local assets: report/..."}
+{"kind":"slide","id":"sl/gny5sjyp","slide":16,"title":"ONDA · EMSI · PFA 4IIR","textShapes":14}
+{"kind":"textbox","id":"sh/9kby1g7m","slide":16,"textChars":22,"textLines":1}
+{"kind":"textbox","id":"sh/ytkf2h8j","slide":16,"textChars":2,"textLines":1}
+{"kind":"textbox","id":"sh/ip4zel83","slide":16,"textChars":25,"textLines":1}
+{"kind":"textbox","id":"sh/3qdg7qpo","slide":16,"textChars":23,"textLines":1}
+{"kind":"textbox","id":"sh/e1sf65o3","slide":16,"textChars":121,"textLines":1}
+{"kind":"textbox","id":"sh/gnax8v6t","slide":16,"textChars":7,"textLines":1}
+{"kind":"textbox","id":"sh/nqlg3a5k","slide":16,"textChars":8,"textLines":1}
+{"kind":"textbox","id":"sh/ps3y5knq","slide":16,"textChars":7,"textLines":1}
+{"kind":"textbox","id":"sh/oruhcf65","slide":16,"textChars":9,"textLines":1}
+{"kind":"textbox","id":"sh/atczepob","slide":16,"textChars":7,"textLines":1}
+{"kind":"textbox","id":"sh/mpgj6t8j","slide":16,"textChars":6,"textLines":1}
+{"kind":"textbox","id":"sh/8by18jq9","slide":16,"textChars":7,"textLines":1}
+{"kind":"textbox","id":"sh/9c7i1o7u","slide":16,"textChars":8,"textLines":1}
+{"kind":"textbox","id":"sh/kne14jqd","slide":16,"textChars":98,"textLines":1}
+{"kind":"image","id":"im/147ahkjq","slide":16,"name":"","bbox":[1046,330.37,768,419.27]}
+{"kind":"notes","id":"nt/gny5sjyp","slide":16,"text":"[Sources] | - Local project report: report/main.tex | - Local asset: report/i..."}
+{"kind":"slide","id":"sl/14bup87q","slide":17,"title":"PARTIE 3","textShapes":6}
+{"kind":"textbox","id":"sh/1c7e50ni","slide":17,"textChars":8,"textLines":1}
+{"kind":"textbox","id":"sh/gbedwfmx","slide":17,"textChars":26,"textLines":1}
+{"kind":"textbox","id":"sh/rm5czq50","slide":17,"textChars":84,"textLines":1}
+{"kind":"textbox","id":"sh/snedsvml","slide":17,"textChars":2,"textLines":1}
+{"kind":"textbox","id":"sh/3ap8fm50","slide":17,"textChars":30,"textLines":1}
+{"kind":"textbox","id":"sh/gnepkr69","slide":17,"textChars":2,"textLines":1}
+{"kind":"notes","id":"nt/14bup87q","slide":17,"text":"[Sources] | - Internal section divider based on the project structure."}
+{"kind":"slide","id":"sl/y5wne50z","slide":18,"title":"ONDA · EMSI · PFA 4IIR","textShapes":9}
+{"kind":"textbox","id":"sh/hsn2l4bu","slide":18,"textChars":22,"textLines":1}
+{"kind":"textbox","id":"sh/itw3upcf","slide":18,"textChars":2,"textLines":1}
+{"kind":"textbox","id":"sh/6hw3y9sb","slide":18,"textChars":26,"textLines":1}
+{"kind":"textbox","id":"sh/rip4retw","slide":18,"textChars":33,"textLines":1}
+{"kind":"textbox","id":"sh/upg3i18r","slide":18,"textChars":7,"textLines":1}
+{"kind":"textbox","id":"sh/1cr2tg72","slide":18,"textChars":134,"textLines":4}
+{"kind":"textbox","id":"sh/gbylkbqh","slide":18,"textChars":6,"textLines":1}
+{"kind":"textbox","id":"sh/7mpknmp0","slide":18,"textChars":141,"textLines":5}
+{"kind":"textbox","id":"sh/snylgrql","slide":18,"textChars":76,"textLines":1}
+{"kind":"notes","id":"nt/y5wne50z","slide":18,"text":"[Sources] | - Local project report: report/main.tex | - Team and supervision ..."}
+{"kind":"slide","id":"sl/nid43ytk","slide":19,"title":"ONDA · EMSI · PFA 4IIR","textShapes":6}
+{"kind":"textbox","id":"sh/8v2pobax","slide":19,"textChars":22,"textLines":1}
+{"kind":"textbox","id":"sh/vitozqt8","slide":19,"textChars":2,"textLines":1}
+{"kind":"textbox","id":"sh/jmd83atk","slide":19,"textChars":26,"textLines":1}
+{"kind":"textbox","id":"sh/il47u5sz","slide":19,"textChars":26,"textLines":1}
+{"kind":"textbox","id":"sh/dsri9sr6","slide":19,"textChars":142,"textLines":1}
+{"kind":"textbox","id":"sh/qpgjex8f","slide":19,"textChars":187,"textLines":5}
+{"kind":"image","id":"im/pkzm18ja","slide":19,"name":"","bbox":[916,466.92,868,186.17]}
+{"kind":"notes","id":"nt/nid43ytk","slide":19,"text":"[Sources] | - Local project report: report/main.tex | - Local asset: report/i..."}
+{"kind":"slide","id":"sl/zyxsni5k","slide":20,"title":"ONDA · EMSI · PFA 4IIR","textShapes":8}
+{"kind":"textbox","id":"sh/rq50vmp8","slide":20,"textChars":22,"textLines":1}
+{"kind":"textbox","id":"sh/4nu1krqh","slide":20,"textChars":2,"textLines":1}
+{"kind":"textbox","id":"sh/gjuhg7ql","slide":20,"textChars":10,"textLines":1}
+{"kind":"textbox","id":"sh/hk3ipcr6","slide":20,"textChars":30,"textLines":1}
+{"kind":"textbox","id":"sh/cj65wzyd","slide":20,"textChars":150,"textLines":1}
+{"kind":"textbox","id":"sh/rid4nuhs","slide":20,"textChars":175,"textLines":4}
+{"kind":"textbox","id":"sh/4vm5sfy1","slide":20,"textChars":26,"textLines":1}
+{"kind":"textbox","id":"sh/3ud4juhg","slide":20,"textChars":9,"textLines":1}
+{"kind":"image","id":"im/qd07ihgv","slide":20,"name":"","bbox":[1066,421.4,648,187.2]}
+{"kind":"notes","id":"nt/zyxsni5k","slide":20,"text":"[Sources] | - Local project report: report/main.tex | - Local asset: report/i..."}
+{"kind":"notice","message":"Truncated: omitted 0 lines. Increase maxChars or narrow target."}

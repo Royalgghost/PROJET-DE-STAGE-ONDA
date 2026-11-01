@@ -1,0 +1,122 @@
+{
+  "sourcePptx": "C:\\Users\\nouam\\Downloads\\Green and Black Modern Cybersecurity Presentation.pptx",
+  "mapPath": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-frame-map.json",
+  "output": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-starter.pptx",
+  "outputBytes": 4875630,
+  "sourceSlideCount": 10,
+  "slideCount": 10,
+  "previewDir": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-starter-preview",
+  "layoutDir": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-starter-layout",
+  "slides": [
+    {
+      "outputSlide": 1,
+      "sourceSlide": 1,
+      "narrativeRole": "opening thesis",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 3,
+      "previewPath": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-starter-preview\\starter-slide-01.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-01.png",
+      "layoutPath": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-starter-layout\\starter-slide-01.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-01.layout.json"
+    },
+    {
+      "outputSlide": 2,
+      "sourceSlide": 2,
+      "narrativeRole": "context and problem",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 11,
+      "previewPath": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-starter-preview\\starter-slide-02.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-02.png",
+      "layoutPath": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-starter-layout\\starter-slide-02.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-02.layout.json"
+    },
+    {
+      "outputSlide": 3,
+      "sourceSlide": 3,
+      "narrativeRole": "solution rationale",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 10,
+      "previewPath": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-starter-preview\\starter-slide-03.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-03.png",
+      "layoutPath": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-starter-layout\\starter-slide-03.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-03.layout.json"
+    },
+    {
+      "outputSlide": 4,
+      "sourceSlide": 4,
+      "narrativeRole": "solution architecture",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 11,
+      "previewPath": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-starter-preview\\starter-slide-04.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-04.png",
+      "layoutPath": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-starter-layout\\starter-slide-04.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-04.layout.json"
+    },
+    {
+      "outputSlide": 5,
+      "sourceSlide": 5,
+      "narrativeRole": "predictive analysis",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 11,
+      "previewPath": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-starter-preview\\starter-slide-05.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-05.png",
+      "layoutPath": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-starter-layout\\starter-slide-05.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-05.layout.json"
+    },
+    {
+      "outputSlide": 6,
+      "sourceSlide": 6,
+      "narrativeRole": "operational prevention",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 11,
+      "previewPath": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-starter-preview\\starter-slide-06.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-06.png",
+      "layoutPath": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-starter-layout\\starter-slide-06.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-06.layout.json"
+    },
+    {
+      "outputSlide": 7,
+      "sourceSlide": 7,
+      "narrativeRole": "prevention actions",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 13,
+      "previewPath": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-starter-preview\\starter-slide-07.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-07.png",
+      "layoutPath": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-starter-layout\\starter-slide-07.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-07.layout.json"
+    },
+    {
+      "outputSlide": 8,
+      "sourceSlide": 8,
+      "narrativeRole": "defensive simulation",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 9,
+      "previewPath": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-starter-preview\\starter-slide-08.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-08.png",
+      "layoutPath": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-starter-layout\\starter-slide-08.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-08.layout.json"
+    },
+    {
+      "outputSlide": 9,
+      "sourceSlide": 9,
+      "narrativeRole": "integration and improvement",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 11,
+      "previewPath": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-starter-preview\\starter-slide-09.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-09.png",
+      "layoutPath": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-starter-layout\\starter-slide-09.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-09.layout.json"
+    },
+    {
+      "outputSlide": 10,
+      "sourceSlide": 10,
+      "narrativeRole": "closing",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 12,
+      "previewPath": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-starter-preview\\starter-slide-10.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-10.png",
+      "layoutPath": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-starter-layout\\starter-slide-10.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-10.layout.json"
+    }
+  ]
+}

@@ -1,0 +1,257 @@
+{"kind":"deck","id":"pr/ig6ozf","name":"Deck"}
+{"kind":"layout","layoutId":"/ppt/slideMasters/slideMaster1.xml","name":"","type":"master","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"body","type":"body","textPreview":"Click to edit Master text styles | Second level | Third level | Fourth level | Fifth level"},{"name":"dateTime","type":"dateTime","textPreview":"6/17/2026"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout1.xml","name":"Title Slide","type":"title","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"subtitle","type":"subtitle","textPreview":"Click to edit Master subtitle style"},{"name":"dateTime","type":"dateTime","textPreview":"6/17/2026"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout2.xml","name":"Title and Content","type":"obj","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"content placeholder 2","textPreview":"Click to edit Master text styles | Second level | Third level | Fourth level | Fifth level"},{"name":"dateTime","type":"dateTime","textPreview":"6/17/2026"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout3.xml","name":"Section Header","type":"secHead","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"body","type":"body","textPreview":"Click to edit Master text styles"},{"name":"dateTime","type":"dateTime","textPreview":"6/17/2026"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout4.xml","name":"Two Content","type":"twoObj","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"content placeholder 2","textPreview":"Click to edit Master text styles | Second level | Third level | Fourth level | Fifth level"},{"name":"content placeholder 3","textPreview":"Click to edit Master text styles | Second level | Third level | Fourth level | Fifth level"},{"name":"dateTime","type":"dateTime","textPreview":"6/17/2026"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout5.xml","name":"Comparison","type":"twoTxTwoObj","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"body","type":"body","textPreview":"Click to edit Master text styles"},{"name":"content placeholder 3","textPreview":"Click to edit Master text styles | Second level | Third level | Fourth level | Fifth level"},{"name":"body","type":"body","textPreview":"Click to edit Master text styles"},{"name":"content placeholder 5","textPreview":"Click to edit Master text styles | Second level | Third level | Fourth level | Fifth level"},{"name":"dateTime","type":"dateTime","textPreview":"6/17/2026"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout6.xml","name":"Title Only","type":"titleOnly","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"dateTime","type":"dateTime","textPreview":"6/17/2026"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout7.xml","name":"Blank","type":"blank","placeholders":[{"name":"dateTime","type":"dateTime","textPreview":"6/17/2026"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout8.xml","name":"Content with Caption","type":"objTx","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"content placeholder 2","textPreview":"Click to edit Master text styles | Second level | Third level | Fourth level | Fifth level"},{"name":"body","type":"body","textPreview":"Click to edit Master text styles"},{"name":"dateTime","type":"dateTime","textPreview":"6/17/2026"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout9.xml","name":"Picture with Caption","type":"picTx","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"picture","type":"picture"},{"name":"body","type":"body","textPreview":"Click to edit Master text styles"},{"name":"dateTime","type":"dateTime","textPreview":"6/17/2026"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout10.xml","name":"Title and Vertical Text","type":"vertTx","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"body","type":"body","textPreview":"Click to edit Master text styles | Second level | Third level | Fourth level | Fifth level"},{"name":"dateTime","type":"dateTime","textPreview":"6/17/2026"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout11.xml","name":"Vertical Title and Text","type":"vertTitleAndTx","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"body","type":"body","textPreview":"Click to edit Master text styles | Second level | Third level | Fourth level | Fifth level"},{"name":"dateTime","type":"dateTime","textPreview":"6/17/2026"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"slide","id":"sl/5t0zim","slide":1,"title":"Mise en place d'une solution de simulation d'une chaîne d'attaque complète : ...","textShapes":2}
+{"kind":"shape","id":"sh/p4jq94na","slide":1,"name":"Freeform 5","bbox":[646.15,1204,702.68,613.45]}
+{"kind":"shape","id":"sh/21s7y9oj","slide":1,"name":"TextBox 6","bbox":[646.15,1188.81,702.68,628.64]}
+{"kind":"shape","id":"sh/gzapwz6d","slide":1,"name":"Freeform 8","bbox":[738.69,1205.59,517.6,408.29]}
+{"kind":"shape","id":"sh/q1sr6x4n","slide":1,"name":"Freeform 17","bbox":[969.75,1655.88,14.36,14.36]}
+{"kind":"shape","id":"sh/p0jqds32","slide":1,"name":"TextBox 18","bbox":[971.1,1657.9,11.66,10.99]}
+{"kind":"textbox","id":"sh/4za94nmh","slide":1,"name":"TextBox 19","text":"Mise en place d'une solution de simulation d'une chaîne d'attaque complète : de l'exploitation à l'ingénierie inverse de malware","textPreview":"Mise en place d'une solution de simulation d'une chaîne d'attaque complète : de l'exploitation à l'ingénierie inverse de malware","textChars":128,"textLines":1,"bbox":[254.11,-276,1359.34,213.26]}
+{"kind":"textbox","id":"sh/gfehgryp","slide":1,"name":"TextBox 20","text":"PROJET FIN D’ANNEE","textPreview":"PROJET FIN D’ANNEE","textChars":18,"textLines":1,"bbox":[547.02,-354.32,773.53,46.85]}
+{"kind":"shape","id":"sh/srehc7yd","slide":1,"name":"Freeform 24","bbox":[1010.87,1655.88,14.36,14.36]}
+{"kind":"shape","id":"sh/tsni5czy","slide":1,"name":"TextBox 25","bbox":[1012.22,1657.9,11.66,10.99]}
+{"kind":"shape","id":"sh/7q5032h8","slide":1,"name":"Freeform 27","bbox":[990.31,1655.88,14.36,14.36]}
+{"kind":"shape","id":"sh/cny1obyx","slide":1,"name":"TextBox 28","bbox":[991.66,1657.9,11.66,10.99]}
+{"kind":"image","id":"im/itofqhg7","slide":1,"name":"Picture 29","bbox":[-408,-196,370.19,99]}
+{"kind":"image","id":"im/8z2d0ne5","slide":1,"name":"Animate_image_without_messing_202606151924","bbox":[-4.87,0,1924.87,1082.74]}
+{"kind":"notes","id":"nt/5t0zim","slide":1,"text":""}
+{"kind":"slide","id":"sl/4hlejb","slide":2,"title":"CYBERSECURITY","textShapes":10}
+{"kind":"shape","id":"sh/lwnyxwri","slide":2,"name":"Freeform 3","bbox":[1200.62,559.43,954.78,613.45]}
+{"kind":"shape","id":"sh/6xwz6h83","slide":2,"name":"TextBox 4","bbox":[1200.62,544.24,954.78,628.64]}
+{"kind":"shape","id":"sh/8zeh8rqt","slide":2,"name":"Freeform 6","bbox":[1294.4,561.02,625.6,410.98]}
+{"kind":"shape","id":"sh/t0ny1w7e","slide":2,"name":"Freeform 7","bbox":[1264.94,925.87,106.61,46.13]}
+{"kind":"shape","id":"sh/u1wza18z","slide":2,"name":"Freeform 8","bbox":[669.71,954.62,173.82,17.38]}
+{"kind":"textbox","id":"sh/v2pg36pk","slide":2,"name":"TextBox 9","text":"CYBERSECURITY","textPreview":"CYBERSECURITY","textChars":13,"textLines":1,"bbox":[108,341.25,1255.59,125.46]}
+{"kind":"textbox","id":"sh/f6lsjyx8","slide":2,"name":"TextBox 10","text":"INTRODUCTION TO","textPreview":"INTRODUCTION TO","textChars":15,"textLines":1,"bbox":[108,276.3,538.88,44.95]}
+{"kind":"textbox","id":"sh/e5cratwn","slide":2,"name":"TextBox 11","text":"05.07.2025","textPreview":"05.07.2025","textChars":10,"textLines":1,"bbox":[1655.77,112,156.23,18.23]}
+{"kind":"textbox","id":"sh/18nal8fe","slide":2,"name":"TextBox 12","text":"Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu.","textPreview":"Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi preti...","textChars":379,"textLines":1,"bbox":[200.33,600.93,345.05,242]}
+{"kind":"textbox","id":"sh/07u9c3et","slide":2,"name":"TextBox 13","text":"What is cybersecurity?","textPreview":"What is cybersecurity?","textChars":22,"textLines":1,"bbox":[200.33,559.43,287.99,22]}
+{"kind":"textbox","id":"sh/r2lsfexw","slide":2,"name":"TextBox 14","text":"Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.","textPreview":"Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi preti...","textChars":266,"textLines":1,"bbox":[669.71,666.93,345.05,176]}
+{"kind":"textbox","id":"sh/q1cr6twb","slide":2,"name":"TextBox 15","text":"Why it's more relevant than ever","textPreview":"Why it's more relevant than ever","textChars":32,"textLines":1,"bbox":[669.71,600.93,244.42,44]}
+{"kind":"textbox","id":"sh/d43ahof2","slide":2,"name":"TextBox 16","text":"95% of cybersecurity breaches are caused by human error.","textPreview":"95% of cybersecurity breaches are caused by human error.","textChars":56,"textLines":1,"bbox":[1497.19,341.83,314.81,98.3]}
+{"kind":"textbox","id":"sh/s3u98jeh","slide":2,"name":"TextBox 17","text":"Key stat","textPreview":"Key stat","textChars":8,"textLines":1,"bbox":[1497.19,304.25,131.33,22]}
+{"kind":"shape","id":"sh/by5srixg","slide":2,"name":"AutoShape 18","bbox":[200.33,882.37,345.05,0]}
+{"kind":"shape","id":"sh/axwbidwv","slide":2,"name":"AutoShape 19","bbox":[669.71,881.87,345.05,0]}
+{"kind":"shape","id":"sh/7u9cjmho","slide":2,"name":"Freeform 21","bbox":[108,108,29.27,27.64]}
+{"kind":"shape","id":"sh/8vidcry9","slide":2,"name":"TextBox 22","bbox":[114.5,116.13,15.45,13.01]}
+{"kind":"textbox","id":"sh/9wrelwze","slide":2,"name":"TextBox 23","text":"Liceria & Co.","textPreview":"Liceria & Co.","textChars":13,"textLines":1,"bbox":[146.07,114.71,156.23,18.23]}
+{"kind":"shape","id":"sh/vytwnmhk","slide":2,"name":"Freeform 25","bbox":[200.33,957.64,14.36,14.36]}
+{"kind":"shape","id":"sh/wz2dgry5","slide":2,"name":"TextBox 26","bbox":[201.68,959.66,11.66,10.99]}
+{"kind":"shape","id":"sh/a1gv2xgv","slide":2,"name":"Freeform 28","bbox":[241.46,957.64,14.36,14.36]}
+{"kind":"shape","id":"sh/b2pcb2hg","slide":2,"name":"TextBox 29","bbox":[242.8,959.66,11.66,10.99]}
+{"kind":"shape","id":"sh/sfmxovid","slide":2,"name":"Freeform 31","bbox":[220.9,957.64,14.36,14.36]}
+{"kind":"shape","id":"sh/redgfq1s","slide":2,"name":"TextBox 32","bbox":[222.24,959.66,11.66,10.99]}
+{"kind":"notes","id":"nt/4hlejb","slide":2,"text":""}
+{"kind":"slide","id":"sl/aukgdf","slide":3,"title":"THE HUMAN ELEMENT","textShapes":9}
+{"kind":"shape","id":"sh/yd8zy1ov","slide":3,"name":"Freeform 3","bbox":[-275.63,233.27,954.78,882.47]}
+{"kind":"shape","id":"sh/xczipgnq","slide":3,"name":"TextBox 4","bbox":[-275.63,218.09,954.78,897.66]}
+{"kind":"shape","id":"sh/bah0n65k","slide":3,"name":"Freeform 6","bbox":[0,234.86,551.2,647.09]}
+{"kind":"shape","id":"sh/ap8zu1oz","slide":3,"name":"Freeform 7","bbox":[377.38,954.62,173.82,17.38]}
+{"kind":"shape","id":"sh/9ofilwne","slide":3,"name":"Freeform 8","bbox":[869.4,906,152.52,66]}
+{"kind":"shape","id":"sh/on6hsr6t","slide":3,"name":"AutoShape 9","bbox":[1367.52,838.45,444.48,0]}
+{"kind":"textbox","id":"sh/i9gjupwf","slide":3,"name":"TextBox 10","text":"THE HUMAN ELEMENT","textPreview":"THE HUMAN ELEMENT","textChars":17,"textLines":1,"bbox":[869.4,254.69,895.59,241.46]}
+{"kind":"textbox","id":"sh/jap0nud0","slide":3,"name":"TextBox 11","text":"IN CYBERSECURITY","textPreview":"IN CYBERSECURITY","textChars":16,"textLines":1,"bbox":[869.4,498.05,621.02,44.95]}
+{"kind":"textbox","id":"sh/kby1wzul","slide":3,"name":"TextBox 12","text":"05.07.2025","textPreview":"05.07.2025","textChars":10,"textLines":1,"bbox":[1655.77,112,156.23,18.23]}
+{"kind":"textbox","id":"sh/5c7ip4v6","slide":3,"name":"TextBox 13","text":"Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.","textPreview":"Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi preti...","textChars":266,"textLines":1,"bbox":[869.4,685.08,387.47,154]}
+{"kind":"textbox","id":"sh/alwjqpwj","slide":3,"name":"TextBox 14","text":"People as the first line of defense","textPreview":"People as the first line of defense","textChars":35,"textLines":1,"bbox":[869.4,616.72,231.44,44]}
+{"kind":"textbox","id":"sh/vm50jud4","slide":3,"name":"TextBox 15","text":"Common attack vectors that target humans","textPreview":"Common attack vectors that target humans","textChars":40,"textLines":1,"bbox":[1367.52,615.72,372.59,69]}
+{"kind":"textbox","id":"sh/wne1sfep","slide":3,"name":"TextBox 16","text":"Phishing, social engineering, weak passwords","textPreview":"Phishing, social engineering, weak passwords","textChars":44,"textLines":1,"bbox":[1367.52,704.89,432.81,66]}
+{"kind":"textbox","id":"sh/xonilkvu","slide":3,"name":"TextBox 17","text":"Cybersecurity isn’t just IT’s responsibility","textPreview":"Cybersecurity isn’t just IT’s responsibility","textChars":44,"textLines":1,"bbox":[1367.52,906,336.67,66]}
+{"kind":"shape","id":"sh/ni50fads","slide":3,"name":"Freeform 19","bbox":[108,108,29.27,27.64]}
+{"kind":"shape","id":"sh/rm1gn6tk","slide":3,"name":"TextBox 20","bbox":[114.5,116.13,15.45,13.01]}
+{"kind":"textbox","id":"sh/qlsfu1cz","slide":3,"name":"TextBox 21","text":"Liceria & Co.","textPreview":"Liceria & Co.","textChars":13,"textLines":1,"bbox":[146.07,114.71,156.23,18.23]}
+{"kind":"shape","id":"sh/cnaxwbu5","slide":3,"name":"Freeform 23","bbox":[108,956.13,14.36,14.36]}
+{"kind":"shape","id":"sh/zqlgrqtw","slide":3,"name":"TextBox 24","bbox":[109.35,958.15,11.66,10.99]}
+{"kind":"shape","id":"sh/1s3ytgbm","slide":3,"name":"Freeform 26","bbox":[149.12,956.13,14.36,14.36]}
+{"kind":"shape","id":"sh/0ruh0vuh","slide":3,"name":"TextBox 27","bbox":[150.47,958.15,11.66,10.99]}
+{"kind":"shape","id":"sh/ut8fmhc7","slide":3,"name":"Freeform 29","bbox":[128.56,956.13,14.36,14.36]}
+{"kind":"shape","id":"sh/kz6dwnap","slide":3,"name":"TextBox 30","bbox":[129.91,958.15,11.66,10.99]}
+{"kind":"notes","id":"nt/aukgdf","slide":3,"text":""}
+{"kind":"slide","id":"sl/tf85mo","slide":4,"title":"UNDERSTANDING","textShapes":10}
+{"kind":"shape","id":"sh/et0jm1sf","slide":4,"name":"AutoShape 2","bbox":[108,875.17,266.78,0]}
+{"kind":"shape","id":"sh/zu9kf69k","slide":4,"name":"AutoShape 3","bbox":[462.41,874.67,325.26,0]}
+{"kind":"shape","id":"sh/90b2lgr2","slide":4,"name":"Freeform 5","bbox":[875.67,476.22,1279.73,633.36]}
+{"kind":"shape","id":"sh/mxk3q1sb","slide":4,"name":"TextBox 6","bbox":[875.67,461.03,1279.73,648.55]}
+{"kind":"shape","id":"sh/43y1g7ax","slide":4,"name":"Freeform 8","bbox":[876.67,566.4,371.6,513.6]}
+{"kind":"shape","id":"sh/p4729cbi","slide":4,"name":"Freeform 9","bbox":[1379.19,293.69,432.81,44.86]}
+{"kind":"textbox","id":"sh/xgvqx8r6","slide":4,"name":"TextBox 10","text":"UNDERSTANDING","textPreview":"UNDERSTANDING","textChars":13,"textLines":1,"bbox":[108,277.75,1359.34,125.46]}
+{"kind":"textbox","id":"sh/wfmpo3ql","slide":4,"name":"TextBox 11","text":"SOCIAL ENGINEERING","textPreview":"SOCIAL ENGINEERING","textChars":18,"textLines":1,"bbox":[108,405.02,842.8,54.68]}
+{"kind":"textbox","id":"sh/ved8vy9g","slide":4,"name":"TextBox 12","text":"05.07.2025","textPreview":"05.07.2025","textChars":10,"textLines":1,"bbox":[1655.77,112,156.23,18.23]}
+{"kind":"textbox","id":"sh/ad47md8v","slide":4,"name":"TextBox 13","text":"Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.","textPreview":"Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi preti...","textChars":266,"textLines":1,"bbox":[108,612.67,285.45,220]}
+{"kind":"textbox","id":"sh/54fq1sri","slide":4,"name":"TextBox 14","text":"Definition and examples","textPreview":"Definition and examples","textChars":23,"textLines":1,"bbox":[108,570.55,266.78,22]}
+{"kind":"textbox","id":"sh/436psnqx","slide":4,"name":"TextBox 15","text":"Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.","textPreview":"Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi preti...","textChars":266,"textLines":1,"bbox":[462.41,634.67,325.26,198]}
+{"kind":"textbox","id":"sh/j2x8zi9c","slide":4,"name":"TextBox 16","text":"How attackers manipulate trust and emotions","textPreview":"How attackers manipulate trust and emotions","textChars":43,"textLines":1,"bbox":[462.41,570.55,266.78,44]}
+{"kind":"textbox","id":"sh/iho7qd8r","slide":4,"name":"TextBox 17","text":"Real-world case study","textPreview":"Real-world case study","textChars":21,"textLines":1,"bbox":[1379.19,566.4,432.81,38]}
+{"kind":"textbox","id":"sh/t8fq5sre","slide":4,"name":"TextBox 18","text":"Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.\n\nLorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis.","textPreview":"Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi preti...","textChars":601,"textLines":3,"bbox":[1379.19,637.85,432.81,330]}
+{"kind":"shape","id":"sh/cny1ov2h","slide":4,"name":"Freeform 20","bbox":[108,108,29.27,27.64]}
+{"kind":"shape","id":"sh/do72h0j2","slide":4,"name":"TextBox 21","bbox":[114.5,116.13,15.45,13.01]}
+{"kind":"textbox","id":"sh/qlgjmlkb","slide":4,"name":"TextBox 22","text":"Liceria & Co.","textPreview":"Liceria & Co.","textChars":13,"textLines":1,"bbox":[146.07,114.71,156.23,18.23]}
+{"kind":"shape","id":"sh/0ri1sf2d","slide":4,"name":"Freeform 24","bbox":[108,957.64,14.36,14.36]}
+{"kind":"shape","id":"sh/lsr2lkjy","slide":4,"name":"TextBox 25","bbox":[109.35,959.66,11.66,10.99]}
+{"kind":"shape","id":"sh/zq9kja1s","slide":4,"name":"Freeform 27","bbox":[149.12,957.64,14.36,14.36]}
+{"kind":"shape","id":"sh/gve1gb29","slide":4,"name":"TextBox 28","bbox":[150.47,959.66,11.66,10.99]}
+{"kind":"shape","id":"sh/jad4felc","slide":4,"name":"Freeform 30","bbox":[128.56,957.64,14.36,14.36]}
+{"kind":"shape","id":"sh/ip43m94r","slide":4,"name":"TextBox 31","bbox":[129.91,959.66,11.66,10.99]}
+{"kind":"notes","id":"nt/tf85mo","slide":4,"text":""}
+{"kind":"slide","id":"sl/5hhn2n","slide":5,"title":"PHISHING","textShapes":10}
+{"kind":"shape","id":"sh/l0zal8vm","slide":5,"name":"Freeform 3","bbox":[-267.04,-41.79,1438.97,703.02]}
+{"kind":"shape","id":"sh/m18bedw7","slide":5,"name":"TextBox 4","bbox":[-267.04,-56.98,1438.97,718.21]}
+{"kind":"shape","id":"sh/8natgnux","slide":5,"name":"Freeform 6","bbox":[601.12,108,479.41,553.23]}
+{"kind":"shape","id":"sh/25or2twn","slide":5,"name":"Freeform 8","bbox":[1337.36,569.08,693.16,678.85]}
+{"kind":"shape","id":"sh/nqxsbyd8","slide":5,"name":"TextBox 9","bbox":[1337.36,553.89,693.16,694.04]}
+{"kind":"shape","id":"sh/3yd4zapc","slide":5,"name":"Freeform 10","bbox":[1337.36,402.99,155.9,67.46]}
+{"kind":"shape","id":"sh/2x4nq5or","slide":5,"name":"AutoShape 11","bbox":[1425.24,972.5,386.76,0]}
+{"kind":"textbox","id":"sh/p0vm1k7i","slide":5,"name":"TextBox 12","text":"PHISHING","textPreview":"PHISHING","textChars":8,"textLines":1,"bbox":[108,840.93,884.96,162.21]}
+{"kind":"textbox","id":"sh/ozm5sf6x","slide":5,"name":"TextBox 13","text":"THE MOST COMMON THREAT","textPreview":"THE MOST COMMON THREAT","textChars":22,"textLines":1,"bbox":[108,760.98,773.53,44.95]}
+{"kind":"textbox","id":"sh/fut4vqp0","slide":5,"name":"TextBox 14","text":"05.07.2025","textPreview":"05.07.2025","textChars":10,"textLines":1,"bbox":[1655.77,112,156.23,18.23]}
+{"kind":"textbox","id":"sh/etknmlof","slide":5,"name":"TextBox 15","text":"What phishing looks like","textPreview":"What phishing looks like","textChars":24,"textLines":1,"bbox":[108,250.36,266.78,22]}
+{"kind":"textbox","id":"sh/1wbmx076","slide":5,"name":"TextBox 16","text":"Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu.","textPreview":"Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi preti...","textChars":379,"textLines":1,"bbox":[108,295.62,386.76,220]}
+{"kind":"textbox","id":"sh/gv25ov6l","slide":5,"name":"TextBox 17","text":"Email, SMS (smishing), voice (vishing)","textPreview":"Email, SMS (smishing), voice (vishing)","textChars":38,"textLines":1,"bbox":[1337.36,272.42,351.5,76]}
+{"kind":"textbox","id":"sh/rqt4rqp4","slide":5,"name":"TextBox 18","text":"Types","textPreview":"Types","textChars":5,"textLines":1,"bbox":[1337.36,234.84,131.33,22]}
+{"kind":"textbox","id":"sh/650niloj","slide":5,"name":"TextBox 19","text":"How to spot red flags","textPreview":"How to spot red flags","textChars":21,"textLines":1,"bbox":[1425.24,642.46,372.59,35]}
+{"kind":"textbox","id":"sh/u10nulsb","slide":5,"name":"TextBox 20","text":"Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu.","textPreview":"Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi preti...","textChars":379,"textLines":1,"bbox":[1425.24,693.46,386.76,220]}
+{"kind":"shape","id":"sh/w3i5wbah","slide":5,"name":"Freeform 22","bbox":[108,108,29.27,27.64]}
+{"kind":"shape","id":"sh/hor65gr2","slide":5,"name":"TextBox 23","bbox":[114.5,116.13,15.45,13.01]}
+{"kind":"textbox","id":"sh/ip0nylsn","slide":5,"name":"TextBox 24","text":"Liceria & Co.","textPreview":"Liceria & Co.","textChars":13,"textLines":1,"bbox":[146.07,114.71,156.23,18.23]}
+{"kind":"shape","id":"sh/4r250vad","slide":5,"name":"Freeform 26","bbox":[1116.44,957.64,14.36,14.36]}
+{"kind":"shape","id":"sh/5sb690ry","slide":5,"name":"TextBox 27","bbox":[1117.79,959.66,11.66,10.99]}
+{"kind":"shape","id":"sh/rutoba94","slide":5,"name":"Freeform 29","bbox":[1157.57,957.64,14.36,14.36]}
+{"kind":"shape","id":"sh/1ovq14b6","slide":5,"name":"TextBox 30","bbox":[1158.91,959.66,11.66,10.99]}
+{"kind":"shape","id":"sh/fmd8zutg","slide":5,"name":"Freeform 32","bbox":[1137.01,957.64,14.36,14.36]}
+{"kind":"shape","id":"sh/el4r6pcv","slide":5,"name":"TextBox 33","bbox":[1138.35,959.66,11.66,10.99]}
+{"kind":"notes","id":"nt/5hhn2n","slide":5,"text":""}
+{"kind":"slide","id":"sl/s3y2dh","slide":6,"title":"BEST PRACTICES","textShapes":10}
+{"kind":"textbox","id":"sh/ml8byt0z","slide":6,"name":"TextBox 2","text":"BEST PRACTICES","textPreview":"BEST PRACTICES","textChars":14,"textLines":1,"bbox":[546.29,260.37,840.18,241.46]}
+{"kind":"textbox","id":"sh/7mhs7yh4","slide":6,"name":"TextBox 3","text":"PASSWORDS & AUTHENTICATION","textPreview":"PASSWORDS & AUTHENTICATION","textChars":26,"textLines":1,"bbox":[108,259.28,499.85,97.94]}
+{"kind":"textbox","id":"sh/kjqtwjit","slide":6,"name":"TextBox 4","text":"05.07.2025","textPreview":"05.07.2025","textChars":10,"textLines":1,"bbox":[1655.77,112,156.23,18.23]}
+{"kind":"shape","id":"sh/yx8bu90n","slide":6,"name":"Freeform 6","bbox":[-137.15,572.54,802.33,882.47]}
+{"kind":"shape","id":"sh/zyhs3eh8","slide":6,"name":"TextBox 7","bbox":[-137.15,557.35,802.33,897.66]}
+{"kind":"shape","id":"sh/xwfa14z2","slide":6,"name":"Freeform 9","bbox":[108,574.13,474.38,505.87]}
+{"kind":"shape","id":"sh/1cbal076","slide":6,"name":"Freeform 10","bbox":[108,417.41,173.82,17.38]}
+{"kind":"textbox","id":"sh/gr29sv61","slide":6,"name":"TextBox 11","text":"Dangers of weak or reused passwords","textPreview":"Dangers of weak or reused passwords","textChars":35,"textLines":1,"bbox":[790.75,656.6,294.72,50]}
+{"kind":"textbox","id":"sh/fqtsjqpg","slide":6,"name":"TextBox 12","text":"Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere.","textPreview":"Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi preti...","textChars":325,"textLines":1,"bbox":[790.75,730,313.78,242]}
+{"kind":"textbox","id":"sh/upkrqlov","slide":6,"name":"TextBox 13","text":"Importance of password managers","textPreview":"Importance of password managers","textChars":31,"textLines":1,"bbox":[1176.15,656.6,390.89,22]}
+{"kind":"textbox","id":"sh/tobqhg7a","slide":6,"name":"TextBox 14","text":"Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis.","textPreview":"Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi preti...","textChars":162,"textLines":1,"bbox":[1176.15,693.64,635.85,66]}
+{"kind":"textbox","id":"sh/sn29ob6p","slide":6,"name":"TextBox 15","text":"Enabling multi-factor authentication (MFA)","textPreview":"Enabling multi-factor authentication (MFA)","textChars":42,"textLines":1,"bbox":[1176.15,846.95,467.13,22]}
+{"kind":"textbox","id":"sh/7m98f6p4","slide":6,"name":"TextBox 16","text":"Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.","textPreview":"Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi preti...","textChars":205,"textLines":1,"bbox":[1176.15,884,557.73,88.01]}
+{"kind":"shape","id":"sh/6l0rm1oj","slide":6,"name":"AutoShape 17","bbox":[1176.15,803.3,635.85,0]}
+{"kind":"shape","id":"sh/5krqdg7e","slide":6,"name":"Freeform 18","bbox":[1650.94,399.94,161.06,69.7]}
+{"kind":"shape","id":"sh/w3m90byp","slide":6,"name":"Freeform 20","bbox":[108,108,29.27,27.64]}
+{"kind":"shape","id":"sh/x4va9gfu","slide":6,"name":"TextBox 21","bbox":[114.5,116.13,15.45,13.01]}
+{"kind":"textbox","id":"sh/a14ry1gj","slide":6,"name":"TextBox 22","text":"Liceria & Co.","textPreview":"Liceria & Co.","textChars":13,"textLines":1,"bbox":[146.07,114.71,156.23,18.23]}
+{"kind":"shape","id":"sh/oz29wryd","slide":6,"name":"Freeform 24","bbox":[790.75,572.04,14.36,14.36]}
+{"kind":"shape","id":"sh/90ba5wfy","slide":6,"name":"TextBox 25","bbox":[792.1,574.06,11.66,10.99]}
+{"kind":"shape","id":"sh/nyt836xs","slide":6,"name":"Freeform 27","bbox":[831.88,572.04,14.36,14.36]}
+{"kind":"shape","id":"sh/8v698veh","slide":6,"name":"TextBox 28","bbox":[833.22,574.06,11.66,10.99]}
+{"kind":"shape","id":"sh/3qhc7uhk","slide":6,"name":"Freeform 30","bbox":[811.31,572.04,14.36,14.36]}
+{"kind":"shape","id":"sh/2p8vyp0z","slide":6,"name":"TextBox 31","bbox":[812.66,574.06,11.66,10.99]}
+{"kind":"notes","id":"nt/s3y2dh","slide":6,"text":""}
+{"kind":"slide","id":"sl/dac0zk","slide":7,"title":"SAFE ONLINE","textShapes":12}
+{"kind":"shape","id":"sh/s7y1gjq9","slide":7,"name":"AutoShape 2","bbox":[345.66,683.62,292,0]}
+{"kind":"shape","id":"sh/d87i9o7e","slide":7,"name":"AutoShape 3","bbox":[773.9,684.13,292,0]}
+{"kind":"shape","id":"sh/ihwja98r","slide":7,"name":"Freeform 4","bbox":[108,932.8,90.6,39.2]}
+{"kind":"shape","id":"sh/4je1czqx","slide":7,"name":"Freeform 6","bbox":[1200.62,468.58,954.78,784.53]}
+{"kind":"shape","id":"sh/5kni547i","slide":7,"name":"TextBox 7","bbox":[1200.62,453.39,954.78,799.72]}
+{"kind":"shape","id":"sh/ne90fypw","slide":7,"name":"Freeform 9","bbox":[1314.73,470.17,605.27,501.83]}
+{"kind":"shape","id":"sh/zih072pw","slide":7,"name":"Freeform 10","bbox":[1442.36,283.37,369.64,38.31]}
+{"kind":"textbox","id":"sh/yh8jexob","slide":7,"name":"TextBox 11","text":"SAFE ONLINE","textPreview":"SAFE ONLINE","textChars":11,"textLines":1,"bbox":[108,261.12,957.9,125.46]}
+{"kind":"textbox","id":"sh/lkzi9c72","slide":7,"name":"TextBox 12","text":"BEHAVIOR","textPreview":"BEHAVIOR","textChars":8,"textLines":1,"bbox":[1022.55,293.37,324.66,44.95]}
+{"kind":"textbox","id":"sh/kjq1g76h","slide":7,"name":"TextBox 13","text":"05.07.2025","textPreview":"05.07.2025","textChars":10,"textLines":1,"bbox":[1655.77,112,156.23,18.23]}
+{"kind":"textbox","id":"sh/76h0b2ps","slide":7,"name":"TextBox 14","text":"Think before you click","textPreview":"Think before you click","textChars":22,"textLines":1,"bbox":[345.66,468.58,267.24,22]}
+{"kind":"textbox","id":"sh/m58j2xo7","slide":7,"name":"TextBox 15","text":"Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis.","textPreview":"Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi preti...","textChars":162,"textLines":1,"bbox":[345.66,505.62,292,132]}
+{"kind":"textbox","id":"sh/98jidc7y","slide":7,"name":"TextBox 16","text":"Verify sources and links","textPreview":"Verify sources and links","textChars":24,"textLines":1,"bbox":[773.9,468.58,267.24,22]}
+{"kind":"textbox","id":"sh/87q1476d","slide":7,"name":"TextBox 17","text":"Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis.","textPreview":"Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi preti...","textChars":162,"textLines":1,"bbox":[773.9,505.62,292,132]}
+{"kind":"textbox","id":"sh/va10fm54","slide":7,"name":"TextBox 18","text":"Use secure Wi-Fi networks","textPreview":"Use secure Wi-Fi networks","textChars":25,"textLines":1,"bbox":[345.66,729.62,292,22]}
+{"kind":"textbox","id":"sh/u9sj6hoj","slide":7,"name":"TextBox 19","text":"Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis.","textPreview":"Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi preti...","textChars":162,"textLines":1,"bbox":[345.66,766.67,292,132]}
+{"kind":"textbox","id":"sh/q5c3el8r","slide":7,"name":"TextBox 20","text":"Be cautious with downloads and attachments","textPreview":"Be cautious with downloads and attachments","textChars":42,"textLines":1,"bbox":[773.9,729.62,292,44]}
+{"kind":"textbox","id":"sh/r6l47q9c","slide":7,"name":"TextBox 21","text":"Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis.","textPreview":"Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi preti...","textChars":162,"textLines":1,"bbox":[773.9,788.62,292,132]}
+{"kind":"shape","id":"sh/d8nm9gr2","slide":7,"name":"Freeform 23","bbox":[108,108,29.27,27.64]}
+{"kind":"shape","id":"sh/i1c3a18f","slide":7,"name":"TextBox 24","bbox":[114.5,116.13,15.45,13.01]}
+{"kind":"textbox","id":"sh/j2lk3690","slide":7,"name":"TextBox 25","text":"Liceria & Co.","textPreview":"Liceria & Co.","textChars":13,"textLines":1,"bbox":[146.07,114.71,156.23,18.23]}
+{"kind":"shape","id":"sh/543m5gr6","slide":7,"name":"Freeform 27","bbox":[1253.49,557.27,14.36,14.36]}
+{"kind":"shape","id":"sh/2xw3m58z","slide":7,"name":"TextBox 28","bbox":[1254.84,559.29,11.66,10.99]}
+{"kind":"shape","id":"sh/xsr654rm","slide":7,"name":"Freeform 30","bbox":[1253.49,516.15,14.36,14.36]}
+{"kind":"shape","id":"sh/cripcza1","slide":7,"name":"TextBox 31","bbox":[1254.84,518.17,11.66,10.99]}
+{"kind":"shape","id":"sh/apgnapsv","slide":7,"name":"Freeform 33","bbox":[1253.49,536.71,14.36,14.36]}
+{"kind":"shape","id":"sh/p4761kba","slide":7,"name":"TextBox 34","bbox":[1254.84,538.73,11.66,10.99]}
+{"kind":"notes","id":"nt/dac0zk","slide":7,"text":""}
+{"kind":"slide","id":"sl/lm4m58","slide":8,"title":"REPORTING AND RESPONSE","textShapes":9}
+{"kind":"textbox","id":"sh/qpkzepor","slide":8,"name":"TextBox 2","text":"REPORTING AND RESPONSE","textPreview":"REPORTING AND RESPONSE","textChars":22,"textLines":1,"bbox":[280.33,254.89,1359.34,241.25]}
+{"kind":"textbox","id":"sh/rqt07upc","slide":8,"name":"TextBox 3","text":"05.07.2025","textPreview":"05.07.2025","textChars":10,"textLines":1,"bbox":[1655.77,112,156.23,18.23]}
+{"kind":"shape","id":"sh/1wvid47e","slide":8,"name":"Freeform 5","bbox":[1233.01,628.09,440,711.4]}
+{"kind":"shape","id":"sh/etkzipon","slide":8,"name":"TextBox 6","bbox":[1233.01,612.9,440,726.58]}
+{"kind":"textbox","id":"sh/fut0bup8","slide":8,"name":"TextBox 7","text":"Role of incident response teams","textPreview":"Role of incident response teams","textChars":31,"textLines":1,"bbox":[1324.38,689.04,257.27,56.99]}
+{"kind":"textbox","id":"sh/gzih8f6p","slide":8,"name":"TextBox 8","text":"Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.","textPreview":"Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi preti...","textChars":205,"textLines":1,"bbox":[1307.02,795.98,292,176.02]}
+{"kind":"shape","id":"sh/1w7u5gv6","slide":8,"name":"Freeform 10","bbox":[740,572.54,440,711.4]}
+{"kind":"shape","id":"sh/0vydcbel","slide":8,"name":"TextBox 11","bbox":[740,557.35,440,726.58]}
+{"kind":"textbox","id":"sh/zu5c36d0","slide":8,"name":"TextBox 12","text":"How to report suspicious activity in your organization","textPreview":"How to report suspicious activity in your organization","textChars":54,"textLines":1,"bbox":[822.68,645.28,274.63,84.99]}
+{"kind":"textbox","id":"sh/etwba1wf","slide":8,"name":"TextBox 13","text":"Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.","textPreview":"Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi preti...","textChars":205,"textLines":1,"bbox":[814,795.98,292,176.02]}
+{"kind":"shape","id":"sh/8zydgvex","slide":8,"name":"Freeform 15","bbox":[246.98,628.09,440,711.4]}
+{"kind":"shape","id":"sh/nypc7qdc","slide":8,"name":"TextBox 16","bbox":[246.98,612.9,440,726.58]}
+{"kind":"textbox","id":"sh/mxgvelwr","slide":8,"name":"TextBox 17","text":"Why early reporting is critical","textPreview":"Why early reporting is critical","textChars":31,"textLines":1,"bbox":[338.35,689.04,257.27,56.99]}
+{"kind":"textbox","id":"sh/xorud0ve","slide":8,"name":"TextBox 18","text":"Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.","textPreview":"Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi preti...","textChars":205,"textLines":1,"bbox":[320.98,795.98,292,176.02]}
+{"kind":"shape","id":"sh/w3idkvet","slide":8,"name":"Freeform 19","bbox":[108,368.65,90.6,39.2]}
+{"kind":"shape","id":"sh/gjq5w361","slide":8,"name":"Freeform 20","bbox":[1721.02,368.65,90.6,39.2]}
+{"kind":"shape","id":"sh/uh8nutob","slide":8,"name":"Freeform 22","bbox":[108,108,29.27,27.64]}
+{"kind":"shape","id":"sh/fiho3ypw","slide":8,"name":"TextBox 23","bbox":[114.5,116.13,15.45,13.01]}
+{"kind":"textbox","id":"sh/47a5036d","slide":8,"name":"TextBox 24","text":"Liceria & Co.","textPreview":"Liceria & Co.","textChars":13,"textLines":1,"bbox":[146.07,114.71,156.23,18.23]}
+{"kind":"notes","id":"nt/lm4m58","slide":8,"text":""}
+{"kind":"slide","id":"sl/ujunep","slide":9,"title":"BUILDING A CULTURE","textShapes":10}
+{"kind":"shape","id":"sh/yxg32l8f","slide":9,"name":"AutoShape 2","bbox":[344.92,972.5,220.78,0]}
+{"kind":"shape","id":"sh/jyp4bq90","slide":9,"name":"AutoShape 3","bbox":[661.6,971.5,220.78,0]}
+{"kind":"shape","id":"sh/83il8fqh","slide":9,"name":"AutoShape 4","bbox":[978.27,970.5,220.78,0]}
+{"kind":"shape","id":"sh/6103658b","slide":9,"name":"Freeform 6","bbox":[1314.73,272.02,954.78,1011]}
+{"kind":"shape","id":"sh/7294fa9w","slide":9,"name":"TextBox 7","bbox":[1314.73,256.83,954.78,1026.19]}
+{"kind":"shape","id":"sh/98n25gri","slide":9,"name":"Freeform 9","bbox":[1315.73,470.17,605.27,501.83]}
+{"kind":"shape","id":"sh/90zadgvm","slide":9,"name":"Freeform 10","bbox":[108,888.09,85.01,85.64]}
+{"kind":"shape","id":"sh/8z694vu1","slide":9,"name":"Freeform 11","bbox":[1513.47,357.36,298.53,30.94]}
+{"kind":"textbox","id":"sh/nyxsbqdg","slide":9,"name":"TextBox 12","text":"BUILDING A CULTURE","textPreview":"BUILDING A CULTURE","textChars":18,"textLines":1,"bbox":[344.92,280.57,828.5,241.45]}
+{"kind":"textbox","id":"sh/mxor2lcv","slide":9,"name":"TextBox 13","text":"OF CYBER AWARENESS","textPreview":"OF CYBER AWARENESS","textChars":18,"textLines":1,"bbox":[344.92,518.69,933.56,54.63]}
+{"kind":"textbox","id":"sh/x4zah0vi","slide":9,"name":"TextBox 14","text":"05.07.2025","textPreview":"05.07.2025","textChars":10,"textLines":1,"bbox":[1655.77,112,156.23,18.23]}
+{"kind":"textbox","id":"sh/w3q98vud","slide":9,"name":"TextBox 15","text":"Regular training and simulations","textPreview":"Regular training and simulations","textChars":32,"textLines":1,"bbox":[344.92,695.05,203.69,44.01]}
+{"kind":"textbox","id":"sh/v2hsfqds","slide":9,"name":"TextBox 16","text":"Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis.","textPreview":"Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi preti...","textChars":162,"textLines":1,"bbox":[344.92,754.89,220.78,176.02]}
+{"kind":"textbox","id":"sh/a18r6lc7","slide":9,"name":"TextBox 17","text":"Encouraging peer accountability","textPreview":"Encouraging peer accountability","textChars":31,"textLines":1,"bbox":[661.6,695.05,203.69,44.01]}
+{"kind":"textbox","id":"sh/5sjal0vu","slide":9,"name":"TextBox 18","text":"Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis.","textPreview":"Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi preti...","textChars":162,"textLines":1,"bbox":[661.6,754.89,220.78,176.02]}
+{"kind":"textbox","id":"sh/kratcfu9","slide":9,"name":"TextBox 19","text":"Cybersecurity as part of daily workflow","textPreview":"Cybersecurity as part of daily workflow","textChars":39,"textLines":1,"bbox":[978.27,695.05,220.78,44.01]}
+{"kind":"textbox","id":"sh/onil436x","slide":9,"name":"TextBox 20","text":"Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis.","textPreview":"Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi preti...","textChars":162,"textLines":1,"bbox":[978.27,754.89,220.78,176.02]}
+{"kind":"shape","id":"sh/2l032dor","slide":9,"name":"Freeform 22","bbox":[108,108,29.27,27.64]}
+{"kind":"shape","id":"sh/3m9kvy5c","slide":9,"name":"TextBox 23","bbox":[114.5,116.13,15.45,13.01]}
+{"kind":"textbox","id":"sh/cb2l8n6t","slide":9,"name":"TextBox 24","text":"Liceria & Co.","textPreview":"Liceria & Co.","textChars":13,"textLines":1,"bbox":[146.07,114.71,156.23,18.23]}
+{"kind":"shape","id":"sh/q9k36don","slide":9,"name":"Freeform 26","bbox":[108,695.05,14.36,14.36]}
+{"kind":"shape","id":"sh/bat4zi58","slide":9,"name":"TextBox 27","bbox":[109.35,697.07,11.66,10.99]}
+{"kind":"shape","id":"sh/tg72po7u","slide":9,"name":"Freeform 29","bbox":[149.12,695.05,14.36,14.36]}
+{"kind":"shape","id":"sh/vaxovmps","slide":9,"name":"TextBox 30","bbox":[150.47,697.07,11.66,10.99]}
+{"kind":"shape","id":"sh/xcf6xw7i","slide":9,"name":"Freeform 32","bbox":[128.56,695.05,14.36,14.36]}
+{"kind":"shape","id":"sh/wb654rqx","slide":9,"name":"TextBox 33","bbox":[129.91,697.07,11.66,10.99]}
+{"kind":"notes","id":"nt/ujunep","slide":9,"text":""}
+{"kind":"slide","id":"sl/1uw6so","slide":10,"title":"FINAL THOUGHTS","textShapes":11}
+{"kind":"shape","id":"sh/6xgr6l0v","slide":10,"name":"Freeform 2","bbox":[0,777.75,573.24,302.25]}
+{"kind":"shape","id":"sh/7yp8fqhg","slide":10,"name":"Freeform 3","bbox":[1346.76,777.75,573.24,302.25]}
+{"kind":"shape","id":"sh/horql0zi","slide":10,"name":"Freeform 5","bbox":[573.24,519.99,773.53,613.45]}
+{"kind":"shape","id":"sh/u10ral0r","slide":10,"name":"TextBox 6","bbox":[573.24,504.81,773.53,628.64]}
+{"kind":"shape","id":"sh/4ri9gfit","slide":10,"name":"Freeform 8","bbox":[670.03,521.58,579.95,374.8]}
+{"kind":"textbox","id":"sh/psbqp0ze","slide":10,"name":"TextBox 9","text":"FINAL THOUGHTS","textPreview":"FINAL THOUGHTS","textChars":14,"textLines":1,"bbox":[280.33,251.58,1359.34,125.35]}
+{"kind":"textbox","id":"sh/hsrulgfq","slide":10,"name":"TextBox 10","text":"& CALL TO ACTION","textPreview":"& CALL TO ACTION","textChars":16,"textLines":1,"bbox":[573.24,375.51,773.53,45.28]}
+{"kind":"textbox","id":"sh/writsby5","slide":10,"name":"TextBox 11","text":"05.07.2025","textPreview":"05.07.2025","textChars":10,"textLines":1,"bbox":[1655.77,112,156.23,18.23]}
+{"kind":"textbox","id":"sh/vq9cj6xk","slide":10,"name":"TextBox 12","text":"Recap","textPreview":"Recap","textChars":5,"textLines":1,"bbox":[108,431.98,118.53,22]}
+{"kind":"textbox","id":"sh/up0bq1gz","slide":10,"name":"TextBox 13","text":"You are the human firewall","textPreview":"You are the human firewall","textChars":26,"textLines":1,"bbox":[108,464,231.37,55.99]}
+{"kind":"textbox","id":"sh/5wbupgfm","slide":10,"name":"TextBox 14","text":"One small mistake can lead to a big breach","textPreview":"One small mistake can lead to a big breach","textChars":42,"textLines":1,"bbox":[224.19,630.8,231.37,83.99]}
+{"kind":"textbox","id":"sh/4vitwvy1","slide":10,"name":"TextBox 15","text":"Take action today","textPreview":"Take action today","textChars":17,"textLines":1,"bbox":[1454.19,458.39,357.81,35]}
+{"kind":"textbox","id":"sh/ju9cnqxg","slide":10,"name":"TextBox 16","text":"Update passwords, stay informed, be alert","textPreview":"Update passwords, stay informed, be alert","textChars":41,"textLines":1,"bbox":[1509.16,507.71,302.84,55.99]}
+{"kind":"textbox","id":"sh/it0bulgb","slide":10,"name":"TextBox 17","text":"Contact info or internal resources for more help","textPreview":"Contact info or internal resources for more help","textChars":48,"textLines":1,"bbox":[1516.35,644.71,217.54,83.99]}
+{"kind":"textbox","id":"sh/l07adwfi","slide":10,"name":"TextBox 18","text":"www.reallygreatsite.com","textPreview":"www.reallygreatsite.com","textChars":23,"textLines":1,"bbox":[839.73,950,240.55,22]}
+{"kind":"shape","id":"sh/cf2lgva5","slide":10,"name":"Freeform 20","bbox":[108,108,29.27,27.64]}
+{"kind":"shape","id":"sh/xgv2p0ba","slide":10,"name":"TextBox 21","bbox":[114.5,116.13,15.45,13.01]}
+{"kind":"textbox","id":"sh/adk3elsz","slide":10,"name":"TextBox 22","text":"Liceria & Co.","textPreview":"Liceria & Co.","textChars":13,"textLines":1,"bbox":[146.07,114.71,156.23,18.23]}
+{"kind":"notes","id":"nt/1uw6so","slide":10,"text":""}

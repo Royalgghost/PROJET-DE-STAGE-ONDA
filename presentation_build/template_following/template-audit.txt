@@ -1,0 +1,39 @@
+Template audit — Green and Black Modern Cybersecurity Presentation.pptx
+
+Source file
+- C:/Users/nouam/Downloads/Green and Black Modern Cybersecurity Presentation.pptx
+- 10 slides, 16:9 widescreen.
+- Source hierarchy is preserved through imported slides, their existing layouts, and the original master/theme.
+
+Visual system observed
+- Near-black backgrounds with neon green highlights, thin rules, geometric accents, and rounded image frames.
+- Large editorial titles, usually split over two or three lines, with compact supporting copy.
+- Repeating small date/brand areas and decorative corner/wave elements.
+- Visual rhythm alternates between title-led pages, split image/content pages, and card-based pages.
+- Source typography and spacing are retained; copy is shortened where necessary to fit the inherited text boxes.
+
+Source-slide roles
+1. Cover / project opening with centered visual frame.
+2. Context and two-column introduction with a right-side image.
+3. Large section title with left-side visual and two content blocks.
+4. Two-column explanation with right-side visual.
+5. Split threat/case layout with image and lower green band.
+6. Best-practices page with left image and three content blocks.
+7. Four-point checklist page with right image.
+8. Three-card response/roles page.
+9. Three-column culture/workflow page with right visual panel.
+10. Closing page with centered visual and call-to-action copy.
+
+Adaptation decision
+- Use every source slide once for a concise 10-slide defense deck.
+- Retain source decorations, master/layout relationships, and visual hierarchy.
+- Replace unrelated template copy, brand references, dates, and image-filled panels with project-specific ONDA Risk Intelligence and CyberRange content.
+- Keep the provided EMSI visual identity on the cover and use ONDA/CyberRange screenshots and diagrams as the project evidence.
+
+Content principles
+- The deck follows one story: operational risk → integrated solution → prediction → human-factor prevention → 30-day action → controlled cyber simulation → evidence-based improvement → conclusion.
+- The CyberRange is presented as an isolated validation environment, never as a production attack surface.
+- Metrics are taken from the project material: 27 sites, 864 historical incidents, 11 high-risk sites, 62.39% accuracy, 54.70% precision, 88.44% recall, 67.59% F1-score, ROC-AUC 0.777, and PR-AUC 0.705.
+
+Known source warnings
+- The inspector reports embedded-font face/name mismatch warnings in the supplied file. They are source-template warnings; no font substitution is introduced by the adaptation.

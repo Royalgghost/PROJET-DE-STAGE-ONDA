@@ -1,0 +1,390 @@
+{"kind":"deck","id":"pr/hxuu07","name":"Deck"}
+{"kind":"layout","layoutId":"2b4d7927-5c9a-4af9-9824-3cfae63e7a96","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"826ba9a5-5aba-4d8c-938d-63d41a188fd2","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/icyl04","slide":1,"title":"PROJET DE FIN D'ANNÉE · 4IIR","textShapes":10}
+{"kind":"shape","id":"sh/lkb2lgbu","slide":1,"bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/yhkjq1c3","slide":1,"bbox":[0,0,18,720]}
+{"kind":"shape","id":"sh/zitkj6to","slide":1,"bbox":[18,0,1262,12]}
+{"kind":"shape","id":"sh/ad0jm1c7","slide":1,"bbox":[58,185,252,30]}
+{"kind":"textbox","id":"sh/be9kf6ts","slide":1,"text":"PROJET DE FIN D'ANNÉE · 4IIR","textPreview":"PROJET DE FIN D'ANNÉE · 4IIR","textChars":28,"textLines":1,"bbox":[68,187,232,26]}
+{"kind":"textbox","id":"sh/obi1kru1","slide":1,"text":"Conception d’un modèle\nd’analyse des risques\net d’alertes prédictives","textPreview":"Conception d’un modèle | d’analyse des risques | et d’alertes prédictives","textChars":69,"textLines":3,"bbox":[58,235,750,190]}
+{"kind":"textbox","id":"sh/pcridwbm","slide":1,"text":"basé sur les données de maintenance des actifs informatiques","textPreview":"basé sur les données de maintenance des actifs informatiques","textChars":60,"textLines":1,"bbox":[62,437,710,40]}
+{"kind":"shape","id":"sh/hwfyxor6","slide":1,"bbox":[62,505,620,3]}
+{"kind":"textbox","id":"sh/gv6x4jal","slide":1,"text":"Une plateforme intégrée pour anticiper les risques WAN,\nréduire l’erreur humaine et valider la détection en environnement contrôlé.","textPreview":"Une plateforme intégrée pour anticiper les risques WAN, | réduire l’erreur humaine et valider la détection en environnement contrôlé.","textChars":131,"textLines":2,"bbox":[62,526,700,62]}
+{"kind":"shape","id":"sh/vuxgvy9g","slide":1,"bbox":[890,212,284,296]}
+{"kind":"textbox","id":"sh/utof2tsv","slide":1,"text":"ÉQUIPE","textPreview":"ÉQUIPE","textChars":6,"textLines":1,"bbox":[920,238,220,24]}
+{"kind":"textbox","id":"sh/tsfytora","slide":1,"text":"Azzat Nouamane\nHnid Aimane","textPreview":"Azzat Nouamane | Hnid Aimane","textChars":26,"textLines":2,"bbox":[920,272,220,72]}
+{"kind":"shape","id":"sh/8rmx0jap","slide":1,"bbox":[920,365,214,1]}
+{"kind":"textbox","id":"sh/7qdgret4","slide":1,"text":"Encadrement professionnel\nMme Jaouhari Ouafaa · ONDA","textPreview":"Encadrement professionnel | Mme Jaouhari Ouafaa · ONDA","textChars":52,"textLines":2,"bbox":[920,383,230,42]}
+{"kind":"textbox","id":"sh/6p4fy9sj","slide":1,"text":"Encadrement pédagogique\nMme Khadija Bousmar · EMSI","textPreview":"Encadrement pédagogique | Mme Khadija Bousmar · EMSI","textChars":50,"textLines":2,"bbox":[920,438,230,42]}
+{"kind":"textbox","id":"sh/lovyp4by","slide":1,"text":"ONDA · Office National des Aéroports","textPreview":"ONDA · Office National des Aéroports","textChars":36,"textLines":1,"bbox":[62,662,550,24]}
+{"kind":"textbox","id":"sh/k3mxwzat","slide":1,"text":"Soutenance · 2026","textPreview":"Soutenance · 2026","textChars":17,"textLines":1,"bbox":[1060,662,160,24]}
+{"kind":"image","id":"im/5wnmpo7a","slide":1,"name":"","alt":"ONDA logo","bbox":[58,54,150,75]}
+{"kind":"image","id":"im/kvelwj6p","slide":1,"name":"","alt":"EMSI logo","bbox":[1075,48,145,85]}
+{"kind":"notes","id":"nt/icyl04","slide":1,"text":"[Sources]\n- Local project report: report/main.tex\n- Local assets: report/images/onda/onda_logo.png and report/images/cyberrange/emsi_logo.png"}
+{"kind":"slide","id":"sl/kpncrm","slide":2,"title":"01 · CONTEXTE","textShapes":14}
+{"kind":"textbox","id":"sh/9knqx4rq","slide":2,"text":"01 · CONTEXTE","textPreview":"01 · CONTEXTE","textChars":13,"textLines":1,"bbox":[48,30,620,24]}
+{"kind":"textbox","id":"sh/mxc7m98z","slide":2,"text":"Pourquoi la continuité réseau est stratégique","textPreview":"Pourquoi la continuité réseau est stratégique","textChars":45,"textLines":1,"bbox":[48,56,1140,54]}
+{"kind":"shape","id":"sh/7yl8vu9k","slide":2,"bbox":[48,121,1184,2]}
+{"kind":"shape","id":"sh/wnepsjq1","slide":2,"bbox":[46,681,1188,1]}
+{"kind":"textbox","id":"sh/honq1orm","slide":2,"text":"ONDA · Risk Intelligence & CyberRange","textPreview":"ONDA · Risk Intelligence & CyberRange","textChars":37,"textLines":1,"bbox":[48,687,500,22]}
+{"kind":"textbox","id":"sh/ulw7q98b","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1180,687,52,22]}
+{"kind":"textbox","id":"sh/vm58ze9g","slide":2,"text":"Dans un aéroport, le WAN relie les services qui rendent l’exploitation possible. Une coupure n’est donc pas un simple incident IT : elle devient rapidement un risque opérationnel.","textPreview":"Dans un aéroport, le WAN relie les services qui rendent l’exploitation possible. Une coupure n’est donc pas un simple incident IT : elle ...","textChars":179,"textLines":1,"bbox":[52,150,650,78]}
+{"kind":"shape","id":"sh/4ry9wjqd","slide":2,"bbox":[52,262,300,110]}
+{"kind":"shape","id":"sh/5s7q5ory","slide":2,"bbox":[52,262,8,110]}
+{"kind":"textbox","id":"sh/1cj658zq","slide":2,"text":"Opérations passagers","textPreview":"Opérations passagers","textChars":20,"textLines":1,"bbox":[76,277,250,30]}
+{"kind":"textbox","id":"sh/0ba5w3y5","slide":2,"text":"Enregistrement, embarquement et échanges avec les systèmes métiers.","textPreview":"Enregistrement, embarquement et échanges avec les systèmes métiers.","textChars":67,"textLines":1,"bbox":[76,313,252,48]}
+{"kind":"shape","id":"sh/za1o3yh0","slide":2,"bbox":[378,262,300,110]}
+{"kind":"shape","id":"sh/e9snutgf","slide":2,"bbox":[378,262,8,110]}
+{"kind":"textbox","id":"sh/903698z2","slide":2,"text":"Sûreté & supervision","textPreview":"Sûreté & supervision","textChars":20,"textLines":1,"bbox":[402,277,250,30]}
+{"kind":"textbox","id":"sh/ozu503yh","slide":2,"text":"Vidéosurveillance, contrôle d’accès et coordination des équipes.","textPreview":"Vidéosurveillance, contrôle d’accès et coordination des équipes.","textChars":64,"textLines":1,"bbox":[402,313,252,48]}
+{"kind":"shape","id":"sh/nylo7yhw","slide":2,"bbox":[52,402,300,110]}
+{"kind":"shape","id":"sh/mdcnydgb","slide":2,"bbox":[52,402,8,110]}
+{"kind":"textbox","id":"sh/p4z6xozi","slide":2,"text":"Bagages & logistique","textPreview":"Bagages & logistique","textChars":20,"textLines":1,"bbox":[76,417,250,30]}
+{"kind":"textbox","id":"sh/43q5ojyx","slide":2,"text":"Traçabilité, tri et circulation des informations entre sites.","textPreview":"Traçabilité, tri et circulation des informations entre sites.","textChars":61,"textLines":1,"bbox":[76,453,252,48]}
+{"kind":"shape","id":"sh/gzex0na5","slide":2,"bbox":[378,402,300,110]}
+{"kind":"shape","id":"sh/h0net8bq","slide":2,"bbox":[378,402,8,110]}
+{"kind":"textbox","id":"sh/uxwfydsz","slide":2,"text":"Communication","textPreview":"Communication","textChars":13,"textLines":1,"bbox":[402,417,250,30]}
+{"kind":"textbox","id":"sh/fy5w7itk","slide":2,"text":"Messagerie, support et coordination avec la direction réseau.","textPreview":"Messagerie, support et coordination avec la direction réseau.","textChars":61,"textLines":1,"bbox":[402,453,252,48]}
+{"kind":"shape","id":"sh/p47yxsbm","slide":2,"bbox":[764,584,422,30]}
+{"kind":"textbox","id":"sh/21wf2dsb","slide":2,"text":"27 sites aéroportuaires · 864 incidents historiques","textPreview":"27 sites aéroportuaires · 864 incidents historiques","textChars":51,"textLines":1,"bbox":[774,586,402,26]}
+{"kind":"image","id":"im/r2pkritk","slide":2,"name":"","alt":"ONDA Risk Intelligence executive portal","bbox":[760,153,462,405]}
+{"kind":"notes","id":"nt/kpncrm","slide":2,"text":"[Sources]\n- Local project report: report/main.tex\n- Local asset: report/images/onda/onda_home.png"}
+{"kind":"slide","id":"sl/2d65di","slide":3,"title":"02 · PROBLÉMATIQUE","textShapes":19}
+{"kind":"textbox","id":"sh/ap4ra90f","slide":3,"text":"02 · PROBLÉMATIQUE","textPreview":"02 · PROBLÉMATIQUE","textChars":18,"textLines":1,"bbox":[48,30,620,24]}
+{"kind":"textbox","id":"sh/xsvq5ozq","slide":3,"text":"Passer d’une réaction après incident à une prévention ciblée","textPreview":"Passer d’une réaction après incident à une prévention ciblée","textChars":60,"textLines":1,"bbox":[48,56,1140,54]}
+{"kind":"shape","id":"sh/crm9cji5","slide":3,"bbox":[48,121,1184,2]}
+{"kind":"shape","id":"sh/zed87ehw","slide":3,"bbox":[46,681,1188,1]}
+{"kind":"textbox","id":"sh/yd4re90b","slide":3,"text":"ONDA · Risk Intelligence & CyberRange","textPreview":"ONDA · Risk Intelligence & CyberRange","textChars":37,"textLines":1,"bbox":[48,687,500,22]}
+{"kind":"textbox","id":"sh/lgfa9oz2","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1180,687,52,22]}
+{"kind":"shape","id":"sh/kfm9gjyh","slide":3,"bbox":[55,169,455,330]}
+{"kind":"textbox","id":"sh/7ixsbyhs","slide":3,"text":"APPROCHE RÉACTIVE","textPreview":"APPROCHE RÉACTIVE","textChars":17,"textLines":1,"bbox":[88,200,360,28]}
+{"kind":"textbox","id":"sh/mhoritg7","slide":3,"text":"Incident","textPreview":"Incident","textChars":8,"textLines":1,"bbox":[88,254,150,42]}
+{"kind":"textbox","id":"sh/cza98n6p","slide":3,"text":"→ Ticket\n→ Diagnostic\n→ Intervention\n→ Retour à la normale","textPreview":"→ Ticket | → Diagnostic | → Intervention | → Retour à la normale","textChars":58,"textLines":4,"bbox":[88,310,280,145]}
+{"kind":"shape","id":"sh/x0ja187a","slide":3,"bbox":[585,275,108,82]}
+{"kind":"textbox","id":"sh/axsr6doz","slide":3,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[585,274,108,82]}
+{"kind":"shape","id":"sh/by1szipk","slide":3,"bbox":[770,169,455,330]}
+{"kind":"textbox","id":"sh/k3utwn61","slide":3,"text":"APPROCHE PROACTIVE","textPreview":"APPROCHE PROACTIVE","textChars":18,"textLines":1,"bbox":[803,200,360,28]}
+{"kind":"textbox","id":"sh/l43a5s7m","slide":3,"text":"Risque","textPreview":"Risque","textChars":6,"textLines":1,"bbox":[803,254,150,42]}
+{"kind":"textbox","id":"sh/y1cbudov","slide":3,"text":"→ Score 0–100\n→ Alerte priorisée\n→ Action préventive\n→ Validation par simulation","textPreview":"→ Score 0–100 | → Alerte priorisée | → Action préventive | → Validation par simulation","textChars":80,"textLines":4,"bbox":[803,310,330,145]}
+{"kind":"shape","id":"sh/z2ls3ipg","slide":3,"bbox":[55,545,260,102]}
+{"kind":"textbox","id":"sh/8rut076x","slide":3,"text":"864","textPreview":"864","textChars":3,"textLines":1,"bbox":[73,557,224,44]}
+{"kind":"textbox","id":"sh/9sna9s7i","slide":3,"text":"INCIDENTS ANALYSÉS","textPreview":"INCIDENTS ANALYSÉS","textChars":18,"textLines":1,"bbox":[73,607,224,26]}
+{"kind":"shape","id":"sh/hojatszm","slide":3,"bbox":[335,545,260,102]}
+{"kind":"textbox","id":"sh/gna9kny1","slide":3,"text":"27","textPreview":"27","textChars":2,"textLines":1,"bbox":[353,557,224,44]}
+{"kind":"textbox","id":"sh/vmhsr2hw","slide":3,"text":"SITES WAN","textPreview":"SITES WAN","textChars":9,"textLines":1,"bbox":[353,607,224,26]}
+{"kind":"shape","id":"sh/ul8rixgb","slide":3,"bbox":[615,545,260,102]}
+{"kind":"textbox","id":"sh/5cjaxczy","slide":3,"text":"30 j","textPreview":"30 j","textChars":4,"textLines":1,"bbox":[633,557,224,44]}
+{"kind":"textbox","id":"sh/4bato7yd","slide":3,"text":"HORIZON DE PRÉVISION","textPreview":"HORIZON DE PRÉVISION","textChars":20,"textLines":1,"bbox":[633,607,224,26]}
+{"kind":"shape","id":"sh/3a1sv2hs","slide":3,"bbox":[895,545,330,102]}
+{"kind":"textbox","id":"sh/i9srmxg7","slide":3,"text":"0–100","textPreview":"0–100","textChars":5,"textLines":1,"bbox":[913,557,294,44]}
+{"kind":"textbox","id":"sh/lgzal8ze","slide":3,"text":"SCORE DE RISQUE","textPreview":"SCORE DE RISQUE","textChars":15,"textLines":1,"bbox":[913,607,294,26]}
+{"kind":"notes","id":"nt/2d65di","slide":3,"text":"[Sources]\n- Local project report: report/main.tex\n- Project metrics: 864 incidents, 27 sites, 30-day forecast horizon, 0–100 risk score"}
+{"kind":"slide","id":"sl/6angzu","slide":4,"title":"03 · VISION INTÉGRÉE","textShapes":20}
+{"kind":"textbox","id":"sh/zap8f6l4","slide":4,"text":"03 · VISION INTÉGRÉE","textPreview":"03 · VISION INTÉGRÉE","textChars":20,"textLines":1,"bbox":[48,30,620,24]}
+{"kind":"textbox","id":"sh/kbipobmp","slide":4,"text":"Une chaîne de décision, de la donnée à l’action","textPreview":"Une chaîne de décision, de la donnée à l’action","textChars":47,"textLines":1,"bbox":[48,56,1140,54]}
+{"kind":"shape","id":"sh/lcrqhg3a","slide":4,"bbox":[48,121,1184,2]}
+{"kind":"shape","id":"sh/a5g7ih4n","slide":4,"bbox":[46,681,1188,1]}
+{"kind":"textbox","id":"sh/b6p8bml8","slide":4,"text":"ONDA · Risk Intelligence & CyberRange","textPreview":"ONDA · Risk Intelligence & CyberRange","textChars":37,"textLines":1,"bbox":[48,687,500,22]}
+{"kind":"textbox","id":"sh/c7ypkrmt","slide":4,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1180,687,52,22]}
+{"kind":"textbox","id":"sh/2hw7eh4r","slide":4,"text":"Le projet ne juxtapose pas deux applications. Il relie la prédiction du risque, la prévention des erreurs humaines et la simulation défensive dans un même cycle d’amélioration.","textPreview":"Le projet ne juxtapose pas deux applications. Il relie la prédiction du risque, la prévention des erreurs humaines et la simulation défen...","textChars":176,"textLines":1,"bbox":[830,174,355,115]}
+{"kind":"shape","id":"sh/ni587m5c","slide":4,"bbox":[830,320,34,34]}
+{"kind":"textbox","id":"sh/fex07ex4","slide":4,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[830,321,34,32]}
+{"kind":"textbox","id":"sh/edoze9gj","slide":4,"text":"Prédire","textPreview":"Prédire","textChars":7,"textLines":1,"bbox":[880,318,120,26]}
+{"kind":"textbox","id":"sh/10fi9ofu","slide":4,"text":"Calculer un risque site à 30 jours","textPreview":"Calculer un risque site à 30 jours","textChars":34,"textLines":1,"bbox":[1004,318,210,36]}
+{"kind":"shape","id":"sh/gf6hgjy9","slide":4,"bbox":[830,380,34,34]}
+{"kind":"textbox","id":"sh/32h0bex0","slide":4,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[830,381,34,32]}
+{"kind":"textbox","id":"sh/21ozitgf","slide":4,"text":"Préparer","textPreview":"Préparer","textChars":8,"textLines":1,"bbox":[880,378,120,26]}
+{"kind":"textbox","id":"sh/p4zidof6","slide":4,"text":"Appliquer les contrôles et le REX","textPreview":"Appliquer les contrôles et le REX","textChars":33,"textLines":1,"bbox":[1004,378,210,36]}
+{"kind":"shape","id":"sh/o3qhkjyl","slide":4,"bbox":[830,440,34,34]}
+{"kind":"textbox","id":"sh/j6dgzuhw","slide":4,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[830,441,34,32]}
+{"kind":"textbox","id":"sh/i54z6pgb","slide":4,"text":"Simuler","textPreview":"Simuler","textChars":7,"textLines":1,"bbox":[880,438,120,26]}
+{"kind":"textbox","id":"sh/6dcbu14v","slide":4,"text":"Reproduire un scénario autorisé","textPreview":"Reproduire un scénario autorisé","textChars":31,"textLines":1,"bbox":[1004,438,210,36]}
+{"kind":"shape","id":"sh/7e5c3mlg","slide":4,"bbox":[830,500,34,34]}
+{"kind":"textbox","id":"sh/8fetwrm1","slide":4,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[830,501,34,32]}
+{"kind":"textbox","id":"sh/tgnu5w3m","slide":4,"text":"Détecter","textPreview":"Détecter","textChars":8,"textLines":1,"bbox":[880,498,120,26]}
+{"kind":"textbox","id":"sh/y9cbqh4z","slide":4,"text":"Observer les traces et les alertes","textPreview":"Observer les traces et les alertes","textChars":34,"textLines":1,"bbox":[1004,498,210,36]}
+{"kind":"shape","id":"sh/jalczmlk","slide":4,"bbox":[830,560,34,34]}
+{"kind":"textbox","id":"sh/kbutsrm5","slide":4,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[830,561,34,32]}
+{"kind":"textbox","id":"sh/lc3u1w3q","slide":4,"text":"Capitaliser","textPreview":"Capitaliser","textChars":11,"textLines":1,"bbox":[880,558,120,26]}
+{"kind":"textbox","id":"sh/a5sbmh43","slide":4,"text":"Transformer l’expérience en action","textPreview":"Transformer l’expérience en action","textChars":34,"textLines":1,"bbox":[1004,558,210,36]}
+{"kind":"image","id":"im/kb2dg3qt","slide":4,"name":"","alt":"Integrated solution pipeline","bbox":[70,155,720,440]}
+{"kind":"notes","id":"nt/6angzu","slide":4,"text":"[Sources]\n- Local project report: report/main.tex\n- Local asset: report/images/diagrams/solution_pipeline.png"}
+{"kind":"slide","id":"sl/cga5se","slide":5,"title":"04 · MÉTHODE","textShapes":18}
+{"kind":"textbox","id":"sh/a1sruhg7","slide":5,"text":"04 · MÉTHODE","textPreview":"04 · MÉTHODE","textChars":12,"textLines":1,"bbox":[48,30,620,24]}
+{"kind":"textbox","id":"sh/x4ja5wfy","slide":5,"text":"Transformer l’historique de maintenance en signal prédictif","textPreview":"Transformer l’historique de maintenance en signal prédictif","textChars":59,"textLines":1,"bbox":[48,56,1140,54]}
+{"kind":"shape","id":"sh/w3a9wryd","slide":5,"bbox":[48,121,1184,2]}
+{"kind":"shape","id":"sh/jq1s7mxo","slide":5,"bbox":[46,681,1188,1]}
+{"kind":"textbox","id":"sh/i5sbyhgj","slide":5,"text":"ONDA · Risk Intelligence & CyberRange","textPreview":"ONDA · Risk Intelligence & CyberRange","textChars":37,"textLines":1,"bbox":[48,687,500,22]}
+{"kind":"textbox","id":"sh/5sja9wfu","slide":5,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1180,687,52,22]}
+{"kind":"shape","id":"sh/krat0ry9","slide":5,"bbox":[45,185,270,270]}
+{"kind":"shape","id":"sh/zuhsv2xk","slide":5,"bbox":[45,185,270,8]}
+{"kind":"textbox","id":"sh/y9ormxgz","slide":5,"text":"DONNÉES","textPreview":"DONNÉES","textChars":7,"textLines":1,"bbox":[67,216,230,28]}
+{"kind":"textbox","id":"sh/8nmtwzi9","slide":5,"text":"Historique des tickets WAN\nDurée d’indisponibilité\nCatégorie et opérateur\nDate et site","textPreview":"Historique des tickets WAN | Durée d’indisponibilité | Catégorie et opérateur | Date et site","textChars":86,"textLines":4,"bbox":[67,264,224,145]}
+{"kind":"shape","id":"sh/tofap4ju","slide":5,"bbox":[349,185,270,270]}
+{"kind":"shape","id":"sh/6l4bup03","slide":5,"bbox":[349,185,270,8]}
+{"kind":"textbox","id":"sh/7mdsnu1o","slide":5,"text":"INDICATEURS","textPreview":"INDICATEURS","textChars":11,"textLines":1,"bbox":[371,216,230,28]}
+{"kind":"textbox","id":"sh/gb6t0zil","slide":5,"text":"Récence des incidents\nFréquence 30 / 90 jours\nImpact cumulé\nSaisonnalité","textPreview":"Récence des incidents | Fréquence 30 / 90 jours | Impact cumulé | Saisonnalité","textChars":72,"textLines":4,"bbox":[371,264,224,145]}
+{"kind":"shape","id":"sh/hcfat4jq","slide":5,"bbox":[653,185,270,270]}
+{"kind":"shape","id":"sh/upoby90f","slide":5,"bbox":[653,185,270,8]}
+{"kind":"textbox","id":"sh/vqxsru10","slide":5,"text":"MODÈLE","textPreview":"MODÈLE","textChars":6,"textLines":1,"bbox":[675,216,230,28]}
+{"kind":"textbox","id":"sh/wv2tofi1","slide":5,"text":"Apprentissage temporel\nClassification du risque\nScore 0–100\nAlerte priorisée","textPreview":"Apprentissage temporel | Classification du risque | Score 0–100 | Alerte priorisée","textChars":76,"textLines":4,"bbox":[675,264,224,145]}
+{"kind":"shape","id":"sh/xgbahkjm","slide":5,"bbox":[957,185,270,270]}
+{"kind":"shape","id":"sh/d03i5c7e","slide":5,"bbox":[957,185,270,8]}
+{"kind":"textbox","id":"sh/szuhw76t","slide":5,"text":"DÉCISION","textPreview":"DÉCISION","textChars":8,"textLines":1,"bbox":[979,216,230,28]}
+{"kind":"textbox","id":"sh/ry1032p8","slide":5,"text":"Top sites critiques\nAction recommandée\nContrôle humain\nSuivi de mitigation","textPreview":"Top sites critiques | Action recommandée | Contrôle humain | Suivi de mitigation","textChars":74,"textLines":4,"bbox":[979,264,224,145]}
+{"kind":"textbox","id":"sh/qxszuxon","slide":5,"text":"Séparation temporelle","textPreview":"Séparation temporelle","textChars":21,"textLines":1,"bbox":[68,515,245,28]}
+{"kind":"textbox","id":"sh/143i9c7a","slide":5,"text":"Entraînement : 2021–2023","textPreview":"Entraînement : 2021–2023","textChars":24,"textLines":1,"bbox":[68,552,245,28]}
+{"kind":"textbox","id":"sh/03uh076p","slide":5,"text":"Validation : 2024","textPreview":"Validation : 2024","textChars":17,"textLines":1,"bbox":[68,584,245,28]}
+{"kind":"shape","id":"sh/f2l07mp4","slide":5,"bbox":[335,570,620,7]}
+{"kind":"shape","id":"sh/e1czyhoz","slide":5,"bbox":[345,552,390,42]}
+{"kind":"textbox","id":"sh/p8nidw7m","slide":5,"text":"historique utilisé pour apprendre","textPreview":"historique utilisé pour apprendre","textChars":33,"textLines":1,"bbox":[360,557,360,30]}
+{"kind":"shape","id":"sh/o7eh4r61","slide":5,"bbox":[745,552,200,42]}
+{"kind":"textbox","id":"sh/6dofytoj","slide":5,"text":"test temporel","textPreview":"test temporel","textChars":13,"textLines":1,"bbox":[755,557,180,30]}
+{"kind":"textbox","id":"sh/7exw7y5o","slide":5,"text":"La méthode vise une aide à la décision : le score indique où vérifier en priorité, il ne remplace pas l’expertise des équipes réseau.","textPreview":"La méthode vise une aide à la décision : le score indique où vérifier en priorité, il ne remplace pas l’expertise des équipes réseau.","textChars":133,"textLines":1,"bbox":[970,536,255,72]}
+{"kind":"notes","id":"nt/cga5se","slide":5,"text":"[Sources]\n- Local project report: report/main.tex\n- Methodology and temporal train/test split from the project report"}
+{"kind":"slide","id":"sl/vv3xqg","slide":6,"title":"05 · UTILISATEURS","textShapes":12}
+{"kind":"textbox","id":"sh/3e58vm5g","slide":6,"text":"05 · UTILISATEURS","textPreview":"05 · UTILISATEURS","textChars":17,"textLines":1,"bbox":[48,30,620,24]}
+{"kind":"textbox","id":"sh/4fe947m1","slide":6,"text":"Quatre familles de cas d’utilisation complémentaires","textPreview":"Quatre familles de cas d’utilisation complémentaires","textChars":52,"textLines":1,"bbox":[48,56,1140,54]}
+{"kind":"shape","id":"sh/5gnqxcnm","slide":6,"bbox":[48,121,1184,2]}
+{"kind":"shape","id":"sh/qhwr6h47","slide":6,"bbox":[46,681,1188,1]}
+{"kind":"textbox","id":"sh/ri58zm5c","slide":6,"text":"ONDA · Risk Intelligence & CyberRange","textPreview":"ONDA · Risk Intelligence & CyberRange","textChars":37,"textLines":1,"bbox":[48,687,500,22]}
+{"kind":"textbox","id":"sh/sje98rmx","slide":6,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1180,687,52,22]}
+{"kind":"shape","id":"sh/elgra143","slide":6,"bbox":[830,180,360,68]}
+{"kind":"textbox","id":"sh/fmp8365o","slide":6,"text":"DSI / direction réseau","textPreview":"DSI / direction réseau","textChars":22,"textLines":1,"bbox":[854,190,310,23]}
+{"kind":"textbox","id":"sh/3etoby98","slide":6,"text":"Piloter le risque global et arbitrer les priorités.","textPreview":"Piloter le risque global et arbitrer les priorités.","textChars":51,"textLines":1,"bbox":[854,216,310,26]}
+{"kind":"shape","id":"sh/idk7id83","slide":6,"bbox":[830,274,360,68]}
+{"kind":"textbox","id":"sh/5gb6d8re","slide":6,"text":"Ingénieur réseau","textPreview":"Ingénieur réseau","textChars":16,"textLines":1,"bbox":[854,284,310,23]}
+{"kind":"textbox","id":"sh/4f2pk3qt","slide":6,"text":"Analyser un site, vérifier l’historique et tracer la mitigation.","textPreview":"Analyser un site, vérifier l’historique et tracer la mitigation.","textChars":64,"textLines":1,"bbox":[854,310,310,26]}
+{"kind":"shape","id":"sh/vato7y9c","slide":6,"bbox":[830,368,360,68]}
+{"kind":"textbox","id":"sh/up0net8r","slide":6,"text":"Équipe opérationnelle","textPreview":"Équipe opérationnelle","textChars":21,"textLines":1,"bbox":[854,378,310,23]}
+{"kind":"textbox","id":"sh/hcb698ri","slide":6,"text":"Préparer une intervention avec une checklist de conformité.","textPreview":"Préparer une intervention avec une checklist de conformité.","textChars":59,"textLines":1,"bbox":[854,404,310,26]}
+{"kind":"shape","id":"sh/gb25g3qx","slide":6,"bbox":[830,462,360,68]}
+{"kind":"textbox","id":"sh/f6doj2pg","slide":6,"text":"Analyste sécurité","textPreview":"Analyste sécurité","textChars":17,"textLines":1,"bbox":[854,472,310,23]}
+{"kind":"textbox","id":"sh/el47qx8v","slide":6,"text":"Observer un scénario CyberRange et relier preuve et défense.","textPreview":"Observer un scénario CyberRange et relier preuve et défense.","textChars":60,"textLines":1,"bbox":[854,498,310,26]}
+{"kind":"image","id":"im/ojyl8fah","slide":6,"name":"","alt":"Global use-case diagram","bbox":[55,160,725,440]}
+{"kind":"notes","id":"nt/vv3xqg","slide":6,"text":"[Sources]\n- Local project report: report/main.tex\n- Local asset: report/images/diagrams/usecase_global.png"}
+{"kind":"slide","id":"sl/ahjha3","slide":7,"title":"06 · ARCHITECTURE","textShapes":10}
+{"kind":"textbox","id":"sh/f2dgjylo","slide":7,"text":"06 · ARCHITECTURE","textPreview":"06 · ARCHITECTURE","textChars":17,"textLines":1,"bbox":[48,30,620,24]}
+{"kind":"textbox","id":"sh/g36hc329","slide":7,"text":"Une architecture orientée données, avec un laboratoire isolé","textPreview":"Une architecture orientée données, avec un laboratoire isolé","textChars":60,"textLines":1,"bbox":[48,56,1140,54]}
+{"kind":"shape","id":"sh/h4fyl83e","slide":7,"bbox":[48,121,1184,2]}
+{"kind":"shape","id":"sh/25ozedkz","slide":7,"bbox":[46,681,1188,1]}
+{"kind":"textbox","id":"sh/36xgnilk","slide":7,"text":"ONDA · Risk Intelligence & CyberRange","textPreview":"ONDA · Risk Intelligence & CyberRange","textChars":37,"textLines":1,"bbox":[48,687,500,22]}
+{"kind":"textbox","id":"sh/476hg325","slide":7,"text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[1180,687,52,22]}
+{"kind":"shape","id":"sh/y9kf29kv","slide":7,"bbox":[755,160,458,138]}
+{"kind":"textbox","id":"sh/jatgbelg","slide":7,"text":"Plateforme ONDA","textPreview":"Plateforme ONDA","textChars":15,"textLines":1,"bbox":[785,180,380,28]}
+{"kind":"textbox","id":"sh/f218z6l8","slide":7,"text":"Dashboards · scoring · alertes · REX\nAccès réservé aux utilisateurs autorisés","textPreview":"Dashboards · scoring · alertes · REX | Accès réservé aux utilisateurs autorisés","textChars":77,"textLines":2,"bbox":[785,224,360,54]}
+{"kind":"shape","id":"sh/u1s7q1kn","slide":7,"bbox":[755,326,458,138]}
+{"kind":"textbox","id":"sh/h4jq1g3e","slide":7,"text":"CyberRange","textPreview":"CyberRange","textChars":10,"textLines":1,"bbox":[785,346,380,28]}
+{"kind":"textbox","id":"sh/g3apsb2t","slide":7,"text":"Réseau Host-Only · scénario contrôlé\nSimulation séparée du réseau de production","textPreview":"Réseau Host-Only · scénario contrôlé | Simulation séparée du réseau de production","textChars":79,"textLines":2,"bbox":[785,390,370,54]}
+{"kind":"shape","id":"sh/7yh8v6lw","slide":7,"bbox":[755,492,458,105]}
+{"kind":"textbox","id":"sh/6x87m1kr","slide":7,"text":"Principe de sécurité","textPreview":"Principe de sécurité","textChars":20,"textLines":1,"bbox":[785,508,370,25]}
+{"kind":"textbox","id":"sh/t0zqxw32","slide":7,"text":"Tester, observer et documenter sans exposer l’infrastructure réelle.","textPreview":"Tester, observer et documenter sans exposer l’infrastructure réelle.","textChars":68,"textLines":1,"bbox":[785,544,372,35]}
+{"kind":"image","id":"im/g3mxcz61","slide":7,"name":"","alt":"Deployment architecture","bbox":[54,159,650,440]}
+{"kind":"notes","id":"nt/ahjha3","slide":7,"text":"[Sources]\n- Local project report: report/main.tex\n- Local asset: report/images/diagrams/deployment_architecture.png"}
+{"kind":"slide","id":"sl/imxg17","slide":8,"title":"07 · PRODUIT","textShapes":10}
+{"kind":"textbox","id":"sh/ju1kvqh8","slide":8,"text":"07 · PRODUIT","textPreview":"07 · PRODUIT","textChars":12,"textLines":1,"bbox":[48,30,620,24]}
+{"kind":"textbox","id":"sh/kvalovit","slide":8,"text":"Trois modules réunis dans une même expérience","textPreview":"Trois modules réunis dans une même expérience","textChars":45,"textLines":1,"bbox":[48,56,1140,54]}
+{"kind":"shape","id":"sh/5w32x0ze","slide":8,"bbox":[48,121,1184,2]}
+{"kind":"shape","id":"sh/a5s3i10r","slide":8,"bbox":[46,681,1188,1]}
+{"kind":"textbox","id":"sh/bq1kr6hw","slide":8,"text":"ONDA · Risk Intelligence & CyberRange","textPreview":"ONDA · Risk Intelligence & CyberRange","textChars":37,"textLines":1,"bbox":[48,687,500,22]}
+{"kind":"textbox","id":"sh/wralkbih","slide":8,"text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[1180,687,52,22]}
+{"kind":"shape","id":"sh/m183e10f","slide":8,"bbox":[68,522,350,90]}
+{"kind":"textbox","id":"sh/n2hkn6h0","slide":8,"text":"IA · Machine Learning","textPreview":"IA · Machine Learning","textChars":21,"textLines":1,"bbox":[88,536,310,25]}
+{"kind":"textbox","id":"sh/32xo7u14","slide":8,"text":"Prédire et classer le risque WAN","textPreview":"Prédire et classer le risque WAN","textChars":32,"textLines":1,"bbox":[88,570,310,25]}
+{"kind":"shape","id":"sh/21o7ypkz","slide":8,"bbox":[458,522,350,90]}
+{"kind":"textbox","id":"sh/p4f694ja","slide":8,"text":"REX · Opérationnel","textPreview":"REX · Opérationnel","textChars":18,"textLines":1,"bbox":[478,536,310,25]}
+{"kind":"textbox","id":"sh/436p0z2p","slide":8,"text":"Standardiser les interventions","textPreview":"Standardiser les interventions","textChars":30,"textLines":1,"bbox":[478,570,310,25]}
+{"kind":"shape","id":"sh/r6xobe1g","slide":8,"bbox":[848,522,350,90]}
+{"kind":"textbox","id":"sh/q5o729kv","slide":8,"text":"Prévention · Analyse","textPreview":"Prévention · Analyse","textChars":20,"textLines":1,"bbox":[868,536,310,25]}
+{"kind":"textbox","id":"sh/d8z6dojm","slide":8,"text":"Prioriser les actions sur 30 jours","textPreview":"Prioriser les actions sur 30 jours","textChars":34,"textLines":1,"bbox":[868,570,310,25]}
+{"kind":"image","id":"im/wzmx4nal","slide":8,"name":"","alt":"ONDA platform modules","bbox":[50,156,1180,330]}
+{"kind":"notes","id":"nt/imxg17","slide":8,"text":"[Sources]\n- Local project report: report/main.tex\n- Local asset: report/images/onda/onda_modules.png"}
+{"kind":"slide","id":"sl/c6s7dt","slide":9,"title":"08 · PILOTAGE","textShapes":10}
+{"kind":"textbox","id":"sh/j6tkzy9s","slide":9,"text":"08 · PILOTAGE","textPreview":"08 · PILOTAGE","textChars":13,"textLines":1,"bbox":[48,30,620,24]}
+{"kind":"textbox","id":"sh/4721s3qd","slide":9,"text":"Le portail exécutif rend la priorité visible immédiatement","textPreview":"Le portail exécutif rend la priorité visible immédiatement","textChars":58,"textLines":1,"bbox":[48,56,1140,54]}
+{"kind":"shape","id":"sh/58b218ry","slide":9,"bbox":[48,121,1184,2]}
+{"kind":"shape","id":"sh/69kjud8j","slide":9,"bbox":[46,681,1188,1]}
+{"kind":"textbox","id":"sh/ratk3i94","slide":9,"text":"ONDA · Risk Intelligence & CyberRange","textPreview":"ONDA · Risk Intelligence & CyberRange","textChars":37,"textLines":1,"bbox":[48,687,500,22]}
+{"kind":"textbox","id":"sh/sb21wnqp","slide":9,"text":"09","textPreview":"09","textChars":2,"textLines":1,"bbox":[1180,687,52,22]}
+{"kind":"shape","id":"sh/md0jitsf","slide":9,"bbox":[900,174,300,96]}
+{"kind":"textbox","id":"sh/7e90re90","slide":9,"text":"Vue réseau","textPreview":"Vue réseau","textChars":10,"textLines":1,"bbox":[925,190,240,24]}
+{"kind":"textbox","id":"sh/rilkf6t4","slide":9,"text":"Distribution du risque sur l’ensemble des sites.","textPreview":"Distribution du risque sur l’ensemble des sites.","textChars":48,"textLines":1,"bbox":[925,226,245,34]}
+{"kind":"shape","id":"sh/qhc3mlcj","slide":9,"bbox":[900,300,300,96]}
+{"kind":"textbox","id":"sh/dk3mhgba","slide":9,"text":"Top 5 critiques","textPreview":"Top 5 critiques","textChars":15,"textLines":1,"bbox":[925,316,240,24]}
+{"kind":"textbox","id":"sh/cjulobup","slide":9,"text":"Ouarzazate, Zagora, Bens-Slimane, Bouarfa et Guelmim.","textPreview":"Ouarzazate, Zagora, Bens-Slimane, Bouarfa et Guelmim.","textChars":53,"textLines":1,"bbox":[925,352,245,34]}
+{"kind":"shape","id":"sh/3e1kb6d8","slide":9,"bbox":[900,426,300,135]}
+{"kind":"textbox","id":"sh/2ds3i1cn","slide":9,"text":"Décision","textPreview":"Décision","textChars":8,"textLines":1,"bbox":[925,442,240,24]}
+{"kind":"textbox","id":"sh/pgj2dgvy","slide":9,"text":"La direction identifie d’abord où concentrer l’analyse et les moyens préventifs.","textPreview":"La direction identifie d’abord où concentrer l’analyse et les moyens préventifs.","textChars":80,"textLines":1,"bbox":[925,480,245,60]}
+{"kind":"image","id":"im/83yd8v2x","slide":9,"name":"","alt":"Risk overview dashboard","bbox":[52,154,810,468]}
+{"kind":"notes","id":"nt/c6s7dt","slide":9,"text":"[Sources]\n- Local project report: report/main.tex\n- Local asset: report/images/onda/onda_overview.png"}
+{"kind":"slide","id":"sl/t03nsd","slide":10,"title":"09 · ANALYSE DU RISQUE","textShapes":6}
+{"kind":"textbox","id":"sh/wny1kn6l","slide":10,"text":"09 · ANALYSE DU RISQUE","textPreview":"09 · ANALYSE DU RISQUE","textChars":22,"textLines":1,"bbox":[48,30,620,24]}
+{"kind":"textbox","id":"sh/bmpkripg","slide":10,"text":"Du signal global à la fiche d’un site","textPreview":"Du signal global à la fiche d’un site","textChars":37,"textLines":1,"bbox":[48,56,1140,54]}
+{"kind":"shape","id":"sh/algjidov","slide":10,"bbox":[48,121,1184,2]}
+{"kind":"shape","id":"sh/lsr2xs7i","slide":10,"bbox":[46,681,1188,1]}
+{"kind":"textbox","id":"sh/kri1on6x","slide":10,"text":"ONDA · Risk Intelligence & CyberRange","textPreview":"ONDA · Risk Intelligence & CyberRange","textChars":37,"textLines":1,"bbox":[48,687,500,22]}
+{"kind":"textbox","id":"sh/jqpkvipc","slide":10,"text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1180,687,52,22]}
+{"kind":"shape","id":"sh/8vi1s76t","slide":10,"bbox":[666,438,532,136]}
+{"kind":"textbox","id":"sh/upo7yhc3","slide":10,"text":"Exemple de lecture","textPreview":"Exemple de lecture","textChars":18,"textLines":1,"bbox":[692,456,460,24]}
+{"kind":"textbox","id":"sh/vqx87md8","slide":10,"text":"129-OUARZAZATE : score 99,9/100, 5 incidents sur 30 jours et 380,8 h d’indisponibilité sur 90 jours.\n001-CASABLANCA : score 2,7/100, aucun incident sur 90 jours.","textPreview":"129-OUARZAZATE : score 99,9/100, 5 incidents sur 30 jours et 380,8 h d’indisponibilité sur 90 jours. | 001-CASABLANCA : score 2,7/100, au...","textChars":161,"textLines":2,"bbox":[692,492,480,66]}
+{"kind":"image","id":"im/b2hczitk","slide":10,"name":"","alt":"Active risk alerts","bbox":[48,160,565,430]}
+{"kind":"image","id":"im/crmtgja1","slide":10,"name":"","alt":"Detailed site risk sheet","bbox":[650,160,568,250]}
+{"kind":"notes","id":"nt/t03nsd","slide":10,"text":"[Sources]\n- Local project report: report/main.tex\n- Local assets: report/images/onda/onda_alerts.png and report/images/onda/onda_detail.png"}
+{"kind":"slide","id":"sl/fekas8","slide":11,"title":"10 · FACTEUR HUMAIN","textShapes":10}
+{"kind":"textbox","id":"sh/gri5072h","slide":11,"text":"10 · FACTEUR HUMAIN","textPreview":"10 · FACTEUR HUMAIN","textChars":19,"textLines":1,"bbox":[48,30,620,24]}
+{"kind":"textbox","id":"sh/fq9472lc","slide":11,"text":"La prévention commence avant la modification en production","textPreview":"La prévention commence avant la modification en production","textChars":58,"textLines":1,"bbox":[48,56,1140,54]}
+{"kind":"shape","id":"sh/up0nyxkr","slide":11,"bbox":[48,121,1184,2]}
+{"kind":"shape","id":"sh/torm5s36","slide":11,"bbox":[46,681,1188,1]}
+{"kind":"textbox","id":"sh/sni5w72l","slide":11,"text":"ONDA · Risk Intelligence & CyberRange","textPreview":"ONDA · Risk Intelligence & CyberRange","textChars":37,"textLines":1,"bbox":[48,687,500,22]}
+{"kind":"textbox","id":"sh/7mp432l0","slide":11,"text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[1180,687,52,22]}
+{"kind":"shape","id":"sh/dkb6hw3a","slide":11,"bbox":[812,170,386,105]}
+{"kind":"textbox","id":"sh/cj258r2p","slide":11,"text":"Checklist pré-intervention","textPreview":"Checklist pré-intervention","textChars":26,"textLines":1,"bbox":[840,190,330,26]}
+{"kind":"textbox","id":"sh/qd4vilgv","slide":11,"text":"Sauvegarde · intégrité firmware · fenêtre horaire · notification DSI","textPreview":"Sauvegarde · intégrité firmware · fenêtre horaire · notification DSI","textChars":68,"textLines":1,"bbox":[840,232,322,30]}
+{"kind":"shape","id":"sh/bedwrqxg","slide":11,"bbox":[812,302,386,105]}
+{"kind":"textbox","id":"sh/cfmdkvy1","slide":11,"text":"Signal d’alerte","textPreview":"Signal d’alerte","textChars":15,"textLines":1,"bbox":[840,322,330,26]}
+{"kind":"textbox","id":"sh/dgvet0fm","slide":11,"text":"Une conformité faible signale un risque d’erreur humaine avant l’opération.","textPreview":"Une conformité faible signale un risque d’erreur humaine avant l’opération.","textChars":75,"textLines":1,"bbox":[840,364,322,30]}
+{"kind":"shape","id":"sh/2pkve1gz","slide":11,"bbox":[812,434,386,126]}
+{"kind":"textbox","id":"sh/3atwn6xk","slide":11,"text":"REX opérationnel","textPreview":"REX opérationnel","textChars":16,"textLines":1,"bbox":[840,454,330,26]}
+{"kind":"textbox","id":"sh/4b2dgbyp","slide":11,"text":"Les incidents et les bonnes pratiques sont capitalisés pour éviter la répétition des mêmes erreurs.","textPreview":"Les incidents et les bonnes pratiques sont capitalisés pour éviter la répétition des mêmes erreurs.","textChars":99,"textLines":1,"bbox":[840,496,322,44]}
+{"kind":"image","id":"im/bytsbux8","slide":11,"name":"","alt":"Human factor and REX checklist","bbox":[52,158,700,448]}
+{"kind":"notes","id":"nt/fekas8","slide":11,"text":"[Sources]\n- Local project report: report/main.tex\n- Local asset: report/images/onda/onda_human.png"}
+{"kind":"slide","id":"sl/iim8e2","slide":12,"title":"11 · PRÉVENTION","textShapes":10}
+{"kind":"textbox","id":"sh/q103q183","slide":12,"text":"11 · PRÉVENTION","textPreview":"11 · PRÉVENTION","textChars":15,"textLines":1,"bbox":[48,30,620,24]}
+{"kind":"textbox","id":"sh/d4r2lg7e","slide":12,"text":"Convertir le score en plan d’intervention priorisé","textPreview":"Convertir le score en plan d’intervention priorisé","textChars":50,"textLines":1,"bbox":[48,56,1140,54]}
+{"kind":"shape","id":"sh/c3ilsbq9","slide":12,"bbox":[48,121,1184,2]}
+{"kind":"shape","id":"sh/z69knqpk","slide":12,"bbox":[46,681,1188,1]}
+{"kind":"textbox","id":"sh/y503ul8z","slide":12,"text":"ONDA · Risk Intelligence & CyberRange","textPreview":"ONDA · Risk Intelligence & CyberRange","textChars":37,"textLines":1,"bbox":[48,687,500,22]}
+{"kind":"textbox","id":"sh/l8bmp07q","slide":12,"text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[1180,687,52,22]}
+{"kind":"shape","id":"sh/7at4rqpw","slide":12,"bbox":[914,172,284,95]}
+{"kind":"textbox","id":"sh/m9k3ylob","slide":12,"text":"Causes & opérateurs","textPreview":"Causes & opérateurs","textChars":19,"textLines":1,"bbox":[934,190,245,24]}
+{"kind":"textbox","id":"sh/w7epgrat","slide":12,"text":"Liaison WAN, électricité, Orange ou IAM.","textPreview":"Liaison WAN, électricité, Orange ou IAM.","textChars":40,"textLines":1,"bbox":[934,228,235,25]}
+{"kind":"shape","id":"sh/h8nq9wbe","slide":12,"bbox":[914,294,284,95]}
+{"kind":"textbox","id":"sh/u5c7e1s3","slide":12,"text":"Temporalité","textPreview":"Temporalité","textChars":11,"textLines":1,"bbox":[934,312,245,24]}
+{"kind":"textbox","id":"sh/v6l87mt8","slide":12,"text":"Repérer les périodes et horaires plus exposés.","textPreview":"Repérer les périodes et horaires plus exposés.","textChars":46,"textLines":1,"bbox":[934,350,235,25]}
+{"kind":"shape","id":"sh/4bepkba5","slide":12,"bbox":[914,416,284,144]}
+{"kind":"textbox","id":"sh/5cnqdgbq","slide":12,"text":"Action recommandée","textPreview":"Action recommandée","textChars":18,"textLines":1,"bbox":[934,434,245,24]}
+{"kind":"textbox","id":"sh/i9w7i1sz","slide":12,"text":"Vérifier l’UPS, planifier une mission technique ou escalader un ticket opérateur.","textPreview":"Vérifier l’UPS, planifier une mission technique ou escalader un ticket opérateur.","textChars":81,"textLines":1,"bbox":[934,472,235,60]}
+{"kind":"image","id":"im/pw7ylgvi","slide":12,"name":"","alt":"WAN outage prevention plan","bbox":[45,150,830,470]}
+{"kind":"notes","id":"nt/iim8e2","slide":12,"text":"[Sources]\n- Local project report: report/main.tex\n- Local asset: report/images/onda/onda_prevention.png"}
+{"kind":"slide","id":"sl/ffx10f","slide":13,"title":"12 · VALIDATION IA","textShapes":12}
+{"kind":"textbox","id":"sh/98nutk36","slide":13,"text":"12 · VALIDATION IA","textPreview":"12 · VALIDATION IA","textChars":18,"textLines":1,"bbox":[48,30,620,24]}
+{"kind":"textbox","id":"sh/mlcvi5kv","slide":13,"text":"Le modèle favorise le rappel pour ne pas manquer les sites à vérifier","textPreview":"Le modèle favorise le rappel pour ne pas manquer les sites à vérifier","textChars":69,"textLines":1,"bbox":[48,56,1140,54]}
+{"kind":"shape","id":"sh/7m5cralg","slide":13,"bbox":[48,121,1184,2]}
+{"kind":"shape","id":"sh/kjudgf2p","slide":13,"bbox":[46,681,1188,1]}
+{"kind":"textbox","id":"sh/lk3up03a","slide":13,"text":"ONDA · Risk Intelligence & CyberRange","textPreview":"ONDA · Risk Intelligence & CyberRange","textChars":37,"textLines":1,"bbox":[48,687,500,22]}
+{"kind":"textbox","id":"sh/yhcve5kj","slide":13,"text":"13","textPreview":"13","textChars":2,"textLines":1,"bbox":[1180,687,52,22]}
+{"kind":"shape","id":"sh/4fydsz2t","slide":13,"bbox":[922,170,260,102]}
+{"kind":"textbox","id":"sh/5g7e143e","slide":13,"text":"88,44 %","textPreview":"88,44 %","textChars":7,"textLines":1,"bbox":[940,182,224,44]}
+{"kind":"textbox","id":"sh/pc7mt03i","slide":13,"text":"RAPPEL","textPreview":"RAPPEL","textChars":6,"textLines":1,"bbox":[940,232,224,26]}
+{"kind":"shape","id":"sh/oby50v2x","slide":13,"bbox":[922,292,260,102]}
+{"kind":"textbox","id":"sh/3ap4rqlc","slide":13,"text":"54,70 %","textPreview":"54,70 %","textChars":7,"textLines":1,"bbox":[940,304,224,44]}
+{"kind":"textbox","id":"sh/29gnylkr","slide":13,"text":"PRÉCISION","textPreview":"PRÉCISION","textChars":9,"textLines":1,"bbox":[940,354,224,26]}
+{"kind":"shape","id":"sh/18nmpg36","slide":13,"bbox":[922,414,260,102]}
+{"kind":"textbox","id":"sh/g7e5wv2l","slide":13,"text":"67,59 %","textPreview":"67,59 %","textChars":7,"textLines":1,"bbox":[940,426,224,44]}
+{"kind":"textbox","id":"sh/f654nql0","slide":13,"text":"F1-SCORE","textPreview":"F1-SCORE","textChars":8,"textLines":1,"bbox":[940,476,224,26]}
+{"kind":"textbox","id":"sh/elwnulkv","slide":13,"text":"Lecture métier","textPreview":"Lecture métier","textChars":14,"textLines":1,"bbox":[922,548,250,25]}
+{"kind":"textbox","id":"sh/l4r61k3a","slide":13,"text":"Le rappel élevé est cohérent avec une logique de prévention : mieux vaut déclencher une vérification supplémentaire que laisser passer un site réellement exposé.","textPreview":"Le rappel élevé est cohérent avec une logique de prévention : mieux vaut déclencher une vérification supplémentaire que laisser passer un...","textChars":161,"textLines":1,"bbox":[922,580,260,62]}
+{"kind":"image","id":"im/md436dcn","slide":13,"name":"","alt":"AI model diagnostic and performance","bbox":[48,154,835,470]}
+{"kind":"notes","id":"nt/ffx10f","slide":13,"text":"[Sources]\n- Local project report: report/main.tex\n- Local asset: report/images/onda/onda_model.png\n- Reported metrics: accuracy 62.39%, precision 54.70%, recall 88.44%, F1 67.59%, ROC-AUC 0.777, PR-AUC 0.705"}
+{"kind":"slide","id":"sl/zn5pde","slide":14,"title":"13 · CYBERRANGE","textShapes":5}
+{"kind":"textbox","id":"sh/kb2hkbeh","slide":14,"text":"13 · CYBERRANGE","textPreview":"13 · CYBERRANGE","textChars":15,"textLines":1,"bbox":[48,30,620,24]}
+{"kind":"textbox","id":"sh/jat0r6xw","slide":14,"text":"Valider la posture défensive dans un périmètre explicitement isolé","textPreview":"Valider la posture défensive dans un périmètre explicitement isolé","textChars":66,"textLines":1,"bbox":[48,56,1140,54]}
+{"kind":"shape","id":"sh/i90zi1wb","slide":14,"bbox":[48,121,1184,2]}
+{"kind":"shape","id":"sh/x8ripwfq","slide":14,"bbox":[46,681,1188,1]}
+{"kind":"textbox","id":"sh/w7ihgry5","slide":14,"text":"ONDA · Risk Intelligence & CyberRange","textPreview":"ONDA · Risk Intelligence & CyberRange","textChars":37,"textLines":1,"bbox":[48,687,500,22]}
+{"kind":"textbox","id":"sh/v690n6xk","slide":14,"text":"14","textPreview":"14","textChars":2,"textLines":1,"bbox":[1180,687,52,22]}
+{"kind":"shape","id":"sh/g3m1svep","slide":14,"bbox":[86,585,1070,44]}
+{"kind":"textbox","id":"sh/a58be9sr","slide":14,"text":"Règle centrale : le scénario est réalisé dans un laboratoire Host-Only, séparé de la production, avec des preuves collectées à chaque étape.","textPreview":"Règle centrale : le scénario est réalisé dans un laboratoire Host-Only, séparé de la production, avec des preuves collectées à chaque étape.","textChars":140,"textLines":1,"bbox":[110,592,1020,30]}
+{"kind":"image","id":"im/bml0rudc","slide":14,"name":"","alt":"CyberRange network","bbox":[48,158,550,400]}
+{"kind":"image","id":"im/wje1w3e1","slide":14,"name":"","alt":"CyberRange architecture","bbox":[640,158,570,400]}
+{"kind":"notes","id":"nt/zn5pde","slide":14,"text":"[Sources]\n- Local project report: report/main.tex\n- Local assets: report/images/cyberrange/cr_network.png and report/images/cyberrange/cr_architecture.png"}
+{"kind":"slide","id":"sl/ezjcmt","slide":15,"title":"14 · SIMULATION CONTRÔLÉE","textShapes":11}
+{"kind":"textbox","id":"sh/dgja1o7y","slide":15,"text":"14 · SIMULATION CONTRÔLÉE","textPreview":"14 · SIMULATION CONTRÔLÉE","textChars":25,"textLines":1,"bbox":[48,30,620,24]}
+{"kind":"textbox","id":"sh/qd8b6ton","slide":15,"text":"Un scénario lisible : découvrir, observer, qualifier","textPreview":"Un scénario lisible : découvrir, observer, qualifier","textChars":52,"textLines":1,"bbox":[48,56,1140,54]}
+{"kind":"shape","id":"sh/be1szeps","slide":15,"bbox":[48,121,1184,2]}
+{"kind":"shape","id":"sh/0jatc36p","slide":15,"bbox":[46,681,1188,1]}
+{"kind":"textbox","id":"sh/lkja58na","slide":15,"text":"ONDA · Risk Intelligence & CyberRange","textPreview":"ONDA · Risk Intelligence & CyberRange","textChars":37,"textLines":1,"bbox":[48,687,500,22]}
+{"kind":"textbox","id":"sh/yhsbatoj","slide":15,"text":"15","textPreview":"15","textChars":2,"textLines":1,"bbox":[1180,687,52,22]}
+{"kind":"shape","id":"sh/87utg36l","slide":15,"bbox":[875,170,320,90]}
+{"kind":"textbox","id":"sh/983u98n6","slide":15,"text":"Découverte","textPreview":"Découverte","textChars":10,"textLines":1,"bbox":[900,188,265,24]}
+{"kind":"textbox","id":"sh/9wbm903m","slide":15,"text":"Cartographier les actifs du laboratoire et vérifier le périmètre.","textPreview":"Cartographier les actifs du laboratoire et vérifier le périmètre.","textChars":65,"textLines":1,"bbox":[900,226,265,30]}
+{"kind":"shape","id":"sh/ov2l0vm1","slide":15,"bbox":[875,286,320,90]}
+{"kind":"textbox","id":"sh/nut47qlg","slide":15,"text":"Observation","textPreview":"Observation","textChars":11,"textLines":1,"bbox":[900,304,265,24]}
+{"kind":"textbox","id":"sh/mtk3yl4v","slide":15,"text":"Capturer les flux et les traces utiles à l’analyse.","textPreview":"Capturer les flux et les traces utiles à l’analyse.","textChars":51,"textLines":1,"bbox":[900,342,265,30]}
+{"kind":"shape","id":"sh/xkvmdk3i","slide":15,"bbox":[875,402,320,90]}
+{"kind":"textbox","id":"sh/wzm54fmx","slide":15,"text":"Qualification","textPreview":"Qualification","textChars":13,"textLines":1,"bbox":[900,420,265,24]}
+{"kind":"textbox","id":"sh/byd4bals","slide":15,"text":"Relier les indices à une règle et à une action défensive.","textPreview":"Relier les indices à une règle et à une action défensive.","textChars":57,"textLines":1,"bbox":[900,458,265,30]}
+{"kind":"shape","id":"sh/axk32547","slide":15,"bbox":[875,528,320,30]}
+{"kind":"textbox","id":"sh/dorm1gne","slide":15,"text":"Usage pédagogique et autorisé uniquement","textPreview":"Usage pédagogique et autorisé uniquement","textChars":40,"textLines":1,"bbox":[885,530,300,26]}
+{"kind":"image","id":"im/qhwri9ob","slide":15,"name":"","alt":"CyberRange attack lifecycle","bbox":[50,157,770,430]}
+{"kind":"notes","id":"nt/ezjcmt","slide":15,"text":"[Sources]\n- Local project report: report/main.tex\n- Local asset: report/images/cyberrange/cr_killchain.png\n- The simulation is presented only as an authorized, isolated defensive lab"}
+{"kind":"slide","id":"sl/8picc5","slide":16,"title":"15 · PREUVES TECHNIQUES","textShapes":11}
+{"kind":"textbox","id":"sh/2x8ja5cb","slide":16,"text":"15 · PREUVES TECHNIQUES","textPreview":"15 · PREUVES TECHNIQUES","textChars":23,"textLines":1,"bbox":[48,30,620,24]}
+{"kind":"textbox","id":"sh/p0zi50v2","slide":16,"text":"Des traces exploitables pour passer de l’observation à la défense","textPreview":"Des traces exploitables pour passer de l’observation à la défense","textChars":65,"textLines":1,"bbox":[48,56,1140,54]}
+{"kind":"shape","id":"sh/4zq1cvuh","slide":16,"bbox":[48,121,1184,2]}
+{"kind":"shape","id":"sh/fux0zqdk","slide":16,"bbox":[46,681,1188,1]}
+{"kind":"textbox","id":"sh/u9oj6lcf","slide":16,"text":"ONDA · Risk Intelligence & CyberRange","textPreview":"ONDA · Risk Intelligence & CyberRange","textChars":37,"textLines":1,"bbox":[48,687,500,22]}
+{"kind":"textbox","id":"sh/hwfi10vq","slide":16,"text":"16","textPreview":"16","textChars":2,"textLines":1,"bbox":[1180,687,52,22]}
+{"kind":"shape","id":"sh/43a1o7ud","slide":16,"bbox":[50,400,350,130]}
+{"kind":"textbox","id":"sh/543ixcvy","slide":16,"text":"Nmap","textPreview":"Nmap","textChars":4,"textLines":1,"bbox":[70,420,300,26]}
+{"kind":"textbox","id":"sh/i1sjmxcn","slide":16,"text":"Identifier les services visibles dans le laboratoire.","textPreview":"Identifier les services visibles dans le laboratoire.","textChars":53,"textLines":1,"bbox":[70,460,300,50]}
+{"kind":"shape","id":"sh/j210v2ds","slide":16,"bbox":[465,400,350,130]}
+{"kind":"textbox","id":"sh/wza1knuh","slide":16,"text":"Wireshark","textPreview":"Wireshark","textChars":9,"textLines":1,"bbox":[485,420,300,26]}
+{"kind":"textbox","id":"sh/h0jitsv2","slide":16,"text":"Comparer les paquets et reconstruire la chronologie.","textPreview":"Comparer les paquets et reconstruire la chronologie.","textChars":52,"textLines":1,"bbox":[485,460,300,50]}
+{"kind":"shape","id":"sh/uxszixcb","slide":16,"bbox":[880,400,350,130]}
+{"kind":"textbox","id":"sh/vy10ridw","slide":16,"text":"Ghidra","textPreview":"Ghidra","textChars":6,"textLines":1,"bbox":[900,420,300,26]}
+{"kind":"textbox","id":"sh/gvu1wrul","slide":16,"text":"Qualifier un artefact et comprendre son comportement.","textPreview":"Qualifier un artefact et comprendre son comportement.","textChars":53,"textLines":1,"bbox":[900,460,300,50]}
+{"kind":"textbox","id":"sh/1wni5wv6","slide":16,"text":"La valeur du CyberRange est la traçabilité : chaque étape du scénario produit un élément vérifiable et réutilisable pour la formation.","textPreview":"La valeur du CyberRange est la traçabilité : chaque étape du scénario produit un élément vérifiable et réutilisable pour la formation.","textChars":134,"textLines":1,"bbox":[95,578,1090,36]}
+{"kind":"image","id":"im/dgjit83u","slide":16,"name":"","alt":"Network discovery evidence","bbox":[50,160,350,200]}
+{"kind":"image","id":"im/e1sj2dkf","slide":16,"name":"","alt":"Traffic analysis evidence","bbox":[465,160,350,200]}
+{"kind":"image","id":"im/z21kvi10","slide":16,"name":"","alt":"Decompilation evidence","bbox":[880,160,350,200]}
+{"kind":"notes","id":"nt/8picc5","slide":16,"text":"[Sources]\n- Local project report: report/main.tex\n- Local assets: report/images/cyberrange/cr_nmap.png, cr_wireshark.png, and cr_decompile.png"}
+{"kind":"slide","id":"sl/pddhzs","slide":17,"title":"16 · RÉPONSE","textShapes":13}
+{"kind":"textbox","id":"sh/bm5cnulo","slide":17,"text":"16 · RÉPONSE","textPreview":"16 · RÉPONSE","textChars":12,"textLines":1,"bbox":[48,30,620,24]}
+{"kind":"textbox","id":"sh/cnedgz2t","slide":17,"text":"Les indicateurs deviennent des règles, puis des mesures de remédiation","textPreview":"Les indicateurs deviennent des règles, puis des mesures de remédiation","textChars":70,"textLines":1,"bbox":[48,56,1140,54]}
+{"kind":"shape","id":"sh/xo7up43e","slide":17,"bbox":[48,121,1184,2]}
+{"kind":"shape","id":"sh/ypgvi9kz","slide":17,"bbox":[46,681,1188,1]}
+{"kind":"textbox","id":"sh/zapwrulk","slide":17,"text":"ONDA · Risk Intelligence & CyberRange","textPreview":"ONDA · Risk Intelligence & CyberRange","textChars":37,"textLines":1,"bbox":[48,687,500,22]}
+{"kind":"textbox","id":"sh/kbydkz25","slide":17,"text":"17","textPreview":"17","textChars":2,"textLines":1,"bbox":[1180,687,52,22]}
+{"kind":"textbox","id":"sh/zytcjulg","slide":17,"text":"Comprendre","textPreview":"Comprendre","textChars":10,"textLines":1,"bbox":[105,420,220,30]}
+{"kind":"shape","id":"sh/yxkbq94v","slide":17,"bbox":[210,458,220,62]}
+{"kind":"textbox","id":"sh/l0vul43m","slide":17,"text":"analyse","textPreview":"analyse","textChars":7,"textLines":1,"bbox":[210,470,220,36]}
+{"kind":"textbox","id":"sh/kzmtszm1","slide":17,"text":"Détecter","textPreview":"Détecter","textChars":8,"textLines":1,"bbox":[510,420,220,30]}
+{"kind":"shape","id":"sh/butcful4","slide":17,"bbox":[615,458,220,62]}
+{"kind":"textbox","id":"sh/atkbmp4z","slide":17,"text":"règle","textPreview":"règle","textChars":5,"textLines":1,"bbox":[615,470,220,36]}
+{"kind":"textbox","id":"sh/xwbuh43a","slide":17,"text":"Alerter","textPreview":"Alerter","textChars":7,"textLines":1,"bbox":[915,420,220,30]}
+{"kind":"shape","id":"sh/cv2tozmp","slide":17,"bbox":[1020,458,220,62]}
+{"kind":"textbox","id":"sh/n69sral8","slide":17,"text":"signal","textPreview":"signal","textChars":6,"textLines":1,"bbox":[1020,470,220,36]}
+{"kind":"textbox","id":"sh/250bip4n","slide":17,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[390,467,60,45]}
+{"kind":"textbox","id":"sh/q10vu5of","slide":17,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[795,467,60,45]}
+{"kind":"shape","id":"sh/r29c3ap0","slide":17,"bbox":[270,575,740,43]}
+{"kind":"textbox","id":"sh/s3idwf6l","slide":17,"text":"Remédiation documentée : corriger, vérifier, capitaliser dans le REX","textPreview":"Remédiation documentée : corriger, vérifier, capitaliser dans le REX","textChars":68,"textLines":1,"bbox":[290,581,700,30]}
+{"kind":"image","id":"im/07y9oz6d","slide":17,"name":"","alt":"Ghidra analysis graph","bbox":[52,160,360,230]}
+{"kind":"image","id":"im/r258rapw","slide":17,"name":"","alt":"YARA detection rule","bbox":[455,160,360,230]}
+{"kind":"image","id":"im/q1wri5ob","slide":17,"name":"","alt":"Snort detection rule","bbox":[858,160,360,230]}
+{"kind":"notes","id":"nt/pddhzs","slide":17,"text":"[Sources]\n- Local project report: report/main.tex\n- Local assets: report/images/cyberrange/cr_ghidra_graph.png, cr_yara.png, and cr_snort.png"}
+{"kind":"slide","id":"sl/87688l","slide":18,"title":"17 · CONCLUSION","textShapes":15}
+{"kind":"textbox","id":"sh/v694zyhc","slide":18,"text":"17 · CONCLUSION","textPreview":"17 · CONCLUSION","textChars":15,"textLines":1,"bbox":[48,30,620,24]}
+{"kind":"textbox","id":"sh/w7i583ix","slide":18,"text":"Une résilience réseau pilotée par le risque et l’expérience","textPreview":"Une résilience réseau pilotée par le risque et l’expérience","textChars":59,"textLines":1,"bbox":[48,56,1140,54]}
+{"kind":"shape","id":"sh/x8rm18zi","slide":18,"bbox":[48,121,1184,2]}
+{"kind":"shape","id":"sh/i90nad03","slide":18,"bbox":[46,681,1188,1]}
+{"kind":"textbox","id":"sh/ja943ih8","slide":18,"text":"ONDA · Risk Intelligence & CyberRange","textPreview":"ONDA · Risk Intelligence & CyberRange","textChars":37,"textLines":1,"bbox":[48,687,500,22]}
+{"kind":"textbox","id":"sh/kbi5cnit","slide":18,"text":"18","textPreview":"18","textChars":2,"textLines":1,"bbox":[1180,687,52,22]}
+{"kind":"shape","id":"sh/5crm58ze","slide":18,"bbox":[70,180,1140,90]}
+{"kind":"textbox","id":"sh/ydw3y90j","slide":18,"text":"Le modèle répond à la question : où agir avant la prochaine coupure ?","textPreview":"Le modèle répond à la question : où agir avant la prochaine coupure ?","textChars":69,"textLines":1,"bbox":[104,205,1070,38]}
+{"kind":"shape","id":"sh/ze54reh4","slide":18,"bbox":[80,330,250,150]}
+{"kind":"textbox","id":"sh/zi5sjqhs","slide":18,"text":"Anticiper","textPreview":"Anticiper","textChars":9,"textLines":1,"bbox":[100,350,210,30]}
+{"kind":"textbox","id":"sh/ehwbal07","slide":18,"text":"Score de risque et prévision à 30 jours","textPreview":"Score de risque et prévision à 30 jours","textChars":39,"textLines":1,"bbox":[102,404,206,52]}
+{"kind":"shape","id":"sh/1knalgzy","slide":18,"bbox":[365,330,250,150]}
+{"kind":"textbox","id":"sh/0jetcbid","slide":18,"text":"Sécuriser","textPreview":"Sécuriser","textChars":9,"textLines":1,"bbox":[385,350,210,30]}
+{"kind":"textbox","id":"sh/relsf6hw","slide":18,"text":"Checklist, REX et laboratoire isolé","textPreview":"Checklist, REX et laboratoire isolé","textChars":35,"textLines":1,"bbox":[387,404,206,52]}
+{"kind":"shape","id":"sh/qdcb610b","slide":18,"bbox":[650,330,250,150]}
+{"kind":"textbox","id":"sh/dgnahgzm","slide":18,"text":"Prouver","textPreview":"Prouver","textChars":7,"textLines":1,"bbox":[670,350,210,30]}
+{"kind":"textbox","id":"sh/cfet8bi1","slide":18,"text":"Métriques, traces et règles de détection","textPreview":"Métriques, traces et règles de détection","textChars":40,"textLines":1,"bbox":[672,404,206,52]}
+{"kind":"shape","id":"sh/3qlsb6hk","slide":18,"bbox":[935,330,250,150]}
+{"kind":"textbox","id":"sh/2pcb210z","slide":18,"text":"Améliorer","textPreview":"Améliorer","textChars":9,"textLines":1,"bbox":[955,350,210,30]}
+{"kind":"textbox","id":"sh/6lsbuhk7","slide":18,"text":"Actions préventives et capitalisation","textPreview":"Actions préventives et capitalisation","textChars":37,"textLines":1,"bbox":[957,404,206,52]}
+{"kind":"textbox","id":"sh/7m1cnmlc","slide":18,"text":"Perspectives : enrichir les données de maintenance, suivre les actions jusqu’à leur clôture, calibrer les seuils avec les équipes et intégrer davantage de scénarios défensifs.","textPreview":"Perspectives : enrichir les données de maintenance, suivre les actions jusqu’à leur clôture, calibrer les seuils avec les équipes et inté...","textChars":175,"textLines":1,"bbox":[110,548,1060,48]}
+{"kind":"textbox","id":"sh/snutwr2x","slide":18,"text":"Merci pour votre attention","textPreview":"Merci pour votre attention","textChars":26,"textLines":1,"bbox":[440,625,400,34]}
+{"kind":"notes","id":"nt/87688l","slide":18,"text":"[Sources]\n- Local project report: report/main.tex\n- Conclusion synthesized from the integrated ONDA Risk Intelligence and CyberRange project"}

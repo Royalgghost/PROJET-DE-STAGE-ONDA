@@ -1,0 +1,356 @@
+.\wazuh-agent-4.14.3-1.msi /q WAZUH_MANAGER="10.0.0.2"
+cd "C:\Users\dell\Downloads\security-main"
+docker compose up -d
+ls
+cd security-main
+ls
+cd project-code
+ls
+docker compose up -d
+cat docker-compose.yml
+notepad docker-compose.yml
+docker compose up -d
+cd C:\Users\dell\Downloads\security-main\security-main\project-code
+ls
+docker compose up -d
+pwd
+cd src
+pwd
+notepad security_check.php
+cd C:\Users\dell\Downloads\security-main\security-main\project-code\src
+New-Item -Path "security_check.php" -ItemType File -Force
+cd C:\Users\dell\Desktop
+notepad security_check.php
+cd C:\Users\dell\Desktop
+notepad security_check.php
+Copy-Item C:\Users\dell\Desktop\security_check.php C:\Users\dell\Downloads\security-main\security-main\project-code\src\
+cd C:\Users\dell\Downloads\security-main\security-main\project-code\src
+ls
+cd C:\Users\dell\Downloads\security-main\security-main\project-code\src
+notepad security_check.php
+cd C:\Users\dell\Downloads\security-main\security-main\project-code\src
+notepad security_check.php
+docker ps
+notepad C:\Users\dell\Downloads\security-main\security-main\project-code\src\home.php
+cd C:\Users\dell\Downloads\security-main\security-main\project-code
+docker compose down -v
+cd C:\Users\dell\Downloads\security-main\security-main
+ls
+# Sauvegarde ta version (au cas où)
+Copy-Item -Recurse project-code project-code-backup
+# Supprime les fichiers modifiés
+Remove-Item -Recurse -Force project-code\src\*
+# Copie les fichiers originaux
+Copy-Item -Recurse attacker-codes\* project-code\src\
+cd project-code
+docker compose up -d
+cd C:\Users\dell\Downloads\security-main\security-main\project-code
+ls
+ls src\index.php
+cd C:\Users\dell\Downloads\security-main\security-main\project-code\src
+notepad index.php
+cd C:\Users\dell\Downloads\security-main\security-main\project-code\src
+notepad config.php
+ls
+cd C:\Users\TonNom\Documents\project-code
+cd C:\Users\dell\Downloads\security-main\security-main\project-code
+docker compose up -d
+cd C:\Users\dell\Downloads\security-main\security-main\project-code\src
+notepad index.php
+notepad config.php
+notepad security_check.php
+cd C:\Users\dell\Downloads\security-main\security-main\project-code
+docker compose down
+docker compose up -d
+cd C:\Users\dell\Downloads\security-main\security-main\project-code\src
+notepad index.php
+notepad home.php
+cd "C:\Users\dell\Downloads\security-main"
+ls
+cd project-code
+cd C:\Users\dell\Downloads\security-main\security-main\project-code
+ls
+docker compose up -d
+wazuh-agent-4.9.2-1.msi
+Invoke-WebRequest -Uri "https://packages.wazuh.com/4.x/windows/wazuh-agent-4.9.2-1.msi" -OutFile "$env:tmp\wazuh-agent-4.9.2.msi"; msiexec.exe /i "$env:tmp\wazuh-agent-4.9.2.msi" /q WAZUH_MANAGER='IP_DE_VOTRE_SERVEUR_WAZUH' WAZUH_REGISTRATION_SERVER='IP_DE_VOTRE_SERVEUR_WAZUH'
+NET START WazuhSvc
+Get-Service -Name "WazuhSvc"
+Invoke-WebRequest -Uri "https://packages.wazuh.com/4.x/windows/wazuh-agent-4.9.2-1.msi" -OutFile "$env:tmp\wazuh-agent-4.9.2.msi"
+cd "C:\Program Files\Oracle\VirtualBox"
+VBoxManage modifyhd "C:\Users\dell\VirtualBox VMs\ubuntu\ubuntu.vdi" --resize 51200
+.\VBoxManage.exe modifyhd "C:\Users\dell\VirtualBox VMs\ubuntu\ubuntu.vdi" --resize 51200
+Invoke-WebRequest -Uri https://packages.wazuh.com/4.x/windows/wazuh-agent-4.14.4-1.msi -OutFile $env:tmp\wazuh-agent; msiexec.exe /i $env:tmp\wazuh-agent /q WAZUH_MANAGER='192.168.0.109' WAZUH_AGENT_NAME='PC-Compta' 
+Start-Service -Name WazuhSvc
+Invoke-WebRequest -Uri https://packages.wazuh.com/4.x/windows/wazuh-agent-4.14.4-1.msi -OutFile $env:tmp\wazuh-agent; msiexec.exe /i $env:tmp\wazuh-agent /q WAZUH_MANAGER='192.168.0.109' WAZUH_AGENT_GROUP='default' WAZUH_AGENT_NAME='PC-Compta' 
+NET START Wazuh
+Get-Service WazuhSvc
+Test-NetConnection 192.168.0.109 -Port 1514
+Get-Content "C:\Program Files (x86)\ossec-agent\ossec.conf" | Select-String -Pattern "192.168.0.109"
+Restart-Service -Name WazuhSvc
+ping 192.168.0.109
+Invoke-WebRequest -Uri https://packages.wazuh.com/4.x/windows/wazuh-agent-4.14.4-1.msi -OutFile $env:tmp\wazuh-agent; msiexec.exe /i $env:tmp\wazuh-agent /q WAZUH_MANAGER='192.168.0.109' WAZUH_AGENT_GROUP='default' WAZUH_AGENT_NAME='PC-Compta' 
+NET START Wazuh
+https://packages.wazuh.com/4.x/windows/wazuh-agent-4.14.4-1.msi
+Invoke-WebRequest -Uri https://packages.wazuh.com/4.x/windows/wazuh-agent-4.14.4-1.msi -OutFile C:\Users\Administrateur\Downloads\wazuh-agent-4.14.4-1.msi
+# Créer le dossier Temp s'il n'existe pas`
+New-Item -ItemType Directory -Force -Path C:\Temp`
+`
+# Télécharger l'agent`
+Invoke-WebRequest -Uri https://packages.wazuh.com/4.x/windows/wazuh-agent-4.14.4-1.msi -OutFile C:\Temp\wazuh-agent-4.14.4-1.msi
+Invoke-WebRequest -Uri https://packages.wazuh.com/4.x/windows/wazuh-agent-4.14.4-1.msi -OutFile C:\Users\Administrateur\Downloads\wazuh-agent-4.14.4-1.msi
+Invoke-WebRequest -Uri https://packages.wazuh.com/4.x/windows/wazuh-agent-4.14.4-1.msi -OutFile C:\Temp\wazuh-agent-4.14.4-1.msi
+msiexec.exe /i C:\Temp\wazuh-agent-4.14.4-1.msi /q WAZUH_MANAGER="192.168.0.109" WAZUH_AGENT_NAME="PC-Compta"
+NET START WazuhSvc
+Start-Service -Name WazuhSvc
+Get-Service WazuhSvc
+# 1. Forcer l'enregistrement manuel`
+& "C:\Program Files (x86)\ossec-agent\agent-auth.exe" -m 192.168.0.109 -A PC-Compta -p 1515`
+`
+# 2. Redémarrer le service`
+Restart-Service -Name WazuhSvc`
+`
+# 3. Vérifier les logs d'erreur`
+Get-Content "C:\Program Files (x86)\ossec-agent\logs\ossec.log" -Tail 30
+Restart-Service -Name WazuhSvc
+Get-Service WazuhSvc
+Get-Process -Name wazuh-agent
+Test-NetConnection 192.168.0.109 -Port 1514
+sudo systemctl status wazuh-dashboard
+sudo systemctl status wazuh-indexer
+sudo systemctl status wazuh-manager
+sudo systemctl status wazuh-dashboard`
+sudo systemctl status wazuh-indexer`
+sudo systemctl status wazuh-manager
+# Éditer le fichier de configuration`
+notepad "C:\Program Files (x86)\ossec-agent\ossec.conf"
+Restart-Service -Name WazuhSvc
+git clone https://github.com/EMSICIR/SECLAB.git`
+cd SECLAB
+# Vérifier que Docker Desktop est installé et démarré`
+docker --version`
+`
+# Lancer les conteneurs`
+docker-compose up -d`
+`
+# Voir les conteneurs en cours`
+docker ps`
+`
+# Entrer dans le conteneur attaquant`
+docker exec -it brute_force_attacker powershell`
+# ou si bash disponible dans le conteneur :`
+docker exec -it brute_force_attacker /bin/bash
+# Dans PowerShell`
+Get-Content attackercodes/force-brute/brute_force.py`
+`
+# Ou avec cat si Git Bash`
+cat attackercodes/force-brute/brute_force.py
+# Rechercher le dossier SECLAB sur votre ordinateur`
+Get-ChildItem -Path C:\Users -Recurse -Filter "SECLAB" -Directory -ErrorAction SilentlyContinue`
+`
+# Ou chercher le fichier spécifique`
+Get-ChildItem -Path C:\Users -Recurse -Filter "brute_force.py" -ErrorAction SilentlyContinue
+# Exemple : si votre repo est dans Documents`
+cd C:\Users\VotreNom\Documents\SECLAB`
+`
+# Ou dans votre home`
+cd $env:USERPROFILE\SECLAB`
+`
+# Vérifier où vous êtes`
+pwd  # ou Get-Location`
+`
+# Vérifier que le fichier existe`
+ls attackercodes\force-brute\
+# 1. Sortir du dossier system32 (important !)`
+cd C:\Users\dell\Documents`
+`
+# 2. Supprimer l'ancien dossier vide (s'il existe)`
+Remove-Item -Recurse -Force SECLAB -ErrorAction SilentlyContinue`
+`
+# 3. Cloner le repository`
+git clone https://github.com/EMSICIR/SECLAB.git`
+`
+# 4. Entrer dans le dossier`
+cd SECLAB`
+`
+# 5. Vérifier que vous êtes au bon endroit`
+Get-Location`
+# Doit afficher : C:\Users\dell\Documents\SECLAB`
+`
+# 6. Vérifier le contenu`
+ls
+# Aller dans Documents`
+cd C:\Users\dell\Documents`
+`
+# Télécharger avec Invoke-WebRequest`
+Invoke-WebRequest -Uri "https://github.com/EMSICIR/SECLAB/archive/refs/heads/main.zip" -OutFile "SECLAB.zip"`
+`
+# Extraire`
+Expand-Archive -Path "SECLAB.zip" -DestinationPath "." -Force`
+`
+# Renommer le dossier`
+Rename-Item -Path "SECLAB-main" -NewName "SECLAB"`
+`
+# Entrer dans le dossier`
+cd SECLAB`
+`
+# Vérifier`
+ls
+# Lancer tous les conteneurs`
+docker-compose up -d`
+`
+# Vérifier que les conteneurs tournent`
+docker ps
+# Voir le contenu du dossier attacker-codes`
+ls attacker-codes`
+`
+# Lire le script de force brute`
+Get-Content attacker-codes\force-brute\brute_force.py
+# Voir tous les conteneurs (même arrêtés)`
+docker ps -a`
+`
+# Chercher brute_force_attacker`
+docker ps -a | findstr brute# Voir tous les conteneurs (même arrêtés)`
+docker ps -a`
+`
+# Chercher brute_force_attacker`
+docker ps -a | findstr brute
+# Aller dans le dossier`
+cd attacker-codes\force-brute`
+`
+# Créer le Dockerfile`
+@"`
+FROM python:3.9-slim`
+`
+WORKDIR /app`
+`
+# Installer requests`
+RUN pip install requests`
+`
+# Copier le script`
+COPY brute_force.py .`
+`
+CMD ["python", "brute_force.py"]`
+"@ | Out-File -FilePath Dockerfile -Encoding ASCII
+# Voir les réseaux Docker`
+docker network ls`
+`
+# Chercher le réseau du projet (probablement seclab_default ou similar)`
+docker network ls | findstr seclab
+# Construire l'image`
+docker build -t brute-force-attacker .`
+`
+# Lancer le conteneur en attachant au réseau de l'application`
+docker run -it --rm --name brute_force_attacker --network seclab_default brute-force-attacker
+# Lancer le conteneur avec le bon réseau`
+docker run -it --rm --name brute_force_attacker --network project-code_default brute-force-attacker
+ipconfig /displaydns
+ssh bandit0@bandit.labs.overthewire.org -p 2220
+ssh bandit1@bandit.labs.overthewire.org -p 2220
+ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
+ssh bandit1@bandit.labs.overthewire.org -p 2220
+ssh bandit2@bandit.labs.overthewire.org -p 2220
+ssh bandit3@bandit.labs.overthewire.org -p 2220
+ssh bandit4@bandit.labs.overthewire.org -p 2220
+ssh bandit5@bandit.labs.overthewire.org -p 2220
+ssh bandit4@bandit.labs.overthewire.org -p 2220
+ssh bandit5@bandit.labs.overthewire.org -p 2220
+ping bandit.labs.overthewire.org
+ping 8.8.8.8
+ping google.com
+ssh bandit5@13.63.65.121 -p 2220
+docker-compose up --build
+cd C:\chemin\vers\ton\projet\seclab
+cd C:\Users\Nasri\Desktop\SECLAB-main
+cd "C:\Users\Nasri\Downloads\SECLAB-main\SECLAB-main"
+cd "C:Downloads\SECLAB-main"
+cd C:Downloads\SECLAB-main
+cd "C:\Users\dell\Downloads\SECLAB-main\SECLAB-main"
+docker-compose up --build
+ls
+Get-ChildItem -Path . -Recurse -Name "docker-compose.yml"
+cd project-code`
+docker-compose up --build
+cd project-code
+docker-compose up --build
+cd "C:\Users\dell\Downloads\SECLAB-main\SECLAB-main\project-code"
+Get-ChildItem -Recurse -Name "index.php"
+Get-ChildItem -Recurse -Name "*.php"
+Get-ChildItem -Recurse -Name "index.php"
+Get-ChildItem -Recurse -Filter "*.php" | Select-Object FullName
+notepad src\api\index.php
+Get-Content src\api\index.php
+Select-String -Path src\*.php -Pattern "user" -SimpleMatch
+Get-Content src\api\v1\index.php`
+Get-Content src\api\v2\graphql.php
+mkdir Atelier7`
+cd Atelier7
+git clone https://github.com/juice-shop/juice-shop.git
+cd juice-shop
+rm -rf .git
+Remove-Item -Recurse -Force .git
+PS C:\WINDOWS\system32\Atelier7\juice-shop> Remove-Item -Recurse -Force .git
+dir -Force
+npm install
+Remove-Item .git -Recurse -Force
+# Docker a des instructions d'installation spécifiques pour chaque système d'exploitation.`
+# Veuillez vous référer à la documentation officielle à l'adresse suivante : https://docker.com/get-started/`
+`
+# Récupère l'image Docker de Node.js :`
+docker pull node:24-slim`
+`
+# Créer un conteneur Node.js et démarrer une session Shell :`
+docker run -it --rm --entrypoint sh node:24-slim`
+`
+# Vérifiez la version de Node.js :`
+node -v # Doit afficher "v24.15.0".`
+`
+# Vérifier la version de npm :`
+npm -v # Doit afficher "11.12.1".`
+
+mkdir Atelier7`
+cd Atelier7
+git clone https://github.com/juice-shop/juice-shop.git
+cd juice-shop
+rm -rf .git
+Remove-Item -Recurse -Force .git
+npm install
+node -v
+npm -v
+where.exe node
+where.exe npm
+node -v
+npm.cmd -v
+cd C:\WINDOWS\system32\Atelier7\Atelier7\juice-shop
+npm.cmd install
+cd $HOME\Desktop
+mkdir Atelier7
+cd Atelier7
+git clone https://github.com/juice-shop/juice-shop.git
+cd juice-shop
+Remove-Item -Recurse -Force .git
+npm.cmd install
+npm.cmd start
+code .
+npm.cmd start
+openssl version
+docker-compose.yml
+cd C:\Users\TonNom\Downloads\project_code
+cd "C:\Users\dell\Desktop\project-code"
+dir
+dir -Recurse docker-compose.yml
+dir -Recurse compose.yml
+dir -Recurse *.yml
+docker start php_app
+docker ps
+python --version
+py --version
+py --version
+py -m venv .venv
+.\.venv\Scripts\python.exe -m pip install --upgrade pip
+.\.venv\Scripts\python.exe -m pip install pandas numpy scikit-learn openpyxl joblib streamlit plotly
+.\venv\Scripts\python.exe src\train_model.py
+.\.venv\Scripts\python.exe src\train_model.py
+Get-ChildItem app.py
+.\.venv\Scripts\python.exe -m streamlit run .\app.py --server.address 127.0.0.1 --server.port 8501
+Get-History | Export-Csv .\historique_commandes_powershell.csv -NoTypeInformation -Encoding UTF8
+Copy-Item (Get-PSReadLineOption).HistorySavePath .\historique_powershell_complet.txt

@@ -1,0 +1,56 @@
+{
+  "model": "LogisticRegression",
+  "prediction_horizon_days": 30,
+  "train_start": "2021-12-06",
+  "train_end": "2023-12-25",
+  "test_start": "2024-01-01",
+  "test_end": "2024-09-23",
+  "train_rows": 2916,
+  "test_rows": 1053,
+  "positive_rate_train": 0.35425240054869683,
+  "positive_rate_test": 0.44349477682811017,
+  "accuracy": 0.6239316239316239,
+  "precision": 0.5470198675496689,
+  "recall": 0.8843683083511777,
+  "f1": 0.6759410801963993,
+  "roc_auc": 0.776715437291257,
+  "pr_auc": 0.7046906916669673,
+  "confusion_matrix": [
+    [
+      244,
+      342
+    ],
+    [
+      54,
+      413
+    ]
+  ],
+  "classification_report": {
+    "0": {
+      "precision": 0.8187919463087249,
+      "recall": 0.41638225255972694,
+      "f1-score": 0.5520361990950227,
+      "support": 586.0
+    },
+    "1": {
+      "precision": 0.5470198675496689,
+      "recall": 0.8843683083511777,
+      "f1-score": 0.6759410801963993,
+      "support": 467.0
+    },
+    "accuracy": 0.6239316239316239,
+    "macro avg": {
+      "precision": 0.682905906929197,
+      "recall": 0.6503752804554523,
+      "f1-score": 0.613988639645711,
+      "support": 1053.0
+    },
+    "weighted avg": {
+      "precision": 0.6982624488913658,
+      "recall": 0.6239316239316239,
+      "f1-score": 0.6069873666869912,
+      "support": 1053.0
+    }
+  },
+  "note": "POC académique basé sur l'historique des incidents par site. Le score estime le risque d'au moins un incident dans les 30 jours."
+}

@@ -1,0 +1,35 @@
+Presentation source and provenance
+
+This deck is based on the user's ONDA Risk Intelligence + CyberRange internship/PFA project and the current four-chapter LaTeX report.
+
+Local report source:
+- C:/Users/nouam/Downloads/ONDA_Projet_Sauvegarde/report/main.tex
+
+Local project images used in the slides:
+- report/images/onda/onda_logo.png
+- report/images/onda/onda_home.png
+- report/images/onda/onda_modules.png
+- report/images/onda/onda_overview.png
+- report/images/onda/onda_alerts.png
+- report/images/onda/onda_detail.png
+- report/images/onda/onda_explorer.png
+- report/images/onda/onda_model.png
+- report/images/onda/onda_human.png
+- report/images/onda/onda_prevention.png
+- report/images/cyberrange/emsi_logo.png
+- report/images/cyberrange/cr_network.png
+- report/images/cyberrange/cr_architecture.png
+- report/images/cyberrange/cr_killchain.png
+- report/images/cyberrange/cr_nmap.png
+- report/images/cyberrange/cr_wireshark.png
+- report/images/cyberrange/cr_decompile.png
+- report/images/cyberrange/cr_ghidra_graph.png
+- report/images/cyberrange/cr_yara.png
+- report/images/cyberrange/cr_snort.png
+- report/images/cyberrange/cr_remediation.png
+- report/images/diagrams/solution_pipeline.png
+- report/images/diagrams/usecase_global.png
+- report/images/diagrams/data_model.png
+- report/images/diagrams/deployment_architecture.png
+
+All metrics, airport names, project roles, and technical descriptions are taken from the report/project context supplied by the user. No external web sources were used.

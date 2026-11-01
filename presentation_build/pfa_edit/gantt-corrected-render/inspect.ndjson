@@ -1,0 +1,225 @@
+{"kind":"slide","id":"sl/y90nupkv","slide":1,"title":"PROJET DE FIN D'ANNÉE · 4IIR","textShapes":10}
+{"kind":"shape","id":"sh/1cvuxc7e","slide":1,"name":"Rectangle 19","bbox":[0,0,1920,1080]}
+{"kind":"shape","id":"sh/547294r6","slide":1,"name":"Rectangle 1","bbox":[0,0,27,1080]}
+{"kind":"shape","id":"sh/k3yl0zql","slide":1,"name":"Rectangle 2","bbox":[27,0,1893,18]}
+{"kind":"shape","id":"sh/ts7md4r2","slide":1,"name":"Rounded Rectangle 5","bbox":[87,277.5,378,45]}
+{"kind":"textbox","id":"sh/sryl4zqx","slide":1,"textChars":28,"textLines":1}
+{"kind":"textbox","id":"sh/fu94fe98","slide":1,"textChars":69,"textLines":3}
+{"kind":"textbox","id":"sh/utg3698n","slide":1,"textChars":60,"textLines":1}
+{"kind":"shape","id":"sh/wn6dc7eh","slide":1,"name":"Rectangle 9","bbox":[93,757.5,930,4.5]}
+{"kind":"textbox","id":"sh/hofulsf2","slide":1,"textChars":131,"textLines":2}
+{"kind":"shape","id":"sh/ul4vaxgb","slide":1,"name":"Rounded Rectangle 11","bbox":[1335,318,426,444]}
+{"kind":"textbox","id":"sh/vmdcj2xw","slide":1,"textChars":6,"textLines":1}
+{"kind":"textbox","id":"sh/4r6dg7et","slide":1,"textChars":26,"textLines":2}
+{"kind":"shape","id":"sh/5sfepcfe","slide":1,"name":"Rectangle 14","bbox":[1380,547.5,321,1.5]}
+{"kind":"textbox","id":"sh/ipovexwn","slide":1,"textChars":52,"textLines":2}
+{"kind":"textbox","id":"sh/3qxwn2x8","slide":1,"textChars":50,"textLines":2}
+{"kind":"textbox","id":"sh/sfqdkrep","slide":1,"textChars":36,"textLines":1}
+{"kind":"textbox","id":"sh/dgzetcfa","slide":1,"textChars":17,"textLines":1}
+{"kind":"image","id":"im/rudgbyx4","slide":1,"name":"Picture 22","bbox":[143.25,81,112.5,112.5]}
+{"kind":"image","id":"im/cfmxk3yp","slide":1,"name":"Picture 23","bbox":[1612.5,108.82,217.5,53.87]}
+{"kind":"notes","id":"nt/y90nupkv","slide":1,"text":"[Sources] | - Local project report: report/main.tex | - Local assets: report/..."}
+{"kind":"slide","id":"sl/hwbqtkby","slide":2,"title":"Sommaire","textShapes":7}
+{"kind":"textbox","id":"sh/9072xkry","slide":2,"textChars":8,"textLines":1}
+{"kind":"shape","id":"sh/a10jqpsj","slide":2,"name":"Freeform 5","bbox":[728,924,468,726.58]}
+{"kind":"shape","id":"sh/x4r21kru","slide":2,"name":"TextBox 6","bbox":[728,908.49,468,742.1]}
+{"kind":"textbox","id":"sh/w3i1sfa9","slide":2,"textChars":30,"textLines":1}
+{"kind":"textbox","id":"sh/r65knqtk","slide":2,"textChars":107,"textLines":4}
+{"kind":"shape","id":"sh/ove9o7yd","slide":2,"name":"Freeform 10","bbox":[1371.99,924,440,711.4]}
+{"kind":"shape","id":"sh/9wnqhczy","slide":2,"name":"TextBox 11","bbox":[1371.99,908.81,440,726.58]}
+{"kind":"textbox","id":"sh/mtwrmxg7","slide":2,"textChars":37,"textLines":1}
+{"kind":"textbox","id":"sh/nu58f2hs","slide":2,"textChars":95,"textLines":4}
+{"kind":"shape","id":"sh/xk7qlczu","slide":2,"name":"Freeform 15","bbox":[108,924,440,711.4]}
+{"kind":"shape","id":"sh/ahwrqhgj","slide":2,"name":"TextBox 16","bbox":[108,908.81,440,726.58]}
+{"kind":"textbox","id":"sh/bip8jmho","slide":2,"textChars":36,"textLines":1}
+{"kind":"textbox","id":"sh/cnupgny5","slide":2,"textChars":116,"textLines":4}
+{"kind":"notes","id":"nt/hwbqtkby","slide":2,"text":""}
+{"kind":"slide","id":"sl/ofy9wn61","slide":3,"title":"Partie 1 — Étude et conception","textShapes":7}
+{"kind":"shape","id":"sh/3ah8rqlg","slide":3,"name":"Freeform 5","bbox":[721.67,595.53,468,726.58]}
+{"kind":"shape","id":"sh/obq90bml","slide":3,"name":"TextBox 6","bbox":[721.67,580.02,468,742.1]}
+{"kind":"textbox","id":"sh/pcjqtg36","slide":3,"textChars":30,"textLines":1}
+{"kind":"textbox","id":"sh/m5cra54z","slide":3,"textChars":107,"textLines":4}
+{"kind":"shape","id":"sh/n2l4fq98","slide":3,"name":"Freeform 10","bbox":[1371.99,924,440,711.4]}
+{"kind":"shape","id":"sh/m1c3mlsn","slide":3,"name":"TextBox 11","bbox":[1371.99,908.81,440,726.58]}
+{"kind":"textbox","id":"sh/943mhgre","slide":3,"textChars":37,"textLines":1}
+{"kind":"textbox","id":"sh/83ulovat","slide":3,"textChars":95,"textLines":4}
+{"kind":"shape","id":"sh/a5c3ql8z","slide":3,"name":"Freeform 15","bbox":[88,915.2,440,711.4]}
+{"kind":"shape","id":"sh/x8nml0ra","slide":3,"name":"TextBox 16","bbox":[88,900.01,440,726.58]}
+{"kind":"textbox","id":"sh/w7ulsvqp","slide":3,"textChars":36,"textLines":1}
+{"kind":"textbox","id":"sh/ja54na9g","slide":3,"textChars":116,"textLines":4}
+{"kind":"textbox","id":"sh/d0jax03i","slide":3,"textChars":8,"textLines":1}
+{"kind":"notes","id":"nt/ofy9wn61","slide":3,"text":""}
+{"kind":"slide","id":"sl/jyx0ra1s","slide":4,"title":"Partie 1 — Étude et conception","textShapes":7}
+{"kind":"shape","id":"sh/ql8jytsj","slide":4,"name":"Freeform 5","bbox":[728,924,468,726.58]}
+{"kind":"shape","id":"sh/doj29oba","slide":4,"name":"TextBox 6","bbox":[728,908.49,468,742.1]}
+{"kind":"textbox","id":"sh/sna103ap","slide":4,"textChars":30,"textLines":1}
+{"kind":"textbox","id":"sh/3ihk3et8","slide":4,"textChars":107,"textLines":4}
+{"kind":"shape","id":"sh/kbm987y5","slide":4,"name":"Freeform 10","bbox":[1371.99,924,440,711.4]}
+{"kind":"shape","id":"sh/5cva1cfq","slide":4,"name":"TextBox 11","bbox":[1371.99,908.81,440,726.58]}
+{"kind":"textbox","id":"sh/i94r6xgz","slide":4,"textChars":37,"textLines":1}
+{"kind":"textbox","id":"sh/jadsz2xk","slide":4,"textChars":95,"textLines":4}
+{"kind":"shape","id":"sh/x8vaxsfe","slide":4,"name":"Freeform 15","bbox":[104.93,572,440,711.4]}
+{"kind":"shape","id":"sh/a5kr2xg3","slide":4,"name":"TextBox 16","bbox":[104.93,556.81,440,726.58]}
+{"kind":"textbox","id":"sh/v6tsv2xo","slide":4,"textChars":36,"textLines":1}
+{"kind":"textbox","id":"sh/g36tgryd","slide":4,"textChars":116,"textLines":4}
+{"kind":"textbox","id":"sh/h4fa9wfy","slide":4,"textChars":8,"textLines":1}
+{"kind":"notes","id":"nt/jyx0ra1s","slide":4,"text":""}
+{"kind":"slide","id":"sl/i107q5of","slide":5,"title":"Partie 1 — Étude et conception","textShapes":7}
+{"kind":"shape","id":"sh/yhkbe1o7","slide":5,"name":"Freeform 5","bbox":[728,924,468,726.58]}
+{"kind":"shape","id":"sh/l4bupwny","slide":5,"name":"TextBox 6","bbox":[728,908.49,468,742.1]}
+{"kind":"textbox","id":"sh/032tgr6d","slide":5,"textChars":30,"textLines":1}
+{"kind":"textbox","id":"sh/n6dcr65o","slide":5,"textChars":107,"textLines":4}
+{"kind":"shape","id":"sh/w32dkbuh","slide":5,"name":"Freeform 10","bbox":[1365.93,476,440,711.4]}
+{"kind":"shape","id":"sh/x4vedgvm","slide":5,"name":"TextBox 11","bbox":[1365.93,460.81,440,726.58]}
+{"kind":"textbox","id":"sh/ahkvi1cb","slide":5,"textChars":37,"textLines":1}
+{"kind":"textbox","id":"sh/v2twb6dw","slide":5,"textChars":95,"textLines":4}
+{"kind":"shape","id":"sh/58vehgvy","slide":5,"name":"Freeform 15","bbox":[108,924,440,711.4]}
+{"kind":"shape","id":"sh/i54fmlc7","slide":5,"name":"TextBox 16","bbox":[108,908.81,440,726.58]}
+{"kind":"textbox","id":"sh/j6dwfqds","slide":5,"textChars":36,"textLines":1}
+{"kind":"textbox","id":"sh/sb6xsvu9","slide":5,"textChars":116,"textLines":4}
+{"kind":"textbox","id":"sh/cf2tcr61","slide":5,"textChars":8,"textLines":1}
+{"kind":"notes","id":"nt/i107q5of","slide":5,"text":""}
+{"kind":"slide","id":"sl/x8f69ofe","slide":6,"title":"PROJET","textShapes":3}
+{"kind":"shape","id":"sh/zi98nu94","slide":6,"name":"Freeform 3","bbox":[548,88.43,824,550.75]}
+{"kind":"shape","id":"sh/87ipkzal","slide":6,"name":"TextBox 4","bbox":[548,74.8,824,564.39]}
+{"kind":"shape","id":"sh/ml07i9sv","slide":6,"name":"Freeform 6","bbox":[680,146.31,603.64,421.36]}
+{"kind":"shape","id":"sh/7m98ru9g","slide":6,"name":"Freeform 7","bbox":[1947.86,862.81,92.01,41.42]}
+{"kind":"textbox","id":"sh/pc76hkr2","slide":6,"textChars":6,"textLines":1}
+{"kind":"textbox","id":"sh/h4bupgn6","slide":6,"textChars":22,"textLines":1}
+{"kind":"textbox","id":"sh/v2tcn650","slide":6,"textChars":548,"textLines":1}
+{"kind":"shape","id":"sh/lg76d8zy","slide":6,"name":"Freeform 25","bbox":[1128.38,1654.66,14.36,14.36]}
+{"kind":"shape","id":"sh/ydgnit07","slide":6,"name":"TextBox 26","bbox":[1129.73,1656.68,11.66,10.99]}
+{"kind":"shape","id":"sh/gju58ji9","slide":6,"name":"Freeform 28","bbox":[1169.5,1654.66,14.36,14.36]}
+{"kind":"shape","id":"sh/1k3mhozu","slide":6,"name":"TextBox 29","bbox":[1170.85,1656.68,11.66,10.99]}
+{"kind":"shape","id":"sh/idk7ehkr","slide":6,"name":"Freeform 31","bbox":[1148.94,1654.66,14.36,14.36]}
+{"kind":"shape","id":"sh/50bqpcj2","slide":6,"name":"TextBox 32","bbox":[1150.29,1656.68,11.66,10.99]}
+{"kind":"notes","id":"nt/x8f69ofe","slide":6,"text":"### Introduction |  | Dans un contexte où les systèmes d’information occupent..."}
+{"kind":"slide","id":"sl/gnmp4jqx","slide":7,"title":"ONDA · EMSI · PFA 4IIR","textShapes":6}
+{"kind":"shape","id":"sh/25ojml43","slide":7,"name":"Rectangle 14","bbox":[0,0,26,1080]}
+{"kind":"shape","id":"sh/cb2tkvap","slide":7,"name":"Straight Connector 1","bbox":[80,1015,1760,0]}
+{"kind":"textbox","id":"sh/dcbud0ra","slide":7,"textChars":22,"textLines":1}
+{"kind":"textbox","id":"sh/ydkbm5sv","slide":7,"textChars":2,"textLines":1}
+{"kind":"shape","id":"sh/zedcfa9g","slide":7,"name":"Oval 4","bbox":[86,976,14,14]}
+{"kind":"shape","id":"sh/kzmdova1","slide":7,"name":"Oval 5","bbox":[108,976,14,14]}
+{"kind":"shape","id":"sh/l0vuh0rm","slide":7,"name":"Oval 6","bbox":[130,976,14,14]}
+{"kind":"textbox","id":"sh/eh0ba1sr","slide":7,"textChars":12,"textLines":1}
+{"kind":"textbox","id":"sh/fi9c369c","slide":7,"textChars":23,"textLines":1}
+{"kind":"shape","id":"sh/baxkjqlk","slide":7,"name":"Straight Connector 9","bbox":[84,198,300,0]}
+{"kind":"textbox","id":"sh/a9ojq5kz","slide":7,"textChars":315,"textLines":1}
+{"kind":"textbox","id":"sh/xcz2l03q","slide":7,"textChars":156,"textLines":1}
+{"kind":"shape","id":"sh/cbq1sv25","slide":7,"name":"Rounded Rectangle 12","bbox":[1040,270,760,500]}
+{"kind":"image","id":"im/y1ofmd0z","slide":7,"name":"Picture 27","bbox":[1056,317.78,728,404.44]}
+{"kind":"notes","id":"nt/gnmp4jqx","slide":7,"text":"[Sources] | - Local project report: report/main.tex | - Local asset: report/i..."}
+{"kind":"slide","id":"sl/fu1gfa1s","slide":8,"title":"PARTIE 1","textShapes":6}
+{"kind":"shape","id":"sh/kfixwbe1","slide":8,"name":"Rectangle 17","bbox":[0,0,26,1080]}
+{"kind":"textbox","id":"sh/18byd4zy","slide":8,"textChars":8,"textLines":1}
+{"kind":"textbox","id":"sh/g72x4zyd","slide":8,"textChars":19,"textLines":1}
+{"kind":"textbox","id":"sh/ri9g7uhw","slide":8,"textChars":92,"textLines":1}
+{"kind":"shape","id":"sh/6h0fypgb","slide":8,"name":"Straight Connector 4","bbox":[94,600,520,0]}
+{"kind":"shape","id":"sh/tkby9kzm","slide":8,"name":"Rounded Rectangle 5","bbox":[1420,180,290,290]}
+{"kind":"textbox","id":"sh/sjix0zy1","slide":8,"textChars":2,"textLines":1}
+{"kind":"shape","id":"sh/je9g3ahk","slide":8,"name":"Rectangle 7","bbox":[1430,650,170,20]}
+{"kind":"shape","id":"sh/id0fu50z","slide":8,"name":"Rectangle 8","bbox":[1430,690,270,20]}
+{"kind":"shape","id":"sh/o7ydoret","slide":8,"name":"Rectangle 9","bbox":[1430,730,220,20]}
+{"kind":"shape","id":"sh/98rehwve","slide":8,"name":"Rectangle 10","bbox":[0,0,26,1080]}
+{"kind":"shape","id":"sh/m5gvmhwn","slide":8,"name":"Straight Connector 11","bbox":[80,1015,1760,0]}
+{"kind":"textbox","id":"sh/n6pwfmd8","slide":8,"textChars":30,"textLines":1}
+{"kind":"textbox","id":"sh/0jydkreh","slide":8,"textChars":2,"textLines":1}
+{"kind":"shape","id":"sh/1k7edwv2","slide":8,"name":"Oval 14","bbox":[86,976,14,14]}
+{"kind":"shape","id":"sh/ehgvihwr","slide":8,"name":"Oval 15","bbox":[108,976,14,14]}
+{"kind":"shape","id":"sh/zipwbmdc","slide":8,"name":"Oval 16","bbox":[130,976,14,14]}
+{"kind":"notes","id":"nt/fu1gfa1s","slide":8,"text":"[Sources] | - Internal section divider based on the project structure."}
+{"kind":"slide","id":"sl/udsvah03","slide":9,"title":"ONDA · EMSI · PFA 4IIR","textShapes":8}
+{"kind":"shape","id":"sh/0ru1ozyp","slide":9,"name":"Rectangle 17","bbox":[0,0,26,1080]}
+{"kind":"shape","id":"sh/1cfmhgne","slide":9,"name":"Straight Connector 1","bbox":[80,1015,1760,0]}
+{"kind":"textbox","id":"sh/0b65obm9","slide":9,"textChars":22,"textLines":1}
+{"kind":"textbox","id":"sh/nex4jq5k","slide":9,"textChars":2,"textLines":1}
+{"kind":"shape","id":"sh/mdonql4z","slide":9,"name":"Oval 4","bbox":[86,976,14,14]}
+{"kind":"shape","id":"sh/9gzml0nq","slide":9,"name":"Oval 5","bbox":[108,976,14,14]}
+{"kind":"shape","id":"sh/ofq5svm5","slide":9,"name":"Oval 6","bbox":[130,976,14,14]}
+{"kind":"textbox","id":"sh/bih4na5w","slide":9,"textChars":19,"textLines":1}
+{"kind":"textbox","id":"sh/ah8nu54b","slide":9,"textChars":30,"textLines":1}
+{"kind":"shape","id":"sh/oza1gfyh","slide":9,"name":"Straight Connector 9","bbox":[84,198,300,0]}
+{"kind":"textbox","id":"sh/p0ji9kf2","slide":9,"textChars":13,"textLines":1}
+{"kind":"textbox","id":"sh/2xsjepgb","slide":9,"textChars":185,"textLines":4}
+{"kind":"textbox","id":"sh/3y107axw","slide":9,"textChars":13,"textLines":1}
+{"kind":"textbox","id":"sh/cnu1kzyd","slide":9,"textChars":201,"textLines":4}
+{"kind":"shape","id":"sh/do3id4fy","slide":9,"name":"Straight Connector 14","bbox":[930,290,0,430]}
+{"kind":"shape","id":"sh/qlcjipgn","slide":9,"name":"Rounded Rectangle 15","bbox":[520,760,880,200]}
+{"kind":"image","id":"im/yho7mlc7","slide":9,"name":"Picture 33","bbox":[793.38,776,333.25,168]}
+{"kind":"notes","id":"nt/udsvah03","slide":9,"text":"[Sources] | - Local project report: report/main.tex | - Local asset: report/i..."}
+{"kind":"slide","id":"sl/m90b6t0r","slide":10,"title":"ONDA · EMSI · PFA 4IIR","textShapes":9}
+{"kind":"shape","id":"sh/fapcz6ls","slide":10,"name":"Rectangle 16","bbox":[0,0,26,1080]}
+{"kind":"shape","id":"sh/xc3mho32","slide":10,"name":"Straight Connector 1","bbox":[80,1015,1760,0]}
+{"kind":"textbox","id":"sh/cbu58j2h","slide":10,"textChars":22,"textLines":1}
+{"kind":"textbox","id":"sh/zelojyl8","slide":10,"textChars":2,"textLines":1}
+{"kind":"shape","id":"sh/ydcnatkn","slide":10,"name":"Oval 4","bbox":[86,976,14,14]}
+{"kind":"shape","id":"sh/l036l83y","slide":10,"name":"Oval 5","bbox":[108,976,14,14]}
+{"kind":"shape","id":"sh/kzu5c32t","slide":10,"name":"Oval 6","bbox":[130,976,14,14]}
+{"kind":"textbox","id":"sh/725onyl4","slide":10,"textChars":19,"textLines":1}
+{"kind":"textbox","id":"sh/m1cnetkj","slide":10,"textChars":22,"textLines":1}
+{"kind":"shape","id":"sh/s7yt4b21","slide":10,"name":"Straight Connector 9","bbox":[84,198,300,0]}
+{"kind":"textbox","id":"sh/d87uxg3m","slide":10,"textChars":9,"textLines":1}
+{"kind":"textbox","id":"sh/q5gb21kb","slide":10,"textChars":194,"textLines":4}
+{"kind":"textbox","id":"sh/r6pcv6lw","slide":10,"textChars":20,"textLines":1}
+{"kind":"textbox","id":"sh/0bit8b2d","slide":10,"textChars":179,"textLines":4}
+{"kind":"shape","id":"sh/1cru1g3y","slide":10,"name":"Rounded Rectangle 14","bbox":[380,770,1180,120]}
+{"kind":"textbox","id":"sh/e9gb61k7","slide":10,"textChars":60,"textLines":1}
+{"kind":"notes","id":"nt/m90b6t0r","slide":10,"text":"[Sources] | - Local project report: report/main.tex | - Scope consolidated fr..."}
+{"kind":"slide","id":"sl/jetc3ut0","slide":11,"title":"ONDA · EMSI · PFA 4IIR","textShapes":6}
+{"kind":"shape","id":"sh/1cfa58zi","slide":11,"name":"Rectangle 14","bbox":[0,0,26,1080]}
+{"kind":"shape","id":"sh/xcryxg7y","slide":11,"name":"Straight Connector 1","bbox":[80,1015,1760,0]}
+{"kind":"textbox","id":"sh/wbih4b6d","slide":11,"textChars":22,"textLines":1}
+{"kind":"textbox","id":"sh/n69grmpw","slide":11,"textChars":2,"textLines":1}
+{"kind":"shape","id":"sh/250zy18b","slide":11,"name":"Oval 4","bbox":[86,976,14,14]}
+{"kind":"shape","id":"sh/98rytw72","slide":11,"name":"Oval 5","bbox":[108,976,14,14]}
+{"kind":"shape","id":"sh/o7ih0r6h","slide":11,"name":"Oval 6","bbox":[130,976,14,14]}
+{"kind":"textbox","id":"sh/72t03qp0","slide":11,"textChars":19,"textLines":1}
+{"kind":"textbox","id":"sh/61kzalof","slide":11,"textChars":35,"textLines":1}
+{"kind":"shape","id":"sh/ofqtgnyt","slide":11,"name":"Straight Connector 9","bbox":[84,198,300,0]}
+{"kind":"textbox","id":"sh/9gza9sze","slide":11,"textChars":170,"textLines":1}
+{"kind":"textbox","id":"sh/mdobedg3","slide":11,"textChars":162,"textLines":4}
+{"kind":"shape","id":"sh/nehs7iho","slide":11,"name":"Rounded Rectangle 12","bbox":[900,270,900,540]}
+{"kind":"image","id":"im/pon6tw36","slide":11,"name":"Picture 27","bbox":[916,298.89,868,482.22]}
+{"kind":"notes","id":"nt/jetc3ut0","slide":11,"text":"[Sources] | - Local project report: report/main.tex | - Local asset: report/i..."}
+{"kind":"slide","id":"sl/8f2psfyx","slide":12,"title":"ONDA · EMSI · PFA 4IIR","textShapes":8}
+{"kind":"shape","id":"sh/nq1o3a5w","slide":12,"name":"Rectangle 16","bbox":[0,0,26,1080]}
+{"kind":"shape","id":"sh/1gbm9s3a","slide":12,"name":"Straight Connector 1","bbox":[80,1015,1760,0]}
+{"kind":"textbox","id":"sh/0f2lgnmp","slide":12,"textChars":22,"textLines":1}
+{"kind":"textbox","id":"sh/ra943il8","slide":12,"textChars":2,"textLines":1}
+{"kind":"shape","id":"sh/q903ad4n","slide":12,"name":"Oval 4","bbox":[86,976,14,14]}
+{"kind":"shape","id":"sh/dcbm583y","slide":12,"name":"Oval 5","bbox":[108,976,14,14]}
+{"kind":"shape","id":"sh/sb2lcnmd","slide":12,"name":"Oval 6","bbox":[130,976,14,14]}
+{"kind":"textbox","id":"sh/b6d4f2lc","slide":12,"textChars":19,"textLines":1}
+{"kind":"textbox","id":"sh/a543mx4r","slide":12,"textChars":27,"textLines":1}
+{"kind":"shape","id":"sh/wvupgz6t","slide":12,"name":"Straight Connector 9","bbox":[84,198,300,0]}
+{"kind":"textbox","id":"sh/xw3q94ne","slide":12,"textChars":16,"textLines":1}
+{"kind":"textbox","id":"sh/atc7epon","slide":12,"textChars":145,"textLines":4}
+{"kind":"textbox","id":"sh/bulo7u58","slide":12,"textChars":20,"textLines":1}
+{"kind":"textbox","id":"sh/orapcf6h","slide":12,"textChars":76,"textLines":1}
+{"kind":"shape","id":"sh/9sj65kn2","slide":12,"name":"Rounded Rectangle 14","bbox":[990,280,760,490]}
+{"kind":"image","id":"im/vytoz6lk","slide":12,"name":"Picture 31","bbox":[1006,312.67,728,424.67]}
+{"kind":"notes","id":"nt/8f2psfyx","slide":12,"text":"[Sources] | - Local project report: report/main.tex | - Local asset: report/i..."}
+{"kind":"slide","id":"sl/hgzapcr6","slide":13,"title":"ONDA · EMSI · PFA 4IIR","textShapes":6}
+{"kind":"shape","id":"sh/876xwfmx","slide":13,"name":"Rectangle 14","bbox":[0,0,26,1080]}
+{"kind":"shape","id":"sh/q50nydsj","slide":13,"name":"Straight Connector 1","bbox":[80,1015,1760,0]}
+{"kind":"textbox","id":"sh/bq9orito","slide":13,"textChars":22,"textLines":1}
+{"kind":"textbox","id":"sh/o3i5w3ad","slide":13,"textChars":2,"textLines":1}
+{"kind":"shape","id":"sh/p4r6p8by","slide":13,"name":"Oval 4","bbox":[86,976,14,14]}
+{"kind":"shape","id":"sh/21gnuts7","slide":13,"name":"Oval 5","bbox":[108,976,14,14]}
+{"kind":"shape","id":"sh/32ponyts","slide":13,"name":"Oval 6","bbox":[130,976,14,14]}
+{"kind":"textbox","id":"sh/gzy5s3a1","slide":13,"textChars":19,"textLines":1}
+{"kind":"textbox","id":"sh/1076lobm","slide":13,"textChars":38,"textLines":1}
+{"kind":"shape","id":"sh/hcfy9k3u","slide":13,"name":"Straight Connector 9","bbox":[84,198,300,0]}
+{"kind":"textbox","id":"sh/gb6x0zm9","slide":13,"textChars":158,"textLines":1}
+{"kind":"textbox","id":"sh/vaxg7ulo","slide":13,"textChars":170,"textLines":4}
+{"kind":"shape","id":"sh/u9ofyp43","slide":13,"name":"Rounded Rectangle 12","bbox":[900,300,900,500]}
+{"kind":"image","id":"im/8bq1ovul","slide":13,"name":"Picture 27","bbox":[916,424.62,868,250.76]}
+{"kind":"notes","id":"nt/hgzapcr6","slide":13,"text":"[Sources] | - Local project report: report/main.tex | - Local asset: report/i..."}
+{"kind":"slide","id":"sl/6lsnupw7","slide":14,"title":"PARTIE 2","textShapes":6}
+{"kind":"shape","id":"sh/0buh8zy5","slide":14,"name":"Rectangle 17","bbox":[0,0,26,1080]}
+{"kind":"textbox","id":"sh/xc7eds76","slide":14,"textChars":8,"textLines":1}
+{"kind":"textbox","id":"sh/wbydknq1","slide":14,"textChars":25,"textLines":1}
+{"kind":"textbox","id":"sh/jepwf2pc","slide":14,"textChars":86,"textLines":1}
+{"kind":"shape","id":"sh/idgvmx8r","slide":14,"name":"Straight Connector 4","bbox":[94,600,520,0]}
+{"kind":"notice","message":"Truncated: omitted 203 lines. Increase maxChars or narrow target."}

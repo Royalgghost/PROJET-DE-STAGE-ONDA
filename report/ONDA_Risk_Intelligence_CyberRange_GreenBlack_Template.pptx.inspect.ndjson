@@ -1,0 +1,267 @@
+{"kind":"deck","id":"pr/5fnf1c","name":"Deck"}
+{"kind":"layout","layoutId":"/ppt/slideMasters/slideMaster1.xml","name":"","type":"master","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"body","type":"body","textPreview":"Click to edit Master text styles | Second level | Third level | Fourth level | Fifth level"},{"name":"dateTime","type":"dateTime","textPreview":"6/17/2026"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout1.xml","name":"Title Slide","type":"title","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"subtitle","type":"subtitle","textPreview":"Click to edit Master subtitle style"},{"name":"dateTime","type":"dateTime","textPreview":"6/17/2026"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout2.xml","name":"Title and Content","type":"obj","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"content placeholder 2","textPreview":"Click to edit Master text styles | Second level | Third level | Fourth level | Fifth level"},{"name":"dateTime","type":"dateTime","textPreview":"6/17/2026"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout3.xml","name":"Section Header","type":"secHead","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"body","type":"body","textPreview":"Click to edit Master text styles"},{"name":"dateTime","type":"dateTime","textPreview":"6/17/2026"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout4.xml","name":"Two Content","type":"twoObj","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"content placeholder 2","textPreview":"Click to edit Master text styles | Second level | Third level | Fourth level | Fifth level"},{"name":"content placeholder 3","textPreview":"Click to edit Master text styles | Second level | Third level | Fourth level | Fifth level"},{"name":"dateTime","type":"dateTime","textPreview":"6/17/2026"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout5.xml","name":"Comparison","type":"twoTxTwoObj","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"body","type":"body","textPreview":"Click to edit Master text styles"},{"name":"content placeholder 3","textPreview":"Click to edit Master text styles | Second level | Third level | Fourth level | Fifth level"},{"name":"body","type":"body","textPreview":"Click to edit Master text styles"},{"name":"content placeholder 5","textPreview":"Click to edit Master text styles | Second level | Third level | Fourth level | Fifth level"},{"name":"dateTime","type":"dateTime","textPreview":"6/17/2026"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout6.xml","name":"Title Only","type":"titleOnly","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"dateTime","type":"dateTime","textPreview":"6/17/2026"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout7.xml","name":"Blank","type":"blank","placeholders":[{"name":"dateTime","type":"dateTime","textPreview":"6/17/2026"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout8.xml","name":"Content with Caption","type":"objTx","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"content placeholder 2","textPreview":"Click to edit Master text styles | Second level | Third level | Fourth level | Fifth level"},{"name":"body","type":"body","textPreview":"Click to edit Master text styles"},{"name":"dateTime","type":"dateTime","textPreview":"6/17/2026"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout9.xml","name":"Picture with Caption","type":"picTx","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"picture","type":"picture"},{"name":"body","type":"body","textPreview":"Click to edit Master text styles"},{"name":"dateTime","type":"dateTime","textPreview":"6/17/2026"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout10.xml","name":"Title and Vertical Text","type":"vertTx","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"body","type":"body","textPreview":"Click to edit Master text styles | Second level | Third level | Fourth level | Fifth level"},{"name":"dateTime","type":"dateTime","textPreview":"6/17/2026"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout11.xml","name":"Vertical Title and Text","type":"vertTitleAndTx","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"body","type":"body","textPreview":"Click to edit Master text styles | Second level | Third level | Fourth level | Fifth level"},{"name":"dateTime","type":"dateTime","textPreview":"6/17/2026"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"slide","id":"sl/y90nupkv","slide":1,"title":"Conception d’un modèle d’analyse","textShapes":2}
+{"kind":"shape","id":"sh/65g3298r","slide":1,"name":"Freeform 5","bbox":[646.15,1204,702.68,613.45]}
+{"kind":"shape","id":"sh/ts7md4r2","slide":1,"name":"TextBox 6","bbox":[646.15,1188.81,702.68,628.64]}
+{"kind":"shape","id":"sh/fu94fe98","slide":1,"name":"Freeform 8","bbox":[738.69,1205.59,517.6,408.29]}
+{"kind":"shape","id":"sh/3qxwn2x8","slide":1,"name":"Freeform 17","bbox":[969.75,1655.88,14.36,14.36]}
+{"kind":"shape","id":"sh/sfqdkrep","slide":1,"name":"TextBox 18","bbox":[971.1,1657.9,11.66,10.99]}
+{"kind":"textbox","id":"sh/dgzetcfa","slide":1,"name":"TextBox 19","text":"Conception d’un modèle d’analyse\ndes risques et d’alertes\nprédictives","textPreview":"Conception d’un modèle d’analyse | des risques et d’alertes | prédictives","textChars":69,"textLines":3,"bbox":[254.11,-276,1359.34,251.2]}
+{"kind":"textbox","id":"sh/1cvuxc7e","slide":1,"name":"TextBox 20","text":"PROJET DE FIN D’ANNÉE · ONDA","textPreview":"PROJET DE FIN D’ANNÉE · ONDA","textChars":28,"textLines":1,"bbox":[547.02,-354.32,773.53,46.85]}
+{"kind":"shape","id":"sh/90ve1w7q","slide":1,"name":"Freeform 24","bbox":[1010.87,1655.88,14.36,14.36]}
+{"kind":"shape","id":"sh/ozmd8r65","slide":1,"name":"TextBox 25","bbox":[1012.22,1657.9,11.66,10.99]}
+{"kind":"shape","id":"sh/mx4v6hoz","slide":1,"name":"Freeform 27","bbox":[990.31,1655.88,14.36,14.36]}
+{"kind":"shape","id":"sh/p4bu5s76","slide":1,"name":"TextBox 28","bbox":[991.66,1657.9,11.66,10.99]}
+{"kind":"image","id":"im/nmxgjixc","slide":1,"name":"Picture 29","bbox":[-408,-196,370.19,99]}
+{"kind":"image","id":"im/xgzi9wzu","slide":1,"name":"Animate_image_without_messing_202606151924","alt":"ONDA Risk Intelligence and CyberRange cover","bbox":[-4.87,0,1924.87,1082.74]}
+{"kind":"image","id":"im/wfqhgri9","slide":1,"name":"","alt":"ONDA Risk Intelligence overview","bbox":[700,575,525,405]}
+{"kind":"image","id":"im/veh07mho","slide":1,"name":"","alt":"EMSI logo","bbox":[20,20,370,99]}
+{"kind":"notes","id":"nt/y90nupkv","slide":1,"text":"[Sources]\n- Local project report: report/main.tex\n- Local asset: report/images/onda/onda_overview.png"}
+{"kind":"slide","id":"sl/hwbqtkby","slide":2,"title":"ENJEU DU PROJET","textShapes":10}
+{"kind":"shape","id":"sh/ozy1ofad","slide":2,"name":"Freeform 3","bbox":[1200.62,559.43,954.78,613.45]}
+{"kind":"shape","id":"sh/b29kza94","slide":2,"name":"TextBox 4","bbox":[1200.62,544.24,954.78,628.64]}
+{"kind":"shape","id":"sh/x4r21kru","slide":2,"name":"Freeform 6","bbox":[1294.4,561.02,625.6,410.98]}
+{"kind":"shape","id":"sh/w3i1sfa9","slide":2,"name":"Freeform 7","bbox":[1264.94,925.87,106.61,46.13]}
+{"kind":"shape","id":"sh/r65knqtk","slide":2,"name":"Freeform 8","bbox":[669.71,954.62,173.82,17.38]}
+{"kind":"textbox","id":"sh/q5wjelsz","slide":2,"name":"TextBox 9","text":"ENJEU DU PROJET","textPreview":"ENJEU DU PROJET","textChars":15,"textLines":1,"bbox":[108,341.25,1255.59,125.46]}
+{"kind":"textbox","id":"sh/ove9o7yd","slide":2,"name":"TextBox 10","text":"CONTINUITÉ RÉSEAU","textPreview":"CONTINUITÉ RÉSEAU","textChars":17,"textLines":1,"bbox":[108,276.3,538.88,44.95]}
+{"kind":"textbox","id":"sh/9wnqhczy","slide":2,"name":"TextBox 11","text":"2025–2026","textPreview":"2025–2026","textChars":9,"textLines":1,"bbox":[1655.77,112,156.23,18.23]}
+{"kind":"textbox","id":"sh/mtwrmxg7","slide":2,"name":"TextBox 12","text":"Dans un aéroport, le WAN relie l’enregistrement, la sûreté, les bagages et les communications. Une coupure réseau devient rapidement un risque opérationnel.","textPreview":"Dans un aéroport, le WAN relie l’enregistrement, la sûreté, les bagages et les communications. Une coupure réseau devient rapidement un r...","textChars":156,"textLines":1,"bbox":[200.33,600.93,345.05,242]}
+{"kind":"textbox","id":"sh/nu58f2hs","slide":2,"name":"TextBox 13","text":"27 sites · 864 incidents","textPreview":"27 sites · 864 incidents","textChars":24,"textLines":1,"bbox":[200.33,559.43,287.99,22.4]}
+{"kind":"textbox","id":"sh/wjy9sry9","slide":2,"name":"TextBox 14","text":"L’historique de maintenance constitue une base commune pour mesurer l’exposition et prioriser les vérifications.","textPreview":"L’historique de maintenance constitue une base commune pour mesurer l’exposition et prioriser les vérifications.","textChars":112,"textLines":1,"bbox":[669.71,666.93,345.05,176]}
+{"kind":"textbox","id":"sh/xk7qlczu","slide":2,"name":"TextBox 15","text":"Pourquoi être proactif ?","textPreview":"Pourquoi être proactif ?","textChars":24,"textLines":1,"bbox":[669.71,600.93,244.42,44]}
+{"kind":"textbox","id":"sh/ahwrqhgj","slide":2,"name":"TextBox 16","text":"Identifier les sites à vérifier avant la prochaine coupure.","textPreview":"Identifier les sites à vérifier avant la prochaine coupure.","textChars":59,"textLines":1,"bbox":[1497.19,341.83,314.81,100.08]}
+{"kind":"textbox","id":"sh/bip8jmho","slide":2,"name":"TextBox 17","text":"OBJECTIF","textPreview":"OBJECTIF","textChars":8,"textLines":1,"bbox":[1497.19,304.25,131.33,22.4]}
+{"kind":"shape","id":"sh/cnupgny5","slide":2,"name":"AutoShape 18","bbox":[200.33,882.37,345.05,0]}
+{"kind":"shape","id":"sh/do3q9szq","slide":2,"name":"AutoShape 19","bbox":[669.71,881.87,345.05,0]}
+{"kind":"shape","id":"sh/s72xofmh","slide":2,"name":"Freeform 21","bbox":[108,108,29.27,27.64]}
+{"kind":"shape","id":"sh/76twva5c","slide":2,"name":"TextBox 22","bbox":[114.5,116.13,15.45,13.01]}
+{"kind":"textbox","id":"sh/65kfmpor","slide":2,"name":"TextBox 23","text":"ONDA · RISK INTELLIGENCE","textPreview":"ONDA · RISK INTELLIGENCE","textChars":24,"textLines":1,"bbox":[146.07,114.71,156.23,34.35]}
+{"kind":"shape","id":"sh/gbmxszmt","slide":2,"name":"Freeform 25","bbox":[200.33,957.64,14.36,14.36]}
+{"kind":"shape","id":"sh/fadgzu58","slide":2,"name":"TextBox 26","bbox":[201.68,959.66,11.66,10.99]}
+{"kind":"shape","id":"sh/p0vy54na","slide":2,"name":"Freeform 28","bbox":[241.46,957.64,14.36,14.36]}
+{"kind":"shape","id":"sh/4zmxwzmp","slide":2,"name":"TextBox 29","bbox":[242.8,959.66,11.66,10.99]}
+{"kind":"shape","id":"sh/nmpcj6ls","slide":2,"name":"Freeform 31","bbox":[220.9,957.64,14.36,14.36]}
+{"kind":"shape","id":"sh/onydsbmd","slide":2,"name":"TextBox 32","bbox":[222.24,959.66,11.66,10.99]}
+{"kind":"image","id":"im/algza9on","slide":2,"name":"","alt":"ONDA executive risk portal","bbox":[-10000,-10000,1,1]}
+{"kind":"notes","id":"nt/hwbqtkby","slide":2,"text":"[Sources]\n- Local project report: report/main.tex\n- Local asset: report/images/onda/onda_home.png"}
+{"kind":"slide","id":"sl/ofy9wn61","slide":3,"title":"UNE VISION","textShapes":9}
+{"kind":"shape","id":"sh/d0jax03i","slide":3,"name":"Freeform 3","bbox":[-275.63,233.27,954.78,882.47]}
+{"kind":"shape","id":"sh/298ryl4v","slide":3,"name":"TextBox 4","bbox":[-275.63,218.09,954.78,897.66]}
+{"kind":"shape","id":"sh/obq90bml","slide":3,"name":"Freeform 6","bbox":[0,234.86,551.2,647.09]}
+{"kind":"shape","id":"sh/pcjqtg36","slide":3,"name":"Freeform 7","bbox":[377.38,954.62,173.82,17.38]}
+{"kind":"shape","id":"sh/m5cra54z","slide":3,"name":"Freeform 8","bbox":[869.4,906,152.52,66]}
+{"kind":"shape","id":"sh/n6ls3alk","slide":3,"name":"AutoShape 9","bbox":[1367.52,838.45,444.48,0]}
+{"kind":"textbox","id":"sh/n2l4fq98","slide":3,"name":"TextBox 10","text":"UNE VISION","textPreview":"UNE VISION","textChars":10,"textLines":1,"bbox":[869.4,254.69,895.59,241.46]}
+{"kind":"textbox","id":"sh/m1c3mlsn","slide":3,"name":"TextBox 11","text":"INTÉGRÉE","textPreview":"INTÉGRÉE","textChars":8,"textLines":1,"bbox":[869.4,498.05,621.02,44.95]}
+{"kind":"textbox","id":"sh/943mhgre","slide":3,"name":"TextBox 12","text":"DU RISQUE À LA DÉFENSE","textPreview":"DU RISQUE À LA DÉFENSE","textChars":22,"textLines":1,"bbox":[1655.77,112,156.23,34.35]}
+{"kind":"textbox","id":"sh/83ulovat","slide":3,"name":"TextBox 13","text":"Le projet réunit prévision WAN, prévention des erreurs humaines et simulation défensive dans un cycle unique : prédire, préparer, simuler, détecter et capitaliser.","textPreview":"Le projet réunit prévision WAN, prévention des erreurs humaines et simulation défensive dans un cycle unique : prédire, préparer, simuler...","textChars":163,"textLines":1,"bbox":[869.4,685.08,387.47,154]}
+{"kind":"textbox","id":"sh/v6l4jq94","slide":3,"name":"TextBox 14","text":"Prédire le risque","textPreview":"Prédire le risque","textChars":17,"textLines":1,"bbox":[869.4,616.72,231.44,44]}
+{"kind":"textbox","id":"sh/a5c3ql8z","slide":3,"name":"TextBox 15","text":"Préparer l’intervention","textPreview":"Préparer l’intervention","textChars":23,"textLines":1,"bbox":[1367.52,615.72,372.59,69]}
+{"kind":"textbox","id":"sh/x8nml0ra","slide":3,"name":"TextBox 16","text":"Score 0–100 · alerte à 30 jours","textPreview":"Score 0–100 · alerte à 30 jours","textChars":31,"textLines":1,"bbox":[1367.52,704.89,432.81,66]}
+{"kind":"textbox","id":"sh/w7ulsvqp","slide":3,"name":"TextBox 17","text":"Checklist · REX · actions priorisées","textPreview":"Checklist · REX · actions priorisées","textChars":36,"textLines":1,"bbox":[1367.52,906,336.67,67.2]}
+{"kind":"shape","id":"sh/i9w3u58v","slide":3,"name":"Freeform 19","bbox":[108,108,29.27,27.64]}
+{"kind":"shape","id":"sh/e10f2twf","slide":3,"name":"TextBox 20","bbox":[114.5,116.13,15.45,13.01]}
+{"kind":"textbox","id":"sh/f29gbyx0","slide":3,"name":"TextBox 21","text":"ONDA · RISK INTELLIGENCE","textPreview":"ONDA · RISK INTELLIGENCE","textChars":24,"textLines":1,"bbox":[146.07,114.71,156.23,34.35]}
+{"kind":"shape","id":"sh/14ryd8fq","slide":3,"name":"Freeform 23","bbox":[108,956.13,14.36,14.36]}
+{"kind":"shape","id":"sh/6d0fytg3","slide":3,"name":"TextBox 24","bbox":[109.35,958.15,11.66,10.99]}
+{"kind":"shape","id":"sh/sfix03y9","slide":3,"name":"Freeform 26","bbox":[149.12,956.13,14.36,14.36]}
+{"kind":"shape","id":"sh/tgry9ofu","slide":3,"name":"TextBox 27","bbox":[150.47,958.15,11.66,10.99]}
+{"kind":"shape","id":"sh/batgjixs","slide":3,"name":"Freeform 29","bbox":[128.56,956.13,14.36,14.36]}
+{"kind":"shape","id":"sh/l4fi9cza","slide":3,"name":"TextBox 30","bbox":[129.91,958.15,11.66,10.99]}
+{"kind":"image","id":"im/3ipsru1c","slide":3,"name":"","alt":"Isolated CyberRange architecture","bbox":[-10000,-10000,1,1]}
+{"kind":"notes","id":"nt/ofy9wn61","slide":3,"text":"[Sources]\n- Local project report: report/main.tex\n- Local asset: report/images/cyberrange cr_architecture.png"}
+{"kind":"slide","id":"sl/jyx0ra1s","slide":4,"title":"ARCHITECTURE","textShapes":10}
+{"kind":"shape","id":"sh/1cj2d8b6","slide":4,"name":"AutoShape 2","bbox":[108,875.17,266.78,0]}
+{"kind":"shape","id":"sh/0ba143al","slide":4,"name":"AutoShape 3","bbox":[462.41,874.67,325.26,0]}
+{"kind":"shape","id":"sh/ql8jytsj","slide":4,"name":"Freeform 5","bbox":[875.67,476.22,1279.73,633.36]}
+{"kind":"shape","id":"sh/doj29oba","slide":4,"name":"TextBox 6","bbox":[875.67,461.03,1279.73,648.55]}
+{"kind":"shape","id":"sh/3ihk3et8","slide":4,"name":"Freeform 8","bbox":[876.67,566.4,371.6,513.6]}
+{"kind":"shape","id":"sh/ih8ju9sn","slide":4,"name":"Freeform 9","bbox":[1379.19,293.69,432.81,44.86]}
+{"kind":"textbox","id":"sh/kbm987y5","slide":4,"name":"TextBox 10","text":"ARCHITECTURE","textPreview":"ARCHITECTURE","textChars":12,"textLines":1,"bbox":[108,277.75,1359.34,125.46]}
+{"kind":"textbox","id":"sh/5cva1cfq","slide":4,"name":"TextBox 11","text":"ONDA + CYBERRANGE","textPreview":"ONDA + CYBERRANGE","textChars":17,"textLines":1,"bbox":[108,405.02,842.8,54.68]}
+{"kind":"textbox","id":"sh/i94r6xgz","slide":4,"name":"TextBox 12","text":"PRINCIPE D’ISOLATION","textPreview":"PRINCIPE D’ISOLATION","textChars":20,"textLines":1,"bbox":[1655.77,112,156.23,34.35]}
+{"kind":"textbox","id":"sh/jadsz2xk","slide":4,"name":"TextBox 13","text":"Deux espaces complémentaires : la plateforme pilote les risques réels ; le laboratoire valide les scénarios de détection et de remédiation sans exposer la production.","textPreview":"Deux espaces complémentaires : la plateforme pilote les risques réels ; le laboratoire valide les scénarios de détection et de remédiatio...","textChars":166,"textLines":1,"bbox":[108,612.67,285.45,220]}
+{"kind":"textbox","id":"sh/w72947yt","slide":4,"name":"TextBox 14","text":"Plateforme ONDA","textPreview":"Plateforme ONDA","textChars":15,"textLines":1,"bbox":[108,570.55,266.78,22.4]}
+{"kind":"textbox","id":"sh/x8vaxsfe","slide":4,"name":"TextBox 15","text":"Dashboards, scoring, alertes, prévention et REX.","textPreview":"Dashboards, scoring, alertes, prévention et REX.","textChars":48,"textLines":1,"bbox":[462.41,634.67,325.26,198]}
+{"kind":"textbox","id":"sh/a5kr2xg3","slide":4,"name":"TextBox 16","text":"Laboratoire isolé","textPreview":"Laboratoire isolé","textChars":17,"textLines":1,"bbox":[462.41,570.55,266.78,44]}
+{"kind":"textbox","id":"sh/v6tsv2xo","slide":4,"name":"TextBox 17","text":"Tester avant d’agir","textPreview":"Tester avant d’agir","textChars":19,"textLines":1,"bbox":[1379.19,566.4,432.81,38.39]}
+{"kind":"textbox","id":"sh/g36tgryd","slide":4,"name":"TextBox 18","text":"Les traces issues du CyberRange — réseau, capture, analyse et règles — rendent la décision défensive vérifiable et réutilisable.","textPreview":"Les traces issues du CyberRange — réseau, capture, analyse et règles — rendent la décision défensive vérifiable et réutilisable.","textChars":128,"textLines":1,"bbox":[1379.19,637.85,432.81,330]}
+{"kind":"shape","id":"sh/p0batw72","slide":4,"name":"Freeform 20","bbox":[108,108,29.27,27.64]}
+{"kind":"shape","id":"sh/oz29krqh","slide":4,"name":"TextBox 21","bbox":[114.5,116.13,15.45,13.01]}
+{"kind":"textbox","id":"sh/3ytsrmpw","slide":4,"name":"TextBox 22","text":"ONDA · RISK INTELLIGENCE","textPreview":"ONDA · RISK INTELLIGENCE","textChars":24,"textLines":1,"bbox":[146.07,114.71,156.23,34.35]}
+{"kind":"shape","id":"sh/1wbapc7q","slide":4,"name":"Freeform 24","bbox":[108,957.64,14.36,14.36]}
+{"kind":"shape","id":"sh/gv29g7q5","slide":4,"name":"TextBox 25","bbox":[109.35,959.66,11.66,10.99]}
+{"kind":"shape","id":"sh/et0reh8f","slide":4,"name":"Freeform 27","bbox":[149.12,957.64,14.36,14.36]}
+{"kind":"shape","id":"sh/tsrqlc7u","slide":4,"name":"TextBox 28","bbox":[150.47,959.66,11.66,10.99]}
+{"kind":"shape","id":"sh/ilwf69kv","slide":4,"name":"Freeform 30","bbox":[128.56,957.64,14.36,14.36]}
+{"kind":"shape","id":"sh/jm5gze1g","slide":4,"name":"TextBox 31","bbox":[129.91,959.66,11.66,10.99]}
+{"kind":"image","id":"im/725s3il8","slide":4,"name":"","alt":"ONDA and CyberRange deployment architecture","bbox":[-10000,-10000,1,1]}
+{"kind":"notes","id":"nt/jyx0ra1s","slide":4,"text":"[Sources]\n- Local project report: report/main.tex\n- Local asset: report/images/diagrams/deployment_architecture.png"}
+{"kind":"slide","id":"sl/i107q5of","slide":5,"title":"RISQUE","textShapes":10}
+{"kind":"shape","id":"sh/cf2tcr61","slide":5,"name":"Freeform 3","bbox":[-267.04,-41.79,1438.97,703.02]}
+{"kind":"shape","id":"sh/z2tcnm5s","slide":5,"name":"TextBox 4","bbox":[-267.04,-56.98,1438.97,718.21]}
+{"kind":"shape","id":"sh/l4bupwny","slide":5,"name":"Freeform 6","bbox":[601.12,108,479.41,553.23]}
+{"kind":"shape","id":"sh/n6dcr65o","slide":5,"name":"Freeform 8","bbox":[1337.36,569.08,693.16,678.85]}
+{"kind":"shape","id":"sh/m5kbi1oj","slide":5,"name":"TextBox 9","bbox":[1337.36,553.89,693.16,694.04]}
+{"kind":"shape","id":"sh/w32dkbuh","slide":5,"name":"Freeform 10","bbox":[1337.36,402.99,155.9,67.46]}
+{"kind":"shape","id":"sh/x4vedgvm","slide":5,"name":"AutoShape 11","bbox":[1425.24,972.5,386.76,0]}
+{"kind":"textbox","id":"sh/ahkvi1cb","slide":5,"name":"TextBox 12","text":"RISQUE","textPreview":"RISQUE","textChars":6,"textLines":1,"bbox":[108,840.93,884.96,162.21]}
+{"kind":"textbox","id":"sh/v2twb6dw","slide":5,"name":"TextBox 13","text":"PRÉDICTIF","textPreview":"PRÉDICTIF","textChars":9,"textLines":1,"bbox":[108,760.98,773.53,44.95]}
+{"kind":"textbox","id":"sh/k7mxovud","slide":5,"name":"TextBox 14","text":"MODÈLE MACHINE LEARNING","textPreview":"MODÈLE MACHINE LEARNING","textChars":23,"textLines":1,"bbox":[1655.77,112,156.23,51.52]}
+{"kind":"textbox","id":"sh/58vehgvy","slide":5,"name":"TextBox 15","text":"Comment le score est construit","textPreview":"Comment le score est construit","textChars":30,"textLines":1,"bbox":[108,250.36,266.78,22.4]}
+{"kind":"textbox","id":"sh/i54fmlc7","slide":5,"name":"TextBox 16","text":"Le modèle exploite les incidents, leur récence, la durée d’indisponibilité, les catégories de panne et l’opérateur afin d’estimer le risque sur les 30 prochains jours.","textPreview":"Le modèle exploite les incidents, leur récence, la durée d’indisponibilité, les catégories de panne et l’opérateur afin d’estimer le risq...","textChars":167,"textLines":1,"bbox":[108,295.62,386.76,220]}
+{"kind":"textbox","id":"sh/j6dwfqds","slide":5,"name":"TextBox 17","text":"Exemple de priorité","textPreview":"Exemple de priorité","textChars":19,"textLines":1,"bbox":[1337.36,272.42,351.5,76]}
+{"kind":"textbox","id":"sh/sb6xsvu9","slide":5,"name":"TextBox 18","text":"CAS RÉEL","textPreview":"CAS RÉEL","textChars":8,"textLines":1,"bbox":[1337.36,234.84,131.33,22.4]}
+{"kind":"textbox","id":"sh/tcfel0vu","slide":5,"name":"TextBox 19","text":"Une aide à la décision","textPreview":"Une aide à la décision","textChars":22,"textLines":1,"bbox":[1425.24,642.46,372.59,35]}
+{"kind":"textbox","id":"sh/hgrmpwj2","slide":5,"name":"TextBox 20","text":"129-OUARZAZATE atteint 99,9/100 : 5 incidents sur 30 jours et 380,8 h d’indisponibilité sur 90 jours. L’équipe valide ensuite l’action.","textPreview":"129-OUARZAZATE atteint 99,9/100 : 5 incidents sur 30 jours et 380,8 h d’indisponibilité sur 90 jours. L’équipe valide ensuite l’action.","textChars":135,"textLines":1,"bbox":[1425.24,693.46,386.76,220]}
+{"kind":"shape","id":"sh/fe94nm1w","slide":5,"name":"Freeform 22","bbox":[108,108,29.27,27.64]}
+{"kind":"shape","id":"sh/ud0ne10b","slide":5,"name":"TextBox 23","bbox":[114.5,116.13,15.45,13.01]}
+{"kind":"textbox","id":"sh/pkr6tgjy","slide":5,"name":"TextBox 24","text":"ONDA · RISK INTELLIGENCE","textPreview":"ONDA · RISK INTELLIGENCE","textChars":24,"textLines":1,"bbox":[146.07,114.71,156.23,34.35]}
+{"kind":"shape","id":"sh/3i94r61s","slide":5,"name":"Freeform 26","bbox":[1116.44,957.64,14.36,14.36]}
+{"kind":"shape","id":"sh/2h0ni107","slide":5,"name":"TextBox 27","bbox":[1117.79,959.66,11.66,10.99]}
+{"kind":"shape","id":"sh/kny587i9","slide":5,"name":"Freeform 29","bbox":[1157.57,957.64,14.36,14.36]}
+{"kind":"shape","id":"sh/atcjidg7","slide":5,"name":"TextBox 30","bbox":[1158.91,959.66,11.66,10.99]}
+{"kind":"shape","id":"sh/wve1knyx","slide":5,"name":"Freeform 32","bbox":[1137.01,957.64,14.36,14.36]}
+{"kind":"shape","id":"sh/xwn2dszi","slide":5,"name":"TextBox 33","bbox":[1138.35,959.66,11.66,10.99]}
+{"kind":"image","id":"im/t4fid4ry","slide":5,"name":"","alt":"ONDA active risk alerts","bbox":[-10000,-10000,1,1]}
+{"kind":"notes","id":"nt/i107q5of","slide":5,"text":"[Sources]\n- Local project report: report/main.tex\n- Local asset: report/images/onda/onda_alerts.png"}
+{"kind":"slide","id":"sl/x8f69ofe","slide":6,"title":"FACTEUR","textShapes":10}
+{"kind":"textbox","id":"sh/yhg7epsj","slide":6,"name":"TextBox 2","text":"FACTEUR","textPreview":"FACTEUR","textChars":7,"textLines":1,"bbox":[546.29,260.37,840.18,241.46]}
+{"kind":"textbox","id":"sh/zi98nu94","slide":6,"name":"TextBox 3","text":"HUMAIN & REX","textPreview":"HUMAIN & REX","textChars":12,"textLines":1,"bbox":[108,259.28,499.85,97.94]}
+{"kind":"textbox","id":"sh/87ipkzal","slide":6,"name":"TextBox 4","text":"PRÉVENIR L’ERREUR OPÉRATIONNELLE","textPreview":"PRÉVENIR L’ERREUR OPÉRATIONNELLE","textChars":32,"textLines":1,"bbox":[1655.77,112,156.23,68.69]}
+{"kind":"shape","id":"sh/ml07i9sv","slide":6,"name":"Freeform 6","bbox":[-137.15,572.54,802.33,882.47]}
+{"kind":"shape","id":"sh/7m98ru9g","slide":6,"name":"TextBox 7","bbox":[-137.15,557.35,802.33,897.66]}
+{"kind":"shape","id":"sh/pc76hkr2","slide":6,"name":"Freeform 9","bbox":[108,574.13,474.38,505.87]}
+{"kind":"shape","id":"sh/h4bupgn6","slide":6,"name":"Freeform 10","bbox":[108,417.41,173.82,17.38]}
+{"kind":"textbox","id":"sh/w32twb6l","slide":6,"name":"TextBox 11","text":"Avant toute modification","textPreview":"Avant toute modification","textChars":24,"textLines":1,"bbox":[790.75,656.6,294.72,50]}
+{"kind":"textbox","id":"sh/v2tcn650","slide":6,"name":"TextBox 12","text":"Sauvegarder la configuration, vérifier l’intégrité du firmware, choisir une fenêtre de faible impact, notifier la DSI et préparer le rollback.","textPreview":"Sauvegarder la configuration, vérifier l’intégrité du firmware, choisir une fenêtre de faible impact, notifier la DSI et préparer le roll...","textChars":142,"textLines":1,"bbox":[790.75,730,313.78,242]}
+{"kind":"textbox","id":"sh/u1kbu1ov","slide":6,"name":"TextBox 13","text":"Après l’intervention","textPreview":"Après l’intervention","textChars":20,"textLines":1,"bbox":[1176.15,656.6,390.89,22.4]}
+{"kind":"textbox","id":"sh/5svutgni","slide":6,"name":"TextBox 14","text":"Vérifier les services critiques, confirmer la connectivité et documenter le résultat.","textPreview":"Vérifier les services critiques, confirmer la connectivité et documenter le résultat.","textChars":85,"textLines":1,"bbox":[1176.15,693.64,635.85,66]}
+{"kind":"textbox","id":"sh/47mt0b6x","slide":6,"name":"TextBox 15","text":"Prévention durable","textPreview":"Prévention durable","textChars":18,"textLines":1,"bbox":[1176.15,846.95,467.13,22.4]}
+{"kind":"textbox","id":"sh/j6dcr65c","slide":6,"name":"TextBox 16","text":"Le REX transforme un incident ou une erreur en règle de travail réutilisable par les équipes.","textPreview":"Le REX transforme un incident ou une erreur en règle de travail réutilisable par les équipes.","textChars":93,"textLines":1,"bbox":[1176.15,884,557.73,88.01]}
+{"kind":"shape","id":"sh/i54bylor","slide":6,"name":"AutoShape 17","bbox":[1176.15,803.3,635.85,0]}
+{"kind":"shape","id":"sh/twfux0ne","slide":6,"name":"Freeform 18","bbox":[1650.94,399.94,161.06,69.7]}
+{"kind":"shape","id":"sh/cbe5g3ih","slide":6,"name":"Freeform 20","bbox":[108,108,29.27,27.64]}
+{"kind":"shape","id":"sh/dcnm98zm","slide":6,"name":"TextBox 21","bbox":[114.5,116.13,15.45,13.01]}
+{"kind":"textbox","id":"sh/qpwnet0b","slide":6,"name":"TextBox 22","text":"ONDA · RISK INTELLIGENCE","textPreview":"ONDA · RISK INTELLIGENCE","textChars":24,"textLines":1,"bbox":[146.07,114.71,156.23,34.35]}
+{"kind":"shape","id":"sh/0fy5k3id","slide":6,"name":"Freeform 24","bbox":[790.75,572.04,14.36,14.36]}
+{"kind":"shape","id":"sh/lg76d8zy","slide":6,"name":"TextBox 25","bbox":[792.1,574.06,11.66,10.99]}
+{"kind":"shape","id":"sh/zep4byhs","slide":6,"name":"Freeform 27","bbox":[831.88,572.04,14.36,14.36]}
+{"kind":"shape","id":"sh/gju58ji9","slide":6,"name":"TextBox 28","bbox":[833.22,574.06,11.66,10.99]}
+{"kind":"shape","id":"sh/jet8nm1c","slide":6,"name":"Freeform 30","bbox":[811.31,572.04,14.36,14.36]}
+{"kind":"shape","id":"sh/idk7ehkr","slide":6,"name":"TextBox 31","bbox":[812.66,574.06,11.66,10.99]}
+{"kind":"image","id":"im/6l0nax83","slide":6,"name":"","alt":"ONDA human factor and REX module","bbox":[-10000,-10000,1,1]}
+{"kind":"notes","id":"nt/x8f69ofe","slide":6,"text":"[Sources]\n- Local project report: report/main.tex\n- Local asset: report/images/onda/onda_human.png"}
+{"kind":"slide","id":"sl/gnmp4jqx","slide":7,"title":"PRÉVENTION","textShapes":12}
+{"kind":"shape","id":"sh/cb2tkvap","slide":7,"name":"AutoShape 2","bbox":[345.66,683.62,292,0]}
+{"kind":"shape","id":"sh/dcbud0ra","slide":7,"name":"AutoShape 3","bbox":[773.9,684.13,292,0]}
+{"kind":"shape","id":"sh/ydkbm5sv","slide":7,"name":"Freeform 4","bbox":[108,932.8,90.6,39.2]}
+{"kind":"shape","id":"sh/kzmdova1","slide":7,"name":"Freeform 6","bbox":[1200.62,468.58,954.78,784.53]}
+{"kind":"shape","id":"sh/l0vuh0rm","slide":7,"name":"TextBox 7","bbox":[1200.62,453.39,954.78,799.72]}
+{"kind":"shape","id":"sh/fi9c369c","slide":7,"name":"Freeform 9","bbox":[1314.73,470.17,605.27,501.83]}
+{"kind":"shape","id":"sh/baxkjqlk","slide":7,"name":"Freeform 10","bbox":[1442.36,283.37,369.64,38.31]}
+{"kind":"textbox","id":"sh/a9ojq5kz","slide":7,"name":"TextBox 11","text":"PRÉVENTION","textPreview":"PRÉVENTION","textChars":10,"textLines":1,"bbox":[108,261.12,957.9,125.46]}
+{"kind":"textbox","id":"sh/xcz2l03q","slide":7,"name":"TextBox 12","text":"PLAN · 30 JOURS","textPreview":"PLAN · 30 JOURS","textChars":15,"textLines":1,"bbox":[1022.55,293.37,324.66,85.09]}
+{"kind":"textbox","id":"sh/cbq1sv25","slide":7,"name":"TextBox 13","text":"ACTIONS PRIORISÉES","textPreview":"ACTIONS PRIORISÉES","textChars":18,"textLines":1,"bbox":[1655.77,112,156.23,34.35]}
+{"kind":"textbox","id":"sh/n6x0fqlo","slide":7,"name":"TextBox 14","text":"Vérifier l’alimentation UPS","textPreview":"Vérifier l’alimentation UPS","textChars":27,"textLines":1,"bbox":[345.66,468.58,267.24,22.4]}
+{"kind":"textbox","id":"sh/25ojml43","slide":7,"name":"TextBox 15","text":"Cibler les sites dont la durée d’indisponibilité est critique.","textPreview":"Cibler les sites dont la durée d’indisponibilité est critique.","textChars":62,"textLines":1,"bbox":[345.66,505.62,292,132]}
+{"kind":"textbox","id":"sh/p8fih03e","slide":7,"name":"TextBox 16","text":"Escalader l’opérateur","textPreview":"Escalader l’opérateur","textChars":21,"textLines":1,"bbox":[773.9,468.58,267.24,22.4]}
+{"kind":"textbox","id":"sh/o761ov2t","slide":7,"name":"TextBox 17","text":"Documenter le lien instable et suivre le ticket Orange ou IAM.","textPreview":"Documenter le lien instable et suivre le ticket Orange ou IAM.","textChars":62,"textLines":1,"bbox":[773.9,505.62,292,132]}
+{"kind":"textbox","id":"sh/f2d0b6lc","slide":7,"name":"TextBox 18","text":"Planifier une mission technique","textPreview":"Planifier une mission technique","textChars":31,"textLines":1,"bbox":[345.66,729.62,292,22.4]}
+{"kind":"textbox","id":"sh/eh4jil4r","slide":7,"name":"TextBox 19","text":"Associer score, historique et disponibilité des équipes.","textPreview":"Associer score, historique et disponibilité des équipes.","textChars":56,"textLines":1,"bbox":[345.66,766.67,292,132]}
+{"kind":"textbox","id":"sh/id4ju1oz","slide":7,"name":"TextBox 20","text":"Renforcer la supervision","textPreview":"Renforcer la supervision","textChars":24,"textLines":1,"bbox":[773.9,729.62,292,44]}
+{"kind":"textbox","id":"sh/jedkn654","slide":7,"name":"TextBox 21","text":"Surveiller les sites récemment touchés jusqu’à stabilisation.","textPreview":"Surveiller les sites récemment touchés jusqu’à stabilisation.","textChars":61,"textLines":1,"bbox":[773.9,788.62,292,132]}
+{"kind":"shape","id":"sh/50v2pgna","slide":7,"name":"Freeform 23","bbox":[108,108,29.27,27.64]}
+{"kind":"shape","id":"sh/q143ylov","slide":7,"name":"TextBox 24","bbox":[114.5,116.13,15.45,13.01]}
+{"kind":"textbox","id":"sh/r2dkrq5g","slide":7,"name":"TextBox 25","text":"ONDA · RISK INTELLIGENCE","textPreview":"ONDA · RISK INTELLIGENCE","textChars":24,"textLines":1,"bbox":[146.07,114.71,156.23,34.35]}
+{"kind":"shape","id":"sh/d4f2t0nm","slide":7,"name":"Freeform 27","bbox":[1253.49,557.27,14.36,14.36]}
+{"kind":"shape","id":"sh/e5o32lor","slide":7,"name":"TextBox 28","bbox":[1254.84,559.29,11.66,10.99]}
+{"kind":"shape","id":"sh/p0zmlk7u","slide":7,"name":"Freeform 30","bbox":[1253.49,516.15,14.36,14.36]}
+{"kind":"shape","id":"sh/ozq5szq9","slide":7,"name":"TextBox 31","bbox":[1254.84,518.17,11.66,10.99]}
+{"kind":"shape","id":"sh/2x8nqp83","slide":7,"name":"Freeform 33","bbox":[1253.49,536.71,14.36,14.36]}
+{"kind":"shape","id":"sh/x4j6p47q","slide":7,"name":"TextBox 34","bbox":[1254.84,538.73,11.66,10.99]}
+{"kind":"image","id":"im/je9kvalg","slide":7,"name":"","alt":"ONDA 30-day WAN prevention plan","bbox":[-10000,-10000,1,1]}
+{"kind":"notes","id":"nt/gnmp4jqx","slide":7,"text":"[Sources]\n- Local project report: report/main.tex\n- Local asset: report/images/onda/onda_prevention.png"}
+{"kind":"slide","id":"sl/fu1gfa1s","slide":8,"title":"DÉTECTION","textShapes":9}
+{"kind":"textbox","id":"sh/18byd4zy","slide":8,"name":"TextBox 2","text":"DÉTECTION","textPreview":"DÉTECTION","textChars":9,"textLines":1,"bbox":[280.33,254.89,1359.34,241.25]}
+{"kind":"textbox","id":"sh/g72x4zyd","slide":8,"name":"TextBox 3","text":"& RÉPONSE","textPreview":"& RÉPONSE","textChars":9,"textLines":1,"bbox":[1655.77,112,156.23,18.23]}
+{"kind":"shape","id":"sh/6h0fypgb","slide":8,"name":"Freeform 5","bbox":[1233.01,628.09,440,711.4]}
+{"kind":"shape","id":"sh/tkby9kzm","slide":8,"name":"TextBox 6","bbox":[1233.01,612.9,440,726.58]}
+{"kind":"textbox","id":"sh/sjix0zy1","slide":8,"name":"TextBox 7","text":"Découvrir","textPreview":"Découvrir","textChars":9,"textLines":1,"bbox":[1324.38,689.04,257.27,56.99]}
+{"kind":"textbox","id":"sh/je9g3ahk","slide":8,"name":"TextBox 8","text":"Nmap identifie les services visibles et prépare la cartographie du laboratoire.","textPreview":"Nmap identifie les services visibles et prépare la cartographie du laboratoire.","textChars":79,"textLines":1,"bbox":[1307.02,795.98,292,176.02]}
+{"kind":"shape","id":"sh/o7ydoret","slide":8,"name":"Freeform 10","bbox":[740,572.54,440,711.4]}
+{"kind":"shape","id":"sh/98rehwve","slide":8,"name":"TextBox 11","bbox":[740,557.35,440,726.58]}
+{"kind":"textbox","id":"sh/m5gvmhwn","slide":8,"name":"TextBox 12","text":"Observer","textPreview":"Observer","textChars":8,"textLines":1,"bbox":[822.68,645.28,274.63,84.99]}
+{"kind":"textbox","id":"sh/n6pwfmd8","slide":8,"name":"TextBox 13","text":"Wireshark conserve les flux et la chronologie nécessaires à l’analyse.","textPreview":"Wireshark conserve les flux et la chronologie nécessaires à l’analyse.","textChars":70,"textLines":1,"bbox":[814,795.98,292,176.02]}
+{"kind":"shape","id":"sh/1k7edwv2","slide":8,"name":"Freeform 15","bbox":[246.98,628.09,440,711.4]}
+{"kind":"shape","id":"sh/ehgvihwr","slide":8,"name":"TextBox 16","bbox":[246.98,612.9,440,726.58]}
+{"kind":"textbox","id":"sh/zipwbmdc","slide":8,"name":"TextBox 17","text":"Qualifier","textPreview":"Qualifier","textChars":9,"textLines":1,"bbox":[338.35,689.04,257.27,56.99]}
+{"kind":"textbox","id":"sh/kfixwbe1","slide":8,"name":"TextBox 18","text":"Ghidra, YARA et Snort relient les indices techniques à une règle de détection.","textPreview":"Ghidra, YARA et Snort relient les indices techniques à une règle de détection.","textChars":78,"textLines":1,"bbox":[320.98,795.98,292,176.02]}
+{"kind":"shape","id":"sh/lgbepgvm","slide":8,"name":"Freeform 19","bbox":[108,368.65,90.6,39.2]}
+{"kind":"shape","id":"sh/tw7e9gnq","slide":8,"name":"Freeform 20","bbox":[1721.02,368.65,90.6,39.2]}
+{"kind":"shape","id":"sh/7u5w765k","slide":8,"name":"Freeform 22","bbox":[108,108,29.27,27.64]}
+{"kind":"shape","id":"sh/6twve1oz","slide":8,"name":"TextBox 23","bbox":[114.5,116.13,15.45,13.01]}
+{"kind":"textbox","id":"sh/5sne5wne","slide":8,"name":"TextBox 24","text":"ONDA · CYBERRANGE","textPreview":"ONDA · CYBERRANGE","textChars":17,"textLines":1,"bbox":[146.07,114.71,156.23,34.35]}
+{"kind":"notes","id":"nt/fu1gfa1s","slide":8,"text":"[Sources]\n- Local project report: report/main.tex\n- Local assets: report/images/cyberrange cr_nmap.png, cr_wireshark.png, cr_yara.png, cr_snort.png"}
+{"kind":"slide","id":"sl/udsvah03","slide":9,"title":"CULTURE","textShapes":10}
+{"kind":"shape","id":"sh/1cfmhgne","slide":9,"name":"AutoShape 2","bbox":[344.92,972.5,220.78,0]}
+{"kind":"shape","id":"sh/0b65obm9","slide":9,"name":"AutoShape 3","bbox":[661.6,971.5,220.78,0]}
+{"kind":"shape","id":"sh/nex4jq5k","slide":9,"name":"AutoShape 4","bbox":[978.27,970.5,220.78,0]}
+{"kind":"shape","id":"sh/9gzml0nq","slide":9,"name":"Freeform 6","bbox":[1314.73,272.02,954.78,1011]}
+{"kind":"shape","id":"sh/ofq5svm5","slide":9,"name":"TextBox 7","bbox":[1314.73,256.83,954.78,1026.19]}
+{"kind":"shape","id":"sh/ah8nu54b","slide":9,"name":"Freeform 9","bbox":[1315.73,470.17,605.27,501.83]}
+{"kind":"shape","id":"sh/oza1gfyh","slide":9,"name":"Freeform 10","bbox":[108,888.09,85.01,85.64]}
+{"kind":"shape","id":"sh/p0ji9kf2","slide":9,"name":"Freeform 11","bbox":[1513.47,357.36,298.53,30.94]}
+{"kind":"textbox","id":"sh/2xsjepgb","slide":9,"name":"TextBox 12","text":"CULTURE","textPreview":"CULTURE","textChars":7,"textLines":1,"bbox":[344.92,280.57,828.5,241.45]}
+{"kind":"textbox","id":"sh/3y107axw","slide":9,"name":"TextBox 13","text":"DE RÉSILIENCE","textPreview":"DE RÉSILIENCE","textChars":13,"textLines":1,"bbox":[344.92,518.69,933.56,54.63]}
+{"kind":"textbox","id":"sh/cnu1kzyd","slide":9,"name":"TextBox 14","text":"APPRENDRE · DÉTECTER · AMÉLIORER","textPreview":"APPRENDRE · DÉTECTER · AMÉLIORER","textChars":32,"textLines":1,"bbox":[1655.77,112,156.23,51.52]}
+{"kind":"textbox","id":"sh/do3id4fy","slide":9,"name":"TextBox 15","text":"Former et simuler","textPreview":"Former et simuler","textChars":17,"textLines":1,"bbox":[344.92,695.05,203.69,44.01]}
+{"kind":"textbox","id":"sh/qlcjipgn","slide":9,"name":"TextBox 16","text":"Des scénarios isolés entraînent les équipes à reconnaître les preuves utiles.","textPreview":"Des scénarios isolés entraînent les équipes à reconnaître les preuves utiles.","textChars":77,"textLines":1,"bbox":[344.92,754.89,220.78,176.02]}
+{"kind":"textbox","id":"sh/bml0buxs","slide":9,"name":"TextBox 17","text":"Responsabiliser","textPreview":"Responsabiliser","textChars":15,"textLines":1,"bbox":[661.6,695.05,203.69,44.01]}
+{"kind":"textbox","id":"sh/0ru1ozyp","slide":9,"name":"TextBox 18","text":"Les checklists et le REX rendent les contrôles visibles et transmissibles.","textPreview":"Les checklists et le REX rendent les contrôles visibles et transmissibles.","textChars":74,"textLines":1,"bbox":[661.6,754.89,220.78,176.02]}
+{"kind":"textbox","id":"sh/lsn2h4fa","slide":9,"name":"TextBox 19","text":"Ancrer le workflow","textPreview":"Ancrer le workflow","textChars":18,"textLines":1,"bbox":[978.27,695.05,220.78,44.01]}
+{"kind":"textbox","id":"sh/98ji147e","slide":9,"name":"TextBox 20","text":"Les preuves et les actions reviennent dans la prévention WAN.","textPreview":"Les preuves et les actions reviennent dans la prévention WAN.","textChars":61,"textLines":1,"bbox":[978.27,754.89,220.78,176.02]}
+{"kind":"shape","id":"sh/76h0zup8","slide":9,"name":"Freeform 22","bbox":[108,108,29.27,27.64]}
+{"kind":"shape","id":"sh/ml8j6p8n","slide":9,"name":"TextBox 23","bbox":[114.5,116.13,15.45,13.01]}
+{"kind":"textbox","id":"sh/hcji5o7a","slide":9,"name":"TextBox 24","text":"ONDA · RISK INTELLIGENCE","textPreview":"ONDA · RISK INTELLIGENCE","textChars":24,"textLines":1,"bbox":[146.07,114.71,156.23,34.35]}
+{"kind":"shape","id":"sh/va103ep4","slide":9,"name":"Freeform 26","bbox":[108,695.05,14.36,14.36]}
+{"kind":"shape","id":"sh/u9sja98z","slide":9,"name":"TextBox 27","bbox":[109.35,697.07,11.66,10.99]}
+{"kind":"shape","id":"sh/cf6h0fql","slide":9,"name":"Freeform 29","bbox":[149.12,695.05,14.36,14.36]}
+{"kind":"shape","id":"sh/2l4faloj","slide":9,"name":"TextBox 30","bbox":[150.47,697.07,11.66,10.99]}
+{"kind":"shape","id":"sh/onmxcv69","slide":9,"name":"Freeform 32","bbox":[128.56,695.05,14.36,14.36]}
+{"kind":"shape","id":"sh/pofy50nu","slide":9,"name":"TextBox 33","bbox":[129.91,697.07,11.66,10.99]}
+{"kind":"image","id":"im/h4ja94z6","slide":9,"name":"","alt":"CyberRange remediation evidence","bbox":[-10000,-10000,1,1]}
+{"kind":"notes","id":"nt/udsvah03","slide":9,"text":"[Sources]\n- Local project report: report/main.tex\n- Local asset: report/images/cyberrange cr_remediation.png"}
+{"kind":"slide","id":"sl/m90b6t0r","slide":10,"title":"BILAN","textShapes":10}
+{"kind":"shape","id":"sh/xc3mho32","slide":10,"name":"Freeform 2","bbox":[0,777.75,573.24,302.25]}
+{"kind":"shape","id":"sh/cbu58j2h","slide":10,"name":"Freeform 3","bbox":[1346.76,777.75,573.24,302.25]}
+{"kind":"shape","id":"sh/ydcnatkn","slide":10,"name":"Freeform 5","bbox":[573.24,519.99,773.53,613.45]}
+{"kind":"shape","id":"sh/l036l83y","slide":10,"name":"TextBox 6","bbox":[573.24,504.81,773.53,628.64]}
+{"kind":"shape","id":"sh/725onyl4","slide":10,"name":"Freeform 8","bbox":[670.03,521.58,579.95,374.8]}
+{"kind":"textbox","id":"sh/m1cnetkj","slide":10,"name":"TextBox 9","text":"BILAN","textPreview":"BILAN","textChars":5,"textLines":1,"bbox":[280.33,251.58,1359.34,125.35]}
+{"kind":"shape","id":"sh/s7yt4b21","slide":10,"name":"TextBox 10","bbox":[573.24,375.51,773.53,45.28]}
+{"kind":"textbox","id":"sh/d87uxg3m","slide":10,"name":"TextBox 11","text":"ONDA · EMSI","textPreview":"ONDA · EMSI","textChars":11,"textLines":1,"bbox":[1655.77,112,156.23,18.23]}
+{"kind":"textbox","id":"sh/q5gb21kb","slide":10,"name":"TextBox 12","text":"Valeur du projet","textPreview":"Valeur du projet","textChars":16,"textLines":1,"bbox":[108,431.98,118.53,44.8]}
+{"kind":"textbox","id":"sh/r6pcv6lw","slide":10,"name":"TextBox 13","text":"Anticiper les sites exposés avant la coupure.","textPreview":"Anticiper les sites exposés avant la coupure.","textChars":45,"textLines":1,"bbox":[108,464,231.37,86.4]}
+{"kind":"textbox","id":"sh/0bit8b2d","slide":10,"name":"TextBox 14","text":"Relier prédiction, procédure et preuve technique.","textPreview":"Relier prédiction, procédure et preuve technique.","textChars":49,"textLines":1,"bbox":[224.19,630.8,231.37,86.4]}
+{"kind":"textbox","id":"sh/1cru1g3y","slide":10,"name":"TextBox 15","text":"Pour aller plus loin","textPreview":"Pour aller plus loin","textChars":20,"textLines":1,"bbox":[1454.19,458.39,357.81,35.2]}
+{"kind":"textbox","id":"sh/e9gb61k7","slide":10,"name":"TextBox 16","text":"Enrichir les données, suivre les actions jusqu’à leur clôture et recalibrer les seuils avec les équipes.","textPreview":"Enrichir les données, suivre les actions jusqu’à leur clôture et recalibrer les seuils avec les équipes.","textChars":104,"textLines":1,"bbox":[1509.16,507.71,302.84,144]}
+{"kind":"textbox","id":"sh/fapcz6ls","slide":10,"name":"TextBox 17","text":"Auteurs : Azzat Nouamane & Hnid Aimane\nEncadrement : Mme Jaouhari Ouafaa · Mme Khadija Bousmar","textPreview":"Auteurs : Azzat Nouamane & Hnid Aimane | Encadrement : Mme Jaouhari Ouafaa · Mme Khadija Bousmar","textChars":94,"textLines":2,"bbox":[1516.35,644.71,217.54,201.6]}
+{"kind":"textbox","id":"sh/ozitcv29","slide":10,"name":"TextBox 18","text":"Projet ONDA · PFA 4IIR","textPreview":"Projet ONDA · PFA 4IIR","textChars":22,"textLines":1,"bbox":[839.73,950,240.55,22.4]}
+{"kind":"shape","id":"sh/xwnupgvy","slide":10,"name":"Freeform 20","bbox":[108,108,29.27,27.64]}
+{"kind":"shape","id":"sh/wvetgbud","slide":10,"name":"TextBox 21","bbox":[114.5,116.13,15.45,13.01]}
+{"kind":"textbox","id":"sh/bu5cnqd8","slide":10,"name":"TextBox 22","text":"ONDA · RISK INTELLIGENCE","textPreview":"ONDA · RISK INTELLIGENCE","textChars":24,"textLines":1,"bbox":[146.07,114.71,156.23,34.35]}
+{"kind":"image","id":"im/94fuxg7u","slide":10,"name":"","alt":"Integrated ONDA risk and CyberRange workflow","bbox":[-10000,-10000,1,1]}
+{"kind":"notes","id":"nt/m90b6t0r","slide":10,"text":"[Sources]\n- Local project report: report/main.tex\n- Local asset: report/images/diagrams/solution_pipeline.png"}

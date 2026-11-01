@@ -1,0 +1,199 @@
+{
+  "templateSource": "C:/Users/nouam/Downloads/Green and Black Modern Cybersecurity Presentation.pptx",
+  "output": "C:/Users/nouam/Downloads/ONDA_Projet_Sauvegarde/report/ONDA_Risk_Intelligence_CyberRange_GreenBlack_Template.pptx",
+  "outputSlides": [
+    {
+      "outputSlide": 1,
+      "sourceSlide": 1,
+      "reuseMode": "duplicate-slide",
+      "narrativeRole": "opening thesis",
+      "contentKeywords": ["ONDA", "analyse prédictive", "CyberRange", "PFA"],
+      "editTargets": [
+        {"sourceElementId": "sh/dgzetcfa", "action": "rewrite"},
+        {"sourceElementId": "sh/1cvuxc7e", "action": "rewrite"},
+        {"sourceElementId": "sh/fu94fe98", "action": "replace"},
+        {"sourceElementId": "im/xgzi9wzu", "action": "replace"}
+      ]
+    },
+    {
+      "outputSlide": 2,
+      "sourceSlide": 2,
+      "reuseMode": "duplicate-slide",
+      "narrativeRole": "context and problem",
+      "contentKeywords": ["continuité réseau", "27 sites", "864 incidents", "proactivité"],
+      "editTargets": [
+        {"sourceElementId": "sh/q5wjelsz", "action": "rewrite"},
+        {"sourceElementId": "sh/ove9o7yd", "action": "rewrite"},
+        {"sourceElementId": "sh/9wnqhczy", "action": "rewrite"},
+        {"sourceElementId": "sh/mtwrmxg7", "action": "rewrite"},
+        {"sourceElementId": "sh/nu58f2hs", "action": "rewrite"},
+        {"sourceElementId": "sh/wjy9sry9", "action": "rewrite"},
+        {"sourceElementId": "sh/xk7qlczu", "action": "rewrite"},
+        {"sourceElementId": "sh/ahwrqhgj", "action": "rewrite"},
+        {"sourceElementId": "sh/bip8jmho", "action": "rewrite"},
+        {"sourceElementId": "sh/65kfmpor", "action": "rewrite"},
+        {"sourceElementId": "sh/x4r21kru", "action": "replace"}
+      ]
+    },
+    {
+      "outputSlide": 3,
+      "sourceSlide": 3,
+      "reuseMode": "duplicate-slide",
+      "narrativeRole": "solution rationale",
+      "contentKeywords": ["vision intégrée", "prédire", "préparer", "simuler", "défense"],
+      "editTargets": [
+        {"sourceElementId": "sh/n2l4fq98", "action": "rewrite"},
+        {"sourceElementId": "sh/m1c3mlsn", "action": "rewrite"},
+        {"sourceElementId": "sh/943mhgre", "action": "rewrite"},
+        {"sourceElementId": "sh/83ulovat", "action": "rewrite"},
+        {"sourceElementId": "sh/v6l4jq94", "action": "rewrite"},
+        {"sourceElementId": "sh/a5c3ql8z", "action": "rewrite"},
+        {"sourceElementId": "sh/x8nml0ra", "action": "rewrite"},
+        {"sourceElementId": "sh/w7ulsvqp", "action": "rewrite"},
+        {"sourceElementId": "sh/f29gbyx0", "action": "rewrite"},
+        {"sourceElementId": "sh/obq90bml", "action": "replace"}
+      ]
+    },
+    {
+      "outputSlide": 4,
+      "sourceSlide": 4,
+      "reuseMode": "duplicate-slide",
+      "narrativeRole": "solution architecture",
+      "contentKeywords": ["architecture", "plateforme ONDA", "laboratoire isolé", "sécurité"],
+      "editTargets": [
+        {"sourceElementId": "sh/kbm987y5", "action": "rewrite"},
+        {"sourceElementId": "sh/5cva1cfq", "action": "rewrite"},
+        {"sourceElementId": "sh/i94r6xgz", "action": "rewrite"},
+        {"sourceElementId": "sh/jadsz2xk", "action": "rewrite"},
+        {"sourceElementId": "sh/w72947yt", "action": "rewrite"},
+        {"sourceElementId": "sh/x8vaxsfe", "action": "rewrite"},
+        {"sourceElementId": "sh/a5kr2xg3", "action": "rewrite"},
+        {"sourceElementId": "sh/v6tsv2xo", "action": "rewrite"},
+        {"sourceElementId": "sh/g36tgryd", "action": "rewrite"},
+        {"sourceElementId": "sh/3ytsrmpw", "action": "rewrite"},
+        {"sourceElementId": "sh/3ihk3et8", "action": "replace"}
+      ]
+    },
+    {
+      "outputSlide": 5,
+      "sourceSlide": 5,
+      "reuseMode": "duplicate-slide",
+      "narrativeRole": "predictive analysis",
+      "contentKeywords": ["score de risque", "machine learning", "99,9", "30 jours"],
+      "editTargets": [
+        {"sourceElementId": "sh/ahkvi1cb", "action": "rewrite"},
+        {"sourceElementId": "sh/v2twb6dw", "action": "rewrite"},
+        {"sourceElementId": "sh/k7mxovud", "action": "rewrite"},
+        {"sourceElementId": "sh/58vehgvy", "action": "rewrite"},
+        {"sourceElementId": "sh/i54fmlc7", "action": "rewrite"},
+        {"sourceElementId": "sh/j6dwfqds", "action": "rewrite"},
+        {"sourceElementId": "sh/sb6xsvu9", "action": "rewrite"},
+        {"sourceElementId": "sh/tcfel0vu", "action": "rewrite"},
+        {"sourceElementId": "sh/hgrmpwj2", "action": "rewrite"},
+        {"sourceElementId": "sh/pkr6tgjy", "action": "rewrite"},
+        {"sourceElementId": "sh/l4bupwny", "action": "replace"}
+      ]
+    },
+    {
+      "outputSlide": 6,
+      "sourceSlide": 6,
+      "reuseMode": "duplicate-slide",
+      "narrativeRole": "operational prevention",
+      "contentKeywords": ["facteur humain", "checklist", "REX", "rollback"],
+      "editTargets": [
+        {"sourceElementId": "sh/yhg7epsj", "action": "rewrite"},
+        {"sourceElementId": "sh/zi98nu94", "action": "rewrite"},
+        {"sourceElementId": "sh/87ipkzal", "action": "rewrite"},
+        {"sourceElementId": "sh/w32twb6l", "action": "rewrite"},
+        {"sourceElementId": "sh/v2tcn650", "action": "rewrite"},
+        {"sourceElementId": "sh/u1kbu1ov", "action": "rewrite"},
+        {"sourceElementId": "sh/5svutgni", "action": "rewrite"},
+        {"sourceElementId": "sh/47mt0b6x", "action": "rewrite"},
+        {"sourceElementId": "sh/j6dcr65c", "action": "rewrite"},
+        {"sourceElementId": "sh/qpwnet0b", "action": "rewrite"},
+        {"sourceElementId": "sh/pc76hkr2", "action": "replace"}
+      ]
+    },
+    {
+      "outputSlide": 7,
+      "sourceSlide": 7,
+      "reuseMode": "duplicate-slide",
+      "narrativeRole": "prevention actions",
+      "contentKeywords": ["plan d'action", "UPS", "opérateur", "supervision"],
+      "editTargets": [
+        {"sourceElementId": "sh/a9ojq5kz", "action": "rewrite"},
+        {"sourceElementId": "sh/xcz2l03q", "action": "rewrite"},
+        {"sourceElementId": "sh/cbq1sv25", "action": "rewrite"},
+        {"sourceElementId": "sh/n6x0fqlo", "action": "rewrite"},
+        {"sourceElementId": "sh/25ojml43", "action": "rewrite"},
+        {"sourceElementId": "sh/p8fih03e", "action": "rewrite"},
+        {"sourceElementId": "sh/o761ov2t", "action": "rewrite"},
+        {"sourceElementId": "sh/f2d0b6lc", "action": "rewrite"},
+        {"sourceElementId": "sh/eh4jil4r", "action": "rewrite"},
+        {"sourceElementId": "sh/id4ju1oz", "action": "rewrite"},
+        {"sourceElementId": "sh/jedkn654", "action": "rewrite"},
+        {"sourceElementId": "sh/r2dkrq5g", "action": "rewrite"},
+        {"sourceElementId": "sh/fi9c369c", "action": "replace"}
+      ]
+    },
+    {
+      "outputSlide": 8,
+      "sourceSlide": 8,
+      "reuseMode": "duplicate-slide",
+      "narrativeRole": "defensive simulation",
+      "contentKeywords": ["CyberRange", "Nmap", "Wireshark", "YARA", "Snort"],
+      "editTargets": [
+        {"sourceElementId": "sh/18byd4zy", "action": "rewrite"},
+        {"sourceElementId": "sh/g72x4zyd", "action": "rewrite"},
+        {"sourceElementId": "sh/sjix0zy1", "action": "rewrite"},
+        {"sourceElementId": "sh/je9g3ahk", "action": "rewrite"},
+        {"sourceElementId": "sh/m5gvmhwn", "action": "rewrite"},
+        {"sourceElementId": "sh/n6pwfmd8", "action": "rewrite"},
+        {"sourceElementId": "sh/zipwbmdc", "action": "rewrite"},
+        {"sourceElementId": "sh/kfixwbe1", "action": "rewrite"},
+        {"sourceElementId": "sh/5sne5wne", "action": "rewrite"}
+      ]
+    },
+    {
+      "outputSlide": 9,
+      "sourceSlide": 9,
+      "reuseMode": "duplicate-slide",
+      "narrativeRole": "integration and improvement",
+      "contentKeywords": ["culture", "former", "preuves", "remédiation"],
+      "editTargets": [
+        {"sourceElementId": "sh/2xsjepgb", "action": "rewrite"},
+        {"sourceElementId": "sh/3y107axw", "action": "rewrite"},
+        {"sourceElementId": "sh/cnu1kzyd", "action": "rewrite"},
+        {"sourceElementId": "sh/do3id4fy", "action": "rewrite"},
+        {"sourceElementId": "sh/qlcjipgn", "action": "rewrite"},
+        {"sourceElementId": "sh/bml0buxs", "action": "rewrite"},
+        {"sourceElementId": "sh/0ru1ozyp", "action": "rewrite"},
+        {"sourceElementId": "sh/lsn2h4fa", "action": "rewrite"},
+        {"sourceElementId": "sh/98ji147e", "action": "rewrite"},
+        {"sourceElementId": "sh/hcji5o7a", "action": "rewrite"},
+        {"sourceElementId": "sh/ah8nu54b", "action": "replace"}
+      ]
+    },
+    {
+      "outputSlide": 10,
+      "sourceSlide": 10,
+      "reuseMode": "duplicate-slide",
+      "narrativeRole": "closing",
+      "contentKeywords": ["conclusion", "valeur", "action", "Azzat", "Hnid"],
+      "editTargets": [
+        {"sourceElementId": "sh/m1cnetkj", "action": "rewrite"},
+        {"sourceElementId": "sh/s7yt4b21", "action": "rewrite"},
+        {"sourceElementId": "sh/d87uxg3m", "action": "rewrite"},
+        {"sourceElementId": "sh/q5gb21kb", "action": "rewrite"},
+        {"sourceElementId": "sh/r6pcv6lw", "action": "rewrite"},
+        {"sourceElementId": "sh/0bit8b2d", "action": "rewrite"},
+        {"sourceElementId": "sh/1cru1g3y", "action": "rewrite"},
+        {"sourceElementId": "sh/e9gb61k7", "action": "rewrite"},
+        {"sourceElementId": "sh/fapcz6ls", "action": "rewrite"},
+        {"sourceElementId": "sh/ozitcv29", "action": "rewrite"},
+        {"sourceElementId": "sh/bu5cnqd8", "action": "rewrite"},
+        {"sourceElementId": "sh/725onyl4", "action": "replace"}
+      ]
+    }
+  ]
+}

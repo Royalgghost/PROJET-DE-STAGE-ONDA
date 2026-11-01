@@ -1,0 +1,257 @@
+{
+  "sourcePptx": "C:\\Users\\nouam\\Downloads\\Green and Black Modern Cybersecurity Presentation.pptx",
+  "workspace": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following",
+  "outDir": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-inspect",
+  "generatedAt": "2026-09-03T15:42:43.771Z",
+  "slideCount": 10,
+  "slideArtifacts": [
+    {
+      "slide": 1,
+      "previewPath": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-inspect\\source-slides\\source-slide-01.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-01.png",
+      "layoutPath": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-inspect\\layouts\\source-slide-01.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-01.layout.json"
+    },
+    {
+      "slide": 2,
+      "previewPath": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-inspect\\source-slides\\source-slide-02.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-02.png",
+      "layoutPath": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-inspect\\layouts\\source-slide-02.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-02.layout.json"
+    },
+    {
+      "slide": 3,
+      "previewPath": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-inspect\\source-slides\\source-slide-03.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-03.png",
+      "layoutPath": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-inspect\\layouts\\source-slide-03.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-03.layout.json"
+    },
+    {
+      "slide": 4,
+      "previewPath": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-inspect\\source-slides\\source-slide-04.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-04.png",
+      "layoutPath": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-inspect\\layouts\\source-slide-04.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-04.layout.json"
+    },
+    {
+      "slide": 5,
+      "previewPath": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-inspect\\source-slides\\source-slide-05.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-05.png",
+      "layoutPath": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-inspect\\layouts\\source-slide-05.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-05.layout.json"
+    },
+    {
+      "slide": 6,
+      "previewPath": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-inspect\\source-slides\\source-slide-06.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-06.png",
+      "layoutPath": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-inspect\\layouts\\source-slide-06.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-06.layout.json"
+    },
+    {
+      "slide": 7,
+      "previewPath": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-inspect\\source-slides\\source-slide-07.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-07.png",
+      "layoutPath": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-inspect\\layouts\\source-slide-07.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-07.layout.json"
+    },
+    {
+      "slide": 8,
+      "previewPath": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-inspect\\source-slides\\source-slide-08.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-08.png",
+      "layoutPath": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-inspect\\layouts\\source-slide-08.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-08.layout.json"
+    },
+    {
+      "slide": 9,
+      "previewPath": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-inspect\\source-slides\\source-slide-09.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-09.png",
+      "layoutPath": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-inspect\\layouts\\source-slide-09.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-09.layout.json"
+    },
+    {
+      "slide": 10,
+      "previewPath": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-inspect\\source-slides\\source-slide-10.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-10.png",
+      "layoutPath": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-inspect\\layouts\\source-slide-10.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-10.layout.json"
+    }
+  ],
+  "inspectPath": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-inspect\\template-inspect.ndjson",
+  "inspectRelativePath": "template-inspect/template-inspect.ndjson",
+  "inspectTruncated": true,
+  "inspectMetadata": {
+    "revision": "2ys69r",
+    "target": {
+      "id": "pr/yx6wzv"
+    },
+    "kind": {
+      "requested": "slide,textbox,shape,image,table,chart",
+      "tokens": [
+        "slide",
+        "textbox",
+        "shape",
+        "image",
+        "table",
+        "chart"
+      ]
+    },
+    "include": {
+      "tokens": []
+    },
+    "exclude": {
+      "tokens": []
+    },
+    "notices": []
+  },
+  "extractedMedia": [
+    {
+      "entry": "ppt/media/image11.jpeg",
+      "path": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-inspect\\assets\\ppt\\media\\image11.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image11.jpeg",
+      "bytes": 254529
+    },
+    {
+      "entry": "ppt/media/image1.jpeg",
+      "path": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-inspect\\assets\\ppt\\media\\image1.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image1.jpeg",
+      "bytes": 129172
+    },
+    {
+      "entry": "ppt/media/image2.png",
+      "path": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-inspect\\assets\\ppt\\media\\image2.png",
+      "relativePath": "template-inspect/assets/ppt/media/image2.png",
+      "bytes": 127910
+    },
+    {
+      "entry": "ppt/media/image3.png",
+      "path": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-inspect\\assets\\ppt\\media\\image3.png",
+      "relativePath": "template-inspect/assets/ppt/media/image3.png",
+      "bytes": 430393
+    },
+    {
+      "entry": "ppt/media/image4.jpeg",
+      "path": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-inspect\\assets\\ppt\\media\\image4.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image4.jpeg",
+      "bytes": 622181
+    },
+    {
+      "entry": "ppt/media/image16.jpeg",
+      "path": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-inspect\\assets\\ppt\\media\\image16.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image16.jpeg",
+      "bytes": 427782
+    },
+    {
+      "entry": "ppt/media/image8.jpeg",
+      "path": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-inspect\\assets\\ppt\\media\\image8.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image8.jpeg",
+      "bytes": 327563
+    },
+    {
+      "entry": "ppt/media/image6.svg",
+      "path": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-inspect\\assets\\ppt\\media\\image6.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image6.svg",
+      "bytes": 1979
+    },
+    {
+      "entry": "ppt/media/image9.svg",
+      "path": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-inspect\\assets\\ppt\\media\\image9.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image9.svg",
+      "bytes": 1750
+    },
+    {
+      "entry": "ppt/media/image7.jpeg",
+      "path": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-inspect\\assets\\ppt\\media\\image7.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image7.jpeg",
+      "bytes": 608533
+    },
+    {
+      "entry": "ppt/media/image10.jpeg",
+      "path": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-inspect\\assets\\ppt\\media\\image10.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image10.jpeg",
+      "bytes": 263215
+    },
+    {
+      "entry": "ppt/media/image5.svg",
+      "path": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-inspect\\assets\\ppt\\media\\image5.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image5.svg",
+      "bytes": 4559
+    },
+    {
+      "entry": "ppt/media/image12.jpeg",
+      "path": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-inspect\\assets\\ppt\\media\\image12.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image12.jpeg",
+      "bytes": 644010
+    },
+    {
+      "entry": "ppt/media/image13.jpeg",
+      "path": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-inspect\\assets\\ppt\\media\\image13.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image13.jpeg",
+      "bytes": 938305
+    },
+    {
+      "entry": "ppt/media/image14.svg",
+      "path": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-inspect\\assets\\ppt\\media\\image14.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image14.svg",
+      "bytes": 1030
+    },
+    {
+      "entry": "ppt/media/image15.svg",
+      "path": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-inspect\\assets\\ppt\\media\\image15.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image15.svg",
+      "bytes": 2674
+    },
+    {
+      "entry": "ppt/media/media1.mp4",
+      "path": "C:\\Users\\nouam\\Downloads\\ONDA_Projet_Sauvegarde\\presentation_build\\template_following\\template-inspect\\assets\\ppt\\media\\media1.mp4",
+      "relativePath": "template-inspect/assets/ppt/media/media1.mp4",
+      "bytes": 2387381
+    }
+  ],
+  "fonts": [
+    "+mj-cs",
+    "+mj-ea",
+    "+mj-lt",
+    "+mn-cs",
+    "+mn-ea",
+    "+mn-lt",
+    "Angsana New",
+    "Arial",
+    "Calibri",
+    "Cordia New",
+    "DaunPenh",
+    "DokChampa",
+    "Estrangelo Edessa",
+    "Euphemia",
+    "Gautami",
+    "Iskoola Pota",
+    "Kalinga",
+    "Kartika",
+    "Latha",
+    "MV Boli",
+    "Mangal",
+    "Microsoft Himalaya",
+    "Microsoft Uighur",
+    "Microsoft Yi Baiti",
+    "Mongolian Baiti",
+    "MoolBoran",
+    "Nyala",
+    "Pattanakarn Bold",
+    "Pattanakarn Light",
+    "Plantagenet Cherokee",
+    "Raavi",
+    "Shruti",
+    "Times New Roman",
+    "Tunga",
+    "Vrinda",
+    "宋体",
+    "新細明體",
+    "맑은 고딕",
+    "ＭＳ Ｐゴシック"
+  ],
+  "packageParts": {
+    "mediaCount": 17,
+    "slideXmlCount": 10,
+    "chartCount": 0,
+    "tableSlideCount": 0
+  }
+}

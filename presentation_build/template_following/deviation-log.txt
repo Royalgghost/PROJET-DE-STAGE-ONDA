@@ -1,0 +1,9 @@
+Deviation log — template adaptation
+
+1. The supplied deck is a generic cybersecurity presentation. Its structure, master, layouts, decorative geometry, color palette, and typography are retained, while all unrelated wording and brand text are replaced.
+2. Generic stock-photo panels are replaced with local ONDA Risk Intelligence, CyberRange, and architecture visuals. These are content replacements inside the inherited visual slots.
+3. The original template has ten slides, so the output is intentionally a ten-slide defense narrative rather than a one-to-one copy of the earlier eighteen-slide deck.
+4. The source template’s “Liceria & Co.” labels and generic website text are removed because they do not belong to the ONDA project.
+5. French project content is used to remain consistent with the internship report; inherited English headings are rewritten in place.
+6. Metrics are kept concise and rounded only where the template’s inherited text boxes require compact presentation copy. The full methodology remains in the report.
+7. No new master, layout, or unrelated slide family is introduced. The CyberRange is described as an isolated and authorized simulation environment.

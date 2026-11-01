@@ -20,9 +20,48 @@
 
 ---
 
+## Captures de l'interface ONDA
+
+<div align="center">
+  <img src="images/onda/onda_home.png" width="800" alt="Accueil ONDA" />
+  <p><em>Accueil de la plateforme ONDA</em></p>
+
+  <img src="images/onda/onda_login.png" width="800" alt="Écran de connexion ONDA" />
+  <p><em>Écran de connexion</em></p>
+
+  <img src="images/onda/onda_explorer.png" width="800" alt="Explorateur ONDA" />
+  <p><em>Explorateur des actifs et incidents</em></p>
+
+  <img src="images/onda/onda_detail.png" width="800" alt="Fiche détaillée ONDA" />
+  <p><em>Fiche détaillée d'un site ou d'un actif</em></p>
+
+  <img src="images/onda/onda_alerts.png" width="800" alt="Alertes ONDA" />
+  <p><em>Vue des alertes et niveaux de risque</em></p>
+
+  <img src="images/onda/onda_overview.png" width="800" alt="Vue d'ensemble ONDA" />
+  <p><em>Vue d'ensemble des risques et tendances</em></p>
+
+  <img src="images/onda/onda_modules.png" width="800" alt="Modules ONDA" />
+  <p><em>Modules fonctionnels de la solution</em></p>
+
+  <img src="images/onda/onda_prevention.png" width="800" alt="Prévention ONDA" />
+  <p><em>Module de prévention des coupures WAN</em></p>
+
+  <img src="images/onda/onda_model.png" width="800" alt="Modèle ONDA" />
+  <p><em>Analyse du modèle et des performances</em></p>
+
+  <img src="images/onda/onda_human.png" width="800" alt="Facteur humain ONDA" />
+  <p><em>Module facteur humain et retours d'expérience</em></p>
+
+  <img src="images/onda/onda_logo.png" width="300" alt="Logo ONDA" />
+  <p><em>Logo ONDA</em></p>
+</div>
+
+---
+
 ## Résumé du Projet
 
-Ce projet porte sur la conception d'un modèle d'analyse des risques et d'alertes prédictives basé sur les données de maintenance des actifs informatiques de l'Office National des Aéroports. La solution exploite l'historique des incidents WAN de 27 sites pour estimer un score de risque sur un horizon de 30 jours, hiérarchiser les alertes et proposer des actions de prévention.
+Ce projet porte sur la conception d'un modèle d'analyse des risques et d'alertes prédictives basé sur les données de maintenance des actifs informatiques de l'Office National des Aéroports. L'objectif est de transformer les données de maintenance en alertes compréhensibles et exploitables pour l'aide à la décision.
 
 ### Objectifs Principaux
 
@@ -49,17 +88,17 @@ Un **CyberRange isolé** complète la validation en reproduisant des scénarios 
 2. Nettoie et normalise les sites, les opérateurs et les catégories d'incidents.
 3. Construit un dataset **site-semaine**.
 4. Crée des variables uniquement à partir du passé :
-   - incidents sur 7, 30, 90 et 180 jours ;
-   - durée d'indisponibilité ;
-   - jours depuis le dernier incident ;
-   - incidents IAM, Orange et électriques ;
-   - historique du site.
+    - incidents sur 7, 30, 90 et 180 jours ;
+    - durée d'indisponibilité ;
+    - jours depuis le dernier incident ;
+    - incidents IAM, Orange et électriques ;
+    - historique du site.
 5. Entraîne une régression logistique pour prédire :
-   **au moins un incident pendant les 30 jours suivants**.
+    **au moins un incident pendant les 30 jours suivants**.
 6. Produit un score de risque de 0 à 100 et trois niveaux :
-   - faible ;
-   - moyen ;
-   - élevé.
+    - faible ;
+    - moyen ;
+    - élevé.
 7. Affiche les résultats dans une interface Streamlit.
 
 ## Architecture
@@ -191,4 +230,4 @@ Analyse de risques, maintenance informatique, réseau WAN, apprentissage automat
 
 ## Conclusion
 
-Le contexte ONDA justifie une approche qui dépasse le simple affichage de tickets. La solution retenue transforme l'historique de maintenance en priorités prédictives et ajoute un laboratoire CyberRange pour relier disponibilité, sécurité et retour d'expérience. Les fonctionnalités livrées couvrent la décision, la prévention et la validation, tout en restant compatibles avec les données disponibles.
+Le contexte ONDA justifie une approche qui dépasse le simple affichage de tickets. La solution retenue transforme l'historique de maintenance en priorités prédictives et ajoute un laboratoire de validation pour renforcer la compréhension des incidents et la préparation à la réponse.

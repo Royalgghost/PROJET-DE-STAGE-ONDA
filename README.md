@@ -4,6 +4,7 @@
 
 **Conception d'un modèle d'analyse des risques et d'alertes prédictives basé sur les données de maintenance des actifs informatiques**
 
+
 ---
 
 ## Auteurs et Encadrement

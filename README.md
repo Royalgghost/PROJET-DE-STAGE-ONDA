@@ -207,6 +207,34 @@ Le CyberRange permet de :
 - Proposer des mesures de remédiation
 - Transformer les enseignements techniques en retour d'expérience
 
+### Preuves du laboratoire CyberRange
+
+<div align="center">
+  <img src="images/cyberrange/emsi_logo.png" width="250" alt="Logo EMSI" />
+  <p><em>Logo EMSI</em></p>
+
+  <img src="images/cyberrange/cr_architecture.png" width="800" alt="Architecture du CyberRange" />
+  <p><em>Architecture du laboratoire CyberRange</em></p>
+
+  <img src="images/cyberrange/cr_network.png" width="800" alt="Réseau CyberRange" />
+  <p><em>Topologie réseau du laboratoire</em></p>
+
+  <img src="images/cyberrange/cr_nmap.png" width="800" alt="Scan réseau Nmap" />
+  <p><em>Découverte des services via Nmap</em></p>
+
+  <img src="images/cyberrange/cr_shell.png" width="800" alt="Shell d'exploitation" />
+  <p><em>Exploitation et reconnaissance système</em></p>
+
+  <img src="images/cyberrange/cr_snort.png" width="800" alt="Détection Snort" />
+  <p><em>Détection d'indices et de signatures Snort</em></p>
+
+  <img src="images/cyberrange/cr_wireshark.png" width="800" alt="Analyse Wireshark" />
+  <p><em>Capture et analyse réseau avec Wireshark</em></p>
+
+  <img src="images/cyberrange/cr_remediation.png" width="800" alt="Mesures de remédiation" />
+  <p><em>Mesures de remédiation et durcissement</em></p>
+</div>
+
 ---
 
 ## Besoins Fonctionnels Couverts
